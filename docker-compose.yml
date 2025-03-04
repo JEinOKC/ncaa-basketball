@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: ncaa-basketball/react-app
+    ports:
+      - "5175:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules # Prevents binding host node_modules, avoiding arch mismatch
+    environment:
+      - NODE_ENV=development
+    #command: npm run dev -- --host 0.0.0.0  # Ensure Vite's development server starts with host set to 0.0.0.0
+    command: sh -c "npm rebuild esbuild && npm run dev -- --host 0.0.0.0" 
