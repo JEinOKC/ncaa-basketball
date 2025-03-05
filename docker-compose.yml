@@ -1,15 +1,34 @@
 version: '3.8'
 
 services:
-  app:
-    build: .
+  frontend:
+    build: 
+      context: .
+      dockerfile: frontend.Dockerfile
     image: ncaa-basketball/react-app
     ports:
       - "5175:5173"
+    depends_on:
+      - backend
     volumes:
-      - .:/app
+      - ./frontend:/app
+      - ./shared-data:/app/data #shared volume for data
       - /app/node_modules # Prevents binding host node_modules, avoiding arch mismatch
     environment:
       - NODE_ENV=development
     #command: npm run dev -- --host 0.0.0.0  # Ensure Vite's development server starts with host set to 0.0.0.0
     command: sh -c "npm rebuild esbuild && npm run dev -- --host 0.0.0.0" 
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    image: ncaa-basketball/node-server
+    ports:
+      - "3099:5000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./backend:/app
+      - ./shared-data:/app/data #shared volume for data
+      - /app/node_modules 
+    command: npm run dev

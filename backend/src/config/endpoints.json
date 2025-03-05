@@ -1,0 +1,19 @@
+{
+	"year":2025,
+	"mensbb":{
+		"teams" : "https://masseyratings.com/scores.php?s=604302&sub=11590&all=1&mode=3&format=2",
+		"games" : {
+			"inter" : "https://masseyratings.com/scores.php?s=604302&sub=11590&all=1&mode=1&format=1",
+			"intra" : "https://masseyratings.com/scores.php?s=604302&sub=11590&all=1&mode=2&format=1",
+			"all" : "https://masseyratings.com/scores.php?s=604302&sub=11590&all=1&mode=3&format=1"
+		}
+	},
+	"womensbb":{
+		"teams" : "https://masseyratings.com/scores.php?s=604303&sub=11590&all=1&mode=3&format=2",
+		"games" : {
+			"inter" : "https://masseyratings.com/scores.php?s=604303&sub=11590&all=1&mode=1&format=1",
+			"intra" : "https://masseyratings.com/scores.php?s=604303&sub=11590&all=1&mode=2&format=1",
+			"all" : "https://masseyratings.com/scores.php?s=604303&sub=11590&all=1&mode=3&format=1"
+		}
+	}
+}
