@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
+import { useStateContext } from './utils/StateContext';
+import DisplayRankings from './components/DisplayRankings';
+import Bracket from './components/Bracket';
 
 function App() {
-  const [count, setCount] = useState(0)
+	
+	const { 
+		wbbRankings, mbbRankings
+		, context, setContext
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	} = useStateContext();
+	
+	useEffect(() => {
+		console.log(wbbRankings);
+		console.log(mbbRankings);
+	}, [wbbRankings, mbbRankings]);
+
+	const getContextRankingsHeadline = (context: string) => {
+		return context === 'wbb' ? 'Women\'s Basketball Top 25' : 'Men\'s Basketball Top 25';
+	};
+
+	const getContextBracketHeadline = (context: string) => {
+		return context === 'wbb' ? 'Women\'s Basketball Bracket' : 'Men\'s Basketball Bracket';
+	};
+
+
+
+	return (
+		<>
+			<Bracket context={context} headline={getContextBracketHeadline(context)} limit={25} />
+			<div className="context-switcher text-right">
+				<button 
+					onClick={() => setContext("mbb")} 
+					className={context === "mbb" ? "active" : "" + "m-2"}
+					>
+					Men's Basketball
+				</button>
+				<button 
+					onClick={() => setContext("wbb")} 
+					className={context === "wbb" ? "active" : "" + "m-2"}
+					>
+					Women's Basketball
+				</button>
+			</div>
+			<h1>Context = {context}</h1>
+			<DisplayRankings context={context} headline={getContextRankingsHeadline(context)} limit={25} />
+		</>
+	)
 }
 
 export default App

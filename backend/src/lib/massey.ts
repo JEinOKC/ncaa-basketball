@@ -2,7 +2,7 @@ import { parse } from 'csv-parse/sync';
 import { CollegeNameFormatter } from './college-name-formatter';
 
 const rankingMethods = require('generic-ranking-methods');
-const nameTable:{ [key: string]: string } = require('../config/name-table.json');
+const nameTable:{ [key: string]: string } = require('../../data/name-table.json');
 
 interface FormattedGameType {
 	calcs: {

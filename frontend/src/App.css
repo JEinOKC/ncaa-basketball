@@ -1,42 +1,38 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import "tailwindcss";
+@import "./assets/tailwind-components.css";
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+@theme{
+  /* based off of this color kit: https://colorkit.co/color/6683b3/ */
+  --color-primary: #6683b3;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  --color-darker-1:#58719b;
+  --color-darker-2:#4a6084;
+  --color-darker-3:#3c4f6e;
+  --color-darker-4:#2f3f58;
+  --color-darker-5:#232f43;
+  --color-darkest: #17202f;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+  --color-lighter-1: #748fbb;
+  --color-lighter-2: #839bc3;
+  --color-lighter-3: #92a7ca;
+  --color-lighter-4: #a1b3d2;
+  --color-lighter-5: #b0c0da;
+  --color-lighter-6: #c0cce1;
+  --color-lighter-7: #cfd9e9;
+  --color-lightest: #dfe5f0;
 
-.card {
-  padding: 2em;
-}
+  /* these colors are the tetrad of the primary */
+  --color-success: #66b36f;
+  --color-danger: #b366a9;
+  --color-neutral: #b39666;
 
-.read-the-docs {
-  color: #888;
+  /* different hues */
+  --color-hue-left-4: #b3669d;
+  --color-hue-left-3: #a966b3;
+  --color-hue-left-2: #8966b3;
+  --color-hue-left-1: #6966b3;
+  --color-hue-right-1: #66a3b3;
+  --color-hue-right-2: #66b3a3;
+  --color-hue-right-3: #66b383;
+  --color-hue-right-4: #69b366;
 }
