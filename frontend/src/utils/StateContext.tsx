@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { RankingItem, BracketType } from './Types';
+import { RankingItem, BracketType, Winners, Regions } from './Types';
+import { v4 as uuidv4 } from 'uuid';
 
 const StateContext = createContext<State | undefined>(undefined);
 
@@ -10,6 +11,8 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 	const [wbbBracket, setWbbBracket] = useState<BracketType>();
 	const [mbbBracket, setMbbBracket] = useState<BracketType>();
 
+	const [gameWinners, setGameWinners] = useState<Winners>({});
+
 	const [nameTable, setNameTable] = useState<{[key:string]:string}>({});
 
 	const [context, setContext] = useState<"wbb"|"mbb">("mbb");
@@ -17,7 +20,7 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 	useEffect(() => {
 		fetch(`/data/womensbb-rankings.json`)
 			.then((response) => response.json())
-			.then((json) => setWbbRankings(json))
+			.then((tmpRankings) => setWbbRankings(tmpRankings))
 			.catch((error) => console.error("Error loading JSON:", error));
 
 		fetch(`/data/mensbb-rankings.json`)
@@ -27,12 +30,28 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 		
 		fetch(`/data/womensbb-bracket.json`)
 			.then((response) => response.json())
-			.then((json) => setWbbBracket(json))
+			.then((tmpRankings:BracketType) => {
+
+				// const regions = tmpRankings.regions;
+				// regions.forEach((region)=>{
+				// 	addGameUUID(region.name);
+				// })
+				
+				setWbbBracket(tmpRankings)
+			})
 			.catch((error) => console.error("Error loading JSON:", error));
 		
 		fetch(`/data/mensbb-bracket.json`)
 			.then((response) => response.json())
-			.then((json) => setMbbBracket(json))
+			.then((tmpRankings:BracketType) => {
+				
+				// const regions = tmpRankings.regions;
+				// regions.forEach((region)=>{
+				// 	addGameUUID(region.name);
+				// })
+				// console.log({'updates after adding uuids':tmpRankings});
+				setMbbBracket(tmpRankings)
+			})
 			.catch((error) => console.error("Error loading JSON:", error));
 
 		fetch(`/data/name-table.json`)
@@ -56,7 +75,9 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 			mbbBracket,
 			nameTable,
 			context,
-			setContext
+			setContext,
+			gameWinners,
+			setGameWinners
 		}}>
 		{children}
 		</StateContext.Provider>

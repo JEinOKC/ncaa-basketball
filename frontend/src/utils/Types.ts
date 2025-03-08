@@ -23,7 +23,7 @@ export interface BracketType{
 export interface NodeType{
 	left:NodeType|null;
 	right:NodeType|null;
-	winner:NodeType|null;
+	winner:string|null;
 	score:number|null;
 	gameUUID?:string;
 	ancestor?:NodeType;

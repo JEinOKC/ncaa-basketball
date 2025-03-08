@@ -13,8 +13,8 @@ function App() {
 	} = useStateContext();
 	
 	useEffect(() => {
-		console.log(wbbRankings);
-		console.log(mbbRankings);
+		// console.log(wbbRankings);
+		// console.log(mbbRankings);
 	}, [wbbRankings, mbbRankings]);
 
 	const getContextRankingsHeadline = (context: string) => {

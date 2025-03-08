@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { NodeType } from "../utils/Types";
+import { useState, useEffect } from "react";
+import { NodeType, Winners } from "../utils/Types";
+import { useStateContext } from "../utils/StateContext";
 
 interface BracketNodeProps {
 	node: NodeType;
@@ -8,54 +9,69 @@ interface BracketNodeProps {
 }
 
 const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, currentRound }) => {
-	const [round, setRound] = useState(currentRound);
-	// const [winner, setWinner] = useState('');
+	
+	const { gameWinners, setGameWinners } = useStateContext();
 
-	const handleWinnerSelection = (winner: NodeType) => {
-		if (winner.name) {
-			// setWinner(winner.name);
+	const handleWinnerSelection = async (winner: NodeType) => {
+		
+		if (node.gameUUID !== undefined && winner.name) {
+			console.log('in the if',winner.name);
+			const safeGameUUID:string = node.gameUUID;
+
+			await setGameWinners((prevWinners:Winners) => ({ ...prevWinners, [safeGameUUID]: winner.name }));
+			console.log({'updated game winners':gameWinners});
 			onSelectWinner(winner);
 		}
 	};
 
-	const isWinner = (node: NodeType):boolean => {
-console.log({'winner??':node.ancestor?.winner,'node name':node.name,'node':node});
-		if(node.ancestor?.winner === node.name){
-			return true;
-		}
-
-		return false;
-	};
+	// useEffect(()=>{
+	// 	console.log('game winners changed',gameWinners[node.gameUUID]);
+	// 	console.log
+	// },[gameWinners])
 
 	return (
-		<div className="flex flex-col items-center border p-2">
-			{node.left && node.right ? (
-				<div className="flex flex-col space-y-2">
-					{/* Left Team */}
-					<button
-						onClick={() => handleWinnerSelection(node.left!)}
-						className="p-1 border hover:bg-green-200"
-					>
-						{node.left.seed}. {node.left.name} {isWinner(node.left) ? <>Winner!</> : <></>}
-					</button>
+		<div className="flex flex-row items-center" >
+			<div className="flex flex-col items-center border p-2 gap-2 w-45">
+				game: {node.gameUUID}
+				{node.left && node.right ? (
+					<div className="flex flex-col space-y-2">
+						{/* Left Team */}
+						<button
+							onClick={() => handleWinnerSelection(node.left!)}
+							className="p-1 border hover:bg-green-200"
+						>
+							{node.left.seed}. {node.left.name}
+						</button>
 
-					{/* Right Team */}
-					<button
-						onClick={() => handleWinnerSelection(node.right!)}
-						className="p-1 border hover:bg-green-200"
-					>
-						{node.right.seed}. {node.right.name} {isWinner(node.right) ? <>Winner!</> : <></>}
-					</button>
-				</div>
-			) : (
-				<div className="border p-2 text-center">
-					{node.name ? (
-						<strong>{node.name}</strong>
-					) : (
-						<span className="text-gray-500">TBD</span>
-					)}
-				</div>
-			)}
+						{/* Right Team */}
+						<button
+							onClick={() => handleWinnerSelection(node.right!)}
+							className="p-1 border hover:bg-green-200"
+						>
+							{node.right.seed}. {node.right.name}
+						</button>
+					</div>
+				) : (
+					<div className="border p-2 text-center">
+						{node.name ? (
+							<strong>{node.name}</strong>
+						) : (
+							<span className="text-gray-500">TBD</span>
+						)}
+					</div>
+				)}
+			</div>
+			
+			{
+				(node.gameUUID && node.gameUUID in gameWinners && gameWinners[node.gameUUID] !== '') && (
+					<div className="flex flex-col items-center border p-2 ml-4 w-45">
+						<div>
+							{gameWinners[node.gameUUID]}
+						</div>
+					</div>
+				)
+			}
+			
 		</div>
 	);
 };

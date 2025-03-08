@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useStateContext } from '../utils/StateContext';
-import { BracketType, Regions } from '../utils/Types';
+import { Regions, NodeType } from '../utils/Types';
 import { Bracketology } from '../utils/bracketology';
-import BracketNode, { NodeType } from './BracketNode';
 import { BracketologyType } from '../utils/Types';
 import { v4 as uuidv4 } from 'uuid';
 import Region from './Region';
@@ -32,6 +31,16 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		};
 	}
 
+	const addGameUUID = (node:NodeType) =>{
+	
+		if(node.left && node.right){
+			node.gameUUID = uuidv4();
+			addGameUUID(node.left);
+			addGameUUID(node.right);
+		}
+		
+	};
+
 	const getRegionNamesInOrder = ():Regions[] =>{
 		const finalFour = bracket?.data.finalFour;
 		const regionOrder:Regions[] = [];
@@ -52,15 +61,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		return regionOrder;
 	}
 
-	const addGameUUID = (node:NodeType) =>{
-
-		if(node.left && node.right){
-			node.gameUUID = uuidv4();
-			addGameUUID(node.left);
-			addGameUUID(node.right);
-		}
-		
-	}
+	
 
 	const getRegion = (regionName:Regions):NodeType =>{
 
@@ -68,17 +69,14 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			return getDefaultRegion();
 		}
 
-		//assign uuids to each game in the region
 		let currentRegion =  bracket.nodeBracket[regionName][0];
-
-		addGameUUID(currentRegion);
 		
 		return currentRegion;
 	}
 	
 	useEffect(() => {
-		console.log(wbbBracket);
-		console.log(mbbBracket);
+		// console.log(wbbBracket);
+		// console.log(mbbBracket);
 
 		if(!wbbBracket || !mbbBracket || !wbbRankings.length || !mbbRankings.length || Object.keys(nameTable).length === 0){
 			return;
@@ -86,18 +84,27 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 		if(context === "wbb"){
 			const wbbBracketology:BracketologyType = new Bracketology(wbbBracket, wbbRankings, nameTable);
+			const wbbRegions = wbbBracketology.data.regions;
+			wbbRegions.forEach((region)=>{
+				addGameUUID(getRegion(region.name));
+			})
+
 			console.log({'wbbBracketology':wbbBracketology});
 			setBracket(wbbBracketology);
 		}
 		else{
 			const mbbBracketology:BracketologyType = new Bracketology(mbbBracket, mbbRankings, nameTable);
+			const mbbRegions = mbbBracketology.data.regions;
+			mbbRegions.forEach((region)=>{
+				addGameUUID(getRegion(region.name));
+			})
 			console.log({'mbbBracketology':mbbBracketology});
 			setBracket(mbbBracketology);
 		}
 
-		console.log({
-			'loaded bracket' : bracket
-		});
+		// console.log({
+		// 	'loaded bracket' : bracket
+		// });
 
 
 	}, [wbbBracket, mbbBracket, wbbRankings, mbbRankings, nameTable]);
