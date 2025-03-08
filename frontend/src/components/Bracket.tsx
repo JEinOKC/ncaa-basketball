@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useStateContext } from '../utils/StateContext';
-import { BracketType } from '../utils/Types';
+import { BracketType, Regions } from '../utils/Types';
 import { Bracketology } from '../utils/bracketology';
+import BracketNode, { NodeType } from './BracketNode';
 import { BracketologyType } from '../utils/Types';
+import { v4 as uuidv4 } from 'uuid';
+import Region from './Region';
 
 interface BracketProps {
 	context: "wbb"|"mbb";
@@ -11,8 +14,6 @@ interface BracketProps {
 }
 
 const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
-	
-
 	const { 
 		wbbBracket, mbbBracket
 		, wbbRankings, mbbRankings 
@@ -20,6 +21,60 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	} = useStateContext();
 
 	const [bracket,setBracket] = useState<BracketologyType>();
+
+	const getDefaultRegion = ():NodeType =>{
+		return {
+			left: null,
+			right: null,
+			winner: null,
+			score: null,
+			gameUUID: uuidv4()
+		};
+	}
+
+	const getRegionNamesInOrder = ():Regions[] =>{
+		const finalFour = bracket?.data.finalFour;
+		const regionOrder:Regions[] = [];
+		if(!finalFour){
+			return regionOrder;
+		}
+
+		for(var i=0;i<finalFour.length;i++){
+			const segment = finalFour[i];
+
+			for(var j=0;j<segment.length;j++){
+				const typedItem:Regions = segment[j] as Regions;
+
+				regionOrder.push(typedItem);
+			}
+		}
+
+		return regionOrder;
+	}
+
+	const addGameUUID = (node:NodeType) =>{
+
+		if(node.left && node.right){
+			node.gameUUID = uuidv4();
+			addGameUUID(node.left);
+			addGameUUID(node.right);
+		}
+		
+	}
+
+	const getRegion = (regionName:Regions):NodeType =>{
+
+		if(!bracket){
+			return getDefaultRegion();
+		}
+
+		//assign uuids to each game in the region
+		let currentRegion =  bracket.nodeBracket[regionName][0];
+
+		addGameUUID(currentRegion);
+		
+		return currentRegion;
+	}
 	
 	useEffect(() => {
 		console.log(wbbBracket);
@@ -59,7 +114,11 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			* display the team name and the ranking 
 			**/}
 
-			{bracket ? bracket.toString(): 'No Bracket'}
+			{bracket ? (
+				getRegionNamesInOrder().map((element) => (
+					<Region key={element} region={getRegion(element)} regionName={element}/>	
+				))
+			) : 'No Bracket'}
 		</div>
 	);
   
