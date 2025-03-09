@@ -83,14 +83,14 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		}
 
 		if(context === "wbb"){
-			const wbbBracketology:BracketologyType = new Bracketology(wbbBracket, wbbRankings, nameTable);
-			const wbbRegions = wbbBracketology.data.regions;
-			wbbRegions.forEach((region)=>{
-				addGameUUID(getRegion(region.name));
-			})
+			// const wbbBracketology:BracketologyType = new Bracketology(wbbBracket, wbbRankings, nameTable);
+			// const wbbRegions = wbbBracketology.data.regions;
+			// wbbRegions.forEach((region)=>{
+			// 	addGameUUID(getRegion(region.name));
+			// })
 
-			console.log({'wbbBracketology':wbbBracketology});
-			setBracket(wbbBracketology);
+			// console.log({'wbbBracketology':wbbBracketology});
+			// setBracket(wbbBracketology);
 		}
 		else{
 			const mbbBracketology:BracketologyType = new Bracketology(mbbBracket, mbbRankings, nameTable);

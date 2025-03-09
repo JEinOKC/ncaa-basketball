@@ -15,41 +15,57 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, current
 	const handleWinnerSelection = async (winner: NodeType) => {
 		
 		if (node.gameUUID !== undefined && winner.name) {
-			console.log('in the if',winner.name);
+			
 			const safeGameUUID:string = node.gameUUID;
-
-			await setGameWinners((prevWinners:Winners) => ({ ...prevWinners, [safeGameUUID]: winner.name }));
-			console.log({'updated game winners':gameWinners});
+			const newWinners = { ...gameWinners,[safeGameUUID]:winner.name};
+			
+			setGameWinners(newWinners);
 			onSelectWinner(winner);
 		}
 	};
-
-	// useEffect(()=>{
-	// 	console.log('game winners changed',gameWinners[node.gameUUID]);
-	// 	console.log
-	// },[gameWinners])
-
+	
 	return (
 		<div className="flex flex-row items-center" >
 			<div className="flex flex-col items-center border p-2 gap-2 w-45">
-				game: {node.gameUUID}
 				{node.left && node.right ? (
 					<div className="flex flex-col space-y-2">
 						{/* Left Team */}
-						<button
-							onClick={() => handleWinnerSelection(node.left!)}
-							className="p-1 border hover:bg-green-200"
-						>
-							{node.left.seed}. {node.left.name}
-						</button>
+						
+						{
+							node.left.name ? (
+								<>
+									<button
+										onClick={() => handleWinnerSelection(node.left!)}
+										className="p-1 border hover:bg-green-200"
+									>
+										{node.left.seed}. {node.left.name}	
+									</button>
+								</>
+							)
+							:
+							(
+								<span className="text-center text-gray-500">TBD</span>
+							)
+						}
 
 						{/* Right Team */}
-						<button
-							onClick={() => handleWinnerSelection(node.right!)}
-							className="p-1 border hover:bg-green-200"
-						>
-							{node.right.seed}. {node.right.name}
-						</button>
+						
+						{
+							node.right.name ? (
+								<>
+									<button
+										onClick={() => handleWinnerSelection(node.right!)}
+										className="p-1 border hover:bg-green-200"
+									>
+										{node.right.seed}. {node.right.name}	
+									</button>
+								</>
+							) 
+							:
+							(
+								<span className="text-center text-gray-500">TBD</span>
+							)
+						}	
 					</div>
 				) : (
 					<div className="border p-2 text-center">

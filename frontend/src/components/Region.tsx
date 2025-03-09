@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useReducer, useState, useEffect } from "react";
 import BracketNode from "./BracketNode";
 import { Regions, NodeType, Winners } from "../utils/Types";
 import { useStateContext } from "../utils/StateContext";
@@ -15,48 +15,98 @@ const Region: React.FC<RegionProps> = ({ region, regionName }) => {
 
 	const [_region, dispatch] = useReducer(bracketReducer, region);
 	const [currentLevel, setCurrentLevel] = useState(1);
-	const { gameWinners, setGameWinners } = useStateContext();
+	const { isTreeComplete, gameWinners, setGameWinners } = useStateContext();
+	
+	// const findNodeSibling = (node:NodeType):NodeType|null =>{
+	// 	if(!node.ancestor){
+	// 		return null;
+	// 	}
+
+	// 	const ancestor = node.ancestor;
+
+	// 	const leftNode = ancestor.left;
+	// 	const rightNode = ancestor.right;
+
+	// 	if(leftNode?.name === node.name && leftNode?.rating === node.rating){
+	// 		return rightNode;
+	// 	}
+
+	// 	return leftNode;
+	// }
+
+	// const resetNode = (node:NodeType):NodeType =>{
+
+	// 	node.name = undefined;
+	// 	node.seed = undefined;
+	// 	node.rating = undefined;
+	// 	node.score = null;	
+
+	// 	return node;
+	// };
 
 	const handleSelectWinner = (winner: NodeType) => {
 		if (!winner.ancestor) return;
 
-		const loserName = (nodesAtCurrentLevel[0].name === winner.name) ? nodesAtCurrentLevel[1].name : nodesAtCurrentLevel[0].name;
+		const ancestor = winner.ancestor;
+		const previousWinner = ancestor.winner;
+
+		// Assign the winner to the ancestor
+		if(winner.name){
+			
+			ancestor.winner = winner.name;
+			ancestor.name = winner.name;
+			ancestor.rating = winner.rating;
+			ancestor.seed = winner.seed;
+		}
+
+		// const loserNode = findNodeSibling(winner);
+
+		// const loserName = loserNode ? loserNode.name : undefined;
+console.log({'winner!':winner});
 
 		//need to remove the previous winner all the way up the bracket, if it exists
-		if(winner.ancestor.name !== winner.name){
+		if(previousWinner && previousWinner !== winner.name){
 			let traveler = winner;
-			console.log({'winner name':winner.name,'ancestor':winner.ancestor.name, 'winner':winner});
-			while(traveler.ancestor && traveler.ancestor.name === loserName){
-				console.log({
-					'traveler name ' : traveler.name,
-					'traveler':traveler
-				});
-				
+			
+			while(traveler.ancestor && traveler.ancestor.name === previousWinner){
+				// Reset the old winner in the ancestor nodes
+				traveler.ancestor.winner = "";
+				traveler.ancestor.name = undefined;
+				traveler.ancestor.rating = undefined;
+				traveler.ancestor.seed = undefined;
 				traveler = traveler.ancestor;
-				traveler.name = undefined;
 
 				if(traveler.gameUUID !== undefined){
-					console.log('traveler.gameUUID',traveler.gameUUID);
 					const safeGameUUID:string = traveler.gameUUID;
-					setGameWinners((prevWinners:Winners) => ({ ...prevWinners, [safeGameUUID]: '' }));
+					setGameWinners((prevWinners:Winners) => ({ 
+						...prevWinners, 
+						[safeGameUUID]: '' 
+					}));
 				}
-				
 				
 			}
 
 		}
 
-		if(winner.name){
-			winner.ancestor.winner = winner.name;
-			winner.ancestor.name = winner.name;
-			winner.ancestor.rating = winner.rating;
-			winner.ancestor.seed = winner.seed;
-		}
+		
+console.log({'ancestor':winner.ancestor,'_region fater update':_region,'region':region});
 
-		console.log({'updated game winners':gameWinners});
-
-		dispatch({ type: "update", payload: winner });
+		dispatch({ type: "update", payload: { ...region} });
 	};
+
+	const isRegionComplete = () =>{
+		return isTreeComplete(_region);
+	}
+
+	useEffect( ()=>{
+		console.log('game winners changed');
+		const regionComplete = isTreeComplete(_region);
+		console.log({
+			'region name':regionName,
+			'is the region complete now?':regionComplete,
+			'region':_region
+		});
+	},[_region] )
 
 	const getNodesAtLevel = (node: NodeType, level: number, current = levels): NodeType[] => {
 		// console.log({
@@ -73,21 +123,20 @@ const Region: React.FC<RegionProps> = ({ region, regionName }) => {
 	};
 
 	const totalLevels = (node: NodeType): number => {
-		console.log({'node':node});
 		if (!node.left || !node.right || !node.gameUUID) return 0;
 		
 		const result =  1 + Math.max(totalLevels(node.left), totalLevels(node.right));
-		console.log('total levels',result);
+		
 		return result;
 	};
 
 	const levels = totalLevels(_region);
 	const nodesAtCurrentLevel = getNodesAtLevel(_region, currentLevel);
 	
-// console.log({'levels':levels,'_region':_region});
+
 	return (
 		<div className="p-4 flex flex-col items-left">
-			<h2 className="text-xl font-bold">{regionName} Region</h2>
+			<h2 className="text-xl font-bold">{regionName} Region {isRegionComplete() && (<>COMPLETE!!</>)}</h2>
 			<div className="mt-4 flex gap-2">
 				<button disabled={currentLevel <= 1} onClick={() => setCurrentLevel((lvl) => lvl - 1)} className="p-2 border rounded disabled:opacity-50">
 					Previous Round
@@ -102,16 +151,13 @@ const Region: React.FC<RegionProps> = ({ region, regionName }) => {
 				))}
 			</div>
 			<div className="mt-4 flex gap-2">
-				<button disabled={currentLevel <= 100} onClick={() => setCurrentLevel((lvl) => lvl - 1)} className="p-2 border rounded disabled:opacity-50">
+				<button disabled={currentLevel <= 1} onClick={() => setCurrentLevel((lvl) => lvl - 1)} className="p-2 border rounded disabled:opacity-50">
 					Previous Round
 				</button>
-				<button disabled={currentLevel === levels+100} onClick={() => setCurrentLevel((lvl) => lvl + 1)} className="p-2 border rounded disabled:opacity-50">
+				<button disabled={currentLevel === levels} onClick={() => setCurrentLevel((lvl) => lvl + 1)} className="p-2 border rounded disabled:opacity-50">
 					Next Round
 				</button>
 			</div>
-			<p>Current Level = {currentLevel}</p>
-			<p>all levels = {levels}</p>
-			<p>game winners = {JSON.stringify(gameWinners)}</p>
 		</div>
 	);
 };

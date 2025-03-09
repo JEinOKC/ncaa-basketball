@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { RankingItem, BracketType, Winners, Regions } from './Types';
+import { RankingItem, BracketType, Winners, Regions, NodeType } from './Types';
 import { v4 as uuidv4 } from 'uuid';
 
 const StateContext = createContext<State | undefined>(undefined);
@@ -16,6 +16,26 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 	const [nameTable, setNameTable] = useState<{[key:string]:string}>({});
 
 	const [context, setContext] = useState<"wbb"|"mbb">("mbb");
+
+	const isTreeComplete = (node:NodeType):boolean =>{
+
+		//not a game, we have reached the end of the tree
+		if(!node.gameUUID){
+			return true;
+		}
+		else if(node.winner === null || node.winner === ''){
+			console.log({'failure at this node':node});
+			return false;
+		}
+
+		if(node.left && node.right){
+			return isTreeComplete(node.left) && isTreeComplete(node.right);
+		}
+
+		//in case we get here, the tree is unbalanced. die false
+		console.log('failed at the end where we should not get to');
+		return false;
+	}
 
 	useEffect(() => {
 		fetch(`/data/womensbb-rankings.json`)
@@ -77,7 +97,8 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 			context,
 			setContext,
 			gameWinners,
-			setGameWinners
+			setGameWinners,
+			isTreeComplete
 		}}>
 		{children}
 		</StateContext.Provider>
