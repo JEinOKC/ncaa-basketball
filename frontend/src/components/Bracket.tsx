@@ -248,6 +248,9 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			return roll < winProbability ? team1 : team2;
 		};
 
+		// Create a single object to store all winners
+		const allWinners: Winners = { ...gameWinners };
+
 		// Process each region
 		for (const regionName of getRegionNamesInOrder()) {
 			const region = getRegion(regionName);
@@ -267,8 +270,6 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 				// Create a promise that resolves when the state update is complete
 				await new Promise<void>((resolve) => {
-					const allWinners: Winners = { ...gameWinners };
-					
 					nodesAtLevel.forEach(node => {
 						// Only simulate if we have two teams to compare
 						if (node.left?.name && node.right?.name) {
@@ -281,8 +282,8 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 						}
 					});
 
-					// Dispatch the update and resolve the promise when it's complete
-					dispatch(setGameWinners(allWinners));
+					// Dispatch the update with all accumulated winners
+					dispatch(setGameWinners({ ...allWinners }));
 					
 					// Give React time to process the state update
 					setTimeout(resolve, 0);
