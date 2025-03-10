@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useStateContext } from '../utils/StateContext';
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
 import { RankingItem } from '../utils/Types';
 
 interface DisplayRankingsProps {
@@ -10,13 +10,9 @@ interface DisplayRankingsProps {
 
 const DisplayRankings: React.FC<DisplayRankingsProps> = ({ context, headline, limit } ) => {
 	
-	const { wbbRankings, mbbRankings } = useStateContext();
+	const wbbRankings = useSelector((state: RootState) => state.state.wbbRankings);
+	const mbbRankings = useSelector((state: RootState) => state.state.mbbRankings);
 	
-	// useEffect(() => {
-	// 	console.log(wbbRankings);
-	// 	console.log(mbbRankings);
-	// }, [wbbRankings, mbbRankings]);
-
 	return (
 		<div>
 			<h1>{headline}</h1>

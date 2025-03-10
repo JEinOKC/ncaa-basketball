@@ -1,12 +1,13 @@
+export type Regions = "East"|"West"|"South"|"Midwest";
+export type leftOrRight = "left"|"right";
+export type Winners = Record<string,string>;
+
 export interface RankingItem {
 	rank: number;
 	rating: number;
 	team_id: number;
 	team_name: string;
 }
-
-export type Regions = "East"|"West"|"South"|"Midwest";
-export type leftOrRight = "left"|"right";
 
 export interface RegionType{
 	id:Regions;
@@ -39,4 +40,6 @@ export interface BracketologyType{
 	ratings: Record<string,number|string>;
 	ratingsArray: RankingItem[];
 	regionsMerged: boolean;
+	mergeRegions: () => void;
+	setWinner: (gameId: string, winnerName: string) => void;
 }

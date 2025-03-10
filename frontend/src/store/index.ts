@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import bracketReducer from "./bracketSlice";
+import stateReducer from "./stateSlice";
 
 export const store = configureStore({
 	reducer: {
-		bracket: bracketReducer, // Add the bracket reducer
+		state: stateReducer, // Add the bracket reducer
 	},
 });
 

@@ -1,16 +1,22 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import './App.css'
-import { useStateContext } from './utils/StateContext';
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "./store";
+import { setContext } from './store/stateSlice';
 import DisplayRankings from './components/DisplayRankings';
 import Bracket from './components/Bracket';
+import AppLoader from './components/AppLoader';
 
 function App() {
-	
-	const { 
-		wbbRankings, mbbRankings
-		, context, setContext
+	const wbbRankings = useSelector((state: RootState) => state.state.wbbRankings);
+	const mbbRankings = useSelector((state: RootState) => state.state.mbbRankings);
+	const context = useSelector((state: RootState) => state.state.context);
 
-	} = useStateContext();
+	const dispatch = useDispatch();
+	
+	const dispatchSetContext = (newContext: 'wbb'|'mbb') => {
+		dispatch(setContext(newContext));
+	} 
 	
 	useEffect(() => {
 		// console.log(wbbRankings);
@@ -25,20 +31,18 @@ function App() {
 		return context === 'wbb' ? 'Women\'s Basketball Bracket' : 'Men\'s Basketball Bracket';
 	};
 
-
-
 	return (
-		<>
+		<AppLoader>
 			<Bracket context={context} headline={getContextBracketHeadline(context)} limit={25} />
 			<div className="context-switcher text-right">
 				<button 
-					onClick={() => setContext("mbb")} 
+					onClick={() => dispatchSetContext("mbb")} 
 					className={context === "mbb" ? "active" : "" + "m-2"}
 					>
 					Men's Basketball
 				</button>
 				<button 
-					onClick={() => setContext("wbb")} 
+					onClick={() => dispatchSetContext("wbb")} 
 					className={context === "wbb" ? "active" : "" + "m-2"}
 					>
 					Women's Basketball
@@ -46,7 +50,7 @@ function App() {
 			</div>
 			<h1>Context = {context}</h1>
 			<DisplayRankings context={context} headline={getContextRankingsHeadline(context)} limit={25} />
-		</>
+		</AppLoader>
 	)
 }
 
