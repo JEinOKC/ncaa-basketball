@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
-import { Regions, NodeType } from '../utils/Types';
+import { Regions, NodeType, Winners } from '../utils/Types';
 import { Bracketology } from '../utils/bracketology';
 import { BracketologyType } from '../utils/Types';
 import { v4 as uuidv4 } from 'uuid';
 import Region from './Region';
 import { setGameWinners } from "../store/stateSlice";
+import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
 
 interface BracketProps {
 	context: "wbb"|"mbb";
@@ -25,6 +26,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);
 
 	const [bracket,setBracket] = useState<BracketologyType>();
+	const [randomness, setRandomness] = useState<number>(0.5); // Default to 0.5 for balanced randomness
 
 	const getDefaultRegion = ():NodeType =>{
 		return {
@@ -37,10 +39,6 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	}
 
 	const handleSelectWinner = (winner: NodeType, regionName: Regions) => {
-		console.log({
-			'inside the handleSelectWinner function within the bracket component. Here is your winner': winner,
-			'and here is the regionName': regionName
-		})
 
 		if (!winner.ancestor) return;
 
@@ -49,42 +47,48 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 		// Assign the winner to the ancestor
 		if (winner.name) {
-			ancestor.winner = winner.name;
-			ancestor.name = winner.name;
-			ancestor.rating = winner.rating;
-			ancestor.seed = winner.seed;
+			ancestor.winner = {
+				name: winner.name,
+				rating: winner.rating || undefined,
+				seed: winner.seed || undefined
+			}
 		}
-console.log('line 57');
-console.log({
-	'previousWinner': previousWinner,
-	'currentWinner': winner.name
-});
+
+		// Create a single updated gameWinners object
+		const updatedGameWinners = { ...gameWinners };
+
 		// If there was a previous winner that's different from the current winner,
 		// we need to clear that winner's path up the bracket
-		if (previousWinner && previousWinner !== winner.name) {
+		if (previousWinner && previousWinner.name !== winner.name) {
 			let traveler = winner;
 			
-			while (traveler.ancestor && traveler.ancestor.name === previousWinner) {
+			while (traveler.ancestor && traveler.ancestor.name === previousWinner.name) {
 				console.log('found a previous winner that is different from the current winner');
 				// Reset the ancestor node's properties
-				traveler.ancestor.winner = "";
+				traveler.ancestor.winner = {};
 				traveler.ancestor.name = undefined;
 				traveler.ancestor.rating = undefined;
 				traveler.ancestor.seed = undefined;
 				
-				// Clear the game winner in Redux store if there's a gameUUID
-				if (traveler.gameUUID) {
-				console.log('clear this game uuid', traveler.gameUUID);
-					const safeGameUUID: string = traveler.gameUUID;
-					dispatch(setGameWinners({
-						...gameWinners,
-						[safeGameUUID]: ''
-					}));
+				// Clear the gameUUID from updatedGameWinners
+				if (traveler.ancestor.gameUUID && updatedGameWinners[traveler.ancestor.gameUUID] === previousWinner.name) {
+					delete updatedGameWinners[traveler.ancestor.gameUUID];
 				}
 				
 				traveler = traveler.ancestor;
 			}
 		}
+
+		// Add the new winner to the same updatedGameWinners object
+		console.log({'ancestor': ancestor});
+		if (ancestor.gameUUID && winner.name) {
+			updatedGameWinners[ancestor.gameUUID] = winner.name;
+		}
+
+		// Dispatch a single update with all changes
+		dispatch(setGameWinners(updatedGameWinners));
+		console.log({'updatedGameWinners':updatedGameWinners});
+		
 	};
 
 	const addGameUUID = (node: NodeType): NodeType => {
@@ -214,6 +218,105 @@ console.log({
 		}
 	}, [gameWinners]);
 
+	const simulateTournament = async () => {
+		console.log('simulateTournament');
+		
+		// Helper function to simulate a game between two teams
+		const simulateGame = (team1: NodeType, team2: NodeType): NodeType => {
+			if (!team1.name || !team2.name || !team1.rating || !team2.rating) {
+				console.error('Missing team info:', {
+					team1: { name: team1.name, rating: team1.rating },
+					team2: { name: team2.name, rating: team2.rating }
+				});
+				return team1;
+			}
+
+			// Calculate win probability based on ratings difference and randomness factor
+			const ratingDiff = team1.rating - team2.rating;
+			const winProbability = 0.5 + (ratingDiff / 100) * (1 - randomness);
+			
+			console.log(`Simulating ${team1.name} vs ${team2.name}:`, {
+				ratingDiff,
+				randomness,
+				winProbability
+			});
+			
+			// Random number between 0 and 1
+			const roll = Math.random();
+			
+			// Return winner based on probability
+			return roll < winProbability ? team1 : team2;
+		};
+
+		// Process each region
+		for (const regionName of getRegionNamesInOrder()) {
+			const region = getRegion(regionName);
+			const levels = totalLevels(region);
+			console.log({
+				'levels': levels,
+				'region': region
+			});
+
+			// Start from the deepest level and work up
+			for (let level = 1; level <= levels; level++) {
+				const nodesAtLevel = getNodesAtLevel(region, level, levels);
+				console.log({
+					'level': level,
+					'nodesAtLevel': nodesAtLevel
+				});
+
+				// Create a promise that resolves when the state update is complete
+				await new Promise<void>((resolve) => {
+					const allWinners: Winners = { ...gameWinners };
+					
+					nodesAtLevel.forEach(node => {
+						// Only simulate if we have two teams to compare
+						if (node.left?.name && node.right?.name) {
+							const winner = simulateGame(node.left, node.right);
+							
+							// Set the winner in this node
+							if (winner.name && node.gameUUID) {
+								allWinners[node.gameUUID] = winner.name;
+							}
+						}
+					});
+
+					// Dispatch the update and resolve the promise when it's complete
+					dispatch(setGameWinners(allWinners));
+					
+					// Give React time to process the state update
+					setTimeout(resolve, 0);
+				});
+			}
+		}
+	}
+
+	const clearTournament = () => {
+		console.log('clearTournament');
+
+		// Process each region
+		for (const regionName of getRegionNamesInOrder()) {
+			const region = getRegion(regionName);
+			const levels = totalLevels(region);
+
+			// Start from the top level and work down to ensure we clear everything
+			for (let level = 1; level <= levels; level++) {
+				const nodesAtLevel = getNodesAtLevel(region, level, levels);
+				
+				nodesAtLevel.forEach(node => {
+					// Reset the node's winner and properties
+					node.winner = null;
+					node.name = undefined;
+					node.rating = undefined;
+					node.seed = undefined;
+				});
+			}
+		}
+
+		// Finally, clear all game winners from state
+		dispatch(setGameWinners({}));
+	}
+
 	return (
 		<div>
 			<h1>{headline}</h1>
@@ -227,9 +330,36 @@ console.log({
 			**/}
 
 			{bracket ? (
-				getRegionNamesInOrder().map((element) => (
-					<Region key={element} region={getRegion(element)} regionName={element} onSelectWinner={handleSelectWinner}/>	
-				))
+				<>
+					<div className="d-flex justify-content-center mb-4">
+						<div className="w-100 max-w-md">
+							<label htmlFor="randomness" className="form-label">
+								Randomness: {Math.round(randomness * 100)}%
+							</label>
+							<input
+								type="range"
+								className="form-range"
+								id="randomness"
+								min="0"
+								max="1"
+								step="0.01"
+								value={randomness}
+								onChange={(e) => setRandomness(parseFloat(e.target.value))}
+							/>
+						</div>
+					</div>
+					<div className="d-flex justify-content-center gap-2 mb-4">
+						<button className="btn btn-primary mb-4" onClick={() => simulateTournament()}>
+							Simulate Tournament
+						</button>
+						<button className="btn btn-secondary mb-4" onClick={() => clearTournament()}>
+							Clear Tournament
+						</button>
+					</div>
+					{getRegionNamesInOrder().map((element) => (
+						<Region key={element} region={getRegion(element)} regionName={element} onSelectWinner={handleSelectWinner}/>	
+					))}
+				</>
 			) : 'No Bracket'}
 		</div>
 	);

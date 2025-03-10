@@ -32,18 +32,8 @@ export const isTreeComplete = (node: NodeType): boolean => {
 	// Base case: if no node, consider it complete
 	if (!node) return true;
 
-	// console.log('Checking node:', {
-	// 	gameUUID: node.gameUUID,
-	// 	winner: node.winner,
-	// 	name: node.name,
-	// 	hasLeft: !!node.left,
-	// 	hasRight: !!node.right,
-	// 	leftWinner: node.left?.winner,
-	// 	rightWinner: node.right?.winner
-	// });
-
 	// If this is a game node (has a UUID), it must have a winner
-	if (node.gameUUID && (node.winner === null || node.winner === '')) {
+	if (node.gameUUID && (node.winner === null || node.winner.name === undefined)) {
 		// console.log('Node incomplete - no winner:', node.gameUUID);
 		return false;
 	}
@@ -52,27 +42,15 @@ export const isTreeComplete = (node: NodeType): boolean => {
 	if (node.left && node.right) {
 		const leftComplete = isTreeComplete(node.left);
 		const rightComplete = isTreeComplete(node.right);
-		const hasWinner = node.winner !== null && node.winner !== '';
+		const hasWinner = node.winner !== null && node.winner.name !== undefined;
 		
-		// console.log('Branch completion status:', {
-		// 	nodeId: node.gameUUID,
-		// 	leftComplete,
-		// 	rightComplete,
-		// 	hasWinner,
-		// 	isComplete: leftComplete && rightComplete && hasWinner
-		// });
 		
 		return leftComplete && rightComplete && hasWinner;
 	}
 
 	// If we get here, it's a leaf node (no children)
-	const isComplete = !node.gameUUID || (node.winner !== null && node.winner !== '');
-	// console.log('Leaf node status:', {
-	// 	nodeId: node.gameUUID,
-	// 	isComplete,
-	// 	hasGameUUID: !!node.gameUUID,
-	// 	winner: node.winner
-	// });
+	const isComplete = !node.gameUUID || (node.winner !== null && node.winner.name !== undefined);
+	
 	return isComplete;
 };
 

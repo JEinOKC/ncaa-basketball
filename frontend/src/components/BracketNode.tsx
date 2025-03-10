@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
-import { setGameWinners } from "../store/stateSlice";
+// import { setGameWinners } from "../store/stateSlice";
 import { NodeType, Winners } from "../utils/Types";
 
 interface BracketNodeProps {
@@ -13,20 +13,20 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, current
 	
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);
 
-	const dispatch = useDispatch();
-	const dispatchSetGameWinners = (newWinners: Winners) => {
-		dispatch(setGameWinners(newWinners));
-	} 
+	// const dispatch = useDispatch();
+	// const dispatchSetGameWinners = (newWinners: Winners) => {
+	// 	dispatch(setGameWinners(newWinners));
+	// } 
 
 
 	const handleWinnerSelection = async (winner: NodeType) => {
 		
 		if (node.gameUUID !== undefined && winner.name) {
 			
-			const safeGameUUID:string = node.gameUUID;
-			const newWinners = { ...gameWinners,[safeGameUUID]:winner.name};
+			// const safeGameUUID:string = node.gameUUID;
+			// const newWinners = { ...gameWinners,[safeGameUUID]:winner.name};
 			
-			dispatchSetGameWinners(newWinners);
+			// dispatchSetGameWinners(newWinners);
 			onSelectWinner(winner);
 		}
 	};

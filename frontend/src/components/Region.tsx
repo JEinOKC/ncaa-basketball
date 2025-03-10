@@ -4,6 +4,7 @@ import { RootState } from "../store";
 import BracketNode from "./BracketNode";
 import { Regions, NodeType } from "../utils/Types";
 import { selectWinner, isTreeComplete, updateRegionCompletion } from "../store/stateSlice";
+import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
 
 interface RegionProps {
 	regionName: Regions;
@@ -39,69 +40,30 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner }) =
 			return isInWinners && isNewChange;
 		});
 		
-		if (hasRelevantChanges) {
-			// Small delay to ensure state is updated
-			setTimeout(() => {
-				// console.log('Region effect triggered:', {
-				// 	regionName,
-				// 	regionGameUUIDs,
-				// 	relevantWinners: Object.entries(gameWinners)
-				// 		.filter(([uuid]) => regionGameUUIDs.includes(uuid))
-				// 		.map(([uuid, winner]) => ({ uuid, winner }))
-				// });
-
-				const regionComplete = isTreeComplete(region);
-				// console.log('Region completion check:', {
-				// 	regionName,
-				// 	isComplete: regionComplete,
-				// 	regionRoot: {
-				// 		gameUUID: region.gameUUID,
-				// 		winner: region.winner,
-				// 		hasLeft: !!region.left,
-				// 		hasRight: !!region.right
-				// 	}
-				// });
-
-				dispatch(updateRegionCompletion({ region: regionName, isComplete: regionComplete }));
-				
-				// Update the last processed game
+		// Always check completion status, even if there are no changes
+		setTimeout(() => {
+			const regionComplete = isTreeComplete(region);
+			dispatch(updateRegionCompletion({ region: regionName, isComplete: regionComplete }));
+			
+			// Update the last processed game only if there were changes
+			if (hasRelevantChanges) {
 				const changedGame = regionGameUUIDs.find(uuid => lastProcessedRef.current !== uuid && uuid in gameWinners);
 				if (changedGame) {
 					lastProcessedRef.current = changedGame;
 				}
-			}, 0);
-		}
+			}
+		}, 0);
 	}, [region, regionName, dispatch, gameWinners]);
 
 	const handleSelectWinner = (winner: NodeType) => {
 		if (!winner.ancestor) return;
-
 		onSelectWinner(winner, regionName);
-
-		
-
-		
-	};
-
-	const getNodesAtLevel = (node: NodeType | null, level: number, current = levels): NodeType[] => {
-		if (!node) return [];
-		if (current === level) return [node];
-		if (!node.left || !node.right) return [];
-		return [
-			...getNodesAtLevel(node.left, level, current - 1),
-			...getNodesAtLevel(node.right, level, current - 1),
-		];
-	};
-
-	const totalLevels = (node: NodeType | null): number => {
-		if (!node || !node.left || !node.right || !node.gameUUID) return 0;
-		return 1 + Math.max(totalLevels(node.left), totalLevels(node.right));
 	};
 
 	if (!region) return <div>No bracket data available for {regionName}.</div>;
 
 	const levels = totalLevels(region);
-	const nodesAtCurrentLevel = getNodesAtLevel(region, currentLevel);
+	const nodesAtCurrentLevel = getNodesAtLevel(region, currentLevel, levels);
 	const isRegionComplete = completedRegions.includes(regionName);
 	
 	return (
