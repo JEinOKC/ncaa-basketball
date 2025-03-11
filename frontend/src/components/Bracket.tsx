@@ -456,7 +456,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 					{/* Completion Alert */}
 					{completedRegions.length === 4 && (
 						<div ref={completionAlertRef} className="bg-white rounded-lg shadow p-6 mb-6">
-							<div className="flex items-center justify-between">
+							<div className="flex items-center justify-between mb-6">
 								<div className="flex items-center">
 									<svg className="h-8 w-8 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 										<path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -464,6 +464,54 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 									<div>
 										<h2 className="text-2xl text-gray-900 font-bold">All regions are complete!</h2>
 										<p className="text-gray-600">Ready for the Final Four</p>
+									</div>
+								</div>
+							</div>
+
+							{/* Final Four Bracket Display */}
+							<div className="flex flex-col items-center">
+								{/* Games Container */}
+								<div className="flex justify-between w-full max-w-4xl">
+									{/* Left Game (First Pair) */}
+									<div className="w-72 bg-gray-50 rounded-lg p-4">
+										<div className="text-sm text-gray-500 mb-2">Final Four - Game 1</div>
+										<div className="flex flex-col gap-2">
+											<div className="flex items-center bg-white p-3 rounded border border-gray-200 text-center">
+												<span className="font-medium text-gray-900 text-center">{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name || 'TBD'}</span>
+											</div>
+											<div className="text-gray-400 text-center text-sm">vs</div>
+											<div className="flex items-center bg-white p-3 rounded border border-gray-200">
+												<span className="font-medium text-gray-900 text-center">{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name || 'TBD'}</span>
+											</div>
+										</div>
+									</div>
+
+									{/* Championship (Center) */}
+									<div className="w-72 bg-amber-50 rounded-lg p-4 -mt-4">
+										<div className="text-sm text-amber-700 mb-2">Championship</div>
+										<div className="flex flex-col gap-2">
+											<div className="flex items-center bg-white p-3 rounded border border-amber-200">
+												<span className="font-medium text-amber-900">Game 1 Winner</span>
+											</div>
+											<div className="text-amber-600 text-center text-sm">vs</div>
+											<div className="flex items-center bg-white p-3 rounded border border-amber-200">
+												<span className="font-medium text-amber-900">Game 2 Winner</span>
+											</div>
+										</div>
+									</div>
+
+									{/* Right Game (Second Pair) */}
+									<div className="w-72 bg-gray-50 rounded-lg p-4">
+										<div className="text-sm text-gray-500 mb-2">Final Four - Game 2</div>
+										<div className="flex flex-col gap-2">
+											<div className="flex items-center bg-white p-3 rounded border border-gray-200">
+												<span className="font-medium text-gray-900">{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name || 'TBD'}</span>
+											</div>
+											<div className="text-gray-400 text-center text-sm">vs</div>
+											<div className="flex items-center bg-white p-3 rounded border border-gray-200">
+												<span className="font-medium text-gray-900">{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name || 'TBD'}</span>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
