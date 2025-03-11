@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import { Regions, NodeType, Winners } from '../utils/Types';
@@ -21,6 +21,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	const dispatch = useDispatch();
 	const isDesktop = useMediaQuery({ minWidth: 1024 });
 	const [currentLevel, setCurrentLevel] = useState(1);
+	const completionAlertRef = useRef<HTMLDivElement>(null);
 	
 	const wbbBracket = useSelector((state: RootState) => state.state.wbbBracket);
 	const mbbBracket = useSelector((state: RootState) => state.state.mbbBracket);
@@ -28,6 +29,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	const mbbRankings = useSelector((state: RootState) => state.state.mbbRankings);
 	const nameTable = useSelector((state: RootState) => state.state.nameTable);
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);
+	const completedRegions = useSelector((state: RootState) => state.state.completedRegions);
 
 	const [bracket,setBracket] = useState<BracketologyType>();
 	const [randomness, setRandomness] = useState<number>(0.5); // Default to 0.5 for balanced randomness
@@ -284,7 +286,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 						// Only simulate if we have two teams to compare
 						if (node.left?.name && node.right?.name) {
 							//if the game has already been played, return the winner
-							if(node.winner){
+							if(node.winner && node.gameUUID && node.winner.name){
 								allWinners[node.gameUUID] = node.winner.name;
 							}
 							else{
@@ -295,8 +297,6 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 									allWinners[node.gameUUID] = winner.name;
 								}
 							}
-
-							
 						}
 					});
 
@@ -364,6 +364,19 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 				</div>
 			</div>
 		);
+	};
+
+	const scrollToCompletionAlert = () => {
+		if (completionAlertRef.current) {
+			const headerOffset = isDesktop ? 128 : 0; // 128px is the header height on desktop (32px padding + ~96px content)
+			const elementPosition = completionAlertRef.current.getBoundingClientRect().top;
+			const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+			window.scrollTo({
+				top: offsetPosition,
+				behavior: 'smooth'
+			});
+		}
 	};
 
 	return (
@@ -440,6 +453,23 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 						</div>
 					</div>
 
+					{/* Completion Alert */}
+					{completedRegions.length === 4 && (
+						<div ref={completionAlertRef} className="bg-white rounded-lg shadow p-6 mb-6">
+							<div className="flex items-center justify-between">
+								<div className="flex items-center">
+									<svg className="h-8 w-8 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+										<path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+									</svg>
+									<div>
+										<h2 className="text-2xl text-gray-900 font-bold">All regions are complete!</h2>
+										<p className="text-gray-600">Ready for the Final Four</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					)}
+
 					{/* Desktop round navigation */}
 					{isDesktop && (
 						<div className="bg-white rounded-lg shadow p-4 mb-6">
@@ -456,6 +486,21 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 							currentLevel={currentLevel}
 						/>	
 					))}
+
+					{/* Fixed bottom notification */}
+					{completedRegions.length === 4 && (
+						<div className={`fixed ${!isDesktop ? 'bottom-[72px] left-4 right-4' : 'bottom-4 left-1/2 -translate-x-1/2'} ${isDesktop ? 'w-auto' : 'w-[calc(100%-2rem)]'} bg-green-50 border border-green-200 rounded-lg shadow-lg z-40`}>
+							<button 
+								onClick={scrollToCompletionAlert}
+								className={`${isDesktop ? 'px-6' : 'w-full'} py-3 text-center text-green-700 font-medium flex items-center justify-center gap-2`}
+							>
+								<svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+									<path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+								</svg>
+								Final Four
+							</button>
+						</div>
+					)}
 
 					{/* Mobile fixed bottom navigation */}
 					{!isDesktop && (

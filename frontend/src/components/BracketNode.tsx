@@ -33,7 +33,7 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, current
 	
 	return (
 		<div className="flex flex-row items-center lg:pl-4" >
-			<div className="flex flex-col items-start border-0 p-2 gap-2 w-45 bg-slate-200">
+			<div className="flex flex-col items-start border-0 p-2 gap-2 w-45 bg-slate-200 overflow-x-clip">
 				{node.left && node.right ? (
 					<div className="flex flex-col space-y-2 ">
 						{/* Left Team */}

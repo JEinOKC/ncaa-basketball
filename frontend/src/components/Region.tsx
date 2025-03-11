@@ -1,11 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import BracketNode from "./BracketNode";
 import { Regions, NodeType } from "../utils/Types";
-import { isTreeComplete, updateRegionCompletion } from "../store/stateSlice";
-import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
-import { useMediaQuery } from 'react-responsive';
+import { updateRegionCompletion } from "../store/stateSlice";
 
 interface RegionProps {
 	regionName: Regions;
@@ -18,8 +16,6 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 	const dispatch = useDispatch();
 	const completedRegions = useSelector((state: RootState) => state.state.completedRegions);
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);
-	const lastProcessedRef = useRef<string | null>(null);
-	const isDesktop = useMediaQuery({ minWidth: 1024 });
 
 	// Function to get all game UUIDs in the region
 	const getAllGameUUIDs = (node: NodeType): string[] => {
@@ -30,26 +26,41 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 		return uuids;
 	};
 
+	// Get the total number of levels in the tree
+	const getTotalLevels = (node: NodeType): number => {
+		if (!node || !node.left || !node.right) return 0;
+		return 1 + Math.max(getTotalLevels(node.left), getTotalLevels(node.right));
+	};
+
+	// Get nodes at a specific level
+	const getNodesAtLevel = (node: NodeType, targetLevel: number, currentLevel: number): NodeType[] => {
+		if (!node) return [];
+		if (currentLevel === targetLevel) return [node];
+		if (!node.left || !node.right) return [];
+		return [
+			...getNodesAtLevel(node.left, targetLevel, currentLevel - 1),
+			...getNodesAtLevel(node.right, targetLevel, currentLevel - 1)
+		];
+	};
+
 	// Check completion status whenever relevant state changes
 	useEffect(() => {
 		const regionGameUUIDs = getAllGameUUIDs(region);
-		const hasRelevantChanges = regionGameUUIDs.some(uuid => {
-			const isInWinners = uuid in gameWinners;
-			const isNewChange = lastProcessedRef.current !== uuid;
-			return isInWinners && isNewChange;
-		});
 		
-		setTimeout(() => {
-			const regionComplete = isTreeComplete(region);
-			dispatch(updateRegionCompletion({ region: regionName, isComplete: regionComplete }));
-			
-			if (hasRelevantChanges) {
-				const changedGame = regionGameUUIDs.find(uuid => lastProcessedRef.current !== uuid && uuid in gameWinners);
-				if (changedGame) {
-					lastProcessedRef.current = changedGame;
-				}
-			}
-		}, 0);
+		// A region is complete when all its games have winners
+		const regionComplete = regionGameUUIDs.every(uuid => {
+			return uuid in gameWinners;
+		});
+
+		dispatch(updateRegionCompletion({ region: regionName, isComplete: regionComplete }));
+		
+		// For debugging
+		if (regionComplete) {
+			console.log(`Region ${regionName} is complete!`, {
+				gameUUIDs: regionGameUUIDs,
+				winners: regionGameUUIDs.map(uuid => gameWinners[uuid])
+			});
+		}
 	}, [region, regionName, dispatch, gameWinners]);
 
 	const handleSelectWinner = (winner: NodeType) => {
@@ -59,49 +70,27 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 
 	if (!region) return <div>No bracket data available for {regionName}.</div>;
 
-	const levels = totalLevels(region);
-	const nodesAtCurrentLevel = getNodesAtLevel(region, currentLevel, levels);
+	const totalLevels = getTotalLevels(region);
+	const nodesAtCurrentLevel = getNodesAtLevel(region, currentLevel, totalLevels);
+	const roundNames = ['Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
 	const isRegionComplete = completedRegions.includes(regionName);
-
-	const roundNames = ['First Round', 'Second Round', 'Sweet 16', 'Elite 8'];
-	
-	const RoundNavigation = () => (
-		<div className={`flex items-center ${isDesktop ? 'justify-start gap-4 mb-4' : 'justify-between px-4'}`}>
-			{/* Round indicator */}
-			<div className="text-gray-700 font-medium">
-				{roundNames[currentLevel - 1] || `Round ${currentLevel}`}
-			</div>
-			
-			{/* Round selector */}
-			<div className="flex gap-2">
-				{Array.from({ length: levels }, (_, i) => i + 1).map((level) => (
-					<button
-						key={level}
-						onClick={() => setCurrentLevel(level)}
-						className={`w-8 h-8 rounded-full flex items-center justify-center text-sm
-							${currentLevel === level 
-								? 'bg-indigo-600 text-white' 
-								: 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
-					>
-						{level}
-					</button>
-				))}
-			</div>
-		</div>
-	);
 	
 	return (
 		<div id={regionName} className="mb-8 scroll-mt-20">
 			<div className="bg-white rounded-lg shadow p-4 mb-4">
-				<div className="flex items-center">
-					<h2 className="text-2xl text-gray-900 font-bold mr-4">{regionName} Region</h2>
-					{isRegionComplete && (
-						<span className="text-green-500 text-xl" title="Region Complete">
-							✓
-						</span>
-					)}
+				<div className="flex items-center justify-between">
+					<div className="flex items-center">
+						<h2 className="text-2xl text-gray-900 font-bold mr-4">{regionName} Region</h2>
+						{isRegionComplete && (
+							<span className="text-green-500 text-xl" title="Region Complete">
+								✓
+							</span>
+						)}
+					</div>
+					<div className="text-gray-700 font-medium">
+						{roundNames[currentLevel - 1] || `Round ${currentLevel}`}
+					</div>
 				</div>
-				{isDesktop && <RoundNavigation />}
 			</div>
 			
 			<div className="flex flex-col space-y-4">
@@ -114,13 +103,6 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 					/>
 				))}
 			</div>
-
-			{/* Mobile fixed bottom navigation */}
-			{!isDesktop && (
-				<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-3 px-4 z-50">
-					<RoundNavigation />
-				</div>
-			)}
 		</div>
 	);
 };

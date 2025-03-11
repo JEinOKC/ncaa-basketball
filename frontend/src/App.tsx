@@ -16,9 +16,24 @@ function App() {
 	const context = useSelector((state: RootState) => state.state.context);
 	const wbbBracket = useSelector((state: RootState) => state.state.wbbBracket);
 	const mbbBracket = useSelector((state: RootState) => state.state.mbbBracket);
+	const completedRegions = useSelector((state: RootState) => state.state.completedRegions);
 	const [selectedLimit, setSelectedLimit] = useState<number>(25);
-
+	const [areAllRegionsComplete, setAreAllRegionsComplete] = useState(false);
 	const dispatch = useDispatch();
+
+	// Monitor for all regions being complete
+	useEffect(() => {
+		const regions = getRegions();
+		const complete = regions.length > 0 && regions.every(region => completedRegions.includes(region));
+		setAreAllRegionsComplete(complete);
+		
+		if (complete) {
+			console.log('🎉 All regions are complete! Ready for Final Four!', {
+				completedRegions,
+				context: context === 'wbb' ? "Women's" : "Men's"
+			});
+		}
+	}, [completedRegions, context]);
 	
 	const getMaxRankingsLimit = () => {
 		const currentRankings = context === 'wbb' ? wbbRankings : mbbRankings;
@@ -126,6 +141,7 @@ function App() {
 								</span>
 							</div>
 						}
+						isComplete={areAllRegionsComplete}
 					/>
 				</div>
 			</div>

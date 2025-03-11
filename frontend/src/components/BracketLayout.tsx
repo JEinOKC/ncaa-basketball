@@ -8,7 +8,12 @@ interface BracketLayoutProps {
     contextToggle: React.ReactNode;
 }
 
-const BracketLayout: React.FC<BracketLayoutProps> = ({ bracket, rankings, navigation, contextToggle }) => {
+const BracketLayout: React.FC<BracketLayoutProps> = ({ 
+    bracket, 
+    rankings, 
+    navigation, 
+    contextToggle
+}) => {
     const isDesktop = useMediaQuery({ minWidth: 1024 });
 
     return (
