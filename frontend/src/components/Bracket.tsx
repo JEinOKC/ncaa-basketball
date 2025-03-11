@@ -315,7 +315,9 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 	return (
 		<div>
-			<h1>{headline}</h1>
+			<div className="bg-white rounded-lg shadow p-6 mb-6">
+				<h1 className="text-3xl text-gray-900 font-bold">{headline}</h1>
+			</div>
 			{/** 
 			* determine the context. depending on the context, loop through the array up until the limit or the length, whatever is shorter
 			* if the context is wbb, then use wbbRankings 
@@ -327,30 +329,46 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 			{bracket ? (
 				<>
-					<div className="d-flex justify-content-center mb-4">
-						<div className="w-100 max-w-md">
-							<label htmlFor="randomness" className="form-label">
-								Chalk Rating Skewer: {Math.round(randomness * 100)}%
-							</label>
-							<input
-								type="range"
-								className="form-range"
-								id="randomness"
-								min="0"
-								max="1"
-								step="0.01"
-								value={randomness}
-								onChange={(e) => setRandomness(parseFloat(e.target.value))}
-							/>
+					<div className="bg-white rounded-lg shadow p-6 mb-6">
+						<div className="w-full">
+							<div className="flex flex-col space-y-2">
+								<div className="flex items-center justify-between">
+									<label htmlFor="randomness" className="text-lg text-gray-900 font-medium">
+										Rating Skewer: {Math.round(randomness * 100)}%
+									</label>
+								</div>
+								<div className="flex flex-col gap-2">
+									<div className="flex justify-between text-sm text-gray-600 px-1">
+										<span>Random</span>
+										<span>Chalk</span>
+									</div>
+									<input
+										type="range"
+										className="w-full form-range"
+										id="randomness"
+										min="0"
+										max="1"
+										step="0.01"
+										value={randomness}
+										onChange={(e) => setRandomness(parseFloat(e.target.value))}
+									/>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div className="d-flex justify-content-center gap-2 mb-4">
-						<button className="btn btn-primary mb-4" onClick={() => simulateTournament()}>
-							Simulate Tournament
-						</button>
-						<button className="btn btn-secondary mb-4" onClick={() => clearTournament()}>
-							Clear Tournament
-						</button>
+						<div className="flex justify-center gap-4 mt-6">
+							<button 
+								className="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors font-medium" 
+								onClick={() => simulateTournament()}
+							>
+								Simulate Tournament
+							</button>
+							<button 
+								className="px-6 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors font-medium" 
+								onClick={() => clearTournament()}
+							>
+								Clear Tournament
+							</button>
+						</div>
 					</div>
 					{getRegionNamesInOrder().map((element) => (
 						<Region key={element} region={getRegion(element)} regionName={element} onSelectWinner={handleSelectWinner}/>	

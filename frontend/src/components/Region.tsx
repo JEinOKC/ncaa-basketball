@@ -67,14 +67,16 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner }) =
 	const isRegionComplete = completedRegions.includes(regionName);
 	
 	return (
-		<div className="mb-8">
-			<div className="flex items-center mb-4">
-				<h2 className="text-xl font-bold mr-4">{regionName} Region</h2>
-				{isRegionComplete && (
-					<span className="text-green-500" title="Region Complete">
-						✓
-					</span>
-				)}
+		<div id={regionName} className="mb-8 scroll-mt-20">
+			<div className="bg-white rounded-lg shadow p-4 mb-4">
+				<div className="flex items-center">
+					<h2 className="text-2xl text-gray-900 font-bold mr-4">{regionName} Region</h2>
+					{isRegionComplete && (
+						<span className="text-green-500 text-xl" title="Region Complete">
+							✓
+						</span>
+					)}
+				</div>
 			</div>
 			<div className="flex flex-col space-y-4">
 				{nodesAtCurrentLevel.map((node, index) => (
@@ -90,14 +92,14 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner }) =
 				<button
 					onClick={() => setCurrentLevel(Math.max(1, currentLevel - 1))}
 					disabled={currentLevel === 1}
-					className="px-4 py-2 bg-blue-500 text-white rounded disabled:bg-gray-300"
+					className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 disabled:bg-gray-300 transition-colors"
 				>
 					Previous Round
 				</button>
 				<button
 					onClick={() => setCurrentLevel(Math.min(levels, currentLevel + 1))}
 					disabled={currentLevel === levels}
-					className="px-4 py-2 bg-blue-500 text-white rounded disabled:bg-gray-300"
+					className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 disabled:bg-gray-300 transition-colors"
 				>
 					Next Round
 				</button>
