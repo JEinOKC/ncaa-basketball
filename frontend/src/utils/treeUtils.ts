@@ -16,7 +16,6 @@ export const getNodesAtLevel = (node: NodeType | null, level: number, current: n
         ...getNodesAtLevel(node.right, level, current - 1),
     ];
 };
-
 /**
  * Calculate the total number of levels in a tree
  * @param node The root node to calculate levels for

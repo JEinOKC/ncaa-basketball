@@ -24,13 +24,19 @@ export interface BracketType{
 export interface NodeType{
 	left:NodeType|null;
 	right:NodeType|null;
-	winner:string|null;
+	winner:WinnerType|null;
 	score:number|null;
 	gameUUID?:string;
 	ancestor?:NodeType;
 	name?:string;
 	seed?:number;
 	rating?:number;
+}
+
+export interface WinnerType{
+	name?:string;
+	rating?:number;
+	seed?:number;
 }
 
 export interface BracketologyType{
