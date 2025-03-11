@@ -8,6 +8,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Region from './Region';
 import { setGameWinners } from "../store/stateSlice";
 import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
+import styles from '../styles/Semicircle.module.css';
 
 interface BracketProps {
 	context: "wbb"|"mbb";
@@ -27,6 +28,23 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 	const [bracket,setBracket] = useState<BracketologyType>();
 	const [randomness, setRandomness] = useState<number>(0.5); // Default to 0.5 for balanced randomness
+
+	const getArcColor = (value: number): string => {
+		// Convert the value to a percentage distance from 50%
+		const distanceFromMiddle = Math.abs(0.5 - value);
+		// Scale it to be between 0 and 1 (0 being at 50%, 1 being at 0% or 100%)
+		const normalizedDistance = distanceFromMiddle * 2;
+		
+		// Calculate RGB values with reduced intensity
+		// Red goes from 0 to 200 (instead of 255)
+		const red = Math.round(200 * normalizedDistance);
+		// Green goes from 0 to 160 (instead of 255)
+		const green = Math.round(160 * (1 - normalizedDistance));
+		// Add some blue to soften the colors
+		const blue = Math.round(40 * (1 - normalizedDistance));
+		
+		return `rgb(${red}, ${green}, ${blue})`;
+	};
 
 	const getDefaultRegion = ():NodeType =>{
 		return {
@@ -330,21 +348,37 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			{bracket ? (
 				<>
 					<div className="bg-white rounded-lg shadow p-6 mb-6">
-						<div className="w-full">
-							<div className="flex flex-col space-y-2">
-								<div className="flex items-center justify-between">
-									<label htmlFor="randomness" className="text-lg text-gray-900 font-medium">
-										Rating Skewer: {Math.round(randomness * 100)}%
-									</label>
-								</div>
-								<div className="flex flex-col gap-2">
-									<div className="flex justify-between text-sm text-gray-600 px-1">
-										<span>Random</span>
-										<span>Chalk</span>
+						<div className="flex flex-col items-center space-y-4">
+							<div className="relative w-48">
+								<div className={styles['semi-circle']}>
+									{/* Base semicircle with gray border is created by ::before pseudo-element */}
+									<div className={styles['semi-circle-mask']}>
+										{/* Progress arc */}
+										<div 
+											className={styles.fill}
+											style={{ 
+												transform: `rotate(${-90 + (180 * randomness)}deg)`,
+												borderTopColor: getArcColor(randomness)
+											}}
+										></div>
 									</div>
+									{/* Center text */}
+									<div className="text-center absolute left-0 right-0 top-1/3 z-10">
+										<span className="text-lg font-semibold text-gray-900">
+											{Math.round(randomness * 100)}%
+										</span>
+									</div>
+								</div>
+								{/* Labels */}
+								<div className="flex justify-between px-2">
+									<span className="text-sm font-medium text-gray-600">Random</span>
+									<span className="text-sm font-medium text-gray-600">Chalk</span>
+								</div>
+								{/* Range input */}
+								<div className="mt-4">
 									<input
 										type="range"
-										className="w-full form-range"
+										className="w-full"
 										id="randomness"
 										min="0"
 										max="1"
