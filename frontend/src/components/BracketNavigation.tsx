@@ -35,11 +35,11 @@ const BracketNavigation: React.FC<BracketNavigationProps> = ({ regions, onRegion
         <div className="w-full">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full px-3 py-2 text-gray-500 bg-white hover:bg-gray-50 rounded-md transition-colors font-medium flex items-center justify-between border border-gray-200"
+                className="w-full px-3 py-2 text-gray-300 bg-white hover:bg-gray-50 !rounded-none transition-colors font-medium flex items-center justify-between border border-gray-200"
             >
                 <span className="truncate">Jump to Region</span>
                 <svg 
-                    className={`w-5 h-5 transition-transform flex-shrink-0 ml-2 text-gray-400 ${isOpen ? 'rotate-180' : ''}`} 
+                    className={`w-5 h-5 transition-transform flex-shrink-0 ml-2 text-gray-300 ${isOpen ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ const BracketNavigation: React.FC<BracketNavigationProps> = ({ regions, onRegion
                 </svg>
             </button>
             {isOpen && (
-                <nav className="absolute left-2 right-2 mt-1 bg-white rounded-md shadow-lg overflow-hidden z-50 border border-gray-200">
+                <nav className="absolute left-2 right-2 mt-1 bg-white shadow-lg !rounded-none overflow-hidden z-50 border border-gray-200">
                     {regions.map((region) => (
                         <a
                             key={region}

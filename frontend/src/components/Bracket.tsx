@@ -9,6 +9,7 @@ import Region from './Region';
 import { setGameWinners } from "../store/stateSlice";
 import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
 import styles from '../styles/Semicircle.module.css';
+import { useMediaQuery } from 'react-responsive';
 
 interface BracketProps {
 	context: "wbb"|"mbb";
@@ -18,6 +19,8 @@ interface BracketProps {
 
 const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	const dispatch = useDispatch();
+	const isDesktop = useMediaQuery({ minWidth: 1024 });
+	const [currentLevel, setCurrentLevel] = useState(1);
 	
 	const wbbBracket = useSelector((state: RootState) => state.state.wbbBracket);
 	const mbbBracket = useSelector((state: RootState) => state.state.mbbBracket);
@@ -28,6 +31,8 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 	const [bracket,setBracket] = useState<BracketologyType>();
 	const [randomness, setRandomness] = useState<number>(0.5); // Default to 0.5 for balanced randomness
+
+	const roundNames = ['Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
 
 	const getArcColor = (value: number): string => {
 		// Convert the value to a percentage distance from 50%
@@ -331,6 +336,36 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		dispatch(setGameWinners({}));
 	}
 
+	const RoundNavigation = () => {
+		const region = getRegion(getRegionNamesInOrder()[0]); // Use first region to determine total levels
+		const levels = totalLevels(region);
+		
+		return (
+			<div className={`flex items-center ${isDesktop ? 'justify-start gap-4 mb-4' : 'justify-between px-4'}`}>
+				{/* Round indicator */}
+				<div className="text-gray-700 font-medium">
+					{roundNames[currentLevel - 1] || `Round ${currentLevel}`}
+				</div>
+				
+				{/* Round selector */}
+				<div className="flex gap-2">
+					{Array.from({ length: levels }, (_, i) => i + 1).map((level) => (
+						<button
+							key={level}
+							onClick={() => setCurrentLevel(level)}
+							className={`w-8 h-8 rounded-full flex items-center justify-center text-sm
+								${currentLevel === level 
+									? 'bg-indigo-600 text-white' 
+									: 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+						>
+							{level}
+						</button>
+					))}
+				</div>
+			</div>
+		);
+	};
+
 	return (
 		<div>
 			<div className="bg-white rounded-lg shadow p-6 mb-6">
@@ -391,22 +426,43 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 						</div>
 						<div className="flex justify-center gap-4 mt-6">
 							<button 
-								className="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors font-medium" 
+								className="px-6 py-2 bg-indigo-600! text-white rounded-md hover:bg-indigo-700 transition-colors font-medium" 
 								onClick={() => simulateTournament()}
 							>
 								Simulate Tournament
 							</button>
 							<button 
-								className="px-6 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors font-medium" 
+								className="px-6 py-2 border bg-amber-800! border-gray-300 text-gray-50 rounded-md hover:bg-gray-50 transition-colors font-medium" 
 								onClick={() => clearTournament()}
 							>
 								Clear Tournament
 							</button>
 						</div>
 					</div>
+
+					{/* Desktop round navigation */}
+					{isDesktop && (
+						<div className="bg-white rounded-lg shadow p-4 mb-6">
+							<RoundNavigation />
+						</div>
+					)}
+
 					{getRegionNamesInOrder().map((element) => (
-						<Region key={element} region={getRegion(element)} regionName={element} onSelectWinner={handleSelectWinner}/>	
+						<Region 
+							key={element} 
+							region={getRegion(element)} 
+							regionName={element} 
+							onSelectWinner={handleSelectWinner}
+							currentLevel={currentLevel}
+						/>	
 					))}
+
+					{/* Mobile fixed bottom navigation */}
+					{!isDesktop && (
+						<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-3 px-4 z-50">
+							<RoundNavigation />
+						</div>
+					)}
 				</>
 			) : 'No Bracket'}
 		</div>
