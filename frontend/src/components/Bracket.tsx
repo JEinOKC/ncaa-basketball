@@ -230,22 +230,9 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 				});
 				return team1;
 			}
+			
 
-			// Calculate win probability based on ratings difference and randomness factor
-			const ratingDiff = team1.rating - team2.rating;
-			const winProbability = 0.5 + (ratingDiff / 100) * (1 - randomness);
-			
-			console.log(`Simulating ${team1.name} vs ${team2.name}:`, {
-				ratingDiff,
-				randomness,
-				winProbability
-			});
-			
-			// Random number between 0 and 1
-			const roll = Math.random();
-			
-			// Return winner based on probability
-			return roll < winProbability ? team1 : team2;
+			return Bracketology.selectGameWinner(team1, team2, randomness);
 		};
 
 		// Create a single object to store all winners
@@ -273,12 +260,20 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 					nodesAtLevel.forEach(node => {
 						// Only simulate if we have two teams to compare
 						if (node.left?.name && node.right?.name) {
-							const winner = simulateGame(node.left, node.right);
-							
-							// Set the winner in this node
-							if (winner.name && node.gameUUID) {
-								allWinners[node.gameUUID] = winner.name;
+							//if the game has already been played, return the winner
+							if(node.winner){
+								allWinners[node.gameUUID] = node.winner.name;
 							}
+							else{
+								const winner = simulateGame(node.left, node.right);
+								
+								// Set the winner in this node
+								if (winner.name && node.gameUUID) {
+									allWinners[node.gameUUID] = winner.name;
+								}
+							}
+
+							
 						}
 					});
 
@@ -335,7 +330,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 					<div className="d-flex justify-content-center mb-4">
 						<div className="w-100 max-w-md">
 							<label htmlFor="randomness" className="form-label">
-								Randomness: {Math.round(randomness * 100)}%
+								Chalk Rating Skewer: {Math.round(randomness * 100)}%
 							</label>
 							<input
 								type="range"

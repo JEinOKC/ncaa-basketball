@@ -558,6 +558,56 @@ class Bracketology implements BracketologyType{
 		}
 	}
 
+	/**
+	 * 
+	 * @param topTeam - team 1 in a game
+	 * @param bottomTeam - team 2 in a game
+	 * @param ratingSkewer - a number from 0-1. 0 = totally random. 1.0 = all favorites win. Anything in between is a scale of randomness
+	 * @returns 
+	 */
+	static selectGameWinner(topTeam:NodeType,bottomTeam:NodeType, ratingSkewer:number){
+		const minRatingsWeight = 0.0;
+		const maxRatingsWeight = 1.0;
+
+		if(ratingSkewer < minRatingsWeight){
+			ratingSkewer = minRatingsWeight;
+		}
+		else if(ratingSkewer > maxRatingsWeight){
+			ratingSkewer = maxRatingsWeight;
+		}
+
+		if( (!topTeam.rating || !bottomTeam.rating) || topTeam.rating === bottomTeam.rating){
+			//go completely random
+			const randomIdx = Math.floor(Math.random() * 2);
+			return randomIdx > 0 ? topTeam : bottomTeam;
+		}
+
+		// Transform ratings from [-1,1] to [0,2]
+		const topTeamScaledRating = topTeam.rating + 1;
+		const bottomTeamScaledRating = bottomTeam.rating + 1;
+
+		// Calculate base win probability using ratio of ratings
+		const totalRating = topTeamScaledRating + bottomTeamScaledRating;
+		const baseTopTeamWinOdds = topTeamScaledRating / totalRating;
+
+		// Apply randomness factor:
+		// At ratingSkewer = 0: 50/50 chance
+		// At ratingSkewer = 0.5: Use pure ratings-based probability
+		// At ratingSkewer = 1: Always pick favorite
+		let finalTopTeamWinOdds;
+		if (ratingSkewer <= 0.5) {
+			// Linear interpolation between 0.5 (random) and baseTopTeamWinOdds
+			finalTopTeamWinOdds = 0.5 + (baseTopTeamWinOdds - 0.5) * (ratingSkewer * 2);
+		} else {
+			// Linear interpolation between baseTopTeamWinOdds and 1 (for favorite) or 0 (for underdog)
+			const target = baseTopTeamWinOdds > 0.5 ? 1 : 0;
+			finalTopTeamWinOdds = baseTopTeamWinOdds + (target - baseTopTeamWinOdds) * ((ratingSkewer - 0.5) * 2);
+		}
+		
+		const randomNumber = Math.random();
+		return randomNumber < finalTopTeamWinOdds ? topTeam : bottomTeam;
+	}
+
 
 }
 
