@@ -338,27 +338,37 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	const clearTournament = () => {
 		console.log('clearTournament');
 
-		// Process each region
-		for (const regionName of getRegionNamesInOrder()) {
-			const region = getRegion(regionName);
-			const levels = totalLevels(region);
+		// Clear all game winners from state first
+		dispatch(setGameWinners({}));
 
-			// Start from the top level and work down to ensure we clear everything
-			for (let level = 1; level <= levels; level++) {
-				const nodesAtLevel = getNodesAtLevel(region, level, levels);
-				
-				nodesAtLevel.forEach(node => {
-					// Reset the node's winner and properties
-					node.winner = null;
-					node.name = undefined;
-					node.rating = undefined;
-					node.seed = undefined;
-				});
-			}
+		// Reinitialize the bracket
+		if (context === "wbb" && wbbBracket && wbbRankings.length) {
+			const wbbBracketology = new Bracketology(wbbBracket, wbbRankings, nameTable);
+			
+			// Add UUIDs to each region's nodes
+			Object.keys(wbbBracketology.nodeBracket).forEach((region) => {
+				const typedRegion = region as Regions;
+				wbbBracketology.nodeBracket[typedRegion][0] = addGameUUID(wbbBracketology.nodeBracket[typedRegion][0]);
+				wbbBracketology.addFirstFourGames(wbbBracketology.nodeBracket[typedRegion]);
+			});
+
+			setBracket(wbbBracketology);
+		}
+		else if (context === "mbb" && mbbBracket && mbbRankings.length) {
+			const mbbBracketology = new Bracketology(mbbBracket, mbbRankings, nameTable);
+			
+			// Add UUIDs to each region's nodes
+			Object.keys(mbbBracketology.nodeBracket).forEach((region) => {
+				const typedRegion = region as Regions;
+				mbbBracketology.nodeBracket[typedRegion][0] = addGameUUID(mbbBracketology.nodeBracket[typedRegion][0]);
+				mbbBracketology.addFirstFourGames(mbbBracketology.nodeBracket[typedRegion]);
+			});
+
+			setBracket(mbbBracketology);
 		}
 
-		// Finally, clear all game winners from state
-		dispatch(setGameWinners({}));
+		// Reset Final Four state
+		setFinalFourState(null);
 	}
 
 	const RoundNavigation = () => {

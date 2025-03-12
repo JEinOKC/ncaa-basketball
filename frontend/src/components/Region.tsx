@@ -23,7 +23,7 @@ console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracke
 	// Function to get all game UUIDs in the region
 	const getAllGameUUIDs = (node: NodeType): string[] => {
 		const uuids: string[] = [];
-		if (node.gameUUID) uuids.push(node.gameUUID);
+		if (node.gameUUID && node.left && node.right) uuids.push(node.gameUUID);
 		if (node.left) uuids.push(...getAllGameUUIDs(node.left));
 		if (node.right) uuids.push(...getAllGameUUIDs(node.right));
 		return uuids;
@@ -33,11 +33,11 @@ console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracke
 	const getNodesAtLevel = (node: NodeType, targetLevel: number, currentLevel: number): NodeType[] => {
 		if (!node) return [];
 		if (currentLevel === targetLevel) return [node];
-		if (!node.left || !node.right) return [];
-		return [
-			...getNodesAtLevel(node.left, targetLevel, currentLevel - 1),
-			...getNodesAtLevel(node.right, targetLevel, currentLevel - 1)
-		];
+		
+		// Continue traversal even if one side is missing
+		const leftNodes = node.left ? getNodesAtLevel(node.left, targetLevel, currentLevel - 1) : [];
+		const rightNodes = node.right ? getNodesAtLevel(node.right, targetLevel, currentLevel - 1) : [];
+		return [...leftNodes, ...rightNodes];
 	};
 
 	// Check completion status whenever relevant state changes
@@ -51,13 +51,6 @@ console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracke
 
 		dispatch(updateRegionCompletion({ region: regionName, isComplete: regionComplete }));
 		
-		// For debugging
-		if (regionComplete) {
-			// console.log(`Region ${regionName} is complete!`, {
-			// 	gameUUIDs: regionGameUUIDs,
-			// 	winners: regionGameUUIDs.map(uuid => gameWinners[uuid])
-			// });
-		}
 	}, [region, regionName, dispatch, gameWinners]);
 
 	const handleSelectWinner = (winner: NodeType) => {
