@@ -17,7 +17,9 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 	const dispatch = useDispatch();
 	const completedRegions = useSelector((state: RootState) => state.state.completedRegions);
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);
-
+	const maxBracketDepth = useSelector((state: RootState) => state.state.maxBracketDepth);
+	const roundNames = ['First Four', 'Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
+console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracketDepth,'currentLevel':currentLevel})
 	// Function to get all game UUIDs in the region
 	const getAllGameUUIDs = (node: NodeType): string[] => {
 		const uuids: string[] = [];
@@ -25,12 +27,6 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 		if (node.left) uuids.push(...getAllGameUUIDs(node.left));
 		if (node.right) uuids.push(...getAllGameUUIDs(node.right));
 		return uuids;
-	};
-
-	// Get the total number of levels in the tree
-	const getTotalLevels = (node: NodeType): number => {
-		if (!node || !node.left || !node.right) return 0;
-		return 1 + Math.max(getTotalLevels(node.left), getTotalLevels(node.right));
 	};
 
 	// Get nodes at a specific level
@@ -71,9 +67,7 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 
 	if (!region) return <div>No bracket data available for {regionName}.</div>;
 
-	const totalLevels = getTotalLevels(region);
-	const nodesAtCurrentLevel = getNodesAtLevel(region, currentLevel, totalLevels);
-	const roundNames = ['First Four', 'Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
+	const nodesAtCurrentLevel = getNodesAtLevel(region, currentLevel, maxBracketDepth);
 	const isRegionComplete = completedRegions.includes(regionName);
 	
 	return (
@@ -95,15 +89,21 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 			</div>
 			
 			<div className="flex flex-col space-y-4">
-				{nodesAtCurrentLevel.map((node: NodeType, index: number) => (
-					<BracketNode
-						key={node.gameUUID || index}
-						node={node}
-						onSelectWinner={handleSelectWinner}
-						currentRound={currentLevel}
-						randomness={randomness}
-					/>
-				))}
+				{nodesAtCurrentLevel.length > 0 ? (
+					nodesAtCurrentLevel.map((node: NodeType, index: number) => (
+						<BracketNode
+							key={node.gameUUID || index}
+							node={node}
+							onSelectWinner={handleSelectWinner}
+							currentRound={currentLevel}
+							randomness={randomness}
+						/>
+					))
+				) : (
+					<div className="text-center p-4 bg-gray-50 rounded-lg">
+						<p className="text-gray-500">No games available for {roundNames[currentLevel - 1]} round in this region</p>
+					</div>
+				)}
 			</div>
 		</div>
 	);

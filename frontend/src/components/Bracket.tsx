@@ -6,7 +6,7 @@ import { Bracketology } from '../utils/bracketology';
 import { BracketologyType } from '../utils/Types';
 import { v4 as uuidv4 } from 'uuid';
 import Region from './Region';
-import { setGameWinners } from "../store/stateSlice";
+import { setGameWinners, setMaxBracketDepth } from "../store/stateSlice";
 import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
 import styles from '../styles/Semicircle.module.css';
 import { useMediaQuery } from 'react-responsive';
@@ -204,12 +204,23 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			Object.keys(wbbBracketology.nodeBracket).forEach((region) => {
 				const typedRegion = region as Regions;
 				wbbBracketology.nodeBracket[typedRegion][0] = addGameUUID(wbbBracketology.nodeBracket[typedRegion][0]);
+				// Process First Four games for this region
+				wbbBracketology.addFirstFourGames(wbbBracketology.nodeBracket[typedRegion]);
 			});
 
 			// Apply any existing winners
 			updateBracketWithWinners(wbbBracketology);
 
-			// console.log({'wbbBracketology':wbbBracketology});
+			// Calculate max depth across all regions
+			let maxDepth = 0;
+			Object.values(wbbBracketology.nodeBracket).forEach(nodes => {
+				if (nodes && nodes.length > 0) {
+					const depth = wbbBracketology.findMaxDepth(nodes[0]);
+					maxDepth = Math.max(maxDepth, depth);
+				}
+			});
+			dispatch(setMaxBracketDepth(maxDepth));
+
 			setBracket(wbbBracketology);
 		}
 		else{
@@ -219,14 +230,26 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			Object.keys(mbbBracketology.nodeBracket).forEach((region) => {
 				const typedRegion = region as Regions;
 				mbbBracketology.nodeBracket[typedRegion][0] = addGameUUID(mbbBracketology.nodeBracket[typedRegion][0]);
+				// Process First Four games for this region
+				mbbBracketology.addFirstFourGames(mbbBracketology.nodeBracket[typedRegion]);
 			});
 
 			// Apply any existing winners
 			updateBracketWithWinners(mbbBracketology);
-			// console.log({'mbbBracketology':mbbBracketology});
+
+			// Calculate max depth across all regions
+			let maxDepth = 0;
+			Object.values(mbbBracketology.nodeBracket).forEach(nodes => {
+				if (nodes && nodes.length > 0) {
+					const depth = mbbBracketology.findMaxDepth(nodes[0]);
+					maxDepth = Math.max(maxDepth, depth);
+				}
+			});
+			dispatch(setMaxBracketDepth(maxDepth));
+
 			setBracket(mbbBracketology);
 		}
-	}, [wbbBracket, mbbBracket, wbbRankings, mbbRankings, nameTable, context]);
+	}, [wbbBracket, mbbBracket, wbbRankings, mbbRankings, nameTable, context, dispatch]);
 
 	useEffect(() => {
 		if (bracket) {
@@ -832,7 +855,6 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			) : 'No Bracket'}
 		</div>
 	);
-  
 };
 
 export default Bracket;

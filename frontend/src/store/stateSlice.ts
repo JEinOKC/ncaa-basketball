@@ -12,6 +12,7 @@ interface State {
 	wbbBracketology?: BracketologyType;
 	mbbBracketology?: BracketologyType;
 	completedRegions: Regions[];
+	maxBracketDepth: number;
 }
 
 const initialState: State = {
@@ -24,7 +25,8 @@ const initialState: State = {
 	gameWinners: {},
 	wbbBracketology: undefined,
 	mbbBracketology: undefined,
-	completedRegions: []
+	completedRegions: [],
+	maxBracketDepth: 0
 };
 
 // Recursive function to check if the bracket tree is complete
@@ -184,7 +186,10 @@ const stateSlice = createSlice({
 			else if (state.context === "mbb" && state.mbbBracketology) {
 				updateBracket(state.mbbBracketology);
 			}
-		}
+		},
+		setMaxBracketDepth: (state, action: PayloadAction<number>) => {
+			state.maxBracketDepth = action.payload;
+		},
 	},
 });
 
@@ -199,7 +204,8 @@ export const {
 	setWbbBracketology,
 	setMbbBracketology,
 	updateRegionCompletion,
-	selectWinner 
+	selectWinner,
+	setMaxBracketDepth
 } = stateSlice.actions;
 
 export default stateSlice.reducer;

@@ -16,8 +16,8 @@ class Bracketology implements BracketologyType{
 		this.ratings = {};
 		this.nameTable = nameTable;
 
-		this.nodeBracket = this.buildGames();
-		
+		const { bracket } = this.buildGames();
+		this.nodeBracket = bracket;
 	}
 	getData(){
 		return this.data;
@@ -361,11 +361,11 @@ class Bracketology implements BracketologyType{
 
 	buildGames(){
 		var myTeams:Record<Regions,string[]> = this.data.teams;
-		var allRegions:any			= {};
-		// console.log(myTeams);
+		var allRegions:Record<Regions,NodeType[]> = {} as Record<Regions,NodeType[]>;
+		let maxDepth = 0;
 
 		//loop through each region. for basketball, each region is an array of 16 teams
-		for(var region in myTeams){
+		for(let region in myTeams){
 			let typedRegion:Regions = region as Regions;
 			let nodeArray = new Array(myTeams[typedRegion].length);
 
@@ -374,11 +374,14 @@ class Bracketology implements BracketologyType{
 			//we know the teams are sorted 1-16
 			for(var i=0;i<myTeams[typedRegion].length;i++){
 				let currentTeam = {
-					'name' : myTeams[typedRegion][i],
-					'seed' : i+1,
-					'rating' : this.lookupRating(myTeams[typedRegion][i])
+					name: myTeams[typedRegion][i],
+					seed: i+1,
+					rating: Number(this.lookupRating(myTeams[typedRegion][i])),
+					left: null,
+					right: null,
+					winner: null,
+					score: null
 				};
-
 
 				//I cannot say I remember exactly why this duplicate with the seed number is necessary. Will see if I can rip it out in this context.
 				this.ratings[currentTeam.name] = currentTeam.rating;
@@ -394,17 +397,20 @@ class Bracketology implements BracketologyType{
 						break;
 					}
 				}
-				
-				
 			}
 
 			let fullRegion = this.buildWeeks(nodeArray);
-			this.addFirstFourGames(fullRegion);
-			allRegions[region] = fullRegion;
+			allRegions[typedRegion] = fullRegion;
+
+			// Calculate max depth for this region
+			const regionDepth = this.findMaxDepth(fullRegion[0]);
+			maxDepth = Math.max(maxDepth, regionDepth);
 		}
 
-		this.nodeBracket = allRegions;
-		return allRegions;
+		return {
+			bracket: allRegions,
+			maxDepth: maxDepth
+		};
 	}
 
 	addFirstFourGames(regionNodes: NodeType[]){
@@ -713,6 +719,19 @@ class Bracketology implements BracketologyType{
 			topTeamSkewedOdds: finalTopTeamWinOdds,
 			bottomTeamSkewedOdds: finalBottomTeamWinOdds
 		};
+	}
+
+	findMaxDepth(node: NodeType): number {
+		if (!node) return 0;
+		if (!node.left && !node.right) return 0;
+		
+		// Only count this level if it's a game (has gameUUID)
+		const currentLevel = node.gameUUID ? 1 : 0;
+		
+		return currentLevel + Math.max(
+			this.findMaxDepth(node.left || { left: null, right: null, winner: null, score: null }),
+			this.findMaxDepth(node.right || { left: null, right: null, winner: null, score: null })
+		);
 	}
 
 }
