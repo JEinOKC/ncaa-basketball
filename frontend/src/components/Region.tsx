@@ -82,10 +82,10 @@ console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracke
 			</div>
 			
 			<div className="flex flex-col space-y-4">
-				{nodesAtCurrentLevel.length > 0 ? (
-					nodesAtCurrentLevel
-						.filter(node => node.gameUUID && node.left && node.right)
-						.map((node: NodeType, index: number) => (
+				{(() => {
+					const filteredNodes = nodesAtCurrentLevel.filter(node => node.gameUUID && node.left && node.right);
+					return filteredNodes.length > 0 ? (
+						filteredNodes.map((node: NodeType, index: number) => (
 							<BracketNode
 								key={node.gameUUID}
 								node={node}
@@ -94,11 +94,12 @@ console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracke
 								randomness={randomness}
 							/>
 						))
-				) : (
-					<div className="text-center p-4 bg-gray-50 rounded-lg">
-						<p className="text-gray-500">No games available for {roundNames[currentLevel - 1]} round in this region</p>
-					</div>
-				)}
+					) : (
+						<div className="text-center p-4 bg-gray-50 rounded-lg">
+							<p className="text-gray-500">There are no {roundNames[currentLevel - 1]} games in the {regionName} Region</p>
+						</div>
+					);
+				})()}
 			</div>
 		</div>
 	);
