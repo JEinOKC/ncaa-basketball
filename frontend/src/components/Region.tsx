@@ -73,7 +73,7 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 
 	const totalLevels = getTotalLevels(region);
 	const nodesAtCurrentLevel = getNodesAtLevel(region, currentLevel, totalLevels);
-	const roundNames = ['Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
+	const roundNames = ['First Four', 'Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
 	const isRegionComplete = completedRegions.includes(regionName);
 	
 	return (

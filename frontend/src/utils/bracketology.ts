@@ -122,6 +122,10 @@ class Bracketology implements BracketologyType{
 
 	}
 
+	determineWinner(team1:any,team2:any,weight:any){
+		/*should look up the ratings for each team, considering the weigh, and return a winner*/
+	}
+
 	findGameById(gameId:string){
 		for(var key in this.nodeBracket){
 			
@@ -395,18 +399,71 @@ class Bracketology implements BracketologyType{
 			}
 
 			let fullRegion = this.buildWeeks(nodeArray);
-
+			this.addFirstFourGames(fullRegion);
 			allRegions[region] = fullRegion;
 		}
-		console.log({'allRegions':allRegions});
-		return allRegions;
-		
 
+		this.nodeBracket = allRegions;
+		return allRegions;
+	}
+
+	addFirstFourGames(regionNodes: NodeType[]){
+		if (!regionNodes || !Array.isArray(regionNodes)) return;
+
+		const traverseNode = (node: NodeType) => {
+			if (!node) return;
+
+			// Check if this is a leaf node with a team name containing "/"
+			if (node.name && node.name.includes('/')) {
+				const [team1, team2] = node.name.split('/').map(name => name.trim());
+				
+				// Create child nodes for the First Four matchup
+				node.left = {
+					name: team1,
+					seed: node.seed,
+					rating: Number(this.lookupRating(team1)),
+					ancestor: node,
+					left: null,
+					right: null,
+					winner: null,
+					score: null
+				};
+
+				node.right = {
+					name: team2,
+					seed: node.seed,
+					rating: Number(this.lookupRating(team2)),
+					ancestor: node,
+					left: null,
+					right: null,
+					winner: null,
+					score: null
+				};
+
+				// Add a UUID for this First Four game
+				node.gameUUID = this.getUUID();
+				
+				// Clear the parent node's name since it's now a game node
+				delete node.name;
+				delete node.seed;
+				delete node.rating;
+				
+				return;
+			}
+
+			// Continue traversing if this is not a leaf node
+			if (node.left) traverseNode(node.left);
+			if (node.right) traverseNode(node.right);
+		};
+
+		// Traverse each root node in the region
+		for (const rootNode of regionNodes) {
+			traverseNode(rootNode);
+		}
 	}
 
 	printNode(myNode:NodeType,nodeDepth:number){
 		
-
 		if(typeof myNode.left !== 'undefined' && myNode.left !== null){
 			this.printNode(myNode.left,nodeDepth-1);
 		}

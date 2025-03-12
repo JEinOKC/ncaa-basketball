@@ -16,6 +16,7 @@ interface BracketNodeProps {
 const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomness }) => {
 	
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);	
+	const nameTable = useSelector((state: RootState) => state.state.nameTable);
 	const [gameIsExpanded, setGameIsExpanded] = useState(false);
 	const [gameOdds, setGameOdds] = useState({
 		topTeamBasicOdds: 0.5,
@@ -38,6 +39,10 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 			setGameIsExpanded(false)
 		}
 	};
+
+	const getTranslatedName = (name:string) => {
+		return nameTable[name] || name;
+	}
 
 
 	
@@ -79,7 +84,7 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 											: 'text-gray-700'
 									}`}
 								>
-									{node.left.seed}. {node.left.name}	
+									{node.left.seed}. {getTranslatedName(node.left.name)}	
 									{gameIsExpanded && (
 										<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner w-70">
 											<div className="text-sm text-gray-700">
@@ -145,7 +150,7 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 											: 'text-gray-700'
 									}`}
 								>
-									{node.right.seed}. {node.right.name}	
+									{node.right.seed}. {getTranslatedName(node.right.name)}	
 									{gameIsExpanded && (
 										<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner w-70">
 											<div className="text-sm text-gray-700">
@@ -189,7 +194,7 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 				(!gameIsExpanded && node.gameUUID && node.gameUUID in gameWinners && gameWinners[node.gameUUID] !== '') && (
 					<div className="flex flex-col items-start p-2 ml-4 w-45 border-b border-slate-400 pb-2">
 						<div className="text-sm text-gray-700">
-							{gameWinners[node.gameUUID]}
+							{getTranslatedName(gameWinners[node.gameUUID] || '')}
 						</div>
 					</div>
 				)

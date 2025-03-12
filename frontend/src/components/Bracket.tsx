@@ -35,7 +35,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	const [randomness, setRandomness] = useState<number>(0.5); // Default to 0.5 for balanced randomness
 	const [finalFourState, setFinalFourState] = useState<FinalFourState | null>(null);
 
-	const roundNames = ['Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
+	const roundNames = ['First Four', 'Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
 
 	const getArcColor = (value: number): string => {
 		// Convert the value to a percentage distance from 50%
@@ -62,7 +62,11 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			score: null,
 			gameUUID: uuidv4()
 		};
-	}
+	};
+
+	const getTranslatedName = (name:string) => {
+		return nameTable[name] || name;
+	};
 
 	const handleSelectWinner = (winner: NodeType) => {
 
@@ -219,7 +223,6 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 			// Apply any existing winners
 			updateBracketWithWinners(mbbBracketology);
-
 			// console.log({'mbbBracketology':mbbBracketology});
 			setBracket(mbbBracketology);
 		}
@@ -645,7 +648,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 													{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name && (
 														<>
 															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.seed}. </span>
-															{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name}
+															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name || '')}
 														</>
 													) || 'TBD'}
 												</span>
@@ -663,7 +666,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 													{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name && (
 														<>
 															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.seed}. </span>
-															{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name}
+															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name || '')}
 														</>
 													) || 'TBD'}
 												</span>
@@ -687,7 +690,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 													{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name && (
 														<>
 															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.seed}. </span>
-															{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name}
+															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name || '')}
 														</>
 													) || 'TBD'}
 												</span>
@@ -705,7 +708,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 													{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name && (
 														<>
 															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.seed}. </span>
-															{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name}
+															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name || '')}
 														</>
 													) || 'TBD'}
 												</span>
@@ -734,7 +737,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 												{finalFourState?.semifinalA.winnerName && (
 													<>
 														<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalA.winnerRegion as Regions][0].winner?.seed}. </span>
-														{finalFourState.semifinalA.winnerName}
+														{getTranslatedName(finalFourState.semifinalA.winnerName || '')}
 													</>
 												) || 'TBD'}
 											</span>
@@ -756,7 +759,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 												{finalFourState?.semifinalB.winnerName && (
 													<>
 														<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalB.winnerRegion as Regions][0].winner?.seed}. </span>
-														{finalFourState.semifinalB.winnerName}
+														{getTranslatedName(finalFourState.semifinalB.winnerName || '')}
 													</>
 												) || 'TBD'}
 											</span>
@@ -774,7 +777,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 													{finalFourState.champion.name && (
 														<>
 															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.champion.region][0].winner?.seed}. </span>
-															{finalFourState.champion.name}
+															{getTranslatedName(finalFourState.champion.name || '')}
 														</>
 													)}
 												</span>
