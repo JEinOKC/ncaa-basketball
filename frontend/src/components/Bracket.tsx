@@ -456,6 +456,83 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		setFinalFourState(updatedState);
 	};
 
+	const simulateFinalFour = () => {
+		if (!finalFourState || !bracket) return;
+
+		const updatedState = { ...finalFourState };
+
+		// Helper function to simulate a game between two regions
+		const simulateGame = (regionA: Regions, regionB: Regions): Regions => {
+			const teamA = bracket.nodeBracket[regionA][0];
+			const teamB = bracket.nodeBracket[regionB][0];
+			
+			if (!teamA.winner || !teamB.winner) return regionA; // Default to first team if no winner
+			
+			const winner = Bracketology.selectGameWinner(
+				{
+					...teamA,
+					name: teamA.winner.name,
+					rating: teamA.winner.rating || 0,
+					seed: teamA.winner.seed
+				},
+				{
+					...teamB,
+					name: teamB.winner.name,
+					rating: teamB.winner.rating || 0,
+					seed: teamB.winner.seed
+				},
+				randomness
+			);
+			
+			return winner.name === teamA.winner.name ? regionA : regionB;
+		};
+
+		// Simulate semifinal A if not completed
+		if (!updatedState.semifinalA.winnerRegion && updatedState.semifinalA.regionA && updatedState.semifinalA.regionB) {
+			const winningRegion = simulateGame(updatedState.semifinalA.regionA, updatedState.semifinalA.regionB);
+			const winningTeamName = bracket.nodeBracket[winningRegion][0].winner?.name;
+			if (winningTeamName) {
+				updatedState.semifinalA.winnerRegion = winningRegion;
+				updatedState.semifinalA.winnerName = winningTeamName;
+				updatedState.championship.regionA = winningRegion;
+			}
+		}
+
+		// Simulate semifinal B if not completed
+		if (!updatedState.semifinalB.winnerRegion && updatedState.semifinalB.regionA && updatedState.semifinalB.regionB) {
+			const winningRegion = simulateGame(updatedState.semifinalB.regionA, updatedState.semifinalB.regionB);
+			const winningTeamName = bracket.nodeBracket[winningRegion][0].winner?.name;
+			if (winningTeamName) {
+				updatedState.semifinalB.winnerRegion = winningRegion;
+				updatedState.semifinalB.winnerName = winningTeamName;
+				updatedState.championship.regionB = winningRegion;
+			}
+		}
+
+		// Simulate championship if both semifinals are complete but championship isn't
+		if (!updatedState.championship.winnerRegion && 
+			updatedState.championship.regionA && 
+			updatedState.championship.regionB && 
+			updatedState.championship.regionA !== ('TBD' as Regions) && 
+			updatedState.championship.regionB !== ('TBD' as Regions)) {
+			const winningRegion = simulateGame(
+				updatedState.championship.regionA,
+				updatedState.championship.regionB
+			);
+			const winningTeamName = bracket.nodeBracket[winningRegion][0].winner?.name;
+			if (winningTeamName) {
+				updatedState.championship.winnerRegion = winningRegion;
+				updatedState.championship.winnerName = winningTeamName;
+				updatedState.champion = {
+					region: winningRegion,
+					name: winningTeamName
+				};
+			}
+		}
+
+		setFinalFourState(updatedState);
+	};
+
 	return (
 		<div>
 			<div className="bg-white rounded-lg shadow p-6 mb-6">
@@ -535,22 +612,27 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 						<div ref={completionAlertRef} className="bg-white rounded-lg shadow p-6 mb-6">
 							<div className="flex items-center justify-between mb-6">
 								<div className="flex items-center">
-									<svg className="h-8 w-8 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-										<path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-									</svg>
 									<div>
-										<h2 className="text-2xl text-gray-900 font-bold">All regions are complete!</h2>
-										<p className="text-gray-600">Ready for the Final Four</p>
+										<h2 className="text-2xl text-gray-900 font-bold">The Final Four</h2>
 									</div>
 								</div>
 							</div>
+							
+							<div className="mb-6 text-center">
+								<button 
+									onClick={() => simulateFinalFour()}
+									className="px-3 py-1.5 bg-indigo-600! text-white rounded-md hover:bg-indigo-700 transition-colors text-sm!"
+								>
+									Simulate Final Four
+								</button>
+							</div>
 
 							{/* Final Four Bracket Display */}
-							<div className="flex flex-col items-center">
-								{/* Games Container */}
-								<div className="flex justify-between w-full max-w-4xl">
+							<div className="flex flex-col items-center w-full">
+								{/* Semifinals Container */}
+								<div className="flex justify-between w-full max-w-4xl gap-4 mb-8">
 									{/* Left Game (First Pair) */}
-									<div className="w-72 bg-gray-50 rounded-lg p-4">
+									<div className="flex-1 bg-gray-50 rounded-lg p-4">
 										<div className="text-sm text-gray-500 mb-2">Final Four - {bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
 										<div className="flex flex-col gap-2">
 											<button 
@@ -562,7 +644,12 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 												}`}
 											>
 												<span className="font-medium text-gray-900 text-center w-full">
-													{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name || 'TBD'}
+													{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name && (
+														<>
+															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.seed}. </span>
+															{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name}
+														</>
+													) || 'TBD'}
 												</span>
 											</button>
 											<div className="text-gray-400 text-center text-sm">vs</div>
@@ -575,54 +662,19 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 												}`}
 											>
 												<span className="font-medium text-gray-900 text-center w-full">
-													{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name || 'TBD'}
-												</span>
-											</button>
-										</div>
-									</div>
-
-									{/* Championship (Center) */}
-									<div className="w-72 bg-amber-50 rounded-lg p-4 -mt-4 border border-amber-200 m-2">
-										<div className="text-sm text-amber-700 mb-2">Championship</div>
-										<div className="flex flex-col gap-2">
-											<button 
-												onClick={() => finalFourState?.championship.regionA && handleFinalFourWinner(
-													finalFourState.championship,
-													finalFourState.championship.regionA
-												)}
-												disabled={!finalFourState?.semifinalA.winnerRegion}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.championship.winnerRegion === finalFourState?.championship.regionA
-														? 'border-amber-500 bg-amber-50'
-														: 'border-amber-200 hover:bg-amber-50'
-												} ${!finalFourState?.semifinalA.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
-											>
-												<span className="font-medium text-amber-900 w-full text-center">
-													{finalFourState?.semifinalA.winnerName || 'TBD'}
-												</span>
-											</button>
-											<div className="text-amber-600 text-center text-sm">vs</div>
-											<button 
-												onClick={() => finalFourState?.championship.regionB && handleFinalFourWinner(
-													finalFourState.championship,
-													finalFourState.championship.regionB
-												)}
-												disabled={!finalFourState?.semifinalB.winnerRegion}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.championship.winnerRegion === finalFourState?.championship.regionB
-														? 'border-amber-500 bg-amber-50'
-														: 'border-amber-200 hover:bg-amber-50'
-												} ${!finalFourState?.semifinalB.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
-											>
-												<span className="font-medium text-amber-900 w-full text-center">
-													{finalFourState?.semifinalB.winnerName || 'TBD'}
+													{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name && (
+														<>
+															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.seed}. </span>
+															{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name}
+														</>
+													) || 'TBD'}
 												</span>
 											</button>
 										</div>
 									</div>
 
 									{/* Right Game (Second Pair) */}
-									<div className="w-72 bg-gray-50 rounded-lg p-4">
+									<div className="flex-1 bg-gray-50 rounded-lg p-4">
 										<div className="text-sm text-gray-500 mb-2">Final Four - {bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
 										<div className="flex flex-col gap-2">
 											<button 
@@ -634,7 +686,12 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 												}`}
 											>
 												<span className="font-medium text-gray-900 w-full text-center">
-													{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name || 'TBD'}
+													{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name && (
+														<>
+															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.seed}. </span>
+															{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name}
+														</>
+													) || 'TBD'}
 												</span>
 											</button>
 											<div className="text-gray-400 text-center text-sm">vs</div>
@@ -647,10 +704,65 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 												}`}
 											>
 												<span className="font-medium text-gray-900 w-full text-center">
-													{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name || 'TBD'}
+													{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name && (
+														<>
+															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.seed}. </span>
+															{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name}
+														</>
+													) || 'TBD'}
 												</span>
 											</button>
 										</div>
+									</div>
+								</div>
+
+								{/* Championship (Center) */}
+								<div className="w-full max-w-md bg-amber-50 rounded-lg p-4 border border-amber-200">
+									<div className="text-sm text-amber-700 mb-2">Championship</div>
+									<div className="flex flex-col gap-2">
+										<button 
+											onClick={() => finalFourState?.championship.regionA && handleFinalFourWinner(
+												finalFourState.championship,
+												finalFourState.championship.regionA
+											)}
+											disabled={!finalFourState?.semifinalA.winnerRegion}
+											className={`flex items-center bg-white! p-3 rounded border ${
+												finalFourState?.championship.winnerRegion === finalFourState?.championship.regionA
+													? 'border-amber-500 bg-amber-50'
+													: 'border-amber-200 hover:bg-amber-50'
+											} ${!finalFourState?.semifinalA.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
+										>
+											<span className="font-medium text-amber-900 w-full text-center">
+												{finalFourState?.semifinalA.winnerName && (
+													<>
+														<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalA.winnerRegion as Regions][0].winner?.seed}. </span>
+														{finalFourState.semifinalA.winnerName}
+													</>
+												) || 'TBD'}
+											</span>
+										</button>
+										<div className="text-amber-600 text-center text-sm">vs</div>
+										<button 
+											onClick={() => finalFourState?.championship.regionB && handleFinalFourWinner(
+												finalFourState.championship,
+												finalFourState.championship.regionB
+											)}
+											disabled={!finalFourState?.semifinalB.winnerRegion}
+											className={`flex items-center bg-white! p-3 rounded border ${
+												finalFourState?.championship.winnerRegion === finalFourState?.championship.regionB
+													? 'border-amber-500 bg-amber-50'
+													: 'border-amber-200 hover:bg-amber-50'
+											} ${!finalFourState?.semifinalB.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
+										>
+											<span className="font-medium text-amber-900 w-full text-center">
+												{finalFourState?.semifinalB.winnerName && (
+													<>
+														<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalB.winnerRegion as Regions][0].winner?.seed}. </span>
+														{finalFourState.semifinalB.winnerName}
+													</>
+												) || 'TBD'}
+											</span>
+										</button>
 									</div>
 								</div>
 
@@ -659,8 +771,15 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 									<div className="mt-8 text-center">
 										<div className="inline-block bg-amber-100 rounded-lg p-6">
 											<h3 className="text-amber-900 text-lg font-semibold mb-2">National Champion</h3>
-											<div className="bg-white px-6 py-3 rounded-lg border-2 border-green-500">
-												<span className="text-2xl font-bold text-amber-900">{finalFourState.champion.name}</span>
+											<div className="bg-white px-6 py-3 rounded-lg border-2 border-amber-500">
+												<span className="text-2xl font-bold text-amber-900">
+													{finalFourState.champion.name && (
+														<>
+															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.champion.region][0].winner?.seed}. </span>
+															{finalFourState.champion.name}
+														</>
+													)}
+												</span>
 											</div>
 										</div>
 									</div>
