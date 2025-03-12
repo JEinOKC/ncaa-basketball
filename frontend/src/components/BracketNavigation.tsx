@@ -35,7 +35,7 @@ const BracketNavigation: React.FC<BracketNavigationProps> = ({ regions, onRegion
         <div className="w-full">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full px-3 py-2 text-gray-300 bg-white hover:bg-gray-50 !rounded-none transition-colors font-medium flex items-center justify-between border border-gray-200"
+                className="w-full px-3 py-2 text-gray-300 bg-gray-900 hover:bg-gray-50 !rounded-none transition-colors font-medium flex items-center justify-between border border-gray-200"
             >
                 <span className="truncate">Jump to Region</span>
                 <svg 

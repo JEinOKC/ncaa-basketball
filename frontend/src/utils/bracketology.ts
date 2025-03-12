@@ -305,7 +305,7 @@ class Bracketology implements BracketologyType{
 		//format the team name to replace leading rating numbers
 		//format the team name to replace the spaces with underscores
 
-		teamName = teamName.replace(/^\d+\.\s*/, '').replace(/ /g,"_");
+		// teamName = teamName.replace(/^\d+\.\s*/, '').replace(/ /g,"_");
 		const translatedTeamName = this.nameTable[teamName] ? this.nameTable[teamName] : teamName;
 
 		// console.log({
@@ -608,6 +608,62 @@ class Bracketology implements BracketologyType{
 		return randomNumber < finalTopTeamWinOdds ? topTeam : bottomTeam;
 	}
 
+	static getGameOdds(topTeam: NodeType, bottomTeam: NodeType, ratingSkewer: number) {
+		const minRatingsWeight = 0.0;
+		const maxRatingsWeight = 1.0;
+
+		if (ratingSkewer < minRatingsWeight) {
+			ratingSkewer = minRatingsWeight;
+		} else if (ratingSkewer > maxRatingsWeight) {
+			ratingSkewer = maxRatingsWeight;
+		}
+		
+		if ((!topTeam.rating || !bottomTeam.rating) || topTeam.rating === bottomTeam.rating) {
+			// If ratings are equal or missing, return 50/50 odds
+			return {
+				topTeamBasicOdds: 0.5,
+				bottomTeamBasicOdds: 0.5,
+				topTeamSkewedOdds: 0.5,
+				bottomTeamSkewedOdds: 0.5
+			};
+		}
+
+		// Transform ratings from [-1,1] to [0,2]
+		const topTeamScaledRating = topTeam.rating + 1;
+		const bottomTeamScaledRating = bottomTeam.rating + 1;
+
+		// Calculate base win probability using ratio of ratings
+		const totalRating = topTeamScaledRating + bottomTeamScaledRating;
+		const baseTopTeamWinOdds = topTeamScaledRating / totalRating;
+		const baseBottomTeamWinOdds = bottomTeamScaledRating / totalRating;
+		
+
+		// Apply randomness factor:
+		// At ratingSkewer = 0: 50/50 chance
+		// At ratingSkewer = 0.5: Use pure ratings-based probability
+		// At ratingSkewer = 1: Always pick favorite
+		let finalTopTeamWinOdds;
+		let finalBottomTeamWinOdds;
+
+		if (ratingSkewer <= 0.5) {
+			// Linear interpolation between 0.5 (random) and baseTopTeamWinOdds
+			finalTopTeamWinOdds = 0.5 + (baseTopTeamWinOdds - 0.5) * (ratingSkewer * 2);
+			finalBottomTeamWinOdds = 0.5 + (baseBottomTeamWinOdds - 0.5) * (ratingSkewer * 2);
+		} else {
+			// Linear interpolation between baseTopTeamWinOdds and 1 (for favorite) or 0 (for underdog)
+			const topTarget = baseTopTeamWinOdds > 0.5 ? 1 : 0;
+			const bottomTarget = baseBottomTeamWinOdds > 0.5 ? 1 : 0;
+			finalTopTeamWinOdds = baseTopTeamWinOdds + (topTarget - baseTopTeamWinOdds) * ((ratingSkewer - 0.5) * 2);
+			finalBottomTeamWinOdds = baseBottomTeamWinOdds + (bottomTarget - baseBottomTeamWinOdds) * ((ratingSkewer - 0.5) * 2);
+		}
+
+		return {
+			topTeamBasicOdds: baseTopTeamWinOdds,
+			bottomTeamBasicOdds: baseBottomTeamWinOdds,
+			topTeamSkewedOdds: finalTopTeamWinOdds,
+			bottomTeamSkewedOdds: finalBottomTeamWinOdds
+		};
+	}
 
 }
 

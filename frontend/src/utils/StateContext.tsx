@@ -77,7 +77,7 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 		fetch(`/data/name-table.json`)
 			.then((response) => response.json())
 			.then((json) => {
-				console.log('name table json', json);
+				// console.log('name table json', json);
 				setNameTable(json);
 			})
 			.catch((error) => console.error("Error loading JSON:", error));

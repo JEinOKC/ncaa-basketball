@@ -10,9 +10,10 @@ interface RegionProps {
 	region: NodeType;
 	onSelectWinner: (winner: NodeType, regionName: Regions) => void;
 	currentLevel: number;
+	randomness: number;
 }
 
-const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, currentLevel }) => {
+const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, currentLevel, randomness }) => {
 	const dispatch = useDispatch();
 	const completedRegions = useSelector((state: RootState) => state.state.completedRegions);
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);
@@ -56,10 +57,10 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 		
 		// For debugging
 		if (regionComplete) {
-			console.log(`Region ${regionName} is complete!`, {
-				gameUUIDs: regionGameUUIDs,
-				winners: regionGameUUIDs.map(uuid => gameWinners[uuid])
-			});
+			// console.log(`Region ${regionName} is complete!`, {
+			// 	gameUUIDs: regionGameUUIDs,
+			// 	winners: regionGameUUIDs.map(uuid => gameWinners[uuid])
+			// });
 		}
 	}, [region, regionName, dispatch, gameWinners]);
 
@@ -100,6 +101,7 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 						node={node}
 						onSelectWinner={handleSelectWinner}
 						currentRound={currentLevel}
+						randomness={randomness}
 					/>
 				))}
 			</div>

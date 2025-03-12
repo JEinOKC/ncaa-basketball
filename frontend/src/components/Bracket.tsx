@@ -106,14 +106,12 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		}
 
 		// Add the new winner to the same updatedGameWinners object
-		console.log({'ancestor': ancestor});
 		if (ancestor.gameUUID && winner.name) {
 			updatedGameWinners[ancestor.gameUUID] = winner.name;
 		}
 
 		// Dispatch a single update with all changes
 		dispatch(setGameWinners(updatedGameWinners));
-		console.log({'updatedGameWinners':updatedGameWinners});
 		
 	};
 
@@ -268,18 +266,18 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		for (const regionName of getRegionNamesInOrder()) {
 			const region = getRegion(regionName);
 			const levels = totalLevels(region);
-			console.log({
-				'levels': levels,
-				'region': region
-			});
+			// console.log({
+			// 	'levels': levels,
+			// 	'region': region
+			// });
 
 			// Start from the deepest level and work up
 			for (let level = 1; level <= levels; level++) {
 				const nodesAtLevel = getNodesAtLevel(region, level, levels);
-				console.log({
-					'level': level,
-					'nodesAtLevel': nodesAtLevel
-				});
+				// console.log({
+				// 	'level': level,
+				// 	'nodesAtLevel': nodesAtLevel
+				// });
 
 				// Create a promise that resolves when the state update is complete
 				await new Promise<void>((resolve) => {
@@ -630,9 +628,9 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 							{/* Final Four Bracket Display */}
 							<div className="flex flex-col items-center w-full">
 								{/* Semifinals Container */}
-								<div className="flex justify-between w-full max-w-4xl gap-4 mb-8">
+								<div className="justify-between w-full max-w-4xl gap-4 mb-8 xs:block lg:flex">
 									{/* Left Game (First Pair) */}
-									<div className="flex-1 bg-gray-50 rounded-lg p-4">
+									<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
 										<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
 										<div className="flex flex-col gap-2">
 											<button 
@@ -674,7 +672,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 									</div>
 
 									{/* Right Game (Second Pair) */}
-									<div className="flex-1 bg-gray-50 rounded-lg p-4">
+									<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
 										<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
 										<div className="flex flex-col gap-2">
 											<button 
@@ -802,6 +800,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 							regionName={element} 
 							onSelectWinner={handleSelectWinner}
 							currentLevel={currentLevel}
+							randomness={randomness}
 						/>	
 					))}
 
