@@ -49,3 +49,21 @@ export interface BracketologyType{
 	mergeRegions: () => void;
 	setWinner: (gameId: string, winnerName: string) => void;
 }
+
+export interface FinalFourGame {
+    gameId: string;
+    regionA: Regions;
+    regionB: Regions;
+    winnerRegion?: Regions;
+    winnerName?: string;
+}
+
+export interface FinalFourState {
+    semifinalA: FinalFourGame;
+    semifinalB: FinalFourGame;
+    championship: FinalFourGame;
+    champion?: {
+        region: Regions;
+        name: string;
+    };
+}
