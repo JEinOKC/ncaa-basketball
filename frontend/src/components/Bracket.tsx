@@ -633,7 +633,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 								<div className="flex justify-between w-full max-w-4xl gap-4 mb-8">
 									{/* Left Game (First Pair) */}
 									<div className="flex-1 bg-gray-50 rounded-lg p-4">
-										<div className="text-sm text-gray-500 mb-2">Final Four - {bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
+										<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
 										<div className="flex flex-col gap-2">
 											<button 
 												onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][0] as Regions)}
@@ -675,7 +675,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 									{/* Right Game (Second Pair) */}
 									<div className="flex-1 bg-gray-50 rounded-lg p-4">
-										<div className="text-sm text-gray-500 mb-2">Final Four - {bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
+										<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
 										<div className="flex flex-col gap-2">
 											<button 
 												onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][0] as Regions)}
