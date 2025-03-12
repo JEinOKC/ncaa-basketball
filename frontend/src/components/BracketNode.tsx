@@ -18,6 +18,7 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);	
 	const nameTable = useSelector((state: RootState) => state.state.nameTable);
 	const [gameIsExpanded, setGameIsExpanded] = useState(false);
+	
 	const [gameOdds, setGameOdds] = useState({
 		topTeamBasicOdds: 0.5,
 		bottomTeamBasicOdds: 0.5,
@@ -44,27 +45,30 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 		return nameTable[name] || name;
 	}
 
+	const gameCanExpand = node.gameUUID && node.left && node.right && node.left.name && node.right.name;
 
-	
+
 	return (
 		<div className="flex flex-row items-center lg:pl-4" >
 			<div className={`flex flex-col items-start border-0 p-2 gap-2 bg-slate-200 overflow-x-clip ${gameIsExpanded ? 'w-75' : 'w-45'}`}>
 				
-				<div className={`bg-white ${gameIsExpanded ? 'w-75' : 'w-45'} -mx-2 -mt-2 border border-slate-300 text-right pr-2`}>
-					<a href="#" onClick={(e) =>{
-						e.preventDefault();
-						setGameIsExpanded(!gameIsExpanded);
-					}}
-					className={`text-sm hover:text-blue-600`}>
-						{gameIsExpanded ? (
-							<FontAwesomeIcon icon={faCompress} />
-						) : 
-						(
-							<FontAwesomeIcon icon={faExpand} />
-						)}
-					</a>
+				{gameCanExpand && (
+					<div className={`bg-white ${gameIsExpanded ? 'w-75' : 'w-45'} -mx-2 -mt-2 border border-slate-300 text-right pr-2`}>
+						<a href="#" onClick={(e) =>{
+							e.preventDefault();
+							setGameIsExpanded(!gameIsExpanded);
+						}}
+						className={`text-sm hover:text-blue-600`}>
+							{gameIsExpanded ? (
+								<FontAwesomeIcon icon={faCompress} />
+							) : 
+							(
+								<FontAwesomeIcon icon={faExpand} />
+							)}
+						</a>
 
-				</div>
+					</div>
+				)}
 
 				{node.left && node.right ? (
 					<div className="flex flex-col space-y-2 ">

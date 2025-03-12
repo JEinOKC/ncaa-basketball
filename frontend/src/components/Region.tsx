@@ -19,7 +19,7 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);
 	const maxBracketDepth = useSelector((state: RootState) => state.state.maxBracketDepth);
 	const roundNames = ['First Four', 'Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
-console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracketDepth,'currentLevel':currentLevel})
+
 	// Function to get all game UUIDs in the region
 	const getAllGameUUIDs = (node: NodeType): string[] => {
 		const uuids: string[] = [];
