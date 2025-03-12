@@ -375,6 +375,9 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		const region = getRegion(getRegionNamesInOrder()[0]); // Use first region to determine total levels
 		const levels = totalLevels(region);
 		
+		// Add one to levels to account for First Four round
+		const totalRounds = levels + 1;
+		
 		return (
 			<div className={`flex items-center ${isDesktop ? 'justify-start gap-4 mb-4' : 'justify-between px-4'}`}>
 				{/* Round indicator */}
@@ -384,7 +387,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 				
 				{/* Round selector */}
 				<div className="flex gap-2">
-					{Array.from({ length: levels }, (_, i) => i + 1).map((level) => (
+					{Array.from({ length: totalRounds }, (_, i) => i + 1).map((level) => (
 						<button
 							key={level}
 							onClick={() => setCurrentLevel(level)}
