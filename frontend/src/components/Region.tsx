@@ -90,15 +90,17 @@ console.log({'region':region,'regionName':regionName,'maxBracketDepth':maxBracke
 			
 			<div className="flex flex-col space-y-4">
 				{nodesAtCurrentLevel.length > 0 ? (
-					nodesAtCurrentLevel.map((node: NodeType, index: number) => (
-						<BracketNode
-							key={node.gameUUID || index}
-							node={node}
-							onSelectWinner={handleSelectWinner}
-							currentRound={currentLevel}
-							randomness={randomness}
-						/>
-					))
+					nodesAtCurrentLevel
+						.filter(node => node.gameUUID && node.left && node.right)
+						.map((node: NodeType, index: number) => (
+							<BracketNode
+								key={node.gameUUID}
+								node={node}
+								onSelectWinner={handleSelectWinner}
+								currentRound={currentLevel}
+								randomness={randomness}
+							/>
+						))
 				) : (
 					<div className="text-center p-4 bg-gray-50 rounded-lg">
 						<p className="text-gray-500">No games available for {roundNames[currentLevel - 1]} round in this region</p>
