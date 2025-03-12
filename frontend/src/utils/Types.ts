@@ -1,4 +1,4 @@
-export type Regions = "East"|"West"|"South"|"Midwest";
+export type Regions = "East"|"West"|"South"|"Midwest"|"Albany"|"Houston"|"Minneapolis"|"Sacramento";
 export type leftOrRight = "left"|"right";
 export type Winners = Record<string,string>;
 
@@ -16,7 +16,7 @@ export interface RegionType{
 }
 
 export interface BracketType{
-	finalFour: "East"|"West"|"South"|"Midwest"[][];	
+	finalFour: "East"|"West"|"South"|"Midwest"|"Albany"|"Houston"|"Minneapolis"|"Sacramento"[][];	
 	regions: RegionType[];
 	teams: Record<Regions,string[]>;
 }

@@ -1,6 +1,18 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { RankingItem, BracketType, Winners, Regions, NodeType } from './Types';
-import { v4 as uuidv4 } from 'uuid';
+import { RankingItem, BracketType, Winners, NodeType } from './Types';
+
+interface State {
+	wbbRankings: RankingItem[];
+	mbbRankings: RankingItem[];
+	wbbBracket: BracketType | undefined;
+	mbbBracket: BracketType | undefined;
+	nameTable: {[key: string]: string};
+	context: "wbb" | "mbb";
+	setContext: (context: "wbb" | "mbb") => void;
+	gameWinners: Winners;
+	setGameWinners: (winners: Winners) => void;
+	isTreeComplete: (node: NodeType) => boolean;
+}
 
 const StateContext = createContext<State | undefined>(undefined);
 
@@ -23,7 +35,7 @@ export const StateProvider = ({ children }: { children: ReactNode }) => {
 		if(!node.gameUUID){
 			return true;
 		}
-		else if(node.winner === null || node.winner === ''){
+		else if(node.winner === null){
 			console.log({'failure at this node':node});
 			return false;
 		}

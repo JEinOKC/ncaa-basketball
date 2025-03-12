@@ -64,7 +64,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		};
 	}
 
-	const handleSelectWinner = (winner: NodeType, regionName: Regions) => {
+	const handleSelectWinner = (winner: NodeType) => {
 
 		if (!winner.ancestor) return;
 

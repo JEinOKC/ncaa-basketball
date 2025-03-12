@@ -55,6 +55,7 @@ class Bracketology implements BracketologyType{
 		};
 	}
 
+
 	placeTeamInNodeArray(nodeArray:any[],team:any,leftOrRight:leftOrRight){
 		//each team element must be an object. we will assign an ancestor value into that object, so if it is anything else, we will create an object and push the definition into 'value'
 		if(typeof team !== 'object'){
@@ -119,10 +120,6 @@ class Bracketology implements BracketologyType{
 			return this.buildWeeks(newNodeArray);
 		}
 
-	}
-
-	determineWinner(team1:any,team2:any,weight:any){
-		/*should look up the ratings for each team, considering the weigh, and return a winner*/
 	}
 
 	findGameById(gameId:string){
@@ -401,18 +398,14 @@ class Bracketology implements BracketologyType{
 
 			allRegions[region] = fullRegion;
 		}
-		
+		console.log({'allRegions':allRegions});
 		return allRegions;
 		
 
 	}
 
 	printNode(myNode:NodeType,nodeDepth:number){
-		var leftOrRight:leftOrRight = 'left';
-		if(typeof myNode.ancestor !== 'undefined'){
-			leftOrRight = myNode.ancestor.left == myNode ? 'left' : 'right';
-			// console.log(leftOrRight);	
-		}
+		
 
 		if(typeof myNode.left !== 'undefined' && myNode.left !== null){
 			this.printNode(myNode.left,nodeDepth-1);

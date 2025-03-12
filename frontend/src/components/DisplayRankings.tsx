@@ -9,7 +9,7 @@ interface DisplayRankingsProps {
 	onLimitChange?: (newLimit: number) => void;
 }
 
-const DisplayRankings: React.FC<DisplayRankingsProps> = ({ context, headline, limit, onLimitChange } ) => {
+const DisplayRankings: React.FC<DisplayRankingsProps> = ({ context, limit, onLimitChange } ) => {
 	
 	const wbbRankings = useSelector((state: RootState) => state.state.wbbRankings);
 	const mbbRankings = useSelector((state: RootState) => state.state.mbbRankings);

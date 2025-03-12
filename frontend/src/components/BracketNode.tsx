@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
 import { Bracketology } from "../utils/bracketology";
-import { NodeType, Winners } from "../utils/Types";
+import { NodeType } from "../utils/Types";
 import { faCompress, faExpand } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,7 +13,7 @@ interface BracketNodeProps {
 	randomness: number;
 }
 
-const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, currentRound, randomness }) => {
+const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomness }) => {
 	
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);	
 	const [gameIsExpanded, setGameIsExpanded] = useState(false);

@@ -18,14 +18,14 @@ function App() {
 	const mbbBracket = useSelector((state: RootState) => state.state.mbbBracket);
 	const completedRegions = useSelector((state: RootState) => state.state.completedRegions);
 	const [selectedLimit, setSelectedLimit] = useState<number>(25);
-	const [areAllRegionsComplete, setAreAllRegionsComplete] = useState(false);
+	// const [areAllRegionsComplete, setAreAllRegionsComplete] = useState(false);
 	const dispatch = useDispatch();
 
 	// Monitor for all regions being complete
 	useEffect(() => {
 		const regions = getRegions();
 		const complete = regions.length > 0 && regions.every(region => completedRegions.includes(region));
-		setAreAllRegionsComplete(complete);
+		// setAreAllRegionsComplete(complete);
 		
 		if (complete) {
 			console.log('🎉 All regions are complete! Ready for Final Four!', {
@@ -40,14 +40,14 @@ function App() {
 		return currentRankings.length;
 	}
 
-	const getRankingsLimitOptions = () => {
-		const maxLimit = getMaxRankingsLimit();
-		const options = [25, 50, 100, 200];
-		if (maxLimit > 0 && !options.includes(maxLimit)) {
-			options.push(maxLimit);
-		}
-		return options.filter(opt => opt <= maxLimit);
-	}
+	// const getRankingsLimitOptions = () => {
+	// 	const maxLimit = getMaxRankingsLimit();
+	// 	const options = [25, 50, 100, 200];
+	// 	if (maxLimit > 0 && !options.includes(maxLimit)) {
+	// 		options.push(maxLimit);
+	// 	}
+	// 	return options.filter(opt => opt <= maxLimit);
+	// }
 
 	const handleLimitChange = (newLimit: number) => {
 		setSelectedLimit(newLimit);
@@ -141,7 +141,6 @@ function App() {
 								</span>
 							</div>
 						}
-						isComplete={areAllRegionsComplete}
 					/>
 				</div>
 			</div>
