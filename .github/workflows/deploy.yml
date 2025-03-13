@@ -1,0 +1,67 @@
+name: Build and Deploy Frontend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "npm"
+
+      # Backend steps
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          npm install
+      
+      - name: Compile TypeScript
+        run: |
+          cd backend
+          npx tsc
+
+      - name: Generate JSON Data
+        run: |
+          cd backend
+          node dist/build-rankings.js  # Ensure this script generates JSON in ../data
+
+      # Frontend steps
+      - name: Setup Frontend Environment
+        run: |
+          cd frontend
+          echo "VITE_DOMAIN_URL=${{ secrets.VITE_DOMAIN_URL }}" > .env
+          echo "VITE_CONFIG=PROD" >> .env
+
+      - name: Install Frontend Dependencies
+        run: |
+          cd frontend
+          npm install
+
+      - name: Build Frontend for Production
+        env: 
+          VITE_DOMAIN_URL: ${{ secrets.VITE_DOMAIN_URL }}
+          VITE_CONFIG: 'PROD'
+        run: |
+          cd frontend
+          npm run build
+
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --follow-symlinks --delete --exclude '.git*/*'
+        env:
+          SOURCE_DIR: frontend/dist
+          AWS_REGION: us-east-1
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
