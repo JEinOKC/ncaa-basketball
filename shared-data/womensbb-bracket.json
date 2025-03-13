@@ -1,0 +1,102 @@
+{
+    "finalFour" : [
+      ["Albany","Houston"],
+      ["Minneapolis","Sacramento"]
+    ],
+    "regions": [
+      {
+        "id": "Albany",
+        "name": "Albany",
+        "fullname": "Albany"
+      },
+      {
+        "id": "Houston",
+        "name": "Houston",
+        "fullname": "Houston"
+      },
+      {
+        "id": "Minneapolis",
+        "name": "Minneapolis",
+        "fullname": "Minneapolis"
+      },
+      {
+        "id": "Sacramento",
+        "name": "Sacramento",
+        "fullname": "Sacramento"
+      }
+    ],
+    "teams": {
+      "Albany": [
+        "Purdue",
+        "Marquette",
+        "Kansas_St",
+        "Tennessee",
+        "Duke",
+        "Kentucky",
+        "Michigan_St",
+        "Memphis",
+        "FL_Atlantic",
+        "USC",
+        "Providence",
+        "Oral_Roberts",
+        "Lafayette",
+        "Montana_St",
+        "Vermont",
+        "TX_Southern/F_Dickinson"
+      ],
+      "Houston": [
+        "Alabama",
+        "Arizona",
+        "Baylor",
+        "Virginia",
+        "San_Diego_St",
+        "Creighton",
+        "Missouri",
+        "Maryland",
+        "West_Virginia",
+        "Utah_St",
+        "NC_State",
+        "Col_Charleston",
+        "Furman",
+        "UC_Santa_Barbara",
+        "Princeton",
+        "TAM_C._Christi/SE_Missouri_St"
+      ],
+      "Minneapolis": [
+        "Houston",
+        "Texas",
+        "Xavier",
+        "Indiana",
+        "Miami_FL",
+        "Iowa_St",
+        "Texas_A&M",
+        "Iowa",
+        "Auburn", 
+        "Penn_St",
+        "Mississippi_St/Pittsburgh",
+        "Drake",
+        "Kent",
+        "Kennesaw",
+        "Colgate",
+        "N_Kentucky"
+      ],
+      "Sacramento": [
+        "Kansas",
+        "UCLA",
+        "Gonzaga",
+        "Connecticut",
+        "St_Mary's_CA",
+        "TCU",
+        "Northwestern",
+        "Arkansas",
+        "Illinois",
+        "Boise_St",
+        "Arizona_St/Nevada",
+        "VCU",
+        "Iona",
+        "Grand_Canyon",
+        "UNC_Asheville",
+        "Howard"
+      ]
+    }
+  }

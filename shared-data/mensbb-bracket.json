@@ -1,0 +1,102 @@
+{
+    "finalFour" : [
+      ["East","West"],
+      ["South","Midwest"]
+    ],
+    "regions": [
+      {
+        "id": "East",
+        "name": "East",
+        "fullname": "East Region"
+      },
+      {
+        "id": "West",
+        "name": "West",
+        "fullname": "West Region"
+      },
+      {
+        "id": "Midwest",
+        "name": "Midwest",
+        "fullname": "Midwest Region"
+      },
+      {
+        "id": "South",
+        "name": "South",
+        "fullname": "South Region"
+      }
+    ],
+    "teams": {
+      "East": [
+        "Connecticut",
+        "Iowa_St",
+        "Illinois",
+        "Auburn",
+        "San_Diego_St",
+        "BYU",
+        "Washington_St",
+        "FL_Atlantic",
+        "Northwestern",
+        "Drake",
+        "Duquesne",
+        "UAB",
+        "Yale",
+        "Morehead_St",
+        "S_Dakota_St",
+        "Stetson"
+      ],
+      "South": [
+        "Houston",
+        "Marquette",
+        "Kentucky",
+        "Duke",
+        "Wisconsin",
+        "Texas_Tech",
+        "Florida",
+        "Nebraska",
+        "Texas_A&M",
+        "Boise_St/Colorado",
+        "NC_State",
+        "James_Madison",
+        "Vermont",
+        "Oakland",
+        "WKU",
+        "Longwood"
+      ],
+      "Midwest": [
+        "Purdue",
+        "Tennessee",
+        "Creighton",
+        "Kansas",
+        "Gonzaga",
+        "South_Carolina",
+        "Texas",
+        "Utah_St",
+        "TCU", 
+        "Virginia/Colorado_St",
+        "Oregon",
+        "McNeese_St",
+        "Samford",
+        "Akron",
+        "St_Peter's",
+        "Montana_St/Grambling"
+      ],
+      "West": [
+        "North_Carolina",
+        "Arizona",
+        "Baylor",
+        "Alabama",
+        "St_Mary's_CA",
+        "Clemson",
+        "Dayton",
+        "Mississippi_St",
+        "Michigan_St",
+        "Nevada",
+        "New_Mexico",
+        "Grand_Canyon",
+        "Col_Charleston",
+        "Colgate",
+        "Long_Beach_St",
+        "Howard/Wagner"
+      ]
+    }
+  }
