@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
-import { Regions, NodeType, Winners, FinalFourState, FinalFourGame } from '../utils/Types';
+import { Regions, NodeType, Winners, FinalFourState, FinalFourGame as FinalFourGameData, BracketologyType } from '../utils/Types';
 import { Bracketology } from '../utils/bracketology';
-import { BracketologyType } from '../utils/Types';
 import { v4 as uuidv4 } from 'uuid';
 import Region from './Region';
 import { setGameWinners, setMaxBracketDepth } from "../store/stateSlice";
@@ -13,6 +12,7 @@ import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint, faCompress, faExpand } from '@fortawesome/free-solid-svg-icons';
 import PrintableBracket from './PrintableBracket';
+import FinalFourGame from './FinalFourGame';
 
 interface BracketProps {
 	context: "wbb"|"mbb";
@@ -433,19 +433,19 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	// Initialize Final Four state when all regions are complete
 	useEffect(() => {
 		if (completedRegions.length === 4 && bracket) {
-			const semifinalA: FinalFourGame = {
+			const semifinalA: FinalFourGameData = {
 				gameId: 'semifinalA',
 				regionA: bracket.data.finalFour[0][0] as Regions,
 				regionB: bracket.data.finalFour[0][1] as Regions
 			};
 			
-			const semifinalB: FinalFourGame = {
+			const semifinalB: FinalFourGameData = {
 				gameId: 'semifinalB',
 				regionA: bracket.data.finalFour[1][0] as Regions,
 				regionB: bracket.data.finalFour[1][1] as Regions
 			};
 
-			const championship: FinalFourGame = {
+			const championship: FinalFourGameData = {
 				gameId: 'championship',
 				regionA: 'TBD' as Regions,
 				regionB: 'TBD' as Regions
@@ -459,7 +459,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		}
 	}, [completedRegions.length, bracket]);
 
-	const handleFinalFourWinner = (game: FinalFourGame, winningRegion: Regions) => {
+	const handleFinalFourWinner = (game: FinalFourGameData, winningRegion: Regions) => {
 		if (!finalFourState || !bracket) return;
 
 		const updatedState = { ...finalFourState };
@@ -767,392 +767,95 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 								<div className="flex flex-col items-center w-full">
 									{/* Semifinals Container */}
 									<div className="justify-between w-full max-w-4xl gap-4 mb-8 xs:block lg:flex">
-										{/* Left Game (First Pair) */}
-										<div className={`flex-1 bg-gray-50 rounded-lg p-4 mb-4 lg:mb-0`}>
-											<div className="flex justify-between items-center mb-2">
-												<div className="text-sm text-gray-500">{bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
-												{finalFourState && finalFourState.semifinalA.regionA && finalFourState.semifinalA.regionB && (
-													<button
-														onClick={() => {
-															if (!finalFourState) return;
-															const gameId = finalFourState.semifinalA.gameId;
-															setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
-															if (!expandedGames[gameId] && bracket) {
-																const teamA = bracket.nodeBracket[finalFourState.semifinalA.regionA][0];
-																const teamB = bracket.nodeBracket[finalFourState.semifinalA.regionB][0];
-																if (teamA.winner && teamB.winner) {
-																	const odds = Bracketology.getGameOdds(
-																		{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
-																		{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
-																		randomness
-																	);
-																	setGameOdds(prev => ({...prev, [gameId]: odds}));
-																}
-															}
-														}}
-														className="text-gray-500 hover:text-gray-700"
-													>
-														<FontAwesomeIcon icon={finalFourState && expandedGames[finalFourState.semifinalA.gameId] ? faCompress : faExpand} />
-													</button>
-												)}
-											</div>
-											<div className="flex flex-col gap-2">
-												<button 
-													onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][0] as Regions)}
-													className={`flex items-center bg-white! p-3 rounded border ${
-														finalFourState?.semifinalA.winnerRegion === bracket?.data.finalFour[0][0]
-															? 'border-green-500 bg-green-50'
-															: 'border-gray-200 hover:bg-gray-50'
-													}`}
-												>
-													<span className="font-medium text-gray-900 text-center w-full">
-														{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name && (
-															<>
-																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.seed}. </span>
-																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name || '')}
-															</>
-														) || 'TBD'}
-													</span>
-												</button>
-												{expandedGames[finalFourState?.semifinalA?.gameId || ''] && gameOdds[finalFourState?.semifinalA?.gameId || ''] && finalFourState && (
-													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
-														<div className="text-sm text-gray-700">
-															
-															{bracket?.nodeBracket[finalFourState.semifinalA.regionA][0].winner?.name && (
-																<>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Overall Ranking:</span>
-																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionA][0].winner?.name)?.rank || 'N/A'}</span>
-																	</div>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Rating:</span>
-																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionA][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
-																	</div>
-																</>
-															)}
-															<div className="flex justify-between">
-																<span className="font-semibold">Basic Odds:</span>
-																<span>{(gameOdds[finalFourState.semifinalA.gameId].topTeamBasicOdds * 100).toFixed(2)}%</span>
-															</div>
-															<div className="mt-2 text-center border-t border-slate-300 pt-2">
-																<span className="font-bold text-xl block">Win Probability</span>
-																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalA.gameId].topTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalA.gameId].topTeamSkewedOdds}, 40)` }}>
-																	{(gameOdds[finalFourState.semifinalA.gameId].topTeamSkewedOdds * 100).toFixed(2)}%
-																</span>
-															</div>
-														</div>
-													</div>
-												)}
-												{expandedGames[finalFourState?.semifinalA?.gameId || ''] && gameOdds[finalFourState?.semifinalA?.gameId || ''] && finalFourState && (
-													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
-														<div className="text-sm text-gray-700">
-															
-															{bracket?.nodeBracket[finalFourState.semifinalA.regionB][0].winner?.name && (
-																<>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Overall Ranking:</span>
-																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionB][0].winner?.name)?.rank || 'N/A'}</span>
-																	</div>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Rating:</span>
-																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionB][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
-																	</div>
-																</>
-															)}
-															<div className="flex justify-between">
-																<span className="font-semibold">Basic Odds:</span>
-																<span>{(gameOdds[finalFourState.semifinalA.gameId].bottomTeamBasicOdds * 100).toFixed(2)}%</span>
-															</div>
-															<div className="mt-2 text-center border-t border-slate-300 pt-2">
-																<span className="font-bold text-xl block">Win Probability</span>
-																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalA.gameId].bottomTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalA.gameId].bottomTeamSkewedOdds}, 40)` }}>
-																	{(gameOdds[finalFourState.semifinalA.gameId].bottomTeamSkewedOdds * 100).toFixed(2)}%
-																</span>
-															</div>
-														</div>
-													</div>
-												)}
-												<div className="text-gray-400 text-center text-sm">vs</div>
-												<button 
-													onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][1] as Regions)}
-													className={`flex items-center bg-white! p-3 rounded border ${
-														finalFourState?.semifinalA.winnerRegion === bracket?.data.finalFour[0][1]
-															? 'border-green-500 bg-green-50'
-															: 'border-gray-200 hover:bg-gray-50'
-													}`}
-												>
-													<span className="font-medium text-gray-900 text-center w-full">
-														{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name && (
-															<>
-																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.seed}. </span>
-																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name || '')}
-															</>
-														) || 'TBD'}
-													</span>
-												</button>
-											</div>
-										</div>
+										{/* Semifinal A */}
+										{finalFourState && bracket && (
+											<FinalFourGame
+												game={finalFourState.semifinalA}
+												bracket={bracket}
+												isExpanded={expandedGames[finalFourState.semifinalA.gameId] || false}
+												onToggleExpand={() => {
+													const gameId = finalFourState.semifinalA.gameId;
+													setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
+													if (!expandedGames[gameId] && bracket) {
+														const teamA = bracket.nodeBracket[finalFourState.semifinalA.regionA][0];
+														const teamB = bracket.nodeBracket[finalFourState.semifinalA.regionB][0];
+														if (teamA.winner && teamB.winner) {
+															const odds = Bracketology.getGameOdds(
+																{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+																{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+																randomness
+															);
+															setGameOdds(prev => ({...prev, [gameId]: odds}));
+														}
+													}
+												}}
+												onSelectWinner={handleFinalFourWinner}
+												getTranslatedName={getTranslatedName}
+												getTeamRankingInfo={getTeamRankingInfo}
+												gameOdds={gameOdds[finalFourState.semifinalA.gameId]}
+											/>
+										)}
 
-										{/* Right Game (Second Pair) */}
-										<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
-											<div className="flex justify-between items-center mb-2">
-												<div className="text-sm text-gray-500">{bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
-												{finalFourState && finalFourState.semifinalB.regionA && finalFourState.semifinalB.regionB && (
-													<button
-														onClick={() => {
-															if (!finalFourState) return;
-															const gameId = finalFourState.semifinalB.gameId;
-															setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
-															if (!expandedGames[gameId] && bracket) {
-																const teamA = bracket.nodeBracket[finalFourState.semifinalB.regionA][0];
-																const teamB = bracket.nodeBracket[finalFourState.semifinalB.regionB][0];
-																if (teamA.winner && teamB.winner) {
-																	const odds = Bracketology.getGameOdds(
-																		{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
-																		{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
-																		randomness
-																	);
-																	setGameOdds(prev => ({...prev, [gameId]: odds}));
-																}
-															}
-														}}
-														className="text-gray-500 hover:text-gray-700"
-													>
-														<FontAwesomeIcon icon={finalFourState && expandedGames[finalFourState.semifinalB.gameId] ? faCompress : faExpand} />
-													</button>
-												)}
-											</div>
-											<div className="flex flex-col gap-2">
-												<button 
-													onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][0] as Regions)}
-													className={`flex items-center bg-white! p-3 rounded border ${
-														finalFourState?.semifinalB.winnerRegion === bracket?.data.finalFour[1][0]
-															? 'border-green-500 bg-green-50'
-															: 'border-gray-200 hover:bg-gray-50'
-													}`}
-												>
-													<span className="font-medium text-gray-900 w-full text-center">
-														{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name && (
-															<>
-																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.seed}. </span>
-																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name || '')}
-															</>
-														) || 'TBD'}
-													</span>
-												</button>
-												{expandedGames[finalFourState?.semifinalB?.gameId || ''] && gameOdds[finalFourState?.semifinalB?.gameId || ''] && finalFourState && (
-													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
-														<div className="text-sm text-gray-700">
-															
-															{bracket?.nodeBracket[finalFourState.semifinalB.regionA][0].winner?.name && (
-																<>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Overall Ranking:</span>
-																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionA][0].winner?.name)?.rank || 'N/A'}</span>
-																	</div>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Rating:</span>
-																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionA][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
-																	</div>
-																</>
-															)}
-															<div className="flex justify-between">
-																<span className="font-semibold">Basic Odds:</span>
-																<span>{(gameOdds[finalFourState.semifinalB.gameId].topTeamBasicOdds * 100).toFixed(2)}%</span>
-															</div>
-															<div className="mt-2 text-center border-t border-slate-300 pt-2">
-																<span className="font-bold text-xl block">Win Probability</span>
-																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalB.gameId].topTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalB.gameId].topTeamSkewedOdds}, 40)` }}>
-																	{(gameOdds[finalFourState.semifinalB.gameId].topTeamSkewedOdds * 100).toFixed(2)}%
-																</span>
-															</div>
-														</div>
-													</div>
-												)}
-												{expandedGames[finalFourState?.semifinalB?.gameId || ''] && gameOdds[finalFourState?.semifinalB?.gameId || ''] && finalFourState && (
-													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
-														<div className="text-sm text-gray-700">
-															
-															{bracket?.nodeBracket[finalFourState.semifinalB.regionB][0].winner?.name && (
-																<>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Overall Ranking:</span>
-																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionB][0].winner?.name)?.rank || 'N/A'}</span>
-																	</div>
-																	<div className="flex justify-between mt-1">
-																		<span className="font-semibold">Rating:</span>
-																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionB][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
-																	</div>
-																</>
-															)}
-															<div className="flex justify-between">
-																<span className="font-semibold">Basic Odds:</span>
-																<span>{(gameOdds[finalFourState.semifinalB.gameId].bottomTeamBasicOdds * 100).toFixed(2)}%</span>
-															</div>
-															<div className="mt-2 text-center border-t border-slate-300 pt-2">
-																<span className="font-bold text-xl block">Win Probability</span>
-																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalB.gameId].bottomTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalB.gameId].bottomTeamSkewedOdds}, 40)` }}>
-																	{(gameOdds[finalFourState.semifinalB.gameId].bottomTeamSkewedOdds * 100).toFixed(2)}%
-																</span>
-															</div>
-														</div>
-													</div>
-												)}
-												<div className="text-gray-400 text-center text-sm">vs</div>
-												<button 
-													onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][1] as Regions)}
-													className={`flex items-center bg-white! p-3 rounded border ${
-														finalFourState?.semifinalB.winnerRegion === bracket?.data.finalFour[1][1]
-															? 'border-green-500 bg-green-50'
-															: 'border-gray-200 hover:bg-gray-50'
-													}`}
-												>
-													<span className="font-medium text-gray-900 text-center w-full">
-														{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name && (
-															<>
-																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.seed}. </span>
-																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name || '')}
-															</>
-														) || 'TBD'}
-													</span>
-												</button>
-											</div>
-										</div>
+										{/* Semifinal B */}
+										{finalFourState && bracket && (
+											<FinalFourGame
+												game={finalFourState.semifinalB}
+												bracket={bracket}
+												isExpanded={expandedGames[finalFourState.semifinalB.gameId] || false}
+												onToggleExpand={() => {
+													const gameId = finalFourState.semifinalB.gameId;
+													setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
+													if (!expandedGames[gameId] && bracket) {
+														const teamA = bracket.nodeBracket[finalFourState.semifinalB.regionA][0];
+														const teamB = bracket.nodeBracket[finalFourState.semifinalB.regionB][0];
+														if (teamA.winner && teamB.winner) {
+															const odds = Bracketology.getGameOdds(
+																{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+																{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+																randomness
+															);
+															setGameOdds(prev => ({...prev, [gameId]: odds}));
+														}
+													}
+												}}
+												onSelectWinner={handleFinalFourWinner}
+												getTranslatedName={getTranslatedName}
+												getTeamRankingInfo={getTeamRankingInfo}
+												gameOdds={gameOdds[finalFourState.semifinalB.gameId]}
+											/>
+										)}
 									</div>
 
-									{/* Championship (Center) */}
-									<div className="w-full max-w-md bg-amber-50 rounded-lg p-4 border border-amber-200">
-										<div className="flex justify-between items-center mb-2">
-											<div className="text-sm text-amber-700">Championship</div>
-											{finalFourState && finalFourState.championship.regionA && finalFourState.championship.regionB && 
-											 finalFourState.championship.regionA !== ('TBD' as Regions) && finalFourState.championship.regionB !== ('TBD' as Regions) && (
-												<button
-													onClick={() => {
-														if (!finalFourState) return;
-														const gameId = finalFourState.championship.gameId;
-														setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
-														if (!expandedGames[gameId] && bracket) {
-															const teamA = bracket.nodeBracket[finalFourState.championship.regionA][0];
-															const teamB = bracket.nodeBracket[finalFourState.championship.regionB][0];
-															if (teamA.winner && teamB.winner) {
-																const odds = Bracketology.getGameOdds(
-																	{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
-																	{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
-																	randomness
-																);
-																setGameOdds(prev => ({...prev, [gameId]: odds}));
-															}
+									{/* Championship */}
+									<div className="w-full max-w-md">
+										{finalFourState && bracket && (
+											<FinalFourGame
+												game={finalFourState.championship}
+												bracket={bracket}
+												isExpanded={expandedGames[finalFourState.championship.gameId] || false}
+												onToggleExpand={() => {
+													const gameId = finalFourState.championship.gameId;
+													setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
+													if (!expandedGames[gameId] && bracket) {
+														const teamA = bracket.nodeBracket[finalFourState.championship.regionA][0];
+														const teamB = bracket.nodeBracket[finalFourState.championship.regionB][0];
+														if (teamA.winner && teamB.winner) {
+															const odds = Bracketology.getGameOdds(
+																{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+																{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+																randomness
+															);
+															setGameOdds(prev => ({...prev, [gameId]: odds}));
 														}
-													}}
-													className="text-amber-700 hover:text-amber-900"
-												>
-													<FontAwesomeIcon icon={finalFourState && expandedGames[finalFourState.championship.gameId] ? faCompress : faExpand} />
-												</button>
-											)}
-										</div>
-										<div className="flex flex-col gap-2">
-											<button 
-												onClick={() => finalFourState?.championship.regionA && handleFinalFourWinner(
-													finalFourState.championship,
-													finalFourState.championship.regionA
-												)}
-												disabled={!finalFourState?.semifinalA.winnerRegion}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.championship.winnerRegion === finalFourState?.championship.regionA
-														? 'border-amber-500 bg-amber-50'
-														: 'border-amber-200 hover:bg-amber-50'
-												} ${!finalFourState?.semifinalA.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
-											>
-												<span className="font-medium text-amber-900 w-full text-center">
-													{finalFourState?.semifinalA.winnerName && (
-														<>
-															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalA.winnerRegion as Regions][0].winner?.seed}. </span>
-															{getTranslatedName(finalFourState.semifinalA.winnerName || '')}
-														</>
-													)}
-												</span>
-											</button>
-											{expandedGames[finalFourState?.championship?.gameId || ''] && gameOdds[finalFourState?.championship?.gameId || ''] && finalFourState && (
-												<div className="mt-2 p-2 bg-amber-100 rounded-lg shadow-inner">
-													<div className="text-sm text-amber-900">
-														
-														{finalFourState.semifinalA.winnerName && (
-															<>
-																<div className="flex justify-between mt-1">
-																	<span className="font-semibold">Overall Ranking:</span>
-																		<span>#{getTeamRankingInfo(finalFourState.semifinalA.winnerName)?.rank || 'N/A'}</span>
-																</div>
-																<div className="flex justify-between mt-1">
-																	<span className="font-semibold">Rating:</span>
-																		<span>{getTeamRankingInfo(finalFourState.semifinalA.winnerName)?.rating.toFixed(2) || 'N/A'}</span>
-																</div>
-															</>
-														)}
-														<div className="flex justify-between">
-															<span className="font-semibold">Basic Odds:</span>
-															<span>{(gameOdds[finalFourState.championship.gameId].topTeamBasicOdds * 100).toFixed(2)}%</span>
-														</div>
-														<div className="mt-2 text-center border-t border-amber-300 pt-2">
-															<span className="font-bold text-xl block">Win Probability</span>
-															<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.championship.gameId].topTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.championship.gameId].topTeamSkewedOdds}, 40)` }}>
-																{(gameOdds[finalFourState.championship.gameId].topTeamSkewedOdds * 100).toFixed(2)}%
-															</span>
-														</div>
-													</div>
-												</div>
-											)}
-											<div className="text-amber-600 text-center text-sm">vs</div>
-											<button 
-												onClick={() => finalFourState?.championship.regionB && handleFinalFourWinner(
-													finalFourState.championship,
-													finalFourState.championship.regionB
-												)}
-												disabled={!finalFourState?.semifinalB.winnerRegion}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.championship.winnerRegion === finalFourState?.championship.regionB
-														? 'border-amber-500 bg-amber-50'
-														: 'border-amber-200 hover:bg-amber-50'
-												} ${!finalFourState?.semifinalB.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
-											>
-												<span className="font-medium text-amber-900 w-full text-center">
-													{finalFourState?.semifinalB.winnerName && (
-														<>
-															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalB.winnerRegion as Regions][0].winner?.seed}. </span>
-															{getTranslatedName(finalFourState.semifinalB.winnerName || '')}
-														</>
-													)}
-												</span>
-											</button>
-											{expandedGames[finalFourState?.championship?.gameId || ''] && gameOdds[finalFourState?.championship?.gameId || ''] && finalFourState && (
-												<div className="mt-2 p-2 bg-amber-100 rounded-lg shadow-inner">
-													<div className="text-sm text-amber-900">
-														
-														{finalFourState.semifinalB.winnerName && (
-															<>
-																<div className="flex justify-between mt-1">
-																	<span className="font-semibold">Overall Ranking:</span>
-																		<span>#{getTeamRankingInfo(finalFourState.semifinalB.winnerName)?.rank || 'N/A'}</span>
-																</div>
-																<div className="flex justify-between mt-1">
-																	<span className="font-semibold">Rating:</span>
-																		<span>{getTeamRankingInfo(finalFourState.semifinalB.winnerName)?.rating.toFixed(2) || 'N/A'}</span>
-																</div>
-															</>
-														)}
-														<div className="flex justify-between">
-															<span className="font-semibold">Basic Odds:</span>
-															<span>{(gameOdds[finalFourState.championship.gameId].bottomTeamBasicOdds * 100).toFixed(2)}%</span>
-														</div>
-														<div className="mt-2 text-center border-t border-amber-300 pt-2">
-															<span className="font-bold text-xl block">Win Probability</span>
-															<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.championship.gameId].bottomTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.championship.gameId].bottomTeamSkewedOdds}, 40)` }}>
-																{(gameOdds[finalFourState.championship.gameId].bottomTeamSkewedOdds * 100).toFixed(2)}%
-															</span>
-														</div>
-													</div>
-												</div>
-											)}
-										</div>
+													}
+												}}
+												onSelectWinner={handleFinalFourWinner}
+												getTranslatedName={getTranslatedName}
+												getTeamRankingInfo={getTeamRankingInfo}
+												gameOdds={gameOdds[finalFourState.championship.gameId]}
+												isChampionship={true}
+											/>
+										)}
 									</div>
 
 									{/* Champion Display */}
