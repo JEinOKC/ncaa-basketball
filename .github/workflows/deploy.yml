@@ -62,7 +62,12 @@ jobs:
       - name: Setup Frontend Environment
         run: |
           cd frontend
+          # Create data directories
+          mkdir -p data
+          mkdir -p public/data
+          # Copy data files to both locations to ensure they're available during build and in final dist
           cp ../shared-data/*.json data/
+          cp ../shared-data/*.json public/data/
           echo "VITE_DOMAIN_URL=${{ secrets.VITE_DOMAIN_URL }}" > .env
           echo "VITE_CONFIG=PROD" >> .env
 
@@ -78,6 +83,9 @@ jobs:
         run: |
           cd frontend
           npm run build
+          # Ensure data files are in the dist directory
+          mkdir -p dist/data
+          cp ../shared-data/*.json dist/data/
 
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
