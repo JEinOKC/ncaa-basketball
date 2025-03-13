@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompress, faExpand } from "@fortawesome/free-solid-svg-icons";
 import { FinalFourGame as FinalFourGameData, NodeType, Regions, BracketologyType } from "../utils/Types";
-import { Bracketology } from "../utils/bracketology";
 
 interface FinalFourGameProps {
     game: FinalFourGameData;
@@ -32,7 +31,6 @@ const FinalFourGame: React.FC<FinalFourGameProps> = ({
     isChampionship = false
 }) => {
     const getTeamNode = (region: Regions): NodeType => bracket.nodeBracket[region][0];
-    const baseTheme = isChampionship ? 'amber' : 'gray';
     const baseTextColor = isChampionship ? 'text-amber-900' : 'text-gray-900';
     const baseBorderColor = isChampionship ? 'border-amber-200' : 'border-gray-200';
     const baseHoverBg = isChampionship ? 'hover:bg-amber-50' : 'hover:bg-gray-50';

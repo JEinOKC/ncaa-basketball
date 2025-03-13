@@ -10,7 +10,7 @@ import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
 import styles from '../styles/Semicircle.module.css';
 import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPrint, faCompress, faExpand } from '@fortawesome/free-solid-svg-icons';
+import { faPrint } from '@fortawesome/free-solid-svg-icons';
 import PrintableBracket from './PrintableBracket';
 import FinalFourGame from './FinalFourGame';
 
