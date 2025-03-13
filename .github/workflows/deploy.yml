@@ -19,10 +19,16 @@ jobs:
           node-version: 18
           cache: "npm"
 
-      # Setup shared data structure
-      - name: Setup Shared Data Structure
+      # Create all necessary directories
+      - name: Create Directory Structure
         run: |
           mkdir -p shared-data
+          mkdir -p backend/data
+          mkdir -p frontend/data
+
+      # Setup shared data structure
+      - name: Copy Shared Data
+        run: |
           # If name-table.json exists in the repo, copy it
           if [ -f "shared-data/name-table.json" ]; then
             cp shared-data/name-table.json backend/data/
@@ -32,7 +38,6 @@ jobs:
       - name: Install Backend Dependencies
         run: |
           cd backend
-          mkdir -p data
           npm install
       
       - name: Compile TypeScript
@@ -57,7 +62,6 @@ jobs:
       - name: Setup Frontend Environment
         run: |
           cd frontend
-          mkdir -p data
           cp ../shared-data/*.json data/
           echo "VITE_DOMAIN_URL=${{ secrets.VITE_DOMAIN_URL }}" > .env
           echo "VITE_CONFIG=PROD" >> .env
