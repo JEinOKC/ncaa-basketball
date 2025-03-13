@@ -34,7 +34,7 @@ jobs:
         run: |
           cd backend
           mkdir -p dist/config
-          cp config/*.json dist/config/
+          cp src/config/*.json dist/config/
 
       - name: Generate JSON Data
         run: |
