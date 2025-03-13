@@ -17,6 +17,9 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 	
 	const gameWinners = useSelector((state: RootState) => state.state.gameWinners);	
 	const nameTable = useSelector((state: RootState) => state.state.nameTable);
+	const wbbRankings = useSelector((state: RootState) => state.state.wbbRankings);
+	const mbbRankings = useSelector((state: RootState) => state.state.mbbRankings);
+	const context = useSelector((state: RootState) => state.state.context);
 	const [gameIsExpanded, setGameIsExpanded] = useState(false);
 	
 	const [gameOdds, setGameOdds] = useState({
@@ -45,8 +48,21 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 		return nameTable[name] || name;
 	}
 
-	const gameCanExpand = node.gameUUID && node.left && node.right && node.left.name && node.right.name;
+	const getTeamRankingInfo = (teamName: string | undefined): { rank: number, rating: number } | null => {
+		if (!teamName) return null;
+		
+		const rankings = context === "wbb" ? wbbRankings : mbbRankings;
+		const translatedName = getTranslatedName(teamName);
+		const teamIndex = rankings.findIndex(team => getTranslatedName(team.team_name) === translatedName);
+		if (teamIndex === -1) return null;
+		
+		return {
+			rank: teamIndex + 1,
+			rating: rankings[teamIndex].rating
+		};
+	};
 
+	const gameCanExpand = node.gameUUID && node.left && node.right && node.left.name && node.right.name;
 
 	return (
 		<div className="flex flex-row items-center lg:pl-4" >
@@ -92,6 +108,10 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 									{gameIsExpanded && (
 										<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner w-70">
 											<div className="text-sm text-gray-700">
+												<div className="flex justify-between">
+													<span className="font-semibold">Overall Ranking:</span>
+													<span>#{getTeamRankingInfo(node.left.name)?.rank || 'N/A'}</span>
+												</div>
 												<div className="flex justify-between">
 													<span className="font-semibold">Rating:</span>
 													<span>{node.left.rating?.toFixed(4)}</span>
@@ -158,6 +178,10 @@ const BracketNode: React.FC<BracketNodeProps> = ({ node, onSelectWinner, randomn
 									{gameIsExpanded && (
 										<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner w-70">
 											<div className="text-sm text-gray-700">
+												<div className="flex justify-between">
+													<span className="font-semibold">Overall Ranking:</span>
+													<span>#{getTeamRankingInfo(node.right.name)?.rank || 'N/A'}</span>
+												</div>
 												<div className="flex justify-between">
 													<span className="font-semibold">Rating:</span>
 													<span>{node.right.rating?.toFixed(4)}</span>

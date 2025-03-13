@@ -28,10 +28,10 @@ function App() {
 		// setAreAllRegionsComplete(complete);
 		
 		if (complete) {
-			console.log('🎉 All regions are complete! Ready for Final Four!', {
-				completedRegions,
-				context: context === 'wbb' ? "Women's" : "Men's"
-			});
+			// console.log('🎉 All regions are complete! Ready for Final Four!', {
+			// 	completedRegions,
+			// 	context: context === 'wbb' ? "Women's" : "Men's"
+			// });
 		}
 	}, [completedRegions, context]);
 	

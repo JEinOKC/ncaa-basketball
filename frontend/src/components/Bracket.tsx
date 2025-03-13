@@ -11,7 +11,7 @@ import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
 import styles from '../styles/Semicircle.module.css';
 import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPrint } from '@fortawesome/free-solid-svg-icons';
+import { faPrint, faCompress, faExpand } from '@fortawesome/free-solid-svg-icons';
 import PrintableBracket from './PrintableBracket';
 
 interface BracketProps {
@@ -37,6 +37,13 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	const [bracket,setBracket] = useState<BracketologyType>();
 	const [randomness, setRandomness] = useState<number>(0.5); // Default to 0.5 for balanced randomness
 	const [finalFourState, setFinalFourState] = useState<FinalFourState | null>(null);
+	const [expandedGames, setExpandedGames] = useState<{[key: string]: boolean}>({});
+	const [gameOdds, setGameOdds] = useState<{[key: string]: {
+		topTeamBasicOdds: number,
+		bottomTeamBasicOdds: number,
+		topTeamSkewedOdds: number,
+		bottomTeamSkewedOdds: number
+	}}>({});
 
 	const roundNames = ['First Four', 'Round of 64', 'Round of 32', 'Sweet 16', 'Elite 8', 'Final Four', 'Championship'];
 
@@ -271,22 +278,24 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		}
 	}, [gameWinners]);
 
+	// Helper function to simulate a game between two teams
+	const simulateGame = (team1: NodeType, team2: NodeType): NodeType => {
+		if (!team1.name || !team2.name || !team1.rating || !team2.rating) {
+			console.error('Missing team info:', {
+				team1: { name: team1.name, rating: team1.rating },
+				team2: { name: team2.name, rating: team2.rating }
+			});
+			return team1;
+		}
+		
+
+		return Bracketology.selectGameWinner(team1, team2, randomness);
+	};
+
 	const simulateTournament = async () => {
 		console.log('simulateTournament');
 		
-		// Helper function to simulate a game between two teams
-		const simulateGame = (team1: NodeType, team2: NodeType): NodeType => {
-			if (!team1.name || !team2.name || !team1.rating || !team2.rating) {
-				console.error('Missing team info:', {
-					team1: { name: team1.name, rating: team1.rating },
-					team2: { name: team2.name, rating: team2.rating }
-				});
-				return team1;
-			}
-			
-
-			return Bracketology.selectGameWinner(team1, team2, randomness);
-		};
+		
 
 		// Create a single object to store all winners
 		const allWinners: Winners = { ...gameWinners };
@@ -503,25 +512,15 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		const updatedState = { ...finalFourState };
 
 		// Helper function to simulate a game between two regions
-		const simulateGame = (regionA: Regions, regionB: Regions): Regions => {
+		const simulateGameHelper = (regionA: Regions, regionB: Regions): Regions => {
 			const teamA = bracket.nodeBracket[regionA][0];
 			const teamB = bracket.nodeBracket[regionB][0];
-			
+
 			if (!teamA.winner || !teamB.winner) return regionA; // Default to first team if no winner
-			
+
 			const winner = Bracketology.selectGameWinner(
-				{
-					...teamA,
-					name: teamA.winner.name,
-					rating: teamA.winner.rating || 0,
-					seed: teamA.winner.seed
-				},
-				{
-					...teamB,
-					name: teamB.winner.name,
-					rating: teamB.winner.rating || 0,
-					seed: teamB.winner.seed
-				},
+				{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+				{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
 				randomness
 			);
 			
@@ -530,7 +529,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 		// Simulate semifinal A if not completed
 		if (!updatedState.semifinalA.winnerRegion && updatedState.semifinalA.regionA && updatedState.semifinalA.regionB) {
-			const winningRegion = simulateGame(updatedState.semifinalA.regionA, updatedState.semifinalA.regionB);
+			const winningRegion = simulateGameHelper(updatedState.semifinalA.regionA, updatedState.semifinalA.regionB);
 			const winningTeamName = bracket.nodeBracket[winningRegion][0].winner?.name;
 			if (winningTeamName) {
 				updatedState.semifinalA.winnerRegion = winningRegion;
@@ -541,7 +540,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 		// Simulate semifinal B if not completed
 		if (!updatedState.semifinalB.winnerRegion && updatedState.semifinalB.regionA && updatedState.semifinalB.regionB) {
-			const winningRegion = simulateGame(updatedState.semifinalB.regionA, updatedState.semifinalB.regionB);
+			const winningRegion = simulateGameHelper(updatedState.semifinalB.regionA, updatedState.semifinalB.regionB);
 			const winningTeamName = bracket.nodeBracket[winningRegion][0].winner?.name;
 			if (winningTeamName) {
 				updatedState.semifinalB.winnerRegion = winningRegion;
@@ -556,7 +555,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 			updatedState.championship.regionB && 
 			updatedState.championship.regionA !== ('TBD' as Regions) && 
 			updatedState.championship.regionB !== ('TBD' as Regions)) {
-			const winningRegion = simulateGame(
+			const winningRegion = simulateGameHelper(
 				updatedState.championship.regionA,
 				updatedState.championship.regionB
 			);
@@ -572,6 +571,74 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		}
 
 		setFinalFourState(updatedState);
+	};
+
+	// Add effect to update odds when randomness changes
+	useEffect(() => {
+		if (!finalFourState || !bracket) return;
+
+		// Update odds for semifinal A if expanded
+		if (expandedGames[finalFourState.semifinalA.gameId] && 
+			finalFourState.semifinalA.regionA && 
+			finalFourState.semifinalA.regionB) {
+			const teamA = bracket.nodeBracket[finalFourState.semifinalA.regionA][0];
+			const teamB = bracket.nodeBracket[finalFourState.semifinalA.regionB][0];
+			if (teamA.winner && teamB.winner) {
+				const odds = Bracketology.getGameOdds(
+					{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+					{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+					randomness
+				);
+				setGameOdds(prev => ({...prev, [finalFourState.semifinalA.gameId]: odds}));
+			}
+		}
+
+		// Update odds for semifinal B if expanded
+		if (expandedGames[finalFourState.semifinalB.gameId] && 
+			finalFourState.semifinalB.regionA && 
+			finalFourState.semifinalB.regionB) {
+			const teamA = bracket.nodeBracket[finalFourState.semifinalB.regionA][0];
+			const teamB = bracket.nodeBracket[finalFourState.semifinalB.regionB][0];
+			if (teamA.winner && teamB.winner) {
+				const odds = Bracketology.getGameOdds(
+					{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+					{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+					randomness
+				);
+				setGameOdds(prev => ({...prev, [finalFourState.semifinalB.gameId]: odds}));
+			}
+		}
+
+		// Update odds for championship if expanded
+		if (expandedGames[finalFourState.championship.gameId] && 
+			finalFourState.championship.regionA !== ('TBD' as Regions) && 
+			finalFourState.championship.regionB !== ('TBD' as Regions)) {
+			const teamA = bracket.nodeBracket[finalFourState.championship.regionA][0];
+			const teamB = bracket.nodeBracket[finalFourState.championship.regionB][0];
+			if (teamA.winner && teamB.winner) {
+				const odds = Bracketology.getGameOdds(
+					{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+					{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+					randomness
+				);
+				setGameOdds(prev => ({...prev, [finalFourState.championship.gameId]: odds}));
+			}
+		}
+	}, [randomness, finalFourState, bracket, expandedGames]);
+
+	// Add helper function to get team ranking info
+	const getTeamRankingInfo = (teamName: string | undefined): { rank: number, rating: number } | null => {
+		if (!teamName) return null;
+		
+		const rankings = context === "wbb" ? wbbRankings : mbbRankings;
+		const translatedName = getTranslatedName(teamName);
+		const teamIndex = rankings.findIndex(team => getTranslatedName(team.team_name) === translatedName);
+		if (teamIndex === -1) return null;
+		
+		return {
+			rank: teamIndex + 1,
+			rating: rankings[teamIndex].rating
+		};
 	};
 
 	return (
@@ -701,8 +768,34 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 									{/* Semifinals Container */}
 									<div className="justify-between w-full max-w-4xl gap-4 mb-8 xs:block lg:flex">
 										{/* Left Game (First Pair) */}
-										<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
-											<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
+										<div className={`flex-1 bg-gray-50 rounded-lg p-4 mb-4 lg:mb-0`}>
+											<div className="flex justify-between items-center mb-2">
+												<div className="text-sm text-gray-500">{bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
+												{finalFourState && finalFourState.semifinalA.regionA && finalFourState.semifinalA.regionB && (
+													<button
+														onClick={() => {
+															if (!finalFourState) return;
+															const gameId = finalFourState.semifinalA.gameId;
+															setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
+															if (!expandedGames[gameId] && bracket) {
+																const teamA = bracket.nodeBracket[finalFourState.semifinalA.regionA][0];
+																const teamB = bracket.nodeBracket[finalFourState.semifinalA.regionB][0];
+																if (teamA.winner && teamB.winner) {
+																	const odds = Bracketology.getGameOdds(
+																		{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+																		{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+																		randomness
+																	);
+																	setGameOdds(prev => ({...prev, [gameId]: odds}));
+																}
+															}
+														}}
+														className="text-gray-500 hover:text-gray-700"
+													>
+														<FontAwesomeIcon icon={finalFourState && expandedGames[finalFourState.semifinalA.gameId] ? faCompress : faExpand} />
+													</button>
+												)}
+											</div>
 											<div className="flex flex-col gap-2">
 												<button 
 													onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][0] as Regions)}
@@ -721,6 +814,64 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 														) || 'TBD'}
 													</span>
 												</button>
+												{expandedGames[finalFourState?.semifinalA?.gameId || ''] && gameOdds[finalFourState?.semifinalA?.gameId || ''] && finalFourState && (
+													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
+														<div className="text-sm text-gray-700">
+															
+															{bracket?.nodeBracket[finalFourState.semifinalA.regionA][0].winner?.name && (
+																<>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Overall Ranking:</span>
+																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionA][0].winner?.name)?.rank || 'N/A'}</span>
+																	</div>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Rating:</span>
+																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionA][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
+																	</div>
+																</>
+															)}
+															<div className="flex justify-between">
+																<span className="font-semibold">Basic Odds:</span>
+																<span>{(gameOdds[finalFourState.semifinalA.gameId].topTeamBasicOdds * 100).toFixed(2)}%</span>
+															</div>
+															<div className="mt-2 text-center border-t border-slate-300 pt-2">
+																<span className="font-bold text-xl block">Win Probability</span>
+																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalA.gameId].topTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalA.gameId].topTeamSkewedOdds}, 40)` }}>
+																	{(gameOdds[finalFourState.semifinalA.gameId].topTeamSkewedOdds * 100).toFixed(2)}%
+																</span>
+															</div>
+														</div>
+													</div>
+												)}
+												{expandedGames[finalFourState?.semifinalA?.gameId || ''] && gameOdds[finalFourState?.semifinalA?.gameId || ''] && finalFourState && (
+													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
+														<div className="text-sm text-gray-700">
+															
+															{bracket?.nodeBracket[finalFourState.semifinalA.regionB][0].winner?.name && (
+																<>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Overall Ranking:</span>
+																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionB][0].winner?.name)?.rank || 'N/A'}</span>
+																	</div>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Rating:</span>
+																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalA.regionB][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
+																	</div>
+																</>
+															)}
+															<div className="flex justify-between">
+																<span className="font-semibold">Basic Odds:</span>
+																<span>{(gameOdds[finalFourState.semifinalA.gameId].bottomTeamBasicOdds * 100).toFixed(2)}%</span>
+															</div>
+															<div className="mt-2 text-center border-t border-slate-300 pt-2">
+																<span className="font-bold text-xl block">Win Probability</span>
+																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalA.gameId].bottomTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalA.gameId].bottomTeamSkewedOdds}, 40)` }}>
+																	{(gameOdds[finalFourState.semifinalA.gameId].bottomTeamSkewedOdds * 100).toFixed(2)}%
+																</span>
+															</div>
+														</div>
+													</div>
+												)}
 												<div className="text-gray-400 text-center text-sm">vs</div>
 												<button 
 													onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][1] as Regions)}
@@ -744,7 +895,33 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 										{/* Right Game (Second Pair) */}
 										<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
-											<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
+											<div className="flex justify-between items-center mb-2">
+												<div className="text-sm text-gray-500">{bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
+												{finalFourState && finalFourState.semifinalB.regionA && finalFourState.semifinalB.regionB && (
+													<button
+														onClick={() => {
+															if (!finalFourState) return;
+															const gameId = finalFourState.semifinalB.gameId;
+															setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
+															if (!expandedGames[gameId] && bracket) {
+																const teamA = bracket.nodeBracket[finalFourState.semifinalB.regionA][0];
+																const teamB = bracket.nodeBracket[finalFourState.semifinalB.regionB][0];
+																if (teamA.winner && teamB.winner) {
+																	const odds = Bracketology.getGameOdds(
+																		{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+																		{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+																		randomness
+																	);
+																	setGameOdds(prev => ({...prev, [gameId]: odds}));
+																}
+															}
+														}}
+														className="text-gray-500 hover:text-gray-700"
+													>
+														<FontAwesomeIcon icon={finalFourState && expandedGames[finalFourState.semifinalB.gameId] ? faCompress : faExpand} />
+													</button>
+												)}
+											</div>
 											<div className="flex flex-col gap-2">
 												<button 
 													onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][0] as Regions)}
@@ -763,6 +940,64 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 														) || 'TBD'}
 													</span>
 												</button>
+												{expandedGames[finalFourState?.semifinalB?.gameId || ''] && gameOdds[finalFourState?.semifinalB?.gameId || ''] && finalFourState && (
+													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
+														<div className="text-sm text-gray-700">
+															
+															{bracket?.nodeBracket[finalFourState.semifinalB.regionA][0].winner?.name && (
+																<>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Overall Ranking:</span>
+																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionA][0].winner?.name)?.rank || 'N/A'}</span>
+																	</div>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Rating:</span>
+																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionA][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
+																	</div>
+																</>
+															)}
+															<div className="flex justify-between">
+																<span className="font-semibold">Basic Odds:</span>
+																<span>{(gameOdds[finalFourState.semifinalB.gameId].topTeamBasicOdds * 100).toFixed(2)}%</span>
+															</div>
+															<div className="mt-2 text-center border-t border-slate-300 pt-2">
+																<span className="font-bold text-xl block">Win Probability</span>
+																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalB.gameId].topTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalB.gameId].topTeamSkewedOdds}, 40)` }}>
+																	{(gameOdds[finalFourState.semifinalB.gameId].topTeamSkewedOdds * 100).toFixed(2)}%
+																</span>
+															</div>
+														</div>
+													</div>
+												)}
+												{expandedGames[finalFourState?.semifinalB?.gameId || ''] && gameOdds[finalFourState?.semifinalB?.gameId || ''] && finalFourState && (
+													<div className="mt-2 p-2 bg-gray-100 rounded-lg shadow-inner">
+														<div className="text-sm text-gray-700">
+															
+															{bracket?.nodeBracket[finalFourState.semifinalB.regionB][0].winner?.name && (
+																<>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Overall Ranking:</span>
+																		<span>#{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionB][0].winner?.name)?.rank || 'N/A'}</span>
+																	</div>
+																	<div className="flex justify-between mt-1">
+																		<span className="font-semibold">Rating:</span>
+																		<span>{getTeamRankingInfo(bracket.nodeBracket[finalFourState.semifinalB.regionB][0].winner?.name)?.rating.toFixed(2) || 'N/A'}</span>
+																	</div>
+																</>
+															)}
+															<div className="flex justify-between">
+																<span className="font-semibold">Basic Odds:</span>
+																<span>{(gameOdds[finalFourState.semifinalB.gameId].bottomTeamBasicOdds * 100).toFixed(2)}%</span>
+															</div>
+															<div className="mt-2 text-center border-t border-slate-300 pt-2">
+																<span className="font-bold text-xl block">Win Probability</span>
+																<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.semifinalB.gameId].bottomTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.semifinalB.gameId].bottomTeamSkewedOdds}, 40)` }}>
+																	{(gameOdds[finalFourState.semifinalB.gameId].bottomTeamSkewedOdds * 100).toFixed(2)}%
+																</span>
+															</div>
+														</div>
+													</div>
+												)}
 												<div className="text-gray-400 text-center text-sm">vs</div>
 												<button 
 													onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][1] as Regions)}
@@ -772,7 +1007,7 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 															: 'border-gray-200 hover:bg-gray-50'
 													}`}
 												>
-													<span className="font-medium text-gray-900 w-full text-center">
+													<span className="font-medium text-gray-900 text-center w-full">
 														{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name && (
 															<>
 																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.seed}. </span>
@@ -787,7 +1022,34 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 									{/* Championship (Center) */}
 									<div className="w-full max-w-md bg-amber-50 rounded-lg p-4 border border-amber-200">
-										<div className="text-sm text-amber-700 mb-2">Championship</div>
+										<div className="flex justify-between items-center mb-2">
+											<div className="text-sm text-amber-700">Championship</div>
+											{finalFourState && finalFourState.championship.regionA && finalFourState.championship.regionB && 
+											 finalFourState.championship.regionA !== ('TBD' as Regions) && finalFourState.championship.regionB !== ('TBD' as Regions) && (
+												<button
+													onClick={() => {
+														if (!finalFourState) return;
+														const gameId = finalFourState.championship.gameId;
+														setExpandedGames(prev => ({...prev, [gameId]: !prev[gameId]}));
+														if (!expandedGames[gameId] && bracket) {
+															const teamA = bracket.nodeBracket[finalFourState.championship.regionA][0];
+															const teamB = bracket.nodeBracket[finalFourState.championship.regionB][0];
+															if (teamA.winner && teamB.winner) {
+																const odds = Bracketology.getGameOdds(
+																	{...teamA, name: teamA.winner.name, rating: teamA.winner.rating || 0},
+																	{...teamB, name: teamB.winner.name, rating: teamB.winner.rating || 0},
+																	randomness
+																);
+																setGameOdds(prev => ({...prev, [gameId]: odds}));
+															}
+														}
+													}}
+													className="text-amber-700 hover:text-amber-900"
+												>
+													<FontAwesomeIcon icon={finalFourState && expandedGames[finalFourState.championship.gameId] ? faCompress : faExpand} />
+												</button>
+											)}
+										</div>
 										<div className="flex flex-col gap-2">
 											<button 
 												onClick={() => finalFourState?.championship.regionA && handleFinalFourWinner(
@@ -807,9 +1069,38 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalA.winnerRegion as Regions][0].winner?.seed}. </span>
 															{getTranslatedName(finalFourState.semifinalA.winnerName || '')}
 														</>
-													) || 'TBD'}
+													)}
 												</span>
 											</button>
+											{expandedGames[finalFourState?.championship?.gameId || ''] && gameOdds[finalFourState?.championship?.gameId || ''] && finalFourState && (
+												<div className="mt-2 p-2 bg-amber-100 rounded-lg shadow-inner">
+													<div className="text-sm text-amber-900">
+														
+														{finalFourState.semifinalA.winnerName && (
+															<>
+																<div className="flex justify-between mt-1">
+																	<span className="font-semibold">Overall Ranking:</span>
+																		<span>#{getTeamRankingInfo(finalFourState.semifinalA.winnerName)?.rank || 'N/A'}</span>
+																</div>
+																<div className="flex justify-between mt-1">
+																	<span className="font-semibold">Rating:</span>
+																		<span>{getTeamRankingInfo(finalFourState.semifinalA.winnerName)?.rating.toFixed(2) || 'N/A'}</span>
+																</div>
+															</>
+														)}
+														<div className="flex justify-between">
+															<span className="font-semibold">Basic Odds:</span>
+															<span>{(gameOdds[finalFourState.championship.gameId].topTeamBasicOdds * 100).toFixed(2)}%</span>
+														</div>
+														<div className="mt-2 text-center border-t border-amber-300 pt-2">
+															<span className="font-bold text-xl block">Win Probability</span>
+															<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.championship.gameId].topTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.championship.gameId].topTeamSkewedOdds}, 40)` }}>
+																{(gameOdds[finalFourState.championship.gameId].topTeamSkewedOdds * 100).toFixed(2)}%
+															</span>
+														</div>
+													</div>
+												</div>
+											)}
 											<div className="text-amber-600 text-center text-sm">vs</div>
 											<button 
 												onClick={() => finalFourState?.championship.regionB && handleFinalFourWinner(
@@ -829,9 +1120,38 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalB.winnerRegion as Regions][0].winner?.seed}. </span>
 															{getTranslatedName(finalFourState.semifinalB.winnerName || '')}
 														</>
-													) || 'TBD'}
+													)}
 												</span>
 											</button>
+											{expandedGames[finalFourState?.championship?.gameId || ''] && gameOdds[finalFourState?.championship?.gameId || ''] && finalFourState && (
+												<div className="mt-2 p-2 bg-amber-100 rounded-lg shadow-inner">
+													<div className="text-sm text-amber-900">
+														
+														{finalFourState.semifinalB.winnerName && (
+															<>
+																<div className="flex justify-between mt-1">
+																	<span className="font-semibold">Overall Ranking:</span>
+																		<span>#{getTeamRankingInfo(finalFourState.semifinalB.winnerName)?.rank || 'N/A'}</span>
+																</div>
+																<div className="flex justify-between mt-1">
+																	<span className="font-semibold">Rating:</span>
+																		<span>{getTeamRankingInfo(finalFourState.semifinalB.winnerName)?.rating.toFixed(2) || 'N/A'}</span>
+																</div>
+															</>
+														)}
+														<div className="flex justify-between">
+															<span className="font-semibold">Basic Odds:</span>
+															<span>{(gameOdds[finalFourState.championship.gameId].bottomTeamBasicOdds * 100).toFixed(2)}%</span>
+														</div>
+														<div className="mt-2 text-center border-t border-amber-300 pt-2">
+															<span className="font-bold text-xl block">Win Probability</span>
+															<span className="text-4xl font-bold block" style={{ color: `rgb(${200 * (1 - gameOdds[finalFourState.championship.gameId].bottomTeamSkewedOdds)}, ${160 * gameOdds[finalFourState.championship.gameId].bottomTeamSkewedOdds}, 40)` }}>
+																{(gameOdds[finalFourState.championship.gameId].bottomTeamSkewedOdds * 100).toFixed(2)}%
+															</span>
+														</div>
+													</div>
+												</div>
+											)}
 										</div>
 									</div>
 
@@ -839,12 +1159,12 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 									{finalFourState?.champion && (
 										<div className="mt-8 text-center">
 											<div className="inline-block bg-green-100 rounded-lg p-6">
-												<h3 className="text-amber-900 text-lg font-semibold mb-2">National Champion</h3>
+												<h3 className="text-green-900 text-lg font-semibold mb-2">National Champion</h3>
 												<div className="bg-white px-6 py-3 rounded-lg border-2 border-green-500">
-													<span className="text-2xl font-bold text-amber-900">
+													<span className="text-2xl font-bold text-green-900">
 														{finalFourState.champion.name && (
 															<>
-																<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.champion.region][0].winner?.seed}. </span>
+																<span className="text-green-600">{bracket?.nodeBracket[finalFourState.champion.region][0].winner?.seed}. </span>
 																{getTranslatedName(finalFourState.champion.name || '')}
 															</>
 														)}
