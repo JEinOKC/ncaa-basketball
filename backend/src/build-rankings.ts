@@ -18,7 +18,7 @@ interface leaguesObjectType {
 
 
 const endpoints:leaguesObjectType = require('./config/endpoints.json');
-const MasseyLeague = require('./lib/massey.ts');
+const MasseyLeague = require('./lib/massey');
 const rankingMethods = require('generic-ranking-methods');
 const dataDir = path.join(__dirname, '../data'); // Adjust based on your structure
 

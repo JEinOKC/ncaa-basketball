@@ -33,8 +33,13 @@ jobs:
       - name: Copy Config Files
         run: |
           cd backend
-          mkdir -p dist/config
+          mkdir -p dist/config dist/lib
           cp src/config/*.json dist/config/
+
+      - name: Recompile TypeScript
+        run: |
+          cd backend
+          npx tsc
 
       - name: Generate JSON Data
         run: |
