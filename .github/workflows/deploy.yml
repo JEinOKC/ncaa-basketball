@@ -30,6 +30,12 @@ jobs:
           cd backend
           npx tsc
 
+      - name: Copy Config Files
+        run: |
+          cd backend
+          mkdir -p dist/config
+          cp config/*.json dist/config/
+
       - name: Generate JSON Data
         run: |
           cd backend
