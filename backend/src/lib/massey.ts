@@ -1,8 +1,9 @@
 import { parse } from 'csv-parse/sync';
 import { CollegeNameFormatter } from './college-name-formatter';
+import path from 'path';
 
 const rankingMethods = require('generic-ranking-methods');
-const nameTable:{ [key: string]: string } = require('../../data/name-table.json');
+const nameTable:{ [key: string]: string } = require(path.join(__dirname, '../../data/name-table.json'));
 
 interface FormattedGameType {
 	calcs: {
