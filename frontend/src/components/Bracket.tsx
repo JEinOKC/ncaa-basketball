@@ -589,19 +589,20 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 
 			{/* Normal view (hidden during print) */}
 			<div className="print:hidden">
-				<div className="bg-white rounded-lg shadow p-6 mb-6">
-					<div className="flex items-center justify-between">
-						<h1 className="text-3xl text-gray-900 font-bold">
+				<div className="flex justify-end mb-2">
+					<button
+						onClick={() => window.print()}
+						className="text-gray-600 hover:text-gray-900 transition-colors"
+						title="Print Bracket"
+					>
+						<FontAwesomeIcon icon={faPrint} size="lg" />
+					</button>
+				</div>
+				<div className="bg-white rounded-lg shadow mb-6">
+					<div className="p-6">
+						<h1 className="text-3xl text-gray-900 font-bold m-0">
 							{headline}
-
 						</h1>
-						<button
-							onClick={() => window.print()}
-							className="text-gray-600 hover:text-gray-900 transition-colors"
-							title="Print Bracket"
-						>
-							<FontAwesomeIcon icon={faPrint} size="lg" />
-						</button>
 					</div>
 				</div>
 

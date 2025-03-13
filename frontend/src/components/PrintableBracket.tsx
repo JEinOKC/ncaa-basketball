@@ -26,9 +26,38 @@ const PrintableRegion: React.FC<PrintableRegionProps> = ({ region, regionName, n
     return Math.max(1 + findMaxDepth(node.left), 1 + findMaxDepth(node.right));
   };
 
+  // Check if this region has First Four games by comparing adjacent level game counts
+  const hasFirstFour = (node: NodeType | null): boolean => {
+    if (!node) return false;
+    
+    // Get the number of games at each level
+    const levelGameCounts: number[] = [];
+    for (let i = 0; i < maxDepth; i++) {
+      const gamesAtLevel = getNodesAtLevel(node, i, maxDepth - 1).filter(n => n.gameUUID).length;
+      levelGameCounts.push(gamesAtLevel);
+    }
+console.log({
+	'levelGameCounts': levelGameCounts,
+	'maxDepth': maxDepth,
+	'region': region
+})
+    // Check if any level has more games than the previous level
+    for (let i = 1; i < levelGameCounts.length; i++) {
+      if (levelGameCounts[i - 1] !== 0&& levelGameCounts[i] > levelGameCounts[i - 1]) {
+		console.log('true',regionName);
+        return true;
+      }
+    }
+    console.log('false',regionName);
+    return false;
+  };
+
   const maxDepth = findMaxDepth(region[0]);
-  // Skip the First Four level by starting at index 1
-  const levels = Array.from({ length: maxDepth - 1 }, (_, i) => i + 1);
+  const shouldSkipFirstFour = hasFirstFour(region[0]);
+  
+  // Only subtract 1 from the starting index if we have First Four games
+  const startIndex = shouldSkipFirstFour ? 1 : 0;
+  const levels = Array.from({ length: maxDepth - startIndex }, (_, i) => i + startIndex);
 
   // Get the display text for a node
   const getDisplayText = (node: NodeType): string => {
@@ -88,6 +117,14 @@ interface PrintableBracketProps {
 const PrintableBracket: React.FC<PrintableBracketProps> = ({ regions, finalFourState, nameTable, gameWinners }) => {
   const regionNames = Object.keys(regions) as Regions[];
 
+  // Helper function to safely get region winner info
+  const getRegionWinnerInfo = (region: Regions | undefined): string => {
+    if (!region || !(region in regions)) return '';
+    const winner = regions[region][0]?.winner;
+    if (!winner?.name || !winner.seed) return '';
+    return `${winner.seed}. ${nameTable[winner.name]}`;
+  };
+
   return (
     <div className={styles.printContainer}>
       {regionNames.map((regionName: Regions) => (
@@ -103,25 +140,52 @@ const PrintableBracket: React.FC<PrintableBracketProps> = ({ regions, finalFourS
       <div className={styles.finalFourContainer}>
         <div className={styles.finalFourTitle}>Final Four</div>
         <div className={styles.bracketStructure}>
+          {/* First Round - Initial Final Four Teams */}
           <div className={styles.bracketRound}>
             <div className={styles.gamePair}>
               <div className={styles.gameSlot}>
-                {finalFourState?.semifinalA?.winnerName ? 
-                  nameTable[finalFourState.semifinalA.winnerName] : ''}
+                {getRegionWinnerInfo(finalFourState?.semifinalA?.regionA)}
               </div>
             </div>
             <div className={styles.gamePair}>
               <div className={styles.gameSlot}>
-                {finalFourState?.semifinalB?.winnerName ? 
-                  nameTable[finalFourState.semifinalB.winnerName] : ''}
+                {getRegionWinnerInfo(finalFourState?.semifinalA?.regionB)}
+              </div>
+            </div>
+            <div className={styles.gamePair}>
+              <div className={styles.gameSlot}>
+                {getRegionWinnerInfo(finalFourState?.semifinalB?.regionA)}
+              </div>
+            </div>
+            <div className={styles.gamePair}>
+              <div className={styles.gameSlot}>
+                {getRegionWinnerInfo(finalFourState?.semifinalB?.regionB)}
               </div>
             </div>
           </div>
+
+          {/* Second Round - Semifinal Winners */}
           <div className={styles.bracketRound}>
             <div className={styles.gamePair}>
               <div className={styles.gameSlot}>
-                {finalFourState?.champion?.name ? 
-                  nameTable[finalFourState.champion.name] : ''}
+                {finalFourState?.semifinalA?.winnerRegion ? 
+                  getRegionWinnerInfo(finalFourState.semifinalA.winnerRegion) : ''}
+              </div>
+            </div>
+            <div className={styles.gamePair}>
+              <div className={styles.gameSlot}>
+                {finalFourState?.semifinalB?.winnerRegion ? 
+                  getRegionWinnerInfo(finalFourState.semifinalB.winnerRegion) : ''}
+              </div>
+            </div>
+          </div>
+
+          {/* Championship Game Winner */}
+          <div className={styles.bracketRound}>
+            <div className={styles.gamePair}>
+              <div className={styles.gameSlot}>
+                {finalFourState?.championship?.winnerRegion ? 
+                  getRegionWinnerInfo(finalFourState.championship.winnerRegion) : ''}
               </div>
             </div>
           </div>
