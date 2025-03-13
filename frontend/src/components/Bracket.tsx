@@ -378,8 +378,9 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 		const region = getRegion(getRegionNamesInOrder()[0]); // Use first region to determine total levels
 		const levels = totalLevels(region);
 		
-		// Add one to levels to account for First Four round
-		const totalRounds = levels + 1;
+		// Limit rounds to Elite 8 (level 5) for region view
+		const maxRegionLevel = 5;
+		const totalRounds = Math.min(maxRegionLevel, levels + 1);
 		
 		return (
 			<div className={`flex items-center ${isDesktop ? 'justify-start gap-4 mb-4' : 'justify-between px-4'}`}>
@@ -837,9 +838,9 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 									{/* Champion Display */}
 									{finalFourState?.champion && (
 										<div className="mt-8 text-center">
-											<div className="inline-block bg-amber-100 rounded-lg p-6">
+											<div className="inline-block bg-green-100 rounded-lg p-6">
 												<h3 className="text-amber-900 text-lg font-semibold mb-2">National Champion</h3>
-												<div className="bg-white px-6 py-3 rounded-lg border-2 border-amber-500">
+												<div className="bg-white px-6 py-3 rounded-lg border-2 border-green-500">
 													<span className="text-2xl font-bold text-amber-900">
 														{finalFourState.champion.name && (
 															<>

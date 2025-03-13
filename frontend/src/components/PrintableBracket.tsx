@@ -36,19 +36,15 @@ const PrintableRegion: React.FC<PrintableRegionProps> = ({ region, regionName, n
       const gamesAtLevel = getNodesAtLevel(node, i, maxDepth - 1).filter(n => n.gameUUID).length;
       levelGameCounts.push(gamesAtLevel);
     }
-console.log({
-	'levelGameCounts': levelGameCounts,
-	'maxDepth': maxDepth,
-	'region': region
-})
+
     // Check if any level has more games than the previous level
     for (let i = 1; i < levelGameCounts.length; i++) {
       if (levelGameCounts[i - 1] !== 0&& levelGameCounts[i] > levelGameCounts[i - 1]) {
-		console.log('true',regionName);
+		
         return true;
       }
     }
-    console.log('false',regionName);
+    
     return false;
   };
 
