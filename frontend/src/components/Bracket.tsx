@@ -10,6 +10,9 @@ import { setGameWinners, setMaxBracketDepth } from "../store/stateSlice";
 import { getNodesAtLevel, totalLevels } from "../utils/treeUtils";
 import styles from '../styles/Semicircle.module.css';
 import { useMediaQuery } from 'react-responsive';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPrint } from '@fortawesome/free-solid-svg-icons';
+import PrintableBracket from './PrintableBracket';
 
 interface BracketProps {
 	context: "wbb"|"mbb";
@@ -571,302 +574,330 @@ const Bracket: React.FC<BracketProps> = ({ context, headline } ) => {
 	};
 
 	return (
-		<div>
-			<div className="bg-white rounded-lg shadow p-6 mb-6">
-				<h1 className="text-3xl text-gray-900 font-bold">{headline}</h1>
+		<>
+			{/* Print-only view */}
+			<div className="hidden print:block">
+				{bracket && (
+					<PrintableBracket
+						regions={bracket.nodeBracket}
+						finalFourState={finalFourState}
+						nameTable={nameTable}
+						gameWinners={gameWinners}
+					/>
+				)}
 			</div>
-			{/** 
-			* determine the context. depending on the context, loop through the array up until the limit or the length, whatever is shorter
-			* if the context is wbb, then use wbbRankings 
-			* if the context is mbb, then use mbbRankings 
-			* if the limit is null, then use the length of the array 
-			* if the limit is not null, then use the limit 
-			* display the team name and the ranking 
-			**/}
 
-			{bracket ? (
-				<>
-					<div className="bg-white rounded-lg shadow p-6 mb-6">
-						<div className="flex flex-col items-center space-y-4">
-							<div className="relative w-48">
-								<div className={styles['semi-circle']}>
-									{/* Base semicircle with gray border is created by ::before pseudo-element */}
-									<div className={styles['semi-circle-mask']}>
-										{/* Progress arc */}
-										<div 
-											className={styles.fill}
-											style={{ 
-												transform: `rotate(${-90 + (180 * randomness)}deg)`,
-												borderTopColor: getArcColor(randomness)
-											}}
-										></div>
-									</div>
-									{/* Center text */}
-									<div className="text-center absolute left-0 right-0 top-1/3 z-10">
-										<span className="text-lg font-semibold text-gray-900">
-											{Math.round(randomness * 100)}%
-										</span>
-									</div>
-								</div>
-								{/* Labels */}
-								<div className="flex justify-between px-2">
-									<span className="text-sm font-medium text-gray-600">Random</span>
-									<span className="text-sm font-medium text-gray-600">Chalk</span>
-								</div>
-								{/* Range input */}
-								<div className="mt-4">
-									<input
-										type="range"
-										className="w-full"
-										id="randomness"
-										min="0"
-										max="1"
-										step="0.01"
-										value={randomness}
-										onChange={(e) => setRandomness(parseFloat(e.target.value))}
-									/>
-								</div>
-							</div>
-						</div>
-						<div className="flex justify-center gap-4 mt-6">
-							<button 
-								className="px-6 py-2 bg-indigo-600! text-white rounded-md hover:bg-indigo-700 transition-colors font-medium" 
-								onClick={() => simulateTournament()}
-							>
-								Simulate Tournament
-							</button>
-							<button 
-								className="px-6 py-2 border bg-amber-800! border-gray-300 text-gray-50 rounded-md hover:bg-gray-50 transition-colors font-medium" 
-								onClick={() => clearTournament()}
-							>
-								Clear Tournament
-							</button>
-						</div>
+			{/* Normal view (hidden during print) */}
+			<div className="print:hidden">
+				<div className="bg-white rounded-lg shadow p-6 mb-6">
+					<div className="flex items-center justify-between">
+						<h1 className="text-3xl text-gray-900 font-bold">
+							{headline}
+
+						</h1>
+						<button
+							onClick={() => window.print()}
+							className="text-gray-600 hover:text-gray-900 transition-colors"
+							title="Print Bracket"
+						>
+							<FontAwesomeIcon icon={faPrint} size="lg" />
+						</button>
 					</div>
+				</div>
 
-					{/* Completion Alert */}
-					{completedRegions.length === 4 && (
-						<div ref={completionAlertRef} className="bg-white rounded-lg shadow p-6 mb-6">
-							<div className="flex items-center justify-between mb-6">
-								<div className="flex items-center">
-									<div>
-										<h2 className="text-2xl text-gray-900 font-bold">The Final Four</h2>
+				{/** 
+				* determine the context. depending on the context, loop through the array up until the limit or the length, whatever is shorter
+				* if the context is wbb, then use wbbRankings 
+				* if the context is mbb, then use mbbRankings 
+				* if the limit is null, then use the length of the array 
+				* if the limit is not null, then use the limit 
+				* display the team name and the ranking 
+				**/}
+
+				{bracket ? (
+					<>
+						<div className="bg-white rounded-lg shadow p-6 mb-6">
+							<div className="flex flex-col items-center space-y-4">
+								<div className="relative w-48">
+									<div className={styles['semi-circle']}>
+										{/* Base semicircle with gray border is created by ::before pseudo-element */}
+										<div className={styles['semi-circle-mask']}>
+											{/* Progress arc */}
+											<div 
+												className={styles.fill}
+												style={{ 
+													transform: `rotate(${-90 + (180 * randomness)}deg)`,
+													borderTopColor: getArcColor(randomness)
+												}}
+											></div>
+										</div>
+										{/* Center text */}
+										<div className="text-center absolute left-0 right-0 top-1/3 z-10">
+											<span className="text-lg font-semibold text-gray-900">
+												{Math.round(randomness * 100)}%
+											</span>
+										</div>
+									</div>
+									{/* Labels */}
+									<div className="flex justify-between px-2">
+										<span className="text-sm font-medium text-gray-600">Random</span>
+										<span className="text-sm font-medium text-gray-600">Chalk</span>
+									</div>
+									{/* Range input */}
+									<div className="mt-4">
+										<input
+											type="range"
+											className="w-full"
+											id="randomness"
+											min="0"
+											max="1"
+											step="0.01"
+											value={randomness}
+											onChange={(e) => setRandomness(parseFloat(e.target.value))}
+										/>
 									</div>
 								</div>
 							</div>
-							
-							<div className="mb-6 text-center">
+							<div className="flex justify-center gap-4 mt-6">
 								<button 
-									onClick={() => simulateFinalFour()}
-									className="px-3 py-1.5 bg-indigo-600! text-white rounded-md hover:bg-indigo-700 transition-colors text-sm!"
+									className="px-6 py-2 bg-indigo-600! text-white rounded-md hover:bg-indigo-700 transition-colors font-medium" 
+									onClick={() => simulateTournament()}
 								>
-									Simulate Final Four
+									Simulate Tournament
+								</button>
+								<button 
+									className="px-6 py-2 border bg-amber-800! border-gray-300 text-gray-50 rounded-md hover:bg-gray-50 transition-colors font-medium" 
+									onClick={() => clearTournament()}
+								>
+									Clear Tournament
 								</button>
 							</div>
+						</div>
 
-							{/* Final Four Bracket Display */}
-							<div className="flex flex-col items-center w-full">
-								{/* Semifinals Container */}
-								<div className="justify-between w-full max-w-4xl gap-4 mb-8 xs:block lg:flex">
-									{/* Left Game (First Pair) */}
-									<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
-										<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
-										<div className="flex flex-col gap-2">
-											<button 
-												onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][0] as Regions)}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.semifinalA.winnerRegion === bracket?.data.finalFour[0][0]
-														? 'border-green-500 bg-green-50'
-														: 'border-gray-200 hover:bg-gray-50'
-												}`}
-											>
-												<span className="font-medium text-gray-900 text-center w-full">
-													{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name && (
-														<>
-															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.seed}. </span>
-															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name || '')}
-														</>
-													) || 'TBD'}
-												</span>
-											</button>
-											<div className="text-gray-400 text-center text-sm">vs</div>
-											<button 
-												onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][1] as Regions)}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.semifinalA.winnerRegion === bracket?.data.finalFour[0][1]
-														? 'border-green-500 bg-green-50'
-														: 'border-gray-200 hover:bg-gray-50'
-												}`}
-											>
-												<span className="font-medium text-gray-900 text-center w-full">
-													{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name && (
-														<>
-															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.seed}. </span>
-															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name || '')}
-														</>
-													) || 'TBD'}
-												</span>
-											</button>
-										</div>
-									</div>
-
-									{/* Right Game (Second Pair) */}
-									<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
-										<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
-										<div className="flex flex-col gap-2">
-											<button 
-												onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][0] as Regions)}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.semifinalB.winnerRegion === bracket?.data.finalFour[1][0]
-														? 'border-green-500 bg-green-50'
-														: 'border-gray-200 hover:bg-gray-50'
-												}`}
-											>
-												<span className="font-medium text-gray-900 w-full text-center">
-													{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name && (
-														<>
-															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.seed}. </span>
-															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name || '')}
-														</>
-													) || 'TBD'}
-												</span>
-											</button>
-											<div className="text-gray-400 text-center text-sm">vs</div>
-											<button 
-												onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][1] as Regions)}
-												className={`flex items-center bg-white! p-3 rounded border ${
-													finalFourState?.semifinalB.winnerRegion === bracket?.data.finalFour[1][1]
-														? 'border-green-500 bg-green-50'
-														: 'border-gray-200 hover:bg-gray-50'
-												}`}
-											>
-												<span className="font-medium text-gray-900 w-full text-center">
-													{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name && (
-														<>
-															<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.seed}. </span>
-															{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name || '')}
-														</>
-													) || 'TBD'}
-												</span>
-											</button>
+						{/* Completion Alert */}
+						{completedRegions.length === 4 && (
+							<div ref={completionAlertRef} className="bg-white rounded-lg shadow p-6 mb-6">
+								<div className="flex items-center justify-between mb-6">
+									<div className="flex items-center">
+										<div>
+											<h2 className="text-2xl text-gray-900 font-bold">The Final Four</h2>
 										</div>
 									</div>
 								</div>
-
-								{/* Championship (Center) */}
-								<div className="w-full max-w-md bg-amber-50 rounded-lg p-4 border border-amber-200">
-									<div className="text-sm text-amber-700 mb-2">Championship</div>
-									<div className="flex flex-col gap-2">
-										<button 
-											onClick={() => finalFourState?.championship.regionA && handleFinalFourWinner(
-												finalFourState.championship,
-												finalFourState.championship.regionA
-											)}
-											disabled={!finalFourState?.semifinalA.winnerRegion}
-											className={`flex items-center bg-white! p-3 rounded border ${
-												finalFourState?.championship.winnerRegion === finalFourState?.championship.regionA
-													? 'border-amber-500 bg-amber-50'
-													: 'border-amber-200 hover:bg-amber-50'
-											} ${!finalFourState?.semifinalA.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
-										>
-											<span className="font-medium text-amber-900 w-full text-center">
-												{finalFourState?.semifinalA.winnerName && (
-													<>
-														<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalA.winnerRegion as Regions][0].winner?.seed}. </span>
-														{getTranslatedName(finalFourState.semifinalA.winnerName || '')}
-													</>
-												) || 'TBD'}
-											</span>
-										</button>
-										<div className="text-amber-600 text-center text-sm">vs</div>
-										<button 
-											onClick={() => finalFourState?.championship.regionB && handleFinalFourWinner(
-												finalFourState.championship,
-												finalFourState.championship.regionB
-											)}
-											disabled={!finalFourState?.semifinalB.winnerRegion}
-											className={`flex items-center bg-white! p-3 rounded border ${
-												finalFourState?.championship.winnerRegion === finalFourState?.championship.regionB
-													? 'border-amber-500 bg-amber-50'
-													: 'border-amber-200 hover:bg-amber-50'
-											} ${!finalFourState?.semifinalB.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
-										>
-											<span className="font-medium text-amber-900 w-full text-center">
-												{finalFourState?.semifinalB.winnerName && (
-													<>
-														<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalB.winnerRegion as Regions][0].winner?.seed}. </span>
-														{getTranslatedName(finalFourState.semifinalB.winnerName || '')}
-													</>
-												) || 'TBD'}
-											</span>
-										</button>
-									</div>
+								
+								<div className="mb-6 text-center">
+									<button 
+										onClick={() => simulateFinalFour()}
+										className="px-3 py-1.5 bg-indigo-600! text-white rounded-md hover:bg-indigo-700 transition-colors text-sm!"
+									>
+										Simulate Final Four
+									</button>
 								</div>
 
-								{/* Champion Display */}
-								{finalFourState?.champion && (
-									<div className="mt-8 text-center">
-										<div className="inline-block bg-amber-100 rounded-lg p-6">
-											<h3 className="text-amber-900 text-lg font-semibold mb-2">National Champion</h3>
-											<div className="bg-white px-6 py-3 rounded-lg border-2 border-amber-500">
-												<span className="text-2xl font-bold text-amber-900">
-													{finalFourState.champion.name && (
-														<>
-															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.champion.region][0].winner?.seed}. </span>
-															{getTranslatedName(finalFourState.champion.name || '')}
-														</>
-													)}
-												</span>
+								{/* Final Four Bracket Display */}
+								<div className="flex flex-col items-center w-full">
+									{/* Semifinals Container */}
+									<div className="justify-between w-full max-w-4xl gap-4 mb-8 xs:block lg:flex">
+										{/* Left Game (First Pair) */}
+										<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
+											<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[0][0]} vs {bracket?.data.finalFour[0][1]}</div>
+											<div className="flex flex-col gap-2">
+												<button 
+													onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][0] as Regions)}
+													className={`flex items-center bg-white! p-3 rounded border ${
+														finalFourState?.semifinalA.winnerRegion === bracket?.data.finalFour[0][0]
+															? 'border-green-500 bg-green-50'
+															: 'border-gray-200 hover:bg-gray-50'
+													}`}
+												>
+													<span className="font-medium text-gray-900 text-center w-full">
+														{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name && (
+															<>
+																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.seed}. </span>
+																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][0] as Regions][0].winner?.name || '')}
+															</>
+														) || 'TBD'}
+													</span>
+												</button>
+												<div className="text-gray-400 text-center text-sm">vs</div>
+												<button 
+													onClick={() => finalFourState?.semifinalA && handleFinalFourWinner(finalFourState.semifinalA, bracket?.data.finalFour[0][1] as Regions)}
+													className={`flex items-center bg-white! p-3 rounded border ${
+														finalFourState?.semifinalA.winnerRegion === bracket?.data.finalFour[0][1]
+															? 'border-green-500 bg-green-50'
+															: 'border-gray-200 hover:bg-gray-50'
+													}`}
+												>
+													<span className="font-medium text-gray-900 text-center w-full">
+														{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name && (
+															<>
+																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.seed}. </span>
+																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[0][1] as Regions][0].winner?.name || '')}
+															</>
+														) || 'TBD'}
+													</span>
+												</button>
+											</div>
+										</div>
+
+										{/* Right Game (Second Pair) */}
+										<div className={`flex-1 bg-gray-50 rounded-lg p-4`}>
+											<div className="text-sm text-gray-500 mb-2">{bracket?.data.finalFour[1][0]} vs {bracket?.data.finalFour[1][1]}</div>
+											<div className="flex flex-col gap-2">
+												<button 
+													onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][0] as Regions)}
+													className={`flex items-center bg-white! p-3 rounded border ${
+														finalFourState?.semifinalB.winnerRegion === bracket?.data.finalFour[1][0]
+															? 'border-green-500 bg-green-50'
+															: 'border-gray-200 hover:bg-gray-50'
+													}`}
+												>
+													<span className="font-medium text-gray-900 w-full text-center">
+														{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name && (
+															<>
+																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.seed}. </span>
+																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][0] as Regions][0].winner?.name || '')}
+															</>
+														) || 'TBD'}
+													</span>
+												</button>
+												<div className="text-gray-400 text-center text-sm">vs</div>
+												<button 
+													onClick={() => finalFourState?.semifinalB && handleFinalFourWinner(finalFourState.semifinalB, bracket?.data.finalFour[1][1] as Regions)}
+													className={`flex items-center bg-white! p-3 rounded border ${
+														finalFourState?.semifinalB.winnerRegion === bracket?.data.finalFour[1][1]
+															? 'border-green-500 bg-green-50'
+															: 'border-gray-200 hover:bg-gray-50'
+													}`}
+												>
+													<span className="font-medium text-gray-900 w-full text-center">
+														{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name && (
+															<>
+																<span className="text-gray-500">{bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.seed}. </span>
+																{getTranslatedName(bracket?.nodeBracket[bracket.data.finalFour[1][1] as Regions][0].winner?.name || '')}
+															</>
+														) || 'TBD'}
+													</span>
+												</button>
 											</div>
 										</div>
 									</div>
-								)}
+
+									{/* Championship (Center) */}
+									<div className="w-full max-w-md bg-amber-50 rounded-lg p-4 border border-amber-200">
+										<div className="text-sm text-amber-700 mb-2">Championship</div>
+										<div className="flex flex-col gap-2">
+											<button 
+												onClick={() => finalFourState?.championship.regionA && handleFinalFourWinner(
+													finalFourState.championship,
+													finalFourState.championship.regionA
+												)}
+												disabled={!finalFourState?.semifinalA.winnerRegion}
+												className={`flex items-center bg-white! p-3 rounded border ${
+													finalFourState?.championship.winnerRegion === finalFourState?.championship.regionA
+														? 'border-amber-500 bg-amber-50'
+														: 'border-amber-200 hover:bg-amber-50'
+												} ${!finalFourState?.semifinalA.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
+											>
+												<span className="font-medium text-amber-900 w-full text-center">
+													{finalFourState?.semifinalA.winnerName && (
+														<>
+															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalA.winnerRegion as Regions][0].winner?.seed}. </span>
+															{getTranslatedName(finalFourState.semifinalA.winnerName || '')}
+														</>
+													) || 'TBD'}
+												</span>
+											</button>
+											<div className="text-amber-600 text-center text-sm">vs</div>
+											<button 
+												onClick={() => finalFourState?.championship.regionB && handleFinalFourWinner(
+													finalFourState.championship,
+													finalFourState.championship.regionB
+												)}
+												disabled={!finalFourState?.semifinalB.winnerRegion}
+												className={`flex items-center bg-white! p-3 rounded border ${
+													finalFourState?.championship.winnerRegion === finalFourState?.championship.regionB
+														? 'border-amber-500 bg-amber-50'
+														: 'border-amber-200 hover:bg-amber-50'
+												} ${!finalFourState?.semifinalB.winnerRegion ? 'opacity-50 cursor-not-allowed' : ''}`}
+											>
+												<span className="font-medium text-amber-900 w-full text-center">
+													{finalFourState?.semifinalB.winnerName && (
+														<>
+															<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.semifinalB.winnerRegion as Regions][0].winner?.seed}. </span>
+															{getTranslatedName(finalFourState.semifinalB.winnerName || '')}
+														</>
+													) || 'TBD'}
+												</span>
+											</button>
+										</div>
+									</div>
+
+									{/* Champion Display */}
+									{finalFourState?.champion && (
+										<div className="mt-8 text-center">
+											<div className="inline-block bg-amber-100 rounded-lg p-6">
+												<h3 className="text-amber-900 text-lg font-semibold mb-2">National Champion</h3>
+												<div className="bg-white px-6 py-3 rounded-lg border-2 border-amber-500">
+													<span className="text-2xl font-bold text-amber-900">
+														{finalFourState.champion.name && (
+															<>
+																<span className="text-amber-600">{bracket?.nodeBracket[finalFourState.champion.region][0].winner?.seed}. </span>
+																{getTranslatedName(finalFourState.champion.name || '')}
+															</>
+														)}
+													</span>
+												</div>
+											</div>
+										</div>
+									)}
+								</div>
 							</div>
-						</div>
-					)}
+						)}
 
-					{/* Desktop round navigation */}
-					{isDesktop && (
-						<div className="bg-white rounded-lg shadow p-4 mb-6">
-							<RoundNavigation />
-						</div>
-					)}
+						{/* Desktop round navigation */}
+						{isDesktop && (
+							<div className="bg-white rounded-lg shadow p-4 mb-6">
+								<RoundNavigation />
+							</div>
+						)}
 
-					{getRegionNamesInOrder().map((element) => (
-						<Region 
-							key={element} 
-							region={getRegion(element)} 
-							regionName={element} 
-							onSelectWinner={handleSelectWinner}
-							currentLevel={currentLevel}
-							randomness={randomness}
-						/>	
-					))}
+						{getRegionNamesInOrder().map((element) => (
+							<Region 
+								key={element} 
+								region={getRegion(element)} 
+								regionName={element} 
+								onSelectWinner={handleSelectWinner}
+								currentLevel={currentLevel}
+								randomness={randomness}
+							/>	
+						))}
 
-					{/* Fixed bottom notification */}
-					{completedRegions.length === 4 && (
-						<div className={`fixed ${!isDesktop ? 'bottom-[72px] left-4 right-4' : 'bottom-4 left-1/2 -translate-x-1/2'} ${isDesktop ? 'w-auto' : 'w-[calc(100%-2rem)]'} bg-green-50 border border-green-200 rounded-lg shadow-lg z-40`}>
-							<button 
-								onClick={scrollToCompletionAlert}
-								className={`${isDesktop ? 'px-6' : 'w-full'} py-3 text-center text-green-700 font-medium flex items-center justify-center gap-2`}
-							>
-								<svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-									<path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
-								</svg>
-								Final Four
-							</button>
-						</div>
-					)}
+						{/* Fixed bottom notification */}
+						{completedRegions.length === 4 && (
+							<div className={`fixed ${!isDesktop ? 'bottom-[72px] left-4 right-4' : 'bottom-4 left-1/2 -translate-x-1/2'} ${isDesktop ? 'w-auto' : 'w-[calc(100%-2rem)]'} bg-green-50 border border-green-200 rounded-lg shadow-lg z-40`}>
+								<button 
+									onClick={scrollToCompletionAlert}
+									className={`${isDesktop ? 'px-6' : 'w-full'} py-3 text-center text-green-700 font-medium flex items-center justify-center gap-2`}
+								>
+									<svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+										<path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+									</svg>
+									Final Four
+								</button>
+							</div>
+						)}
 
-					{/* Mobile fixed bottom navigation */}
-					{!isDesktop && (
-						<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-3 px-4 z-50">
-							<RoundNavigation />
-						</div>
-					)}
-				</>
-			) : 'No Bracket'}
-		</div>
+						{/* Mobile fixed bottom navigation */}
+						{!isDesktop && (
+							<div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-3 px-4 z-50">
+								<RoundNavigation />
+							</div>
+						)}
+					</>
+				) : 'No Bracket'}
+			</div>
+		</>
 	);
 };
 

@@ -1,0 +1,136 @@
+/* Hide elements we don't want to print */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .printContainer,
+    .printContainer * {
+        visibility: visible;
+    }
+    
+    .printContainer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Hide all other UI elements */
+    nav, header, footer, button, .ratings, .controls {
+        display: none !important;
+    }
+}
+
+/* Reset page margins and ensure landscape orientation */
+@page {
+    margin: 0.5cm;
+    size: landscape;
+}
+
+/* Print container */
+.printContainer {
+    width: 100%;
+    padding: 20px;
+    background: white;
+}
+
+/* Region container */
+.regionQuadrant {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Region title */
+.regionTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Bracket structure */
+.bracketStructure {
+    display: flex;
+    padding-left: 20px;
+    gap: 40px;
+}
+
+/* Round column */
+.bracketRound {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 640px; /* Height for 32 teams with proper spacing */
+}
+
+/* Game pair container */
+.gamePair {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+/* Game slot */
+.gameSlot {
+    width: 200px;
+    height: 20px;
+    border-bottom: 1px solid #000;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* Connector lines */
+.gamePair::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    width: 20px;
+    height: 41px;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+/* Final Four section */
+.finalFourContainer {
+    width: 100%;
+    padding: 20px;
+}
+
+.finalFourTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.championshipGame {
+    margin: 20px 0 0 20px;
+}
+
+/* Print settings */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .printContainer,
+    .printContainer * {
+        visibility: visible;
+    }
+    
+    .printContainer {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    @page {
+        size: landscape;
+        margin: 0.5cm;
+    }
+} 
