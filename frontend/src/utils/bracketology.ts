@@ -122,10 +122,6 @@ class Bracketology implements BracketologyType{
 
 	}
 
-	determineWinner(team1:any,team2:any,weight:any){
-		/*should look up the ratings for each team, considering the weigh, and return a winner*/
-	}
-
 	findGameById(gameId:string){
 		for(var key in this.nodeBracket){
 			

@@ -85,7 +85,7 @@ const Region: React.FC<RegionProps> = ({ regionName, region, onSelectWinner, cur
 				{(() => {
 					const filteredNodes = nodesAtCurrentLevel.filter(node => node.gameUUID && node.left && node.right);
 					return filteredNodes.length > 0 ? (
-						filteredNodes.map((node: NodeType, index: number) => (
+						filteredNodes.map((node: NodeType) => (
 							<BracketNode
 								key={node.gameUUID}
 								node={node}

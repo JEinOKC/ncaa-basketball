@@ -55,7 +55,6 @@ export interface BracketologyType{
 	createNode: () => NodeType;
 	placeTeamInNodeArray: (nodeArray: any[], team: any, leftOrRight: leftOrRight) => any[];
 	buildWeeks: (nodeArray: any[]) => any[];
-	determineWinner: (team1: any, team2: any, weight: any) => any;
 	findGameById: (gameId: string) => NodeType | null;
 	lookupRating: (teamName: string) => number | string;
 	buildGames: () => { bracket: Record<Regions, NodeType[]>; maxDepth: number };
