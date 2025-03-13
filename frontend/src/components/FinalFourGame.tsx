@@ -44,10 +44,34 @@ const FinalFourGame: React.FC<FinalFourGameProps> = ({
     const statsTextColor = isChampionship ? 'text-amber-900' : 'text-gray-700';
     const statsBorderColor = isChampionship ? 'border-amber-300' : 'border-slate-300';
 
+	
     const renderTeamButton = (region: Regions, isTopTeam: boolean) => {
-        if (!region || region === 'TBD' as Regions) return null;
+        if (!region || region === 'TBD' as Regions) {
+            return (
+                <button 
+                    disabled
+                    className={`flex items-center bg-white! p-3 rounded border ${baseBorderColor} opacity-50`}
+                >
+                    <span className={`font-medium ${baseTextColor} text-center w-full`}>
+                        TBD
+                    </span>
+                </button>
+            );
+        }
         const teamNode = getTeamNode(region);
-        if (!teamNode.winner?.name) return null;
+		
+        if (!teamNode.winner?.name) {
+            return (
+                <button 
+                    disabled
+                    className={`flex items-center bg-white! p-3 rounded border ${baseBorderColor} opacity-50`}
+                >
+                    <span className={`font-medium ${baseTextColor} text-center w-full`}>
+                        TBD
+                    </span>
+                </button>
+            );
+        }
 
         const odds = isTopTeam ? 
             { basic: gameOdds?.topTeamBasicOdds, skewed: gameOdds?.topTeamSkewedOdds } :
@@ -120,7 +144,12 @@ const FinalFourGame: React.FC<FinalFourGameProps> = ({
             </div>
             <div className="flex flex-col gap-2">
                 {renderTeamButton(game.regionA, true)}
-                <div className={`text-center text-sm ${dividerColor}`}>vs</div>
+				{
+					(game.regionA !== ('TBD' as Regions) || game.regionB !== ('TBD' as Regions)) && (
+						<div className={`text-center text-sm ${dividerColor}`}>vs</div>
+					)
+				}
+                
                 {renderTeamButton(game.regionB, false)}
             </div>
         </div>
