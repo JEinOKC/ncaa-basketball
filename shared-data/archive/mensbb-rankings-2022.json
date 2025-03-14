@@ -1,0 +1,2508 @@
+[
+  {
+    "team_id": 10,
+    "team_name": "Arizona",
+    "rank": 1,
+    "rating": 0.7115951947314231,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 298,
+    "team_name": "Texas Tech",
+    "rank": 2,
+    "rating": 0.706528076833696,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 134,
+    "team_name": "Kansas",
+    "rank": 3,
+    "rating": 0.6957060249930966,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 115,
+    "team_name": "Houston",
+    "rank": 4,
+    "rating": 0.6912980973929813,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Auburn",
+    "rank": 5,
+    "rating": 0.6837273821067812,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 333,
+    "team_name": "Villanova",
+    "rank": 6,
+    "rating": 0.6660369327356581,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 313,
+    "team_name": "UCLA",
+    "rank": 7,
+    "rating": 0.6657838450080059,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 105,
+    "team_name": "Gonzaga",
+    "rank": 8,
+    "rating": 0.6449139320346648,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 138,
+    "team_name": "Kentucky",
+    "rank": 9,
+    "rating": 0.639326160825855,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 238,
+    "team_name": "Purdue",
+    "rank": 10,
+    "rating": 0.6300871611667329,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 20,
+    "team_name": "Baylor",
+    "rank": 11,
+    "rating": 0.618849863980935,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 292,
+    "team_name": "Tennessee",
+    "rank": 12,
+    "rating": 0.5944138276733223,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 127,
+    "team_name": "Iowa",
+    "rank": 13,
+    "rating": 0.5942208025622789,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 76,
+    "team_name": "Duke",
+    "rank": 14,
+    "rating": 0.582464555942415,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 58,
+    "team_name": "UConn",
+    "rank": 15,
+    "rating": 0.548247491309143,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 237,
+    "team_name": "Providence",
+    "rank": 16,
+    "rating": 0.545836834112509,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 207,
+    "team_name": "North Carolina",
+    "rank": 17,
+    "rating": 0.5429284560326272,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 280,
+    "team_name": "Saint Mary's",
+    "rank": 18,
+    "rating": 0.5345473597486777,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 165,
+    "team_name": "Memphis",
+    "rank": 19,
+    "rating": 0.5074022191191251,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 121,
+    "team_name": "Illinois",
+    "rank": 20,
+    "rating": 0.5045009241321827,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Arkansas",
+    "rank": 21,
+    "rating": 0.49741403964917685,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 154,
+    "team_name": "LSU",
+    "rank": 22,
+    "rating": 0.4657463888479402,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 171,
+    "team_name": "Michigan State",
+    "rank": 23,
+    "rating": 0.46289160255519,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 219,
+    "team_name": "Ohio State",
+    "rank": 24,
+    "rating": 0.462014045474097,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 200,
+    "team_name": "New Mexico State",
+    "rank": 25,
+    "rating": 0.46119346138087164,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 25,
+    "team_name": "Boise State",
+    "rank": 26,
+    "rating": 0.45148615605542625,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 351,
+    "team_name": "Wisconsin",
+    "rank": 27,
+    "rating": 0.45108265313106166,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 254,
+    "team_name": "San Diego State",
+    "rank": 28,
+    "rating": 0.4415815322690948,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 168,
+    "team_name": "Miami (FL)",
+    "rank": 29,
+    "rating": 0.4398140831259196,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 56,
+    "team_name": "Colorado State",
+    "rank": 30,
+    "rating": 0.43769931968574577,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 320,
+    "team_name": "USC",
+    "rank": 31,
+    "rating": 0.4362651674531428,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 295,
+    "team_name": "Texas",
+    "rank": 32,
+    "rating": 0.43216589974608643,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 35,
+    "team_name": "BYU",
+    "rank": 33,
+    "rating": 0.42625745912699897,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 335,
+    "team_name": "Virginia Tech",
+    "rank": 34,
+    "rating": 0.4211144353299921,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 186,
+    "team_name": "Murray State",
+    "rank": 35,
+    "rating": 0.4129000292637941,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 306,
+    "team_name": "UAB",
+    "rank": 36,
+    "rating": 0.40692342839947804,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Alabama",
+    "rank": 37,
+    "rating": 0.4063445084555706,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 124,
+    "team_name": "Indiana",
+    "rank": 38,
+    "rating": 0.40522210100791517,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 128,
+    "team_name": "Iowa State",
+    "rank": 39,
+    "rating": 0.4035695416449207,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 290,
+    "team_name": "TCU",
+    "rank": 40,
+    "rating": 0.4015374260825238,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 170,
+    "team_name": "Michigan",
+    "rank": 41,
+    "rating": 0.39415908168008607,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 343,
+    "team_name": "Washington State",
+    "rank": 42,
+    "rating": 0.3829438678525201,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 159,
+    "team_name": "Marquette",
+    "rank": 43,
+    "rating": 0.3821439979365508,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 210,
+    "team_name": "North Texas",
+    "rank": 44,
+    "rating": 0.37672619526623197,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 341,
+    "team_name": "Wake Forest",
+    "rank": 45,
+    "rating": 0.3735965815507274,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 153,
+    "team_name": "Loyola Chicago",
+    "rank": 46,
+    "rating": 0.36697282957489125,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 255,
+    "team_name": "San Francisco",
+    "rank": 47,
+    "rating": 0.36674654596997097,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 68,
+    "team_name": "Dayton",
+    "rank": 48,
+    "rating": 0.36646751119565446,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 331,
+    "team_name": "VCU",
+    "rank": 49,
+    "rating": 0.3622457010301961,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 67,
+    "team_name": "Davidson",
+    "rank": 50,
+    "rating": 0.35944645165155104,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 61,
+    "team_name": "Creighton",
+    "rank": 51,
+    "rating": 0.3579496845144429,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 220,
+    "team_name": "Oklahoma",
+    "rank": 52,
+    "rating": 0.35788291275227085,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 296,
+    "team_name": "Texas A&M",
+    "rank": 53,
+    "rating": 0.3558743080591486,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 224,
+    "team_name": "Oregon",
+    "rank": 54,
+    "rating": 0.3552221770933684,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 262,
+    "team_name": "Seton Hall",
+    "rank": 55,
+    "rating": 0.3537460435389683,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 126,
+    "team_name": "Iona",
+    "rank": 56,
+    "rating": 0.3497583666882837,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 266,
+    "team_name": "SMU",
+    "rank": 57,
+    "rating": 0.3497126429018845,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 248,
+    "team_name": "South Dakota State",
+    "rank": 58,
+    "rating": 0.3448163173647705,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 356,
+    "team_name": "Xavier",
+    "rank": 59,
+    "rating": 0.34296995121223617,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 355,
+    "team_name": "Wyoming",
+    "rank": 60,
+    "rating": 0.3411529153477823,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 216,
+    "team_name": "Notre Dame",
+    "rank": 61,
+    "rating": 0.3322802729295065,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 90,
+    "team_name": "Florida",
+    "rank": 62,
+    "rating": 0.3240072167169214,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 221,
+    "team_name": "Oklahoma State",
+    "rank": 63,
+    "rating": 0.3173217953130456,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 95,
+    "team_name": "Fresno State",
+    "rank": 64,
+    "rating": 0.31435921481794393,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 274,
+    "team_name": "St. Bonaventure",
+    "rank": 65,
+    "rating": 0.3109183510541781,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 281,
+    "team_name": "Saint Peter's",
+    "rank": 66,
+    "rating": 0.3065157301340486,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 46,
+    "team_name": "Chattanooga",
+    "rank": 67,
+    "rating": 0.3022819173519841,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 174,
+    "team_name": "Mississippi State",
+    "rank": 68,
+    "rating": 0.3002186617864102,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 279,
+    "team_name": "St. Louis",
+    "rank": 69,
+    "rating": 0.2998203610710116,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 277,
+    "team_name": "St. John's",
+    "rank": 70,
+    "rating": 0.2954815401529523,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 332,
+    "team_name": "Vermont",
+    "rank": 71,
+    "rating": 0.2918315645569426,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 107,
+    "team_name": "Grand Canyon",
+    "rank": 72,
+    "rating": 0.29065652729244595,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 324,
+    "team_name": "Utah State",
+    "rank": 73,
+    "rating": 0.2854301654618944,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 55,
+    "team_name": "Colorado",
+    "rank": 74,
+    "rating": 0.28342217744283754,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 243,
+    "team_name": "Richmond",
+    "rank": 75,
+    "rating": 0.27913329003782594,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 135,
+    "team_name": "Kansas State",
+    "rank": 76,
+    "rating": 0.27662758638373813,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 330,
+    "team_name": "Vanderbilt",
+    "rank": 77,
+    "rating": 0.2729681108871396,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 213,
+    "team_name": "Northern Iowa",
+    "rank": 78,
+    "rating": 0.2720440501300058,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 185,
+    "team_name": "MTSU",
+    "rank": 79,
+    "rating": 0.2688248982233499,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 301,
+    "team_name": "Towson",
+    "rank": 80,
+    "rating": 0.2653993164916133,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 334,
+    "team_name": "Virginia",
+    "rank": 81,
+    "rating": 0.2601515120523294,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 345,
+    "team_name": "West Virginia",
+    "rank": 82,
+    "rating": 0.2577712563081354,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 283,
+    "team_name": "Stanford",
+    "rank": 83,
+    "rating": 0.2535264730172924,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 257,
+    "team_name": "Santa Clara",
+    "rank": 84,
+    "rating": 0.24964160814521438,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 287,
+    "team_name": "Syracuse",
+    "rank": 85,
+    "rating": 0.24523408432932114,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 161,
+    "team_name": "Maryland",
+    "rank": 86,
+    "rating": 0.2436611710232159,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 177,
+    "team_name": "Missouri State",
+    "rank": 87,
+    "rating": 0.24346641711632006,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 246,
+    "team_name": "Rutgers",
+    "rank": 88,
+    "rating": 0.23934031361487648,
+    "bid_type": "At-Large"
+  },
+  {
+    "team_id": 300,
+    "team_name": "Toledo",
+    "rank": 89,
+    "rating": 0.23496631003663349,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Arizona State",
+    "rank": 90,
+    "rating": 0.23386768525622328,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 96,
+    "team_name": "Furman",
+    "rank": 91,
+    "rating": 0.22985861175860853,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 214,
+    "team_name": "Northwestern",
+    "rank": 92,
+    "rating": 0.22455943666187622,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 1,
+    "team_name": "Abilene Christian",
+    "rank": 93,
+    "rating": 0.2221120358303057,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 180,
+    "team_name": "Montana State",
+    "rank": 94,
+    "rating": 0.20412737711767778,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 22,
+    "team_name": "Belmont",
+    "rank": 95,
+    "rating": 0.2008080196148747,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 228,
+    "team_name": "Penn State",
+    "rank": 96,
+    "rating": 0.19072436326740996,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 50,
+    "team_name": "Clemson",
+    "rank": 97,
+    "rating": 0.18717218098895533,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 268,
+    "team_name": "South Carolina",
+    "rank": 98,
+    "rating": 0.18655588948374383,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 318,
+    "team_name": "UNC Wilmington",
+    "rank": 99,
+    "rating": 0.18421168274595803,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 312,
+    "team_name": "UCF",
+    "rank": 100,
+    "rating": 0.18218172072766145,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 48,
+    "team_name": "Cincinnati",
+    "rank": 101,
+    "rating": 0.1819197950629009,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 348,
+    "team_name": "Wichita State",
+    "rank": 102,
+    "rating": 0.1776769178592704,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 72,
+    "team_name": "Depaul",
+    "rank": 103,
+    "rating": 0.17414594407957038,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 326,
+    "team_name": "Utah Valley",
+    "rank": 104,
+    "rating": 0.1739749139302389,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 218,
+    "team_name": "Ohio",
+    "rank": 105,
+    "rating": 0.16896522873602926,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 353,
+    "team_name": "Wofford",
+    "rank": 106,
+    "rating": 0.1639756129329684,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 172,
+    "team_name": "Minnesota",
+    "rank": 107,
+    "rating": 0.16197332787038687,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 74,
+    "team_name": "Drake",
+    "rank": 108,
+    "rating": 0.16016448347104606,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 149,
+    "team_name": "Louisiana Tech",
+    "rank": 109,
+    "rating": 0.1575979127387523,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 319,
+    "team_name": "UNLV",
+    "rank": 110,
+    "rating": 0.15633337311124768,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 352,
+    "team_name": "Western Kentucky",
+    "rank": 111,
+    "rating": 0.1544231353107228,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 54,
+    "team_name": "Colgate",
+    "rank": 112,
+    "rating": 0.15175527918964057,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 188,
+    "team_name": "North Dakota State",
+    "rank": 113,
+    "rating": 0.15168249293505842,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 342,
+    "team_name": "Washington",
+    "rank": 114,
+    "rating": 0.1487028403041099,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 236,
+    "team_name": "Princeton",
+    "rank": 115,
+    "rating": 0.14861563295231955,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 143,
+    "team_name": "Liberty",
+    "rank": 116,
+    "rating": 0.14457898516064335,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 297,
+    "team_name": "Texas State",
+    "rank": 117,
+    "rating": 0.13258444258073956,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 344,
+    "team_name": "Weber State",
+    "rank": 118,
+    "rating": 0.13242061972137106,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 34,
+    "team_name": "Butler",
+    "rank": 119,
+    "rating": 0.13220222760278053,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 308,
+    "team_name": "UC Irvine",
+    "rank": 120,
+    "rating": 0.12665978592821026,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 69,
+    "team_name": "Delaware",
+    "rank": 121,
+    "rating": 0.1256325547895887,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 197,
+    "team_name": "Nevada",
+    "rank": 122,
+    "rating": 0.1252546835254413,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 132,
+    "team_name": "Jacksonville State",
+    "rank": 123,
+    "rating": 0.12324986482258443,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 323,
+    "team_name": "Utah",
+    "rank": 124,
+    "rating": 0.12065778670764506,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 137,
+    "team_name": "Kent State",
+    "rank": 125,
+    "rating": 0.11680967367799641,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 291,
+    "team_name": "Temple",
+    "rank": 126,
+    "rating": 0.11513112894372604,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 187,
+    "team_name": "N Colorado",
+    "rank": 127,
+    "rating": 0.10854259935775182,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 113,
+    "team_name": "Hofstra",
+    "rank": 128,
+    "rating": 0.10392216315254792,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 26,
+    "team_name": "Boston College",
+    "rank": 129,
+    "rating": 0.10361324446773806,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 100,
+    "team_name": "George Mason",
+    "rank": 130,
+    "rating": 0.10325822966179,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 340,
+    "team_name": "Wagner",
+    "rank": 131,
+    "rating": 0.10223523729373979,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 33,
+    "team_name": "Buffalo",
+    "rank": 132,
+    "rating": 0.10085006905246197,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 39,
+    "team_name": "California",
+    "rank": 133,
+    "rating": 0.099524424101135,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 178,
+    "team_name": "Monmouth NJ",
+    "rank": 134,
+    "rating": 0.09939451844785574,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 303,
+    "team_name": "Tulane",
+    "rank": 135,
+    "rating": 0.09771799753843402,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 263,
+    "team_name": "S.F. Austin",
+    "rank": 136,
+    "rating": 0.09134598109554228,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 261,
+    "team_name": "Seattle",
+    "rank": 137,
+    "rating": 0.08832076196148231,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 175,
+    "team_name": "Missouri",
+    "rank": 138,
+    "rating": 0.08679026103561394,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 173,
+    "team_name": "Mississippi",
+    "rank": 139,
+    "rating": 0.0832056354851639,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 311,
+    "team_name": "UC Santa Barbara",
+    "rank": 140,
+    "rating": 0.08089892901900779,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 181,
+    "team_name": "Morehead State",
+    "rank": 141,
+    "rating": 0.08069108423055682,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 241,
+    "team_name": "Rhode Island",
+    "rank": 142,
+    "rating": 0.07987853482046664,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 202,
+    "team_name": "Niagara",
+    "rank": 143,
+    "rating": 0.07902011259458824,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 205,
+    "team_name": "Norfolk State",
+    "rank": 144,
+    "rating": 0.07807438949046311,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 103,
+    "team_name": "Georgia State",
+    "rank": 145,
+    "rating": 0.07296218792872487,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 147,
+    "team_name": "Longwood",
+    "rank": 146,
+    "rating": 0.0668201274951027,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 89,
+    "team_name": "Florida Atlantic",
+    "rank": 147,
+    "rating": 0.06585090677200389,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 196,
+    "team_name": "Nebraska",
+    "rank": 148,
+    "rating": 0.06422657042740912,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 75,
+    "team_name": "Drexel",
+    "rank": 149,
+    "rating": 0.06226878427566803,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 357,
+    "team_name": "Yale",
+    "rank": 150,
+    "rating": 0.06207648186817054,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Akron",
+    "rank": 151,
+    "rating": 0.06118226651282008,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 350,
+    "team_name": "Winthrop",
+    "rank": 152,
+    "rating": 0.059483022601924514,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 93,
+    "team_name": "Florida State",
+    "rank": 153,
+    "rating": 0.05940387399380658,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 249,
+    "team_name": "Soutern Illinois",
+    "rank": 154,
+    "rating": 0.05837652116867449,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 146,
+    "team_name": "Long Beach State",
+    "rank": 155,
+    "rating": 0.05480451270012526,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 52,
+    "team_name": "Coastal Car",
+    "rank": 156,
+    "rating": 0.04880915006961661,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 305,
+    "team_name": "Texas Southern",
+    "rank": 157,
+    "rating": 0.04516314035203844,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 273,
+    "team_name": "Southern Utah",
+    "rank": 158,
+    "rating": 0.04494021963663067,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 309,
+    "team_name": "UC Riverside",
+    "rank": 159,
+    "rating": 0.044614033367692166,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 252,
+    "team_name": "Samford",
+    "rank": 160,
+    "rating": 0.041489163149424205,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 84,
+    "team_name": "ETSU",
+    "rank": 161,
+    "rating": 0.039805806058145904,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 267,
+    "team_name": "South Alabama",
+    "rank": 162,
+    "rating": 0.035990995939300635,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 60,
+    "team_name": "Cornell",
+    "rank": 163,
+    "rating": 0.030647959512742292,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Arkansas State",
+    "rank": 164,
+    "rating": 0.029761985855028008,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 223,
+    "team_name": "Oral Roberts",
+    "rank": 165,
+    "rating": 0.027589740599721555,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 63,
+    "team_name": "Cal State Fullerton",
+    "rank": 166,
+    "rating": 0.02514237791688246,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 29,
+    "team_name": "Bradley",
+    "rank": 167,
+    "rating": 0.022289764123743092,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 336,
+    "team_name": "VMI",
+    "rank": 168,
+    "rating": 0.02160053330365668,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 199,
+    "team_name": "New Mexico",
+    "rank": 169,
+    "rating": 0.020223019591452576,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 150,
+    "team_name": "Louisville",
+    "rank": 170,
+    "rating": 0.009971972655209181,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 99,
+    "team_name": "Gardner Webb",
+    "rank": 171,
+    "rating": 0.009705757072722667,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 269,
+    "team_name": "South Dakota",
+    "rank": 172,
+    "rating": 0.004635614597402064,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 111,
+    "team_name": "Hawaii",
+    "rank": 173,
+    "rating": 0.003114517034649892,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 166,
+    "team_name": "Mercer",
+    "rank": 174,
+    "rating": 0.003105338316420402,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 203,
+    "team_name": "Nicholls State",
+    "rank": 175,
+    "rating": 0.0023917852896325103,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 110,
+    "team_name": "Harvard",
+    "rank": 176,
+    "rating": -0.0012424158334296107,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 217,
+    "team_name": "Oakland",
+    "rank": 177,
+    "rating": -0.002945071053163696,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 9,
+    "team_name": "Appalachian State",
+    "rank": 178,
+    "rating": -0.008315410238409673,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 251,
+    "team_name": "Sam Houston State",
+    "rank": 179,
+    "rating": -0.011895104731302099,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 31,
+    "team_name": "Bryant",
+    "rank": 180,
+    "rating": -0.016527373026974698,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 148,
+    "team_name": "Louisiana",
+    "rank": 181,
+    "rating": -0.017211991553914625,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 81,
+    "team_name": "E Washington",
+    "rank": 182,
+    "rating": -0.021418284293208353,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 104,
+    "team_name": "Georgia Tech",
+    "rank": 183,
+    "rating": -0.025760285290990843,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 272,
+    "team_name": "Southern",
+    "rank": 184,
+    "rating": -0.02703709081764822,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 327,
+    "team_name": "UTEP",
+    "rank": 185,
+    "rating": -0.029081675253409496,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 176,
+    "team_name": "Missouri KC",
+    "rank": 186,
+    "rating": -0.029545233404641158,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 53,
+    "team_name": "Charleston",
+    "rank": 187,
+    "rating": -0.029717356362925922,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 88,
+    "team_name": "Fgcu",
+    "rank": 188,
+    "rating": -0.03263117682632742,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 191,
+    "team_name": "Navy",
+    "rank": 189,
+    "rating": -0.03539686474159151,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 302,
+    "team_name": "Troy",
+    "rank": 190,
+    "rating": -0.04073159315344214,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 194,
+    "team_name": "North Carolina State",
+    "rank": 191,
+    "rating": -0.041809513839077356,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 242,
+    "team_name": "Rice",
+    "rank": 192,
+    "rating": -0.04183157018111698,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 253,
+    "team_name": "San Diego",
+    "rank": 193,
+    "rating": -0.04330185804008859,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 232,
+    "team_name": "Portland",
+    "rank": 194,
+    "rating": -0.04468734566538767,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 354,
+    "team_name": "Wright State",
+    "rank": 195,
+    "rating": -0.04499827099746933,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 21,
+    "team_name": "Bellarmine",
+    "rank": 196,
+    "rating": -0.047418324958982544,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 278,
+    "team_name": "St. Joseph's Pa",
+    "rank": 197,
+    "rating": -0.05036521895574037,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 239,
+    "team_name": "Quinnipiac",
+    "rank": 198,
+    "rating": -0.05228505988144627,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 264,
+    "team_name": "Siena",
+    "rank": 199,
+    "rating": -0.05387832264620165,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 131,
+    "team_name": "Jacksonville",
+    "rank": 200,
+    "rating": -0.06073574619678497,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 40,
+    "team_name": "Campbell",
+    "rank": 201,
+    "rating": -0.06103649231717714,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 82,
+    "team_name": "East Carolina",
+    "rank": 202,
+    "rating": -0.06285102323556364,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 151,
+    "team_name": "Loyola Marymount",
+    "rank": 203,
+    "rating": -0.0638665531340628,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 145,
+    "team_name": "LIU Brooklyn",
+    "rank": 204,
+    "rating": -0.06698769272063064,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 45,
+    "team_name": "Charlotte",
+    "rank": 205,
+    "rating": -0.0680121696918841,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 112,
+    "team_name": "High Point",
+    "rank": 206,
+    "rating": -0.06992164366590169,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 30,
+    "team_name": "Brown",
+    "rank": 207,
+    "rating": -0.07276377708239616,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 227,
+    "team_name": "Penn",
+    "rank": 208,
+    "rating": -0.0734841746531101,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 94,
+    "team_name": "Fordham",
+    "rank": 209,
+    "rating": -0.07438518632144471,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 231,
+    "team_name": "Pittsburgh",
+    "rank": 210,
+    "rating": -0.07494761504464847,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 87,
+    "team_name": "Fairfield",
+    "rank": 211,
+    "rating": -0.07539978304171262,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 179,
+    "team_name": "Montana",
+    "rank": 212,
+    "rating": -0.07738531509662669,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 66,
+    "team_name": "Dartmouth",
+    "rank": 213,
+    "rating": -0.07960106581419137,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 307,
+    "team_name": "UC Davis",
+    "rank": 214,
+    "rating": -0.08234489839732559,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 158,
+    "team_name": "Marist",
+    "rank": 215,
+    "rating": -0.08459957197953624,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 117,
+    "team_name": "Howard",
+    "rank": 216,
+    "rating": -0.08837656266922526,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Alcorn State",
+    "rank": 217,
+    "rating": -0.09373531830683658,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 49,
+    "team_name": "Citadel",
+    "rank": 218,
+    "rating": -0.09534064395384381,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 162,
+    "team_name": "Massachusetts",
+    "rank": 219,
+    "rating": -0.0954375450905527,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 285,
+    "team_name": "Stony Brook",
+    "rank": 220,
+    "rating": -0.09967568956737873,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 51,
+    "team_name": "Cleveland State",
+    "rank": 221,
+    "rating": -0.10113694084370126,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 244,
+    "team_name": "Rider",
+    "rank": 222,
+    "rating": -0.10141178850892635,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 222,
+    "team_name": "Old Dominion",
+    "rank": 223,
+    "rating": -0.10248368935101852,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 122,
+    "team_name": "Illinois State",
+    "rank": 224,
+    "rating": -0.10301860323043988,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 304,
+    "team_name": "Tulsa",
+    "rank": 225,
+    "rating": -0.10457268708006434,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 101,
+    "team_name": "Georgetown",
+    "rank": 226,
+    "rating": -0.10507052439309639,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 321,
+    "team_name": "UT Arlington",
+    "rank": 227,
+    "rating": -0.10911628079836577,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 157,
+    "team_name": "Manhattan",
+    "rank": 228,
+    "rating": -0.11823506348555791,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 338,
+    "team_name": "W Illinois",
+    "rank": 229,
+    "rating": -0.11979576334830676,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 289,
+    "team_name": "Tarleton State",
+    "rank": 230,
+    "rating": -0.12101127035279902,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 37,
+    "team_name": "Cal Baptist",
+    "rank": 231,
+    "rating": -0.12123700422983223,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 133,
+    "team_name": "James Madison",
+    "rank": 232,
+    "rating": -0.1214444091813881,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 27,
+    "team_name": "Boston Univ",
+    "rank": 233,
+    "rating": -0.12223817577795361,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 136,
+    "team_name": "Kennesaw State",
+    "rank": 234,
+    "rating": -0.12364091989517542,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 259,
+    "team_name": "SE Louisiana",
+    "rank": 235,
+    "rating": -0.1245177554681017,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 317,
+    "team_name": "UNC Greensboro",
+    "rank": 236,
+    "rating": -0.1276364729674091,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 83,
+    "team_name": "Elon",
+    "rank": 237,
+    "rating": -0.13511182768889188,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 316,
+    "team_name": "UNC Asheville",
+    "rank": 238,
+    "rating": -0.13907323744086242,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 190,
+    "team_name": "Northern Kentucky",
+    "rank": 239,
+    "rating": -0.14202975797622358,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 329,
+    "team_name": "Valparaiso",
+    "rank": 240,
+    "rating": -0.14569923181169456,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 155,
+    "team_name": "MA Lowell",
+    "rank": 241,
+    "rating": -0.14582788920411843,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 73,
+    "team_name": "Detroit",
+    "rank": 242,
+    "rating": -0.16498201877252194,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 211,
+    "team_name": "Northeastern",
+    "rank": 243,
+    "rating": -0.17435816736281895,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 310,
+    "team_name": "UC San Diego",
+    "rank": 244,
+    "rating": -0.17506659276209932,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 225,
+    "team_name": "Oregon State",
+    "rank": 245,
+    "rating": -0.1787847905672817,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 288,
+    "team_name": "Texas A&M – Corpus Christi",
+    "rank": 246,
+    "rating": -0.18223214361462015,
+    "bid_type": "Automatic"
+  },
+  {
+    "team_id": 102,
+    "team_name": "Georgia",
+    "rank": 247,
+    "rating": -0.1830224371893681,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 270,
+    "team_name": "South Florida",
+    "rank": 248,
+    "rating": -0.18479599655073503,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 230,
+    "team_name": "PFW",
+    "rank": 249,
+    "rating": -0.18935218769482673,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 130,
+    "team_name": "Jackson State",
+    "rank": 250,
+    "rating": -0.18958094982778195,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 234,
+    "team_name": "Prairie View",
+    "rank": 251,
+    "rating": -0.1914461444905888,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 152,
+    "team_name": "Loyola Maryland",
+    "rank": 252,
+    "rating": -0.19481461968831382,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 97,
+    "team_name": "G Washington",
+    "rank": 253,
+    "rating": -0.19488549575039998,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 315,
+    "team_name": "UMBC",
+    "rank": 254,
+    "rating": -0.19639805919753317,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 98,
+    "team_name": "Ga Southern",
+    "rank": 255,
+    "rating": -0.1977648537544423,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 106,
+    "team_name": "Grambling State",
+    "rank": 256,
+    "rating": -0.20559429617465927,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Air Force",
+    "rank": 257,
+    "rating": -0.208258151269171,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 256,
+    "team_name": "San Jose State",
+    "rank": 258,
+    "rating": -0.20913106898043915,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 325,
+    "team_name": "Utah Tech",
+    "rank": 259,
+    "rating": -0.21365036274479848,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 201,
+    "team_name": "New Orleans",
+    "rank": 260,
+    "rating": -0.21403724175876837,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 233,
+    "team_name": "Portland State",
+    "rank": 261,
+    "rating": -0.2157401797469923,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 169,
+    "team_name": "Miami (OH)",
+    "rank": 262,
+    "rating": -0.21806772884892278,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 198,
+    "team_name": "New Hampshire",
+    "rank": 263,
+    "rating": -0.2204555806795259,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 229,
+    "team_name": "Pepperdine",
+    "rank": 264,
+    "rating": -0.22269235774384885,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 139,
+    "team_name": "La Salle",
+    "rank": 265,
+    "rating": -0.22467137851574404,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 286,
+    "team_name": "SUNY Albany",
+    "rank": 266,
+    "rating": -0.2255167366844341,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 184,
+    "team_name": "Mt St Mary's",
+    "rank": 267,
+    "rating": -0.2269582769931639,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 71,
+    "team_name": "Denver",
+    "rank": 268,
+    "rating": -0.22767235360470264,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 160,
+    "team_name": "Marshall",
+    "rank": 269,
+    "rating": -0.22903509326234053,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 258,
+    "team_name": "SC Upstate",
+    "rank": 270,
+    "rating": -0.22921645532188986,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 192,
+    "team_name": "NC A&T",
+    "rank": 271,
+    "rating": -0.2315094109746281,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 235,
+    "team_name": "Presbyterian",
+    "rank": 272,
+    "rating": -0.233771540240414,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 167,
+    "team_name": "Merrimack",
+    "rank": 273,
+    "rating": -0.24420563707761464,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 189,
+    "team_name": "Northern Illinois",
+    "rank": 274,
+    "rating": -0.2501987740524759,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 260,
+    "team_name": "Southeast Missouri State",
+    "rank": 275,
+    "rating": -0.25402075958145,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 358,
+    "team_name": "Youngstown State",
+    "rank": 276,
+    "rating": -0.25666799454478273,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 314,
+    "team_name": "ULM",
+    "rank": 277,
+    "rating": -0.2575179364392568,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Army",
+    "rank": 278,
+    "rating": -0.26643144306468847,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 41,
+    "team_name": "Canisius",
+    "rank": 279,
+    "rating": -0.26664212995553704,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 65,
+    "team_name": "Cal State Sacramento",
+    "rank": 280,
+    "rating": -0.27053376467710644,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 284,
+    "team_name": "Stetson",
+    "rank": 281,
+    "rating": -0.27235219010212264,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 77,
+    "team_name": "Duquesne",
+    "rank": 282,
+    "rating": -0.27573558778674645,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 59,
+    "team_name": "Coppin State",
+    "rank": 283,
+    "rating": -0.27845815455545136,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 24,
+    "team_name": "Binghamton",
+    "rank": 284,
+    "rating": -0.27902021035022867,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 19,
+    "team_name": "Ball State",
+    "rank": 285,
+    "rating": -0.28130255023510736,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 144,
+    "team_name": "Lipscomb",
+    "rank": 286,
+    "rating": -0.28483130881223745,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Austin Peay",
+    "rank": 287,
+    "rating": -0.28689854962388334,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 209,
+    "team_name": "North Florida",
+    "rank": 288,
+    "rating": -0.2905804236485557,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 28,
+    "team_name": "Bowling Green",
+    "rank": 289,
+    "rating": -0.2941323295854081,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Alabama A&M",
+    "rank": 290,
+    "rating": -0.2952974299567943,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 293,
+    "team_name": "Tennessee State",
+    "rank": 291,
+    "rating": -0.29649107329343094,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 282,
+    "team_name": "St. Thomas Mn",
+    "rank": 292,
+    "rating": -0.300526631532905,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Alabama State",
+    "rank": 293,
+    "rating": -0.3024634639068734,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 79,
+    "team_name": "E Kentucky",
+    "rank": 294,
+    "rating": -0.30371925336925504,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 92,
+    "team_name": "Florida Intl",
+    "rank": 295,
+    "rating": -0.3044356484421205,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 337,
+    "team_name": "W Carolina",
+    "rank": 296,
+    "rating": -0.3068913836085503,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 118,
+    "team_name": "Idaho",
+    "rank": 297,
+    "rating": -0.3201228717221953,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 294,
+    "team_name": "Tennessee Tech",
+    "rank": 298,
+    "rating": -0.3201259078349944,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 250,
+    "team_name": "Sacred Heart",
+    "rank": 299,
+    "rating": -0.3291705363675321,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 142,
+    "team_name": "Lehigh",
+    "rank": 300,
+    "rating": -0.33178324239014545,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 36,
+    "team_name": "C Michigan",
+    "rank": 301,
+    "rating": -0.3331052290975743,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 125,
+    "team_name": "Indiana State",
+    "rank": 302,
+    "rating": -0.33633074103846305,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 109,
+    "team_name": "Hartford",
+    "rank": 303,
+    "rating": -0.3364826521531308,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 212,
+    "team_name": "Northern Arizona",
+    "rank": 304,
+    "rating": -0.3369393424720418,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 182,
+    "team_name": "Morgan State",
+    "rank": 305,
+    "rating": -0.3454508293836624,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 322,
+    "team_name": "UT San Antonio",
+    "rank": 306,
+    "rating": -0.3520231218657135,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 247,
+    "team_name": "South Carolina State",
+    "rank": 307,
+    "rating": -0.3554212598332834,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 116,
+    "team_name": "Houston Chr",
+    "rank": 308,
+    "rating": -0.35891482843228006,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 140,
+    "team_name": "Lafayette",
+    "rank": 309,
+    "rating": -0.36044984779618744,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 193,
+    "team_name": "NC Central",
+    "rank": 310,
+    "rating": -0.3624194910652692,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 328,
+    "team_name": "UTRGV",
+    "rank": 311,
+    "rating": -0.3628732624964692,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 38,
+    "team_name": "Cal Poly",
+    "rank": 312,
+    "rating": -0.36330437774227586,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 62,
+    "team_name": "Cal State Bakersfield",
+    "rank": 313,
+    "rating": -0.36958096914622607,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 91,
+    "team_name": "Florida A&M",
+    "rank": 314,
+    "rating": -0.37133149870616466,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 164,
+    "team_name": "Maryland East Shore",
+    "rank": 315,
+    "rating": -0.378947168627987,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 119,
+    "team_name": "Idaho State",
+    "rank": 316,
+    "rating": -0.38025493460685666,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 226,
+    "team_name": "Pacific",
+    "rank": 317,
+    "rating": -0.3848516882089783,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 271,
+    "team_name": "Southern Miss",
+    "rank": 318,
+    "rating": -0.38882302519160694,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 80,
+    "team_name": "E Michigan",
+    "rank": 319,
+    "rating": -0.3910070218978786,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 206,
+    "team_name": "North Alabama",
+    "rank": 320,
+    "rating": -0.39105441015248943,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 47,
+    "team_name": "Chicago State",
+    "rank": 321,
+    "rating": -0.39488716047667505,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 204,
+    "team_name": "NJIT",
+    "rank": 322,
+    "rating": -0.4002929909046706,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 339,
+    "team_name": "W Michigan",
+    "rank": 323,
+    "rating": -0.40388553780042574,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 120,
+    "team_name": "Il Chicago",
+    "rank": 324,
+    "rating": -0.40694894046376917,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Arkansas Little Rock",
+    "rank": 325,
+    "rating": -0.4080619621422344,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 64,
+    "team_name": "Cal State Northridge",
+    "rank": 326,
+    "rating": -0.409000167842857,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 265,
+    "team_name": "Siue",
+    "rank": 327,
+    "rating": -0.4127106929298489,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 23,
+    "team_name": "Bethune-cookman",
+    "rank": 328,
+    "rating": -0.4136693396696204,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 85,
+    "team_name": "Evansville",
+    "rank": 329,
+    "rating": -0.41921399475662513,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 163,
+    "team_name": "McNeese State",
+    "rank": 330,
+    "rating": -0.4212999263088737,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 8,
+    "team_name": "American University",
+    "rank": 331,
+    "rating": -0.42232937966711825,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 240,
+    "team_name": "Radford",
+    "rank": 332,
+    "rating": -0.4231327167558119,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 275,
+    "team_name": "St Francis Ny",
+    "rank": 333,
+    "rating": -0.4243635657787652,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 276,
+    "team_name": "St. Francis Pa",
+    "rank": 334,
+    "rating": -0.42648610308254997,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 299,
+    "team_name": "TN Martin",
+    "rank": 335,
+    "rating": -0.4282668273900084,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 32,
+    "team_name": "Bucknell",
+    "rank": 336,
+    "rating": -0.43074862030253047,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 42,
+    "team_name": "Cent Arkansas",
+    "rank": 337,
+    "rating": -0.43588742757537025,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 215,
+    "team_name": "Northwestern LA",
+    "rank": 338,
+    "rating": -0.4436630778537959,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 195,
+    "team_name": "NE Omaha",
+    "rank": 339,
+    "rating": -0.45177356799446344,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 108,
+    "team_name": "Hampton",
+    "rank": 340,
+    "rating": -0.4630559101190476,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 123,
+    "team_name": "Incarnate Word",
+    "rank": 341,
+    "rating": -0.48854645448918044,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 43,
+    "team_name": "Central Conn",
+    "rank": 342,
+    "rating": -0.4932809855023708,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 208,
+    "team_name": "North Dakota",
+    "rank": 343,
+    "rating": -0.5009646173927191,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 57,
+    "team_name": "Columbia",
+    "rank": 344,
+    "rating": -0.511820957641297,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Arkansas Pine Bluff",
+    "rank": 345,
+    "rating": -0.5133917466918345,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 347,
+    "team_name": "WI Milwaukee",
+    "rank": 346,
+    "rating": -0.5245585072223727,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 183,
+    "team_name": "Mississippi Valley State",
+    "rank": 347,
+    "rating": -0.5253256120958034,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 346,
+    "team_name": "WI Green Bay",
+    "rank": 348,
+    "rating": -0.5276493992693744,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 349,
+    "team_name": "William & Mary",
+    "rank": 349,
+    "rating": -0.5453146227162897,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 245,
+    "team_name": "Robert Morris",
+    "rank": 350,
+    "rating": -0.5548053331960121,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 114,
+    "team_name": "Holy Cross",
+    "rank": 351,
+    "rating": -0.592419468826504,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 86,
+    "team_name": "Fairleigh Dickinson",
+    "rank": 352,
+    "rating": -0.6096842052075223,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 156,
+    "team_name": "Maine",
+    "rank": 353,
+    "rating": -0.6138479010278116,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 141,
+    "team_name": "Lamar",
+    "rank": 354,
+    "rating": -0.6200413847164912,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 44,
+    "team_name": "Charleston Southern",
+    "rank": 355,
+    "rating": -0.6326721115902083,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 78,
+    "team_name": "E Illinois",
+    "rank": 356,
+    "rating": -0.6388424281467486,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 70,
+    "team_name": "Delaware State",
+    "rank": 357,
+    "rating": -0.7112867958856435,
+    "bid_type": "N/A"
+  },
+  {
+    "team_id": 129,
+    "team_name": "IUPUI",
+    "rank": 358,
+    "rating": -0.745528177184321,
+    "bid_type": "N/A"
+  }
+]

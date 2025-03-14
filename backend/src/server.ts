@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { main } from './build-rankings';
+import { SelectionCommittee } from './lib/selection-committee';
 
 // Load environment variables
 dotenv.config();
@@ -43,6 +44,80 @@ app.get('/api/ncaambb', async (req: Request, res: Response) => {
 app.get('/api/generate-rankings', async (req: Request, res: Response) => {
 	await main();
 	res.status(200).send('Rankings generated');
+});
+
+app.get('/api/game-results/:year', async (req: Request, res: Response) => {
+	const year = parseInt(req.params.year);
+	const selectionCommittee = new SelectionCommittee(year);
+	const gameResults = await selectionCommittee.getGameResults(year);	
+
+	//write team summaries to the archive folder
+	fs.writeFileSync(path.join(__dirname, `../data/archive/mensbb-team-summaries-${year}.json`), JSON.stringify(gameResults.teamSummaries, null, 2));
+
+	res.status(200).send(gameResults);
+
+	// console.log(`initializing mens basketball rankings for ${year}`);
+});
+
+// app.get('/api/selection-committee/:year', async (req: Request, res: Response) => {
+app.get('/api/build-archive-ratings/:year', async (req: Request, res: Response) => {
+	const MasseyLeague = require('./lib/massey');
+	const dataDir = path.join(__dirname, '../data/archive');
+	const year = parseInt(req.params.year);
+	const selectionCommittee = new SelectionCommittee(year);
+	const endpoints = selectionCommittee.getMasseyEndpoints(year);
+
+	console.log(`initializing mens basketball rankings for ${year}`);
+	const massey = new MasseyLeague(endpoints.teams, endpoints.games.intra, endpoints.games.inter);
+	await massey.loadEverything();
+	
+
+	interface TeamType {
+		team_id: number;
+		team_name: string;
+		rank: number;
+		rating: number;
+		bid_type?: string;
+	}
+
+	const currentRatings:TeamType[] = massey.generateRankings();
+	const tournament = fs.readFileSync(path.join(__dirname, `../data/archive/mensbb-tournament-${year}.json`), 'utf8');
+	const tournamentData = JSON.parse(tournament);
+
+	//add bid_type to the currentRatings
+
+	//add bid_type = 'N/A' to all the teams that don't have a bid
+	currentRatings.forEach((team:TeamType) => {
+		if (!team.bid_type) {
+			team.bid_type = 'N/A';
+		}
+	});
+
+	tournamentData.forEach((team:any) => {
+		const teamName = team.team_name;
+		const bidType = team.bid_type;
+		
+		//match team_name to currentRatings.team_name
+		const teamId = currentRatings.find((t:TeamType) => t.team_name === teamName)?.team_id;
+		if (teamId) {
+			const matchedTeam = currentRatings.find((t: TeamType) => t.team_id === teamId);
+			if (matchedTeam) {
+				matchedTeam.bid_type = bidType;
+			} else {
+				console.log(`Team with ID ${teamId} not found in currentRatings`);
+			}
+		}
+		else{
+			console.log(`team ${teamName} not found in currentRatings`);
+		}
+	});
+
+	// Write JSON to file
+	fs.writeFileSync(path.join(dataDir, `mensbb-rankings-${year}.json`), JSON.stringify(currentRatings, null, 2));
+	console.log(`mens rankings written for ${year}`);
+
+
+	res.status(200).send(endpoints);
 });
 
 app.listen(PORT, () => {
