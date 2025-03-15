@@ -3,91 +3,11 @@ import { parse } from 'csv-parse/sync';
 import fs from 'fs';
 import path from 'path';
 import { CollegeNameFormatter } from './college-name-formatter';
+import { SelectionCommitteeType, MasseyEndpointsType, MasseyEndpointsByYearType, TeamDataType, GameTeamDataType, GameDataType, TeamSummaryDataType, YearRankingsType, TeamDataMap, TeamSummaryMap } from './types';
 
 const mbbEndpointsByYear = _mbbEndpointsByYear as MasseyEndpointsByYearType;
 const nameTable:{ [key: string]: string } = require(path.join(__dirname, '../../data/name-table.json'));
 
-interface SelectionCommitteeType {
-	year: number;
-	tournamentStartDate: string;
-}
-
-interface MasseyEndpointsType {
-	teams: string;
-	games: {
-		inter: string;
-		intra: string;
-		all: string;
-	}
-}
-
-interface MasseyEndpointsByYearType {
-	[key: string]: {
-		masseyID: number;
-		tournamentStartDate: string;
-	}
-}
-
-interface TeamDataType {
-	id: number;
-	games: {
-		opponent: string;
-		site: string;
-		margin: number;
-	}[];
-}
-
-interface GameTeamDataType {
-	id: number;
-	score: number;
-	scoreDiff: number;
-	site: string;
-	name: string;
-	opponent: string;
-	gameDate: string;
-}
-
-interface GameDataType {
-	teamA: GameTeamDataType;
-	teamB: GameTeamDataType;
-	neutral: boolean;
-}
-
-interface TeamSummaryDataType {
-	id: number;	
-	ranking: number;
-	rating: number;
-	averageOpponentRanking: number;
-	averageOpponentRating: number;
-	averageScoringMargin: number;
-	gameCount: number;
-	bidType: string;
-	wins:{
-		quad1: number;
-		quad2: number;
-		quad3: number;
-		quad4: number;
-	}
-	losses:{
-		quad1: number;
-		quad2: number;
-		quad3: number;
-		quad4: number;
-	}
-	
-}
-
-interface YearRankingsType {
-	team_id: number;
-	team_name: string;
-	rank: number;
-	rating: number;
-	bid_type: string;
-}
-
-
-type TeamDataMap = Map<string, TeamDataType>;
-type TeamSummaryMap = Map<string, TeamSummaryDataType>;
 
 export class SelectionCommittee implements SelectionCommitteeType {
 	year: number;
@@ -108,6 +28,26 @@ export class SelectionCommittee implements SelectionCommitteeType {
 	static mapToObject = <K, V>(map: Map<K, V>): Record<string | number | symbol, V> => {
 		return Object.fromEntries(map.entries());
 	};
+
+	getTeamSummariesFromFile():TeamSummaryMap {
+		const dataDir = path.join(__dirname, '../../data/archive');
+		const summaries = JSON.parse(fs.readFileSync(path.join(dataDir, `mensbb-team-summaries-${this.year}.json`), 'utf8'));
+
+		return new Map(Object.entries(summaries));
+	}
+
+	getTeamSummaryFromFile(teamName: string):TeamSummaryDataType {
+		const dataDir = path.join(__dirname, '../../data/archive');
+
+		//this is a json file that is a map of team names to team summaries
+		const summaries = JSON.parse(fs.readFileSync(path.join(dataDir, `mensbb-team-summaries-${this.year}.json`), 'utf8'));
+
+		if(!summaries[teamName]){
+			throw new Error(`Team ${teamName} not found in year ${this.year}`);
+		}
+
+		return summaries[teamName];
+	}
 
 	getTeamRanking(teamName: string):YearRankingsType {
 		const teamRanking = this.yearRankings.find((ranking: YearRankingsType) => ranking.team_name === teamName);

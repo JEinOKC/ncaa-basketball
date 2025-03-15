@@ -6,6 +6,8 @@ import fs from 'fs';
 import path from 'path';
 import { main } from './build-rankings';
 import { SelectionCommittee } from './lib/selection-committee';
+import { MBBLogisticalRegression } from './lib/logistical-regression';
+import { TeamSummaryDataType } from './lib/types';
 
 // Load environment variables
 dotenv.config();
@@ -57,6 +59,76 @@ app.get('/api/game-results/:year', async (req: Request, res: Response) => {
 	res.status(200).send(gameResults);
 
 	// console.log(`initializing mens basketball rankings for ${year}`);
+});
+
+app.get('/api/predict-bid/:year/:teamName', async (req: Request, res: Response) => {
+	const year = parseInt(req.params.year);
+	const teamName = req.params.teamName;
+
+	const selectionCommittee = new SelectionCommittee(year);
+	const teamSummary = selectionCommittee.getTeamSummaryFromFile(teamName);
+
+	const logisticalRegression = new MBBLogisticalRegression();
+	logisticalRegression.loadModel();
+
+	// res.status(200).send('testing');
+
+	const prediction = logisticalRegression.predict(teamSummary);
+	const result = logisticalRegression.predictProbability(teamSummary);
+
+	res.status(200).send({
+		'rawDecisionValue':result.rawDecisionValue, 
+		'simplisticProbability':result.probability,
+		'simplisticPrediction':prediction	
+	});
+
+});
+
+app.get('/api/predict-bids/:year', async (req: Request, res: Response) => {
+	const year = parseInt(req.params.year);
+	const selectionCommittee = new SelectionCommittee(year);
+
+	interface TeamSummaryWithProbabilityType extends TeamSummaryDataType {
+		probability: number;
+		prediction: number;
+		rawDecisionValue: number;
+		teamName: string;
+	}
+
+	const teamSummaries = selectionCommittee.getTeamSummariesFromFile();
+	const finalSummaries:TeamSummaryWithProbabilityType[] = [];
+
+	const logisticalRegression = new MBBLogisticalRegression();
+	logisticalRegression.loadModel();
+
+	teamSummaries.forEach((teamSummary:TeamSummaryDataType) => {
+		const result = logisticalRegression.predictProbability(teamSummary);
+
+		const finalSummary:TeamSummaryWithProbabilityType = {
+			...teamSummary,
+			teamName: '[unknown]',
+			probability: result.probability,
+			prediction: result.prediction,
+			rawDecisionValue: result.rawDecisionValue
+		}
+
+		finalSummaries.push(finalSummary);
+		
+	});
+
+	fs.writeFileSync(path.join(__dirname, `../data/archive/mensbb-team-summaries-${year}-with-probabilities.json`), JSON.stringify(finalSummaries, null, 2));
+
+	res.status(200).send(finalSummaries);
+});
+
+app.get('/api/train-model', async (req: Request, res: Response) => {
+	const logisticalRegression = new MBBLogisticalRegression();
+	
+	logisticalRegression.trainModel();
+	logisticalRegression.saveModel();
+	res.status(200).send('Model trained and saved');
+	
+
 });
 
 // app.get('/api/selection-committee/:year', async (req: Request, res: Response) => {
