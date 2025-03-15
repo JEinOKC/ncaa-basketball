@@ -7,7 +7,6 @@ import path from 'path';
 import { main } from './build-rankings';
 import { SelectionCommittee } from './lib/selection-committee';
 import { MBBLogisticalRegression } from './lib/logistical-regression';
-import { TeamSummaryDataType } from './lib/types';
 
 // Load environment variables
 dotenv.config();
@@ -88,37 +87,9 @@ app.get('/api/predict-bids/:year', async (req: Request, res: Response) => {
 	const year = parseInt(req.params.year);
 	const selectionCommittee = new SelectionCommittee(year);
 
-	interface TeamSummaryWithProbabilityType extends TeamSummaryDataType {
-		probability: number;
-		prediction: number;
-		rawDecisionValue: number;
-		teamName: string;
-	}
+	const results = await selectionCommittee.getTeamSummariesWithProbabilities();
 
-	const teamSummaries = selectionCommittee.getTeamSummariesFromFile();
-	const finalSummaries:TeamSummaryWithProbabilityType[] = [];
-
-	const logisticalRegression = new MBBLogisticalRegression();
-	logisticalRegression.loadModel();
-
-	teamSummaries.forEach((teamSummary:TeamSummaryDataType) => {
-		const result = logisticalRegression.predictProbability(teamSummary);
-
-		const finalSummary:TeamSummaryWithProbabilityType = {
-			...teamSummary,
-			teamName: '[unknown]',
-			probability: result.probability,
-			prediction: result.prediction,
-			rawDecisionValue: result.rawDecisionValue
-		}
-
-		finalSummaries.push(finalSummary);
-		
-	});
-
-	fs.writeFileSync(path.join(__dirname, `../data/archive/mensbb-team-summaries-${year}-with-probabilities.json`), JSON.stringify(finalSummaries, null, 2));
-
-	res.status(200).send(finalSummaries);
+	res.status(200).send(results);
 });
 
 app.get('/api/train-model', async (req: Request, res: Response) => {

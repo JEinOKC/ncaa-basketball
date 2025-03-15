@@ -76,6 +76,13 @@ export interface YearRankingsType {
 	bid_type: string;
 }
 
+export interface TeamSummaryWithProbabilityType extends TeamSummaryDataType {
+	probability: number;
+	prediction: number;
+	rawDecisionValue: number;
+	teamName: string;
+}
+
 
 export type TeamDataMap = Map<string, TeamDataType>;
 export type TeamSummaryMap = Map<string, TeamSummaryDataType>;
