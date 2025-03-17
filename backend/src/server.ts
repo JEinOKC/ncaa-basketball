@@ -22,9 +22,6 @@ app.get('/api/health', (req: Request, res: Response) => {
 });
 
 app.get('/api/ncaawbb', async (req: Request, res: Response) => {
-	// const massey = new MasseyLeague(endpoints.womensbb.teams, endpoints.womensbb.games.intra, endpoints.womensbb.games.inter);
-	// await massey.loadEverything();
-	// const currentRatings = massey.generateRankings();
 
 	const currentRatings = fs.readFileSync(path.join(__dirname, '../data/womensbb-rankings.json'), 'utf8');
 
