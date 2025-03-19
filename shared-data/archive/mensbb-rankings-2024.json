@@ -4,2533 +4,2533 @@
     "team_name": "Purdue",
     "rank": 1,
     "rating": 0.8586045256892048,
-    "bid_type": "At Large"
+    "seed": 3
   },
   {
     "team_id": 115,
     "team_name": "Houston",
     "rank": 2,
     "rating": 0.7781468009693208,
-    "bid_type": "At Large"
+    "seed": 2
   },
   {
     "team_id": 58,
     "team_name": "UConn",
     "rank": 3,
     "rating": 0.775489070217263,
-    "bid_type": "Automatic"
+    "seed": 1
   },
   {
     "team_id": 209,
     "team_name": "North Carolina",
     "rank": 4,
     "rating": 0.6451104157695557,
-    "bid_type": "At Large"
+    "seed": 4
   },
   {
     "team_id": 10,
     "team_name": "Arizona",
     "rank": 5,
     "rating": 0.6321825943624941,
-    "bid_type": "At Large"
+    "seed": 6
   },
   {
     "team_id": 296,
     "team_name": "Tennessee",
     "rank": 6,
     "rating": 0.6181024558952473,
-    "bid_type": "At Large"
+    "seed": 5
   },
   {
     "team_id": 161,
     "team_name": "Marquette",
     "rank": 7,
     "rating": 0.6115689927139533,
-    "bid_type": "At Large"
+    "seed": 7
   },
   {
     "team_id": 17,
     "team_name": "Auburn",
     "rank": 8,
     "rating": 0.598277610249407,
-    "bid_type": "Automatic"
+    "seed": 15
   },
   {
     "team_id": 76,
     "team_name": "Duke",
     "rank": 9,
     "rating": 0.5970596555829893,
-    "bid_type": "At Large"
+    "seed": 13
   },
   {
     "team_id": 121,
     "team_name": "Illinois",
     "rank": 10,
     "rating": 0.5806561824101436,
-    "bid_type": "Automatic"
+    "seed": 12
   },
   {
     "team_id": 50,
     "team_name": "Clemson",
     "rank": 11,
     "rating": 0.5606486116470804,
-    "bid_type": "At Large"
+    "seed": 22
   },
   {
     "team_id": 355,
     "team_name": "Wisconsin",
     "rank": 12,
     "rating": 0.5593411113011953,
-    "bid_type": "At Large"
+    "seed": 19
   },
   {
     "team_id": 128,
     "team_name": "Iowa State",
     "rank": 13,
     "rating": 0.5556917326739387,
-    "bid_type": "Automatic"
+    "seed": 8
   },
   {
     "team_id": 257,
     "team_name": "San Diego State",
     "rank": 14,
     "rating": 0.5461723148389168,
-    "bid_type": "At Large"
+    "seed": 18
   },
   {
     "team_id": 4,
     "team_name": "Alabama",
     "rank": 15,
     "rating": 0.5436204605463872,
-    "bid_type": "At Large"
+    "seed": 16
   },
   {
     "team_id": 90,
     "team_name": "Florida Atlantic",
     "rank": 16,
     "rating": 0.5386942402912664,
-    "bid_type": "At Large"
+    "seed": 31
   },
   {
     "team_id": 20,
     "team_name": "Baylor",
     "rank": 17,
     "rating": 0.5386155846558188,
-    "bid_type": "At Large"
+    "seed": 9
   },
   {
     "team_id": 68,
     "team_name": "Dayton",
     "rank": 18,
     "rating": 0.5186800779248693,
-    "bid_type": "At Large"
+    "seed": 28
   },
   {
     "team_id": 74,
     "team_name": "Drake",
     "rank": 19,
     "rating": 0.5114958157271677,
-    "bid_type": "Automatic"
+    "seed": 40
   },
   {
     "team_id": 61,
     "team_name": "Creighton",
     "rank": 20,
     "rating": 0.5064763520391492,
-    "bid_type": "At Large"
+    "seed": 10
   },
   {
     "team_id": 55,
     "team_name": "Colorado",
     "rank": 21,
     "rating": 0.4956030478837665,
-    "bid_type": "At Large"
+    "seed": 39
   },
   {
     "team_id": 138,
     "team_name": "Kentucky",
     "rank": 22,
     "rating": 0.47926297601082607,
-    "bid_type": "At Large"
+    "seed": 11
   },
   {
     "team_id": 106,
     "team_name": "Gonzaga",
     "rank": 23,
     "rating": 0.47707599185311245,
-    "bid_type": "At Large"
+    "seed": 17
   },
   {
     "team_id": 328,
     "team_name": "Utah State",
     "rank": 24,
     "rating": 0.47636630009793673,
-    "bid_type": "At Large"
+    "seed": 30
   },
   {
     "team_id": 173,
     "team_name": "Michigan State",
     "rank": 25,
     "rating": 0.4753297662892436,
-    "bid_type": "At Large"
+    "seed": 33
   },
   {
     "team_id": 56,
     "team_name": "Colorado State",
     "rank": 26,
     "rating": 0.4635986212710034,
-    "bid_type": "At Large"
+    "seed": 42
   },
   {
     "team_id": 280,
     "team_name": "St. John's",
     "rank": 27,
     "rating": 0.4558708213994633,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 198,
     "team_name": "Nebraska",
     "rank": 28,
     "rating": 0.4536865792877788,
-    "bid_type": "At Large"
+    "seed": 29
   },
   {
     "team_id": 125,
     "team_name": "Indiana State",
     "rank": 29,
     "rating": 0.4517992116341661,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 91,
     "team_name": "Florida",
     "rank": 30,
     "rating": 0.4380074744112817,
-    "bid_type": "At Large"
+    "seed": 25
   },
   {
     "team_id": 196,
     "team_name": "North Carolina State",
     "rank": 31,
     "rating": 0.43418603903332414,
-    "bid_type": "Automatic"
+    "seed": 45
   },
   {
     "team_id": 233,
     "team_name": "Pittsburgh",
     "rank": 32,
     "rating": 0.43142100111016135,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 134,
     "team_name": "Kansas",
     "rank": 33,
     "rating": 0.4283476402134226,
-    "bid_type": "At Large"
+    "seed": 14
   },
   {
     "team_id": 201,
     "team_name": "New Mexico",
     "rank": 34,
     "rating": 0.4213959721475322,
-    "bid_type": "Automatic"
+    "seed": 44
   },
   {
     "team_id": 35,
     "team_name": "BYU",
     "rank": 35,
     "rating": 0.4195876192619485,
-    "bid_type": "At Large"
+    "seed": 21
   },
   {
     "team_id": 108,
     "team_name": "Grand Canyon",
     "rank": 36,
     "rating": 0.41925329988611815,
-    "bid_type": "Automatic"
+    "seed": 47
   },
   {
     "team_id": 199,
     "team_name": "Nevada",
     "rank": 37,
     "rating": 0.4183606335342246,
-    "bid_type": "At Large"
+    "seed": 37
   },
   {
     "team_id": 271,
     "team_name": "South Carolina",
     "rank": 38,
     "rating": 0.414829060439002,
-    "bid_type": "At Large"
+    "seed": 24
   },
   {
     "team_id": 294,
     "team_name": "TCU",
     "rank": 39,
     "rating": 0.4043526909555003,
-    "bid_type": "At Large"
+    "seed": 35
   },
   {
     "team_id": 299,
     "team_name": "Texas",
     "rank": 40,
     "rating": 0.3918787126024657,
-    "bid_type": "At Large"
+    "seed": 27
   },
   {
     "team_id": 216,
     "team_name": "Northwestern",
     "rank": 41,
     "rating": 0.3877776868504057,
-    "bid_type": "At Large"
+    "seed": 36
   },
   {
     "team_id": 300,
     "team_name": "Texas A&M",
     "rank": 42,
     "rating": 0.38686803125159075,
-    "bid_type": "At Large"
+    "seed": 34
   },
   {
     "team_id": 283,
     "team_name": "Saint Mary's",
     "rank": 43,
     "rating": 0.3864425489721939,
-    "bid_type": "Automatic"
+    "seed": 20
   },
   {
     "team_id": 302,
     "team_name": "Texas Tech",
     "rank": 44,
     "rating": 0.3844341419391014,
-    "bid_type": "At Large"
+    "seed": 23
   },
   {
     "team_id": 265,
     "team_name": "Seton Hall",
     "rank": 45,
     "rating": 0.3757374948876015,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 48,
     "team_name": "Cincinnati",
     "rank": 46,
     "rating": 0.3706351779949002,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 337,
     "team_name": "Villanova",
     "rank": 47,
     "rating": 0.3676670017075659,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 25,
     "team_name": "Boise State",
     "rank": 48,
     "rating": 0.367483704578259,
-    "bid_type": "At Large"
+    "seed": 38
   },
   {
     "team_id": 133,
     "team_name": "James Madison",
     "rank": 49,
     "rating": 0.3586962667723052,
-    "bid_type": "Automatic"
+    "seed": 48
   },
   {
     "team_id": 176,
     "team_name": "Mississippi State",
     "rank": 50,
     "rating": 0.3570848082702747,
-    "bid_type": "At Large"
+    "seed": 32
   },
   {
     "team_id": 226,
     "team_name": "Oregon",
     "rank": 51,
     "rating": 0.3554073557016658,
-    "bid_type": "Automatic"
+    "seed": 43
   },
   {
     "team_id": 338,
     "team_name": "Virginia",
     "rank": 52,
     "rating": 0.348529905409352,
-    "bid_type": "At Large"
+    "seed": 41
   },
   {
     "team_id": 239,
     "team_name": "Providence",
     "rank": 53,
     "rating": 0.3481136036106616,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 347,
     "team_name": "Washington State",
     "rank": 54,
     "rating": 0.34793248405110233,
-    "bid_type": "At Large"
+    "seed": 26
   },
   {
     "team_id": 361,
     "team_name": "Yale",
     "rank": 55,
     "rating": 0.3403946550234953,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 339,
     "team_name": "Virginia Tech",
     "rank": 56,
     "rating": 0.3352434702217791,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 221,
     "team_name": "Ohio State",
     "rank": 57,
     "rating": 0.3329145741292585,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 9,
     "team_name": "Appalachian State",
     "rank": 58,
     "rating": 0.3312271893776582,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 29,
     "team_name": "Bradley",
     "rank": 59,
     "rating": 0.3285132521556333,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 165,
     "team_name": "McNeese State",
     "rank": 60,
     "rating": 0.3278069682588278,
-    "bid_type": "Automatic"
+    "seed": 49
   },
   {
     "team_id": 163,
     "team_name": "Maryland",
     "rank": 61,
     "rating": 0.32774289088661096,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 312,
     "team_name": "UC Irvine",
     "rank": 62,
     "rating": 0.32653241025091745,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 238,
     "team_name": "Princeton",
     "rank": 63,
     "rating": 0.320465246293927,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 345,
     "team_name": "Wake Forest",
     "rank": 64,
     "rating": 0.3169777175513246,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 327,
     "team_name": "Utah",
     "rank": 65,
     "rating": 0.31155467910646706,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 112,
     "team_name": "High Point",
     "rank": 66,
     "rating": 0.3093590178577414,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 255,
     "team_name": "Samford",
     "rank": 67,
     "rating": 0.30619545795432435,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 151,
     "team_name": "Louisiana Tech",
     "rank": 68,
     "rating": 0.2969036982750502,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 222,
     "team_name": "Oklahoma",
     "rank": 69,
     "rating": 0.2951220052893101,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 336,
     "team_name": "Vermont",
     "rank": 70,
     "rating": 0.27819342338438174,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 323,
     "team_name": "UNLV",
     "rank": 71,
     "rating": 0.2749340269919483,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 360,
     "team_name": "Xavier",
     "rank": 72,
     "rating": 0.2721526200310432,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 316,
     "team_name": "UCF",
     "rank": 73,
     "rating": 0.26748184081907994,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 127,
     "team_name": "Iowa",
     "rank": 74,
     "rating": 0.26560808487213616,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 346,
     "team_name": "Washington",
     "rank": 75,
     "rating": 0.26149150027760515,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 94,
     "team_name": "Florida State",
     "rank": 76,
     "rating": 0.2533632840993543,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 103,
     "team_name": "Georgia",
     "rank": 77,
     "rating": 0.25165589524456106,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 101,
     "team_name": "George Mason",
     "rank": 78,
     "rating": 0.25146371169030307,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 45,
     "team_name": "Charlotte",
     "rank": 79,
     "rating": 0.2505398284350026,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 291,
     "team_name": "Syracuse",
     "rank": 80,
     "rating": 0.24774172071216496,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 34,
     "team_name": "Butler",
     "rank": 81,
     "rating": 0.2471440836593518,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 77,
     "team_name": "Duquesne",
     "rank": 82,
     "rating": 0.24473965292223634,
-    "bid_type": "Automatic"
+    "seed": 46
   },
   {
     "team_id": 124,
     "team_name": "Indiana",
     "rank": 83,
     "rating": 0.24365465440576292,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 26,
     "team_name": "Boston College",
     "rank": 84,
     "rating": 0.24319105262000879,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 60,
     "team_name": "Cornell",
     "rank": 85,
     "rating": 0.24209240745454405,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 273,
     "team_name": "South Florida",
     "rank": 86,
     "rating": 0.24201064157271965,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 170,
     "team_name": "Miami (FL)",
     "rank": 87,
     "rating": 0.23981329940526228,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 335,
     "team_name": "VCU",
     "rank": 88,
     "rating": 0.23791860811651966,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 135,
     "team_name": "Kansas State",
     "rank": 89,
     "rating": 0.2369394963049075,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 167,
     "team_name": "Memphis",
     "rank": 90,
     "rating": 0.23316718864925845,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 215,
     "team_name": "Northern Iowa",
     "rank": 91,
     "rating": 0.23306417410197586,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 246,
     "team_name": "Richmond",
     "rank": 92,
     "rating": 0.2300816913680653,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 175,
     "team_name": "Mississippi",
     "rank": 93,
     "rating": 0.22956768441476413,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 155,
     "team_name": "Loyola Chicago",
     "rank": 94,
     "rating": 0.21857192979024873,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 212,
     "team_name": "North Texas",
     "rank": 95,
     "rating": 0.2130690328765633,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 3,
     "team_name": "Akron",
     "rank": 96,
     "rating": 0.2122171574004188,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 269,
     "team_name": "SMU",
     "rank": 97,
     "rating": 0.20767720922966457,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 113,
     "team_name": "Hofstra",
     "rank": 98,
     "rating": 0.200527455237053,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 53,
     "team_name": "Charleston",
     "rank": 99,
     "rating": 0.2002678878499499,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 258,
     "team_name": "San Francisco",
     "rank": 100,
     "rating": 0.19973985870309113,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 183,
     "team_name": "Morehead State",
     "rank": 101,
     "rating": 0.19838674458768402,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 325,
     "team_name": "UT Arlington",
     "rank": 102,
     "rating": 0.19578214848126518,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 164,
     "team_name": "Massachusetts",
     "rank": 103,
     "rating": 0.18832476245310373,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 362,
     "team_name": "Youngstown State",
     "rank": 104,
     "rating": 0.1849903994268176,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 306,
     "team_name": "Troy",
     "rank": 105,
     "rating": 0.18010076454196638,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 174,
     "team_name": "Minnesota",
     "rank": 106,
     "rating": 0.1781188466763542,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 310,
     "team_name": "UAB",
     "rank": 107,
     "rating": 0.17475599402288255,
-    "bid_type": "Automatic"
+    "seed": 50
   },
   {
     "team_id": 156,
     "team_name": "LSU",
     "rank": 108,
     "rating": 0.17292361561995798,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 14,
     "team_name": "Arkansas",
     "rank": 109,
     "rating": 0.1684140938480061,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 264,
     "team_name": "Seattle",
     "rank": 110,
     "rating": 0.16800695661996617,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 219,
     "team_name": "Oakland",
     "rank": 111,
     "rating": 0.16569249278964543,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 249,
     "team_name": "Rutgers",
     "rank": 112,
     "rating": 0.16557334627942752,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 278,
     "team_name": "St. Bonaventure",
     "rank": 113,
     "rating": 0.15647061358894632,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 15,
     "team_name": "Arkansas State",
     "rank": 114,
     "rating": 0.15563108010475618,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 324,
     "team_name": "USC",
     "rank": 115,
     "rating": 0.15563063667476046,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 341,
     "team_name": "W Carolina",
     "rank": 116,
     "rating": 0.15420866552989326,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 356,
     "team_name": "Western Kentucky",
     "rank": 117,
     "rating": 0.15376785677716923,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 179,
     "team_name": "Missouri State",
     "rank": 118,
     "rating": 0.15367535445246816,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 252,
     "team_name": "Soutern Illinois",
     "rank": 119,
     "rating": 0.15333830617172012,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 281,
     "team_name": "St. Joseph's Pa",
     "rank": 120,
     "rating": 0.14428120228772354,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 321,
     "team_name": "UNC Greensboro",
     "rank": 121,
     "rating": 0.1419818287140462,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 260,
     "team_name": "Santa Clara",
     "rank": 122,
     "rating": 0.13434422538793897,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 67,
     "team_name": "Davidson",
     "rank": 123,
     "rating": 0.1340101149873399,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 220,
     "team_name": "Ohio",
     "rank": 124,
     "rating": 0.1269845548124374,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 322,
     "team_name": "UNC Wilmington",
     "rank": 125,
     "rating": 0.11746245104443148,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 149,
     "team_name": "Longwood",
     "rank": 126,
     "rating": 0.10837464511360899,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 100,
     "team_name": "Gardner Webb",
     "rank": 127,
     "rating": 0.10719093156349781,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 22,
     "team_name": "Belmont",
     "rank": 128,
     "rating": 0.10534288850773395,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 286,
     "team_name": "Stanford",
     "rank": 129,
     "rating": 0.0973409818833793,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 230,
     "team_name": "Penn State",
     "rank": 130,
     "rating": 0.08997580787516087,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 218,
     "team_name": "Notre Dame",
     "rank": 131,
     "rating": 0.08801161154582585,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 105,
     "team_name": "Georgia Tech",
     "rank": 132,
     "rating": 0.08763511867847058,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 293,
     "team_name": "Tarleton State",
     "rank": 133,
     "rating": 0.08671039856833407,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 150,
     "team_name": "Louisiana",
     "rank": 134,
     "rating": 0.08300990281640871,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 223,
     "team_name": "Oklahoma State",
     "rank": 135,
     "rating": 0.07135741879985344,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 46,
     "team_name": "Chattanooga",
     "rank": 136,
     "rating": 0.07018024682502517,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 243,
     "team_name": "Radford",
     "rank": 137,
     "rating": 0.06205072029298398,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 330,
     "team_name": "Utah Valley",
     "rank": 138,
     "rating": 0.06068134314806182,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 289,
     "team_name": "Stony Brook",
     "rank": 139,
     "rating": 0.053697369977861925,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 157,
     "team_name": "MA Lowell",
     "rank": 140,
     "rating": 0.05166629001579016,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 107,
     "team_name": "Grambling State",
     "rank": 141,
     "rating": 0.04763212556241402,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 88,
     "team_name": "Fairfield",
     "rank": 142,
     "rating": 0.04585019555051614,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 317,
     "team_name": "UCLA",
     "rank": 143,
     "rating": 0.045549903642101784,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 144,
     "team_name": "Liberty",
     "rank": 144,
     "rating": 0.044371134306609473,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 148,
     "team_name": "Long Beach State",
     "rank": 145,
     "rating": 0.04263035283761176,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 122,
     "team_name": "Illinois State",
     "rank": 146,
     "rating": 0.039035534741793665,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 307,
     "team_name": "Tulane",
     "rank": 147,
     "rating": 0.03862378774941656,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 188,
     "team_name": "Murray State",
     "rank": 148,
     "rating": 0.0373416248888862,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 352,
     "team_name": "Wichita State",
     "rank": 149,
     "rating": 0.03583054638329916,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 320,
     "team_name": "UNC Asheville",
     "rank": 150,
     "rating": 0.034660756324803185,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 97,
     "team_name": "Furman",
     "rank": 151,
     "rating": 0.03464502043713127,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 304,
     "team_name": "Toledo",
     "rank": 152,
     "rating": 0.03119826943843108,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 146,
     "team_name": "Lipscomb",
     "rank": 153,
     "rating": 0.0308511226905246,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 54,
     "team_name": "Colgate",
     "rank": 154,
     "rating": 0.02840525219915312,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 172,
     "team_name": "Michigan",
     "rank": 155,
     "rating": 0.023453514538544867,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 314,
     "team_name": "UC San Diego",
     "rank": 156,
     "rating": 0.022002280868456858,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 251,
     "team_name": "South Dakota State",
     "rank": 157,
     "rating": 0.016705416497890146,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 254,
     "team_name": "Sam Houston State",
     "rank": 158,
     "rating": 0.014944118267332869,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 354,
     "team_name": "Winthrop",
     "rank": 159,
     "rating": 0.014180577666546844,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 181,
     "team_name": "Montana",
     "rank": 160,
     "rating": 0.013460921861756618,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 11,
     "team_name": "Arizona State",
     "rank": 161,
     "rating": 0.003618843670964994,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 75,
     "team_name": "Drexel",
     "rank": 162,
     "rating": 0.001640863124848995,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 331,
     "team_name": "UTEP",
     "rank": 163,
     "rating": -0.0016367820868379524,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 358,
     "team_name": "Wright State",
     "rank": 164,
     "rating": -0.0029140382853480064,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 348,
     "team_name": "Weber State",
     "rank": 165,
     "rating": -0.003876957573132785,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 301,
     "team_name": "Texas State",
     "rank": 166,
     "rating": -0.005454889467314805,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 232,
     "team_name": "PFW",
     "rank": 167,
     "rating": -0.011947074469791666,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 284,
     "team_name": "Saint Peter's",
     "rank": 168,
     "rating": -0.01668252434672952,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 266,
     "team_name": "S.F. Austin",
     "rank": 169,
     "rating": -0.017995048931553452,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 177,
     "team_name": "Missouri",
     "rank": 170,
     "rating": -0.01848961802392053,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 305,
     "team_name": "Towson",
     "rank": 171,
     "rating": -0.0195185334960059,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 111,
     "team_name": "Hawaii",
     "rank": 172,
     "rating": -0.020913178770923024,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 192,
     "team_name": "Northern Kentucky",
     "rank": 173,
     "rating": -0.02139553878476367,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 311,
     "team_name": "UC Davis",
     "rank": 174,
     "rating": -0.0215344361007842,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 64,
     "team_name": "Cal State Northridge",
     "rank": 175,
     "rating": -0.023862587727859423,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 276,
     "team_name": "Southern",
     "rank": 176,
     "rating": -0.024894985931795954,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 350,
     "team_name": "WI Green Bay",
     "rank": 177,
     "rating": -0.025757623964976002,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 207,
     "team_name": "Norfolk State",
     "rank": 178,
     "rating": -0.025809819411597178,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 349,
     "team_name": "West Virginia",
     "rank": 179,
     "rating": -0.028016496014578535,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 81,
     "team_name": "E Washington",
     "rank": 180,
     "rating": -0.03456449483762099,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 208,
     "team_name": "North Alabama",
     "rank": 181,
     "rating": -0.03570104587110885,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 31,
     "team_name": "Bryant",
     "rank": 182,
     "rating": -0.04067072077386649,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 82,
     "team_name": "East Carolina",
     "rank": 183,
     "rating": -0.04244553641472432,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 85,
     "team_name": "ETSU",
     "rank": 184,
     "rating": -0.045253405688408244,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 126,
     "team_name": "Iona",
     "rank": 185,
     "rating": -0.04624985191376346,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 292,
     "team_name": "Texas A&M – Corpus Christi",
     "rank": 186,
     "rating": -0.04644640807772708,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 211,
     "team_name": "North Florida",
     "rank": 187,
     "rating": -0.052190010619684896,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 39,
     "team_name": "California",
     "rank": 188,
     "rating": -0.052251662011314676,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 141,
     "team_name": "Lamar",
     "rank": 189,
     "rating": -0.0524750436973331,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 180,
     "team_name": "Monmouth NJ",
     "rank": 190,
     "rating": -0.05268074549583152,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 1,
     "team_name": "Abilene Christian",
     "rank": 191,
     "rating": -0.05470985654905731,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 69,
     "team_name": "Delaware",
     "rank": 192,
     "rating": -0.0547505930113834,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 28,
     "team_name": "Bowling Green",
     "rank": 193,
     "rating": -0.05540191451923175,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 295,
     "team_name": "Temple",
     "rank": 194,
     "rating": -0.05568184756219018,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 51,
     "team_name": "Cleveland State",
     "rank": 195,
     "rating": -0.055960135811744624,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 308,
     "team_name": "Tulsa",
     "rank": 196,
     "rating": -0.0570665034290861,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 12,
     "team_name": "Arkansas Little Rock",
     "rank": 197,
     "rating": -0.05723172891039835,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 7,
     "team_name": "Alcorn State",
     "rank": 198,
     "rating": -0.059491950585198426,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 79,
     "team_name": "E Kentucky",
     "rank": 199,
     "rating": -0.06224824167506534,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 359,
     "team_name": "Wyoming",
     "rank": 200,
     "rating": -0.06227822304748763,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 277,
     "team_name": "Southern Utah",
     "rank": 201,
     "rating": -0.06429411436853125,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 137,
     "team_name": "Kent State",
     "rank": 202,
     "rating": -0.0650763535410016,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 285,
     "team_name": "St. Thomas Mn",
     "rank": 203,
     "rating": -0.06722209183798687,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 303,
     "team_name": "TN Martin",
     "rank": 204,
     "rating": -0.0717878470307462,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 168,
     "team_name": "Mercer",
     "rank": 205,
     "rating": -0.07234374657495148,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 30,
     "team_name": "Brown",
     "rank": 206,
     "rating": -0.07627459634431695,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 86,
     "team_name": "Evansville",
     "rank": 207,
     "rating": -0.07819962034136684,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 313,
     "team_name": "UC Riverside",
     "rank": 208,
     "rating": -0.07961086978200468,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 169,
     "team_name": "Merrimack",
     "rank": 209,
     "rating": -0.07963568678133193,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 162,
     "team_name": "Marshall",
     "rank": 210,
     "rating": -0.08000600386237197,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 37,
     "team_name": "Cal Baptist",
     "rank": 211,
     "rating": -0.08125954911955946,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 309,
     "team_name": "Texas Southern",
     "rank": 212,
     "rating": -0.08561726922852499,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 152,
     "team_name": "Louisville",
     "rank": 213,
     "rating": -0.08746026380868802,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 158,
     "team_name": "Maine",
     "rank": 214,
     "rating": -0.08931519884329019,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 182,
     "team_name": "Montana State",
     "rank": 215,
     "rating": -0.08950703001467855,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 89,
     "team_name": "Fgcu",
     "rank": 216,
     "rating": -0.08999673510314456,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 189,
     "team_name": "N Colorado",
     "rank": 217,
     "rating": -0.09049861567039867,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 132,
     "team_name": "Jacksonville State",
     "rank": 218,
     "rating": -0.091503265438255,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 315,
     "team_name": "UC Santa Barbara",
     "rank": 219,
     "rating": -0.09352713871169478,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 98,
     "team_name": "G Washington",
     "rank": 220,
     "rating": -0.09394155378109693,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 178,
     "team_name": "Missouri KC",
     "rank": 221,
     "rating": -0.09576622038462602,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 120,
     "team_name": "Il Chicago",
     "rank": 222,
     "rating": -0.09655086437851529,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 102,
     "team_name": "Georgetown",
     "rank": 223,
     "rating": -0.10251657539694038,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 242,
     "team_name": "Quinnipiac",
     "rank": 224,
     "rating": -0.1081347546692735,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 153,
     "team_name": "Loyola Marymount",
     "rank": 225,
     "rating": -0.10821213584835555,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 259,
     "team_name": "San Jose State",
     "rank": 226,
     "rating": -0.1084550403856969,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 227,
     "team_name": "Oregon State",
     "rank": 227,
     "rating": -0.11077821779566684,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 63,
     "team_name": "Cal State Fullerton",
     "rank": 228,
     "rating": -0.11243734792597627,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 139,
     "team_name": "La Salle",
     "rank": 229,
     "rating": -0.11348969880682201,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 95,
     "team_name": "Fordham",
     "rank": 230,
     "rating": -0.11368472201872558,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 229,
     "team_name": "Penn",
     "rank": 231,
     "rating": -0.11507612296367142,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 231,
     "team_name": "Pepperdine",
     "rank": 232,
     "rating": -0.11627011968495989,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 342,
     "team_name": "W Illinois",
     "rank": 233,
     "rating": -0.11927899579939259,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 110,
     "team_name": "Harvard",
     "rank": 234,
     "rating": -0.12032129176198877,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 282,
     "team_name": "St. Louis",
     "rank": 235,
     "rating": -0.12153330923339499,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 270,
     "team_name": "South Alabama",
     "rank": 236,
     "rating": -0.12510789862175561,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 357,
     "team_name": "Wofford",
     "rank": 237,
     "rating": -0.1282982395450919,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 96,
     "team_name": "Fresno State",
     "rank": 238,
     "rating": -0.12929584130447658,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 351,
     "team_name": "WI Milwaukee",
     "rank": 239,
     "rating": -0.13207981787877654,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 241,
     "team_name": "Queens NC",
     "rank": 240,
     "rating": -0.13570883777701642,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 160,
     "team_name": "Marist",
     "rank": 241,
     "rating": -0.13640464057190246,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 104,
     "team_name": "Georgia State",
     "rank": 242,
     "rating": -0.1386850951404243,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 43,
     "team_name": "Central Conn",
     "rank": 243,
     "rating": -0.1422484671710271,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 247,
     "team_name": "Rider",
     "rank": 244,
     "rating": -0.1439207074559791,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 200,
     "team_name": "New Hampshire",
     "rank": 245,
     "rating": -0.14538679259364956,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 344,
     "team_name": "Wagner",
     "rank": 246,
     "rating": -0.14844947151157928,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 210,
     "team_name": "North Dakota",
     "rank": 247,
     "rating": -0.1494226391188006,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 275,
     "team_name": "Southern Miss",
     "rank": 248,
     "rating": -0.1498125909858127,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 334,
     "team_name": "Vanderbilt",
     "rank": 249,
     "rating": -0.15073042124179936,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 205,
     "team_name": "Nicholls State",
     "rank": 250,
     "rating": -0.15179219377575465,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 245,
     "team_name": "Rice",
     "rank": 251,
     "rating": -0.15261583102961812,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 23,
     "team_name": "Bethune-cookman",
     "rank": 252,
     "rating": -0.15263221929583842,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 287,
     "team_name": "Stetson",
     "rank": 253,
     "rating": -0.1569791559040241,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 244,
     "team_name": "Rhode Island",
     "rank": 254,
     "rating": -0.16055853615078364,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 256,
     "team_name": "San Diego",
     "rank": 255,
     "rating": -0.1666795556028629,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 297,
     "team_name": "Tennessee State",
     "rank": 256,
     "rating": -0.16918864343609435,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 117,
     "team_name": "Howard",
     "rank": 257,
     "rating": -0.170270560772076,
-    "bid_type": "Automatic"
+    "seed": 69
   },
   {
     "team_id": 57,
     "team_name": "Columbia",
     "rank": 258,
     "rating": -0.17149464139149617,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 204,
     "team_name": "Niagara",
     "rank": 259,
     "rating": -0.17269131494647882,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 290,
     "team_name": "SUNY Albany",
     "rank": 260,
     "rating": -0.17412838526710203,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 190,
     "team_name": "North Dakota State",
     "rank": 261,
     "rating": -0.17852724113851517,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 62,
     "team_name": "Cal State Bakersfield",
     "rank": 262,
     "rating": -0.17975905468795364,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 195,
     "team_name": "NC Central",
     "rank": 263,
     "rating": -0.18146610826029017,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 225,
     "team_name": "Oral Roberts",
     "rank": 264,
     "rating": -0.1881080895171834,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 186,
     "team_name": "Mt St Mary's",
     "rank": 265,
     "rating": -0.19056000631727796,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 237,
     "team_name": "Presbyterian",
     "rank": 266,
     "rating": -0.19548273294062887,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 72,
     "team_name": "Depaul",
     "rank": 267,
     "rating": -0.19597690512206573,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 171,
     "team_name": "Miami (OH)",
     "rank": 268,
     "rating": -0.1964384483869871,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 343,
     "team_name": "W Michigan",
     "rank": 269,
     "rating": -0.19648527964918994,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 131,
     "team_name": "Jacksonville",
     "rank": 270,
     "rating": -0.19717212382368332,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 187,
     "team_name": "MTSU",
     "rank": 271,
     "rating": -0.19778204442622413,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 130,
     "team_name": "Jackson State",
     "rank": 272,
     "rating": -0.19979692560722473,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 36,
     "team_name": "C Michigan",
     "rank": 273,
     "rating": -0.2004774200234892,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 333,
     "team_name": "Valparaiso",
     "rank": 274,
     "rating": -0.2056055851114591,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 24,
     "team_name": "Binghamton",
     "rank": 275,
     "rating": -0.20749062757476194,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 197,
     "team_name": "NE Omaha",
     "rank": 276,
     "rating": -0.21001581900107172,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 19,
     "team_name": "Ball State",
     "rank": 277,
     "rating": -0.21008922034094824,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 18,
     "team_name": "Austin Peay",
     "rank": 278,
     "rating": -0.21079535021525136,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 213,
     "team_name": "Northeastern",
     "rank": 279,
     "rating": -0.21369408811844268,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 32,
     "team_name": "Bucknell",
     "rank": 280,
     "rating": -0.21518883657819077,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 71,
     "team_name": "Denver",
     "rank": 281,
     "rating": -0.2160357675209203,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 234,
     "team_name": "Portland",
     "rank": 282,
     "rating": -0.21904404613163084,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 235,
     "team_name": "Portland State",
     "rank": 283,
     "rating": -0.21931790859525574,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 202,
     "team_name": "New Mexico State",
     "rank": 284,
     "rating": -0.22317747911398023,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 250,
     "team_name": "South Carolina State",
     "rank": 285,
     "rating": -0.2280494751288,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 8,
     "team_name": "American University",
     "rank": 286,
     "rating": -0.2310974922706028,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 41,
     "team_name": "Canisius",
     "rank": 287,
     "rating": -0.23528564521004014,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 319,
     "team_name": "UMBC",
     "rank": 288,
     "rating": -0.2388475620342888,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 2,
     "team_name": "Air Force",
     "rank": 289,
     "rating": -0.23960250852613554,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 261,
     "team_name": "SC Upstate",
     "rank": 290,
     "rating": -0.2436185699715497,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 191,
     "team_name": "Northern Illinois",
     "rank": 291,
     "rating": -0.24548782071851297,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 253,
     "team_name": "Sacred Heart",
     "rank": 292,
     "rating": -0.2512601263264428,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 40,
     "team_name": "Campbell",
     "rank": 293,
     "rating": -0.2608670144601136,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 326,
     "team_name": "UT San Antonio",
     "rank": 294,
     "rating": -0.26370903481722047,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 119,
     "team_name": "Idaho State",
     "rank": 295,
     "rating": -0.2662437127062218,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 6,
     "team_name": "Alabama State",
     "rank": 296,
     "rating": -0.2753292905253618,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 329,
     "team_name": "Utah Tech",
     "rank": 297,
     "rating": -0.27553674197120565,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 143,
     "team_name": "Lehigh",
     "rank": 298,
     "rating": -0.28073920829973176,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 136,
     "team_name": "Kennesaw State",
     "rank": 299,
     "rating": -0.28208701988615814,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 44,
     "team_name": "Charleston Southern",
     "rank": 300,
     "rating": -0.28266218427818357,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 47,
     "team_name": "Chicago State",
     "rank": 301,
     "rating": -0.28602455263746324,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 49,
     "team_name": "Citadel",
     "rank": 302,
     "rating": -0.28770305359210785,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 93,
     "team_name": "Florida Intl",
     "rank": 303,
     "rating": -0.29527167440457314,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 78,
     "team_name": "E Illinois",
     "rank": 304,
     "rating": -0.29814045807087214,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 272,
     "team_name": "South Dakota",
     "rank": 305,
     "rating": -0.3010572128812275,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 214,
     "team_name": "Northern Arizona",
     "rank": 306,
     "rating": -0.30420458915145815,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 318,
     "team_name": "ULM",
     "rank": 307,
     "rating": -0.31779815603416955,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 70,
     "team_name": "Delaware State",
     "rank": 308,
     "rating": -0.31843780323776477,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 248,
     "team_name": "Robert Morris",
     "rank": 309,
     "rating": -0.31929658300646285,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 142,
     "team_name": "Le Moyne",
     "rank": 310,
     "rating": -0.320037352272424,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 268,
     "team_name": "Siue",
     "rank": 311,
     "rating": -0.3204224838068616,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 262,
     "team_name": "SE Louisiana",
     "rank": 312,
     "rating": -0.32045180118703526,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 52,
     "team_name": "Coastal Car",
     "rank": 313,
     "rating": -0.32324329991003875,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 27,
     "team_name": "Boston Univ",
     "rank": 314,
     "rating": -0.32602466215300685,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 80,
     "team_name": "E Michigan",
     "rank": 315,
     "rating": -0.3265960158498669,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 5,
     "team_name": "Alabama A&M",
     "rank": 316,
     "rating": -0.3312193011335601,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 99,
     "team_name": "Ga Southern",
     "rank": 317,
     "rating": -0.336970132559662,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 21,
     "team_name": "Bellarmine",
     "rank": 318,
     "rating": -0.3404521451686406,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 140,
     "team_name": "Lafayette",
     "rank": 319,
     "rating": -0.3477770374206279,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 184,
     "team_name": "Morgan State",
     "rank": 320,
     "rating": -0.36118922078554055,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 84,
     "team_name": "Elon",
     "rank": 321,
     "rating": -0.3621578665763181,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 224,
     "team_name": "Old Dominion",
     "rank": 322,
     "rating": -0.3675988324520238,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 87,
     "team_name": "Fairleigh Dickinson",
     "rank": 323,
     "rating": -0.37396945212916877,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 13,
     "team_name": "Arkansas Pine Bluff",
     "rank": 324,
     "rating": -0.3801202202910135,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 83,
     "team_name": "East Texas A&M",
     "rank": 325,
     "rating": -0.3909191127675345,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 42,
     "team_name": "Cent Arkansas",
     "rank": 326,
     "rating": -0.3963701979924286,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 236,
     "team_name": "Prairie View",
     "rank": 327,
     "rating": -0.39953740161143286,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 353,
     "team_name": "William & Mary",
     "rank": 328,
     "rating": -0.4005526102744245,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 92,
     "team_name": "Florida A&M",
     "rank": 329,
     "rating": -0.40277183228591856,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 217,
     "team_name": "Northwestern LA",
     "rank": 330,
     "rating": -0.40819682523290557,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 109,
     "team_name": "Hampton",
     "rank": 331,
     "rating": -0.4100916670252236,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 66,
     "team_name": "Dartmouth",
     "rank": 332,
     "rating": -0.42054019123779396,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 194,
     "team_name": "NC A&T",
     "rank": 333,
     "rating": -0.42875761249013833,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 332,
     "team_name": "UTRGV",
     "rank": 334,
     "rating": -0.4294881118156472,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 118,
     "team_name": "Idaho",
     "rank": 335,
     "rating": -0.43468248420730426,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 298,
     "team_name": "Tennessee Tech",
     "rank": 336,
     "rating": -0.4358027422304831,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 274,
     "team_name": "Southern Indiana",
     "rank": 337,
     "rating": -0.4435438424353087,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 65,
     "team_name": "Cal State Sacramento",
     "rank": 338,
     "rating": -0.44716207199348085,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 193,
     "team_name": "Navy",
     "rank": 339,
     "rating": -0.44983767452878176,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 159,
     "team_name": "Manhattan",
     "rank": 340,
     "rating": -0.4575024121779731,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 206,
     "team_name": "NJIT",
     "rank": 341,
     "rating": -0.46221442256501744,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 16,
     "team_name": "Army",
     "rank": 342,
     "rating": -0.4765677089874944,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 33,
     "team_name": "Buffalo",
     "rank": 343,
     "rating": -0.49173615192725534,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 73,
     "team_name": "Detroit",
     "rank": 344,
     "rating": -0.5061967629452782,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 203,
     "team_name": "New Orleans",
     "rank": 345,
     "rating": -0.5093192503076702,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 166,
     "team_name": "Maryland East Shore",
     "rank": 346,
     "rating": -0.5174649062020787,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 114,
     "team_name": "Holy Cross",
     "rank": 347,
     "rating": -0.5175846988775082,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 263,
     "team_name": "Southeast Missouri State",
     "rank": 348,
     "rating": -0.5399839304695347,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 267,
     "team_name": "Siena",
     "rank": 349,
     "rating": -0.5505173396874746,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 116,
     "team_name": "Houston Chr",
     "rank": 350,
     "rating": -0.553710365777199,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 123,
     "team_name": "Incarnate Word",
     "rank": 351,
     "rating": -0.5537552752041331,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 154,
     "team_name": "Loyola Maryland",
     "rank": 352,
     "rating": -0.5580986213926357,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 340,
     "team_name": "VMI",
     "rank": 353,
     "rating": -0.5596912757194283,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 288,
     "team_name": "Stonehill",
     "rank": 354,
     "rating": -0.5728764349747466,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 185,
     "team_name": "Mississippi Valley State",
     "rank": 355,
     "rating": -0.575968824908392,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 279,
     "team_name": "St. Francis Pa",
     "rank": 356,
     "rating": -0.5770458665171382,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 145,
     "team_name": "Lindenwood",
     "rank": 357,
     "rating": -0.5827166613675645,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 38,
     "team_name": "Cal Poly",
     "rank": 358,
     "rating": -0.5844551314240394,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 129,
     "team_name": "IUPUI",
     "rank": 359,
     "rating": -0.5942491740105036,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 228,
     "team_name": "Pacific",
     "rank": 360,
     "rating": -0.607852747450082,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 147,
     "team_name": "LIU Brooklyn",
     "rank": 361,
     "rating": -0.6323264630323144,
-    "bid_type": "N/A"
+    "seed": 69
   },
   {
     "team_id": 59,
     "team_name": "Coppin State",
     "rank": 362,
     "rating": -0.6916287611208348,
-    "bid_type": "N/A"
+    "seed": 69
   }
 ]

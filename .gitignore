@@ -25,6 +25,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# python files
+backend/py-src/myenv/
+
 
 # Server files
 server

@@ -52,7 +52,7 @@ export interface TeamSummaryDataType {
 	averageOpponentRating: number;
 	averageScoringMargin: number;
 	gameCount: number;
-	bidType: string;
+	seed: number;
 	wins:{
 		quad1: number;
 		quad2: number;
@@ -73,7 +73,7 @@ export interface YearRankingsType {
 	team_name: string;
 	rank: number;
 	rating: number;
-	bid_type: string;
+	seed: number;
 }
 
 export interface TeamSummaryWithProbabilityType extends TeamSummaryDataType {

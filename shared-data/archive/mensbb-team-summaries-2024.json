@@ -19,7 +19,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 16
   },
   "Morehead State": {
     "id": 183,
@@ -41,7 +41,7 @@
       "quad3": 2,
       "quad4": 2
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Boston College": {
     "id": 26,
@@ -63,7 +63,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Fairfield": {
     "id": 88,
@@ -85,7 +85,7 @@
       "quad3": 3,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Bowling Green": {
     "id": 28,
@@ -107,7 +107,7 @@
       "quad3": 2,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Chicago State": {
     "id": 47,
@@ -129,7 +129,7 @@
       "quad3": 4,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Fairleigh Dickinson": {
     "id": 87,
@@ -151,7 +151,7 @@
       "quad3": 4,
       "quad4": 11
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Buffalo": {
     "id": 33,
@@ -173,7 +173,7 @@
       "quad3": 10,
       "quad4": 11
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Butler": {
     "id": 34,
@@ -195,7 +195,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "E Michigan": {
     "id": 80,
@@ -217,7 +217,7 @@
       "quad3": 5,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "California": {
     "id": 39,
@@ -239,7 +239,7 @@
       "quad3": 4,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "St. Thomas Mn": {
     "id": 285,
@@ -261,7 +261,7 @@
       "quad3": 6,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Charleston": {
     "id": 53,
@@ -283,7 +283,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Iona": {
     "id": 126,
@@ -305,7 +305,7 @@
       "quad3": 6,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Charlotte": {
     "id": 45,
@@ -327,7 +327,7 @@
       "quad3": 5,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Maine": {
     "id": 158,
@@ -349,7 +349,7 @@
       "quad3": 4,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Cincinnati": {
     "id": 48,
@@ -371,7 +371,7 @@
       "quad3": 2,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Il Chicago": {
     "id": 120,
@@ -393,7 +393,7 @@
       "quad3": 7,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Colgate": {
     "id": 54,
@@ -415,7 +415,7 @@
       "quad3": 1,
       "quad4": 3
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Brown": {
     "id": 30,
@@ -437,7 +437,7 @@
       "quad3": 6,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Colorado": {
     "id": 55,
@@ -459,7 +459,7 @@
       "quad3": 3,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 39
   },
   "Towson": {
     "id": 305,
@@ -481,7 +481,7 @@
       "quad3": 4,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Dayton": {
     "id": 68,
@@ -503,7 +503,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 28
   },
   "Siue": {
     "id": 268,
@@ -525,7 +525,7 @@
       "quad3": 5,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Duke": {
     "id": 76,
@@ -547,7 +547,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 13
   },
   "Dartmouth": {
     "id": 66,
@@ -569,7 +569,7 @@
       "quad3": 6,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Evansville": {
     "id": 86,
@@ -591,7 +591,7 @@
       "quad3": 6,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Miami (OH)": {
     "id": 171,
@@ -613,7 +613,7 @@
       "quad3": 5,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Florida": {
     "id": 91,
@@ -635,7 +635,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "At Large"
+    "seed": 25
   },
   "Loyola Maryland": {
     "id": 154,
@@ -657,7 +657,7 @@
       "quad3": 4,
       "quad4": 18
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Fordham": {
     "id": 95,
@@ -679,7 +679,7 @@
       "quad3": 8,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Wagner": {
     "id": 344,
@@ -701,7 +701,7 @@
       "quad3": 2,
       "quad4": 11
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "G Washington": {
     "id": 98,
@@ -723,7 +723,7 @@
       "quad3": 5,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Stonehill": {
     "id": 288,
@@ -745,7 +745,7 @@
       "quad3": 5,
       "quad4": 17
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Houston": {
     "id": 115,
@@ -767,7 +767,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 2
   },
   "ULM": {
     "id": 318,
@@ -789,7 +789,7 @@
       "quad3": 5,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Howard": {
     "id": 117,
@@ -811,7 +811,7 @@
       "quad3": 4,
       "quad4": 8
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Hampton": {
     "id": 109,
@@ -833,7 +833,7 @@
       "quad3": 10,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Illinois": {
     "id": 121,
@@ -855,7 +855,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 12
   },
   "E Illinois": {
     "id": 78,
@@ -877,7 +877,7 @@
       "quad3": 3,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Iowa State": {
     "id": 128,
@@ -899,7 +899,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 8
   },
   "WI Green Bay": {
     "id": 350,
@@ -921,7 +921,7 @@
       "quad3": 4,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Kansas": {
     "id": 134,
@@ -943,7 +943,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 14
   },
   "NC Central": {
     "id": 195,
@@ -965,7 +965,7 @@
       "quad3": 2,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "USC": {
     "id": 324,
@@ -987,7 +987,7 @@
       "quad3": 5,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Kansas State": {
     "id": 135,
@@ -1009,7 +1009,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Kentucky": {
     "id": 138,
@@ -1031,7 +1031,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 11
   },
   "New Mexico State": {
     "id": 202,
@@ -1053,7 +1053,7 @@
       "quad3": 9,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Louisiana": {
     "id": 150,
@@ -1075,7 +1075,7 @@
       "quad3": 5,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Youngstown State": {
     "id": 362,
@@ -1097,7 +1097,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Louisville": {
     "id": 152,
@@ -1119,7 +1119,7 @@
       "quad3": 5,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UMBC": {
     "id": 319,
@@ -1141,7 +1141,7 @@
       "quad3": 7,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "LSU": {
     "id": 156,
@@ -1163,7 +1163,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Mississippi Valley State": {
     "id": 185,
@@ -1185,7 +1185,7 @@
       "quad3": 7,
       "quad4": 14
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Marquette": {
     "id": 161,
@@ -1207,7 +1207,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 7
   },
   "Northern Illinois": {
     "id": 191,
@@ -1229,7 +1229,7 @@
       "quad3": 7,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Marshall": {
     "id": 162,
@@ -1251,7 +1251,7 @@
       "quad3": 5,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Queens NC": {
     "id": 241,
@@ -1273,7 +1273,7 @@
       "quad3": 8,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Memphis": {
     "id": 167,
@@ -1295,7 +1295,7 @@
       "quad3": 3,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Jackson State": {
     "id": 130,
@@ -1317,7 +1317,7 @@
       "quad3": 7,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Miami (FL)": {
     "id": 170,
@@ -1339,7 +1339,7 @@
       "quad3": 3,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "NJIT": {
     "id": 206,
@@ -1361,7 +1361,7 @@
       "quad3": 3,
       "quad4": 14
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "James Madison": {
     "id": 133,
@@ -1383,7 +1383,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "Automatic"
+    "seed": 48
   },
   "Michigan State": {
     "id": 173,
@@ -1405,7 +1405,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 33
   },
   "MTSU": {
     "id": 187,
@@ -1427,7 +1427,7 @@
       "quad3": 12,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Northern Kentucky": {
     "id": 192,
@@ -1449,7 +1449,7 @@
       "quad3": 6,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Minnesota": {
     "id": 174,
@@ -1471,7 +1471,7 @@
       "quad3": 1,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Bethune-cookman": {
     "id": 23,
@@ -1493,7 +1493,7 @@
       "quad3": 6,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "North Carolina State": {
     "id": 196,
@@ -1515,7 +1515,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 45
   },
   "Citadel": {
     "id": 49,
@@ -1537,7 +1537,7 @@
       "quad3": 9,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Nebraska": {
     "id": 198,
@@ -1559,7 +1559,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 29
   },
   "Lindenwood": {
     "id": 145,
@@ -1581,7 +1581,7 @@
       "quad3": 3,
       "quad4": 15
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "New Mexico": {
     "id": 201,
@@ -1603,7 +1603,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "Automatic"
+    "seed": 44
   },
   "Texas Southern": {
     "id": 309,
@@ -1625,7 +1625,7 @@
       "quad3": 4,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "North Carolina": {
     "id": 209,
@@ -1647,7 +1647,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 4
   },
   "Radford": {
     "id": 243,
@@ -1669,7 +1669,7 @@
       "quad3": 5,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Northwestern": {
     "id": 216,
@@ -1691,7 +1691,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "At Large"
+    "seed": 36
   },
   "Binghamton": {
     "id": 24,
@@ -1713,7 +1713,7 @@
       "quad3": 4,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Ohio State": {
     "id": 221,
@@ -1735,7 +1735,7 @@
       "quad3": 2,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Oakland": {
     "id": 219,
@@ -1757,7 +1757,7 @@
       "quad3": 4,
       "quad4": 2
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Oklahoma": {
     "id": 222,
@@ -1779,7 +1779,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "C Michigan": {
     "id": 36,
@@ -1801,7 +1801,7 @@
       "quad3": 2,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Oregon": {
     "id": 226,
@@ -1823,7 +1823,7 @@
       "quad3": 3,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 43
   },
   "Georgia": {
     "id": 103,
@@ -1845,7 +1845,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Sam Houston State": {
     "id": 254,
@@ -1867,7 +1867,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Pacific": {
     "id": 228,
@@ -1889,7 +1889,7 @@
       "quad3": 7,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Pittsburgh": {
     "id": 233,
@@ -1911,7 +1911,7 @@
       "quad3": 1,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "NC A&T": {
     "id": 194,
@@ -1933,7 +1933,7 @@
       "quad3": 5,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Providence": {
     "id": 239,
@@ -1955,7 +1955,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Columbia": {
     "id": 57,
@@ -1977,7 +1977,7 @@
       "quad3": 4,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Purdue": {
     "id": 240,
@@ -1999,7 +1999,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 3
   },
   "Samford": {
     "id": 255,
@@ -2021,7 +2021,7 @@
       "quad3": 3,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Rhode Island": {
     "id": 244,
@@ -2043,7 +2043,7 @@
       "quad3": 6,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Central Conn": {
     "id": 43,
@@ -2065,7 +2065,7 @@
       "quad3": 3,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Richmond": {
     "id": 246,
@@ -2087,7 +2087,7 @@
       "quad3": 3,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "VMI": {
     "id": 340,
@@ -2109,7 +2109,7 @@
       "quad3": 11,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Princeton": {
     "id": 238,
@@ -2131,7 +2131,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Rutgers": {
     "id": 249,
@@ -2153,7 +2153,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "St. Joseph's Pa": {
     "id": 281,
@@ -2175,7 +2175,7 @@
       "quad3": 2,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Lafayette": {
     "id": 140,
@@ -2197,7 +2197,7 @@
       "quad3": 7,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Seton Hall": {
     "id": 265,
@@ -2219,7 +2219,7 @@
       "quad3": 2,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Saint Peter's": {
     "id": 284,
@@ -2241,7 +2241,7 @@
       "quad3": 4,
       "quad4": 6
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "South Carolina": {
     "id": 271,
@@ -2263,7 +2263,7 @@
       "quad3": 2,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 24
   },
   "SC Upstate": {
     "id": 261,
@@ -2285,7 +2285,7 @@
       "quad3": 8,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Akron": {
     "id": 3,
@@ -2307,7 +2307,7 @@
       "quad3": 2,
       "quad4": 3
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "South Dakota State": {
     "id": 251,
@@ -2329,7 +2329,7 @@
       "quad3": 5,
       "quad4": 4
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Syracuse": {
     "id": 291,
@@ -2351,7 +2351,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "New Hampshire": {
     "id": 200,
@@ -2373,7 +2373,7 @@
       "quad3": 3,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "TCU": {
     "id": 294,
@@ -2395,7 +2395,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 35
   },
   "Southern": {
     "id": 276,
@@ -2417,7 +2417,7 @@
       "quad3": 5,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Tennessee": {
     "id": 296,
@@ -2439,7 +2439,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 5
   },
   "Tennessee Tech": {
     "id": 298,
@@ -2461,7 +2461,7 @@
       "quad3": 10,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Texas": {
     "id": 299,
@@ -2483,7 +2483,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 27
   },
   "Incarnate Word": {
     "id": 123,
@@ -2505,7 +2505,7 @@
       "quad3": 3,
       "quad4": 17
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Texas A&M": {
     "id": 300,
@@ -2527,7 +2527,7 @@
       "quad3": 4,
       "quad4": 1
     },
-    "bidType": "At Large"
+    "seed": 34
   },
   "East Texas A&M": {
     "id": 83,
@@ -2549,7 +2549,7 @@
       "quad3": 3,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Toledo": {
     "id": 304,
@@ -2571,7 +2571,7 @@
       "quad3": 3,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Detroit": {
     "id": 73,
@@ -2593,7 +2593,7 @@
       "quad3": 11,
       "quad4": 13
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Tulane": {
     "id": 307,
@@ -2615,7 +2615,7 @@
       "quad3": 6,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Nicholls State": {
     "id": 205,
@@ -2637,7 +2637,7 @@
       "quad3": 4,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Tulsa": {
     "id": 308,
@@ -2659,7 +2659,7 @@
       "quad3": 9,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Cent Arkansas": {
     "id": 42,
@@ -2681,7 +2681,7 @@
       "quad3": 7,
       "quad4": 14
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UCF": {
     "id": 316,
@@ -2703,7 +2703,7 @@
       "quad3": 3,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Florida Intl": {
     "id": 93,
@@ -2725,7 +2725,7 @@
       "quad3": 6,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UCLA": {
     "id": 317,
@@ -2747,7 +2747,7 @@
       "quad3": 2,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "St. Francis Pa": {
     "id": 279,
@@ -2769,7 +2769,7 @@
       "quad3": 3,
       "quad4": 16
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UConn": {
     "id": 58,
@@ -2791,7 +2791,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 1
   },
   "Northern Arizona": {
     "id": 214,
@@ -2813,7 +2813,7 @@
       "quad3": 9,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UT San Antonio": {
     "id": 326,
@@ -2835,7 +2835,7 @@
       "quad3": 11,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "W Illinois": {
     "id": 342,
@@ -2857,7 +2857,7 @@
       "quad3": 2,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Vermont": {
     "id": 336,
@@ -2879,7 +2879,7 @@
       "quad3": 2,
       "quad4": 2
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Merrimack": {
     "id": 169,
@@ -2901,7 +2901,7 @@
       "quad3": 1,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Villanova": {
     "id": 337,
@@ -2923,7 +2923,7 @@
       "quad3": 4,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "American University": {
     "id": 8,
@@ -2945,7 +2945,7 @@
       "quad3": 3,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Virginia": {
     "id": 338,
@@ -2967,7 +2967,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 41
   },
   "Tarleton State": {
     "id": 293,
@@ -2989,7 +2989,7 @@
       "quad3": 3,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Virginia Tech": {
     "id": 339,
@@ -3011,7 +3011,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Coppin State": {
     "id": 59,
@@ -3033,7 +3033,7 @@
       "quad3": 6,
       "quad4": 18
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Wake Forest": {
     "id": 345,
@@ -3055,7 +3055,7 @@
       "quad3": 2,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Elon": {
     "id": 84,
@@ -3077,7 +3077,7 @@
       "quad3": 5,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Washington": {
     "id": 346,
@@ -3099,7 +3099,7 @@
       "quad3": 3,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Bellarmine": {
     "id": 21,
@@ -3121,7 +3121,7 @@
       "quad3": 10,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Washington State": {
     "id": 347,
@@ -3143,7 +3143,7 @@
       "quad3": 3,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 26
   },
   "Idaho": {
     "id": 118,
@@ -3165,7 +3165,7 @@
       "quad3": 6,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "North Dakota State": {
     "id": 190,
@@ -3187,7 +3187,7 @@
       "quad3": 7,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "W Michigan": {
     "id": 343,
@@ -3209,7 +3209,7 @@
       "quad3": 7,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Wichita State": {
     "id": 352,
@@ -3231,7 +3231,7 @@
       "quad3": 10,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Lipscomb": {
     "id": 146,
@@ -3253,7 +3253,7 @@
       "quad3": 5,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Wisconsin": {
     "id": 355,
@@ -3275,7 +3275,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 19
   },
   "Arkansas State": {
     "id": 15,
@@ -3297,7 +3297,7 @@
       "quad3": 3,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Xavier": {
     "id": 360,
@@ -3319,7 +3319,7 @@
       "quad3": 1,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Robert Morris": {
     "id": 248,
@@ -3341,7 +3341,7 @@
       "quad3": 11,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Clemson": {
     "id": 50,
@@ -3363,7 +3363,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 22
   },
   "Winthrop": {
     "id": 354,
@@ -3385,7 +3385,7 @@
       "quad3": 4,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "George Mason": {
     "id": 101,
@@ -3407,7 +3407,7 @@
       "quad3": 6,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Monmouth NJ": {
     "id": 180,
@@ -3429,7 +3429,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Notre Dame": {
     "id": 218,
@@ -3451,7 +3451,7 @@
       "quad3": 4,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Niagara": {
     "id": 204,
@@ -3473,7 +3473,7 @@
       "quad3": 2,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "St. Bonaventure": {
     "id": 278,
@@ -3495,7 +3495,7 @@
       "quad3": 3,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Longwood": {
     "id": 149,
@@ -3517,7 +3517,7 @@
       "quad3": 5,
       "quad4": 4
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "McNeese State": {
     "id": 165,
@@ -3539,7 +3539,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "Automatic"
+    "seed": 49
   },
   "VCU": {
     "id": 335,
@@ -3561,7 +3561,7 @@
       "quad3": 3,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "West Virginia": {
     "id": 349,
@@ -3583,7 +3583,7 @@
       "quad3": 3,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Missouri State": {
     "id": 179,
@@ -3605,7 +3605,7 @@
       "quad3": 7,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Belmont": {
     "id": 22,
@@ -3627,7 +3627,7 @@
       "quad3": 4,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Georgia State": {
     "id": 104,
@@ -3649,7 +3649,7 @@
       "quad3": 3,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Marist": {
     "id": 160,
@@ -3671,7 +3671,7 @@
       "quad3": 4,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Army": {
     "id": 16,
@@ -3693,7 +3693,7 @@
       "quad3": 4,
       "quad4": 17
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Bradley": {
     "id": 29,
@@ -3715,7 +3715,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UAB": {
     "id": 310,
@@ -3737,7 +3737,7 @@
       "quad3": 1,
       "quad4": 2
     },
-    "bidType": "Automatic"
+    "seed": 50
   },
   "Grand Canyon": {
     "id": 108,
@@ -3759,7 +3759,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 47
   },
   "Southeast Missouri State": {
     "id": 263,
@@ -3781,7 +3781,7 @@
       "quad3": 8,
       "quad4": 11
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Portland": {
     "id": 234,
@@ -3803,7 +3803,7 @@
       "quad3": 6,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Long Beach State": {
     "id": 148,
@@ -3825,7 +3825,7 @@
       "quad3": 5,
       "quad4": 6
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Stanford": {
     "id": 286,
@@ -3847,7 +3847,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Cal State Northridge": {
     "id": 64,
@@ -3869,7 +3869,7 @@
       "quad3": 8,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Duquesne": {
     "id": 77,
@@ -3891,7 +3891,7 @@
       "quad3": 4,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 46
   },
   "Cleveland State": {
     "id": 51,
@@ -3913,7 +3913,7 @@
       "quad3": 6,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UC San Diego": {
     "id": 314,
@@ -3935,7 +3935,7 @@
       "quad3": 4,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Denver": {
     "id": 71,
@@ -3957,7 +3957,7 @@
       "quad3": 7,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Utah": {
     "id": 327,
@@ -3979,7 +3979,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "E Washington": {
     "id": 81,
@@ -4001,7 +4001,7 @@
       "quad3": 1,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Georgia Tech": {
     "id": 105,
@@ -4023,7 +4023,7 @@
       "quad3": 5,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Ga Southern": {
     "id": 99,
@@ -4045,7 +4045,7 @@
       "quad3": 6,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Mississippi": {
     "id": 175,
@@ -4067,7 +4067,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Alabama State": {
     "id": 6,
@@ -4089,7 +4089,7 @@
       "quad3": 5,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Missouri": {
     "id": 177,
@@ -4111,7 +4111,7 @@
       "quad3": 4,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Arkansas Pine Bluff": {
     "id": 13,
@@ -4133,7 +4133,7 @@
       "quad3": 3,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Northeastern": {
     "id": 213,
@@ -4155,7 +4155,7 @@
       "quad3": 11,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Boston Univ": {
     "id": 27,
@@ -4177,7 +4177,7 @@
       "quad3": 3,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Portland State": {
     "id": 235,
@@ -4199,7 +4199,7 @@
       "quad3": 7,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Air Force": {
     "id": 2,
@@ -4221,7 +4221,7 @@
       "quad3": 5,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Siena": {
     "id": 267,
@@ -4243,7 +4243,7 @@
       "quad3": 7,
       "quad4": 18
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Holy Cross": {
     "id": 114,
@@ -4265,7 +4265,7 @@
       "quad3": 5,
       "quad4": 16
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Delaware": {
     "id": 69,
@@ -4287,7 +4287,7 @@
       "quad3": 4,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Bucknell": {
     "id": 32,
@@ -4309,7 +4309,7 @@
       "quad3": 7,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Cornell": {
     "id": 60,
@@ -4331,7 +4331,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Lehigh": {
     "id": 143,
@@ -4353,7 +4353,7 @@
       "quad3": 5,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Penn State": {
     "id": 230,
@@ -4375,7 +4375,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Delaware State": {
     "id": 70,
@@ -4397,7 +4397,7 @@
       "quad3": 4,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Temple": {
     "id": 295,
@@ -4419,7 +4419,7 @@
       "quad3": 9,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Maryland East Shore": {
     "id": 166,
@@ -4441,7 +4441,7 @@
       "quad3": 6,
       "quad4": 11
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Arkansas": {
     "id": 14,
@@ -4463,7 +4463,7 @@
       "quad3": 1,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Alcorn State": {
     "id": 7,
@@ -4485,7 +4485,7 @@
       "quad3": 2,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "St. Louis": {
     "id": 282,
@@ -4507,7 +4507,7 @@
       "quad3": 6,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Southern Indiana": {
     "id": 274,
@@ -4529,7 +4529,7 @@
       "quad3": 6,
       "quad4": 14
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Arizona": {
     "id": 10,
@@ -4551,7 +4551,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 6
   },
   "Morgan State": {
     "id": 184,
@@ -4573,7 +4573,7 @@
       "quad3": 5,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "San Diego State": {
     "id": 257,
@@ -4595,7 +4595,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 18
   },
   "Cal State Fullerton": {
     "id": 63,
@@ -4617,7 +4617,7 @@
       "quad3": 6,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Arkansas Little Rock": {
     "id": 12,
@@ -4639,7 +4639,7 @@
       "quad3": 4,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Texas State": {
     "id": 301,
@@ -4661,7 +4661,7 @@
       "quad3": 4,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Campbell": {
     "id": 40,
@@ -4683,7 +4683,7 @@
       "quad3": 6,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Navy": {
     "id": 193,
@@ -4705,7 +4705,7 @@
       "quad3": 5,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "BYU": {
     "id": 35,
@@ -4727,7 +4727,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 21
   },
   "Houston Chr": {
     "id": 116,
@@ -4749,7 +4749,7 @@
       "quad3": 2,
       "quad4": 13
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Abilene Christian": {
     "id": 1,
@@ -4771,7 +4771,7 @@
       "quad3": 6,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Oklahoma State": {
     "id": 223,
@@ -4793,7 +4793,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Colorado State": {
     "id": 56,
@@ -4815,7 +4815,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 42
   },
   "Louisiana Tech": {
     "id": 151,
@@ -4837,7 +4837,7 @@
       "quad3": 5,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Cal State Bakersfield": {
     "id": 62,
@@ -4859,7 +4859,7 @@
       "quad3": 10,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Southern Utah": {
     "id": 277,
@@ -4881,7 +4881,7 @@
       "quad3": 8,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Manhattan": {
     "id": 159,
@@ -4903,7 +4903,7 @@
       "quad3": 8,
       "quad4": 13
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Bryant": {
     "id": 31,
@@ -4925,7 +4925,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UT Arlington": {
     "id": 325,
@@ -4947,7 +4947,7 @@
       "quad3": 4,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Oral Roberts": {
     "id": 225,
@@ -4969,7 +4969,7 @@
       "quad3": 4,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Baylor": {
     "id": 20,
@@ -4991,7 +4991,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 9
   },
   "Auburn": {
     "id": 17,
@@ -5013,7 +5013,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 15
   },
   "Creighton": {
     "id": 61,
@@ -5035,7 +5035,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 10
   },
   "Florida A&M": {
     "id": 92,
@@ -5057,7 +5057,7 @@
       "quad3": 4,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "PFW": {
     "id": 232,
@@ -5079,7 +5079,7 @@
       "quad3": 3,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Depaul": {
     "id": 72,
@@ -5101,7 +5101,7 @@
       "quad3": 3,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Georgetown": {
     "id": 102,
@@ -5123,7 +5123,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Le Moyne": {
     "id": 142,
@@ -5145,7 +5145,7 @@
       "quad3": 5,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Indiana": {
     "id": 124,
@@ -5167,7 +5167,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Fgcu": {
     "id": 89,
@@ -5189,7 +5189,7 @@
       "quad3": 8,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Maryland": {
     "id": 163,
@@ -5211,7 +5211,7 @@
       "quad3": 4,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Mt St Mary's": {
     "id": 186,
@@ -5233,7 +5233,7 @@
       "quad3": 6,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Michigan": {
     "id": 172,
@@ -5255,7 +5255,7 @@
       "quad3": 5,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UNC Asheville": {
     "id": 320,
@@ -5277,7 +5277,7 @@
       "quad3": 5,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Nevada": {
     "id": 199,
@@ -5299,7 +5299,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 37
   },
   "Cal State Sacramento": {
     "id": 65,
@@ -5321,7 +5321,7 @@
       "quad3": 9,
       "quad4": 13
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "St. John's": {
     "id": 280,
@@ -5343,7 +5343,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Stony Brook": {
     "id": 289,
@@ -5365,7 +5365,7 @@
       "quad3": 6,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Massachusetts": {
     "id": 164,
@@ -5387,7 +5387,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "SUNY Albany": {
     "id": 290,
@@ -5409,7 +5409,7 @@
       "quad3": 8,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "La Salle": {
     "id": 139,
@@ -5431,7 +5431,7 @@
       "quad3": 5,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Drexel": {
     "id": 75,
@@ -5453,7 +5453,7 @@
       "quad3": 6,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Presbyterian": {
     "id": 237,
@@ -5475,7 +5475,7 @@
       "quad3": 7,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Vanderbilt": {
     "id": 334,
@@ -5497,7 +5497,7 @@
       "quad3": 7,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Iowa": {
     "id": 127,
@@ -5519,7 +5519,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "North Dakota": {
     "id": 210,
@@ -5541,7 +5541,7 @@
       "quad3": 4,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "San Jose State": {
     "id": 259,
@@ -5563,7 +5563,7 @@
       "quad3": 5,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UC Irvine": {
     "id": 312,
@@ -5585,7 +5585,7 @@
       "quad3": 5,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "North Texas": {
     "id": 212,
@@ -5607,7 +5607,7 @@
       "quad3": 3,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Northern Iowa": {
     "id": 215,
@@ -5629,7 +5629,7 @@
       "quad3": 6,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Ohio": {
     "id": 220,
@@ -5651,7 +5651,7 @@
       "quad3": 6,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Troy": {
     "id": 306,
@@ -5673,7 +5673,7 @@
       "quad3": 7,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Penn": {
     "id": 229,
@@ -5695,7 +5695,7 @@
       "quad3": 4,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "San Diego": {
     "id": 256,
@@ -5717,7 +5717,7 @@
       "quad3": 6,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Santa Clara": {
     "id": 260,
@@ -5739,7 +5739,7 @@
       "quad3": 2,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Utah Tech": {
     "id": 329,
@@ -5761,7 +5761,7 @@
       "quad3": 8,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "SMU": {
     "id": 269,
@@ -5783,7 +5783,7 @@
       "quad3": 3,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Canisius": {
     "id": 41,
@@ -5805,7 +5805,7 @@
       "quad3": 7,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Drake": {
     "id": 74,
@@ -5827,7 +5827,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "Automatic"
+    "seed": 40
   },
   "Mississippi State": {
     "id": 176,
@@ -5849,7 +5849,7 @@
       "quad3": 0,
       "quad4": 1
     },
-    "bidType": "At Large"
+    "seed": 32
   },
   "Arizona State": {
     "id": 11,
@@ -5871,7 +5871,7 @@
       "quad3": 4,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UNLV": {
     "id": 323,
@@ -5893,7 +5893,7 @@
       "quad3": 0,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Seattle": {
     "id": 264,
@@ -5915,7 +5915,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Prairie View": {
     "id": 236,
@@ -5937,7 +5937,7 @@
       "quad3": 6,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Florida Atlantic": {
     "id": 90,
@@ -5959,7 +5959,7 @@
       "quad3": 2,
       "quad4": 1
     },
-    "bidType": "At Large"
+    "seed": 31
   },
   "Loyola Chicago": {
     "id": 155,
@@ -5981,7 +5981,7 @@
       "quad3": 3,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Texas Tech": {
     "id": 302,
@@ -6003,7 +6003,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 23
   },
   "North Florida": {
     "id": 211,
@@ -6025,7 +6025,7 @@
       "quad3": 1,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Charleston Southern": {
     "id": 44,
@@ -6047,7 +6047,7 @@
       "quad3": 6,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "ETSU": {
     "id": 85,
@@ -6069,7 +6069,7 @@
       "quad3": 7,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Kent State": {
     "id": 137,
@@ -6091,7 +6091,7 @@
       "quad3": 6,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "S.F. Austin": {
     "id": 266,
@@ -6113,7 +6113,7 @@
       "quad3": 4,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Utah Valley": {
     "id": 330,
@@ -6135,7 +6135,7 @@
       "quad3": 5,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "San Francisco": {
     "id": 258,
@@ -6157,7 +6157,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Lamar": {
     "id": 141,
@@ -6179,7 +6179,7 @@
       "quad3": 2,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "South Florida": {
     "id": 273,
@@ -6201,7 +6201,7 @@
       "quad3": 2,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "South Carolina State": {
     "id": 250,
@@ -6223,7 +6223,7 @@
       "quad3": 5,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "NE Omaha": {
     "id": 197,
@@ -6245,7 +6245,7 @@
       "quad3": 5,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Western Kentucky": {
     "id": 356,
@@ -6267,7 +6267,7 @@
       "quad3": 6,
       "quad4": 4
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "UC Davis": {
     "id": 311,
@@ -6289,7 +6289,7 @@
       "quad3": 7,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Pepperdine": {
     "id": 231,
@@ -6311,7 +6311,7 @@
       "quad3": 4,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "North Alabama": {
     "id": 208,
@@ -6333,7 +6333,7 @@
       "quad3": 4,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Alabama A&M": {
     "id": 5,
@@ -6355,7 +6355,7 @@
       "quad3": 10,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Cal Poly": {
     "id": 38,
@@ -6377,7 +6377,7 @@
       "quad3": 14,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UC Santa Barbara": {
     "id": 315,
@@ -6399,7 +6399,7 @@
       "quad3": 7,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "William & Mary": {
     "id": 353,
@@ -6421,7 +6421,7 @@
       "quad3": 10,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Mercer": {
     "id": 168,
@@ -6443,7 +6443,7 @@
       "quad3": 5,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Northwestern LA": {
     "id": 217,
@@ -6465,7 +6465,7 @@
       "quad3": 4,
       "quad4": 14
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Saint Mary's": {
     "id": 283,
@@ -6487,7 +6487,7 @@
       "quad3": 1,
       "quad4": 1
     },
-    "bidType": "Automatic"
+    "seed": 20
   },
   "Indiana State": {
     "id": 125,
@@ -6509,7 +6509,7 @@
       "quad3": 1,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "SE Louisiana": {
     "id": 262,
@@ -6531,7 +6531,7 @@
       "quad3": 3,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Cal Baptist": {
     "id": 37,
@@ -6553,7 +6553,7 @@
       "quad3": 6,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Wright State": {
     "id": 358,
@@ -6575,7 +6575,7 @@
       "quad3": 6,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "MA Lowell": {
     "id": 157,
@@ -6597,7 +6597,7 @@
       "quad3": 3,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Florida State": {
     "id": 94,
@@ -6619,7 +6619,7 @@
       "quad3": 4,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Kennesaw State": {
     "id": 136,
@@ -6641,7 +6641,7 @@
       "quad3": 5,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Furman": {
     "id": 97,
@@ -6663,7 +6663,7 @@
       "quad3": 7,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Gonzaga": {
     "id": 106,
@@ -6685,7 +6685,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 17
   },
   "Yale": {
     "id": 361,
@@ -6707,7 +6707,7 @@
       "quad3": 2,
       "quad4": 2
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Sacred Heart": {
     "id": 253,
@@ -6729,7 +6729,7 @@
       "quad3": 3,
       "quad4": 10
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Liberty": {
     "id": 144,
@@ -6751,7 +6751,7 @@
       "quad3": 3,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "LIU Brooklyn": {
     "id": 147,
@@ -6773,7 +6773,7 @@
       "quad3": 6,
       "quad4": 14
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Rider": {
     "id": 247,
@@ -6795,7 +6795,7 @@
       "quad3": 7,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UNC Greensboro": {
     "id": 321,
@@ -6817,7 +6817,7 @@
       "quad3": 5,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Oregon State": {
     "id": 227,
@@ -6839,7 +6839,7 @@
       "quad3": 6,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Quinnipiac": {
     "id": 242,
@@ -6861,7 +6861,7 @@
       "quad3": 2,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Soutern Illinois": {
     "id": 252,
@@ -6883,7 +6883,7 @@
       "quad3": 3,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Jacksonville": {
     "id": 131,
@@ -6905,7 +6905,7 @@
       "quad3": 5,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Austin Peay": {
     "id": 18,
@@ -6927,7 +6927,7 @@
       "quad3": 7,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Hofstra": {
     "id": 113,
@@ -6949,7 +6949,7 @@
       "quad3": 6,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Davidson": {
     "id": 67,
@@ -6971,7 +6971,7 @@
       "quad3": 7,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Harvard": {
     "id": 110,
@@ -6993,7 +6993,7 @@
       "quad3": 2,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Rice": {
     "id": 245,
@@ -7015,7 +7015,7 @@
       "quad3": 9,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Grambling State": {
     "id": 107,
@@ -7037,7 +7037,7 @@
       "quad3": 1,
       "quad4": 6
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "IUPUI": {
     "id": 129,
@@ -7059,7 +7059,7 @@
       "quad3": 9,
       "quad4": 13
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Valparaiso": {
     "id": 333,
@@ -7081,7 +7081,7 @@
       "quad3": 8,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Murray State": {
     "id": 188,
@@ -7103,7 +7103,7 @@
       "quad3": 10,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "South Dakota": {
     "id": 272,
@@ -7125,7 +7125,7 @@
       "quad3": 6,
       "quad4": 13
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UTRGV": {
     "id": 332,
@@ -7147,7 +7147,7 @@
       "quad3": 9,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Chattanooga": {
     "id": 46,
@@ -7169,7 +7169,7 @@
       "quad3": 6,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Southern Miss": {
     "id": 275,
@@ -7191,7 +7191,7 @@
       "quad3": 6,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Gardner Webb": {
     "id": 100,
@@ -7213,7 +7213,7 @@
       "quad3": 5,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UC Riverside": {
     "id": 313,
@@ -7235,7 +7235,7 @@
       "quad3": 9,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Montana": {
     "id": 181,
@@ -7257,7 +7257,7 @@
       "quad3": 3,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Idaho State": {
     "id": 119,
@@ -7279,7 +7279,7 @@
       "quad3": 11,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Ball State": {
     "id": 19,
@@ -7301,7 +7301,7 @@
       "quad3": 8,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Old Dominion": {
     "id": 224,
@@ -7323,7 +7323,7 @@
       "quad3": 3,
       "quad4": 12
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "South Alabama": {
     "id": 270,
@@ -7345,7 +7345,7 @@
       "quad3": 4,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "East Carolina": {
     "id": 82,
@@ -7367,7 +7367,7 @@
       "quad3": 5,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Texas A&M – Corpus Christi": {
     "id": 292,
@@ -7389,7 +7389,7 @@
       "quad3": 2,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Jacksonville State": {
     "id": 132,
@@ -7411,7 +7411,7 @@
       "quad3": 5,
       "quad4": 9
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Appalachian State": {
     "id": 9,
@@ -7433,7 +7433,7 @@
       "quad3": 4,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "W Carolina": {
     "id": 341,
@@ -7455,7 +7455,7 @@
       "quad3": 5,
       "quad4": 0
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "WI Milwaukee": {
     "id": 351,
@@ -7477,7 +7477,7 @@
       "quad3": 8,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Montana State": {
     "id": 182,
@@ -7499,7 +7499,7 @@
       "quad3": 9,
       "quad4": 6
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "Illinois State": {
     "id": 122,
@@ -7521,7 +7521,7 @@
       "quad3": 4,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Utah State": {
     "id": 328,
@@ -7543,7 +7543,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 30
   },
   "Wofford": {
     "id": 357,
@@ -7565,7 +7565,7 @@
       "quad3": 8,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "High Point": {
     "id": 112,
@@ -7587,7 +7587,7 @@
       "quad3": 4,
       "quad4": 1
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "TN Martin": {
     "id": 303,
@@ -7609,7 +7609,7 @@
       "quad3": 3,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Wyoming": {
     "id": 359,
@@ -7631,7 +7631,7 @@
       "quad3": 1,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Stetson": {
     "id": 287,
@@ -7653,7 +7653,7 @@
       "quad3": 3,
       "quad4": 5
     },
-    "bidType": "Automatic"
+    "seed": 69
   },
   "UNC Wilmington": {
     "id": 322,
@@ -7675,7 +7675,7 @@
       "quad3": 6,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Fresno State": {
     "id": 96,
@@ -7697,7 +7697,7 @@
       "quad3": 2,
       "quad4": 3
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Loyola Marymount": {
     "id": 153,
@@ -7719,7 +7719,7 @@
       "quad3": 5,
       "quad4": 5
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Boise State": {
     "id": 25,
@@ -7741,7 +7741,7 @@
       "quad3": 0,
       "quad4": 0
     },
-    "bidType": "At Large"
+    "seed": 38
   },
   "Weber State": {
     "id": 348,
@@ -7763,7 +7763,7 @@
       "quad3": 5,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Norfolk State": {
     "id": 207,
@@ -7785,7 +7785,7 @@
       "quad3": 3,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "UTEP": {
     "id": 331,
@@ -7807,7 +7807,7 @@
       "quad3": 7,
       "quad4": 4
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Missouri KC": {
     "id": 178,
@@ -7829,7 +7829,7 @@
       "quad3": 5,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "N Colorado": {
     "id": 189,
@@ -7851,7 +7851,7 @@
       "quad3": 4,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Tennessee State": {
     "id": 297,
@@ -7873,7 +7873,7 @@
       "quad3": 5,
       "quad4": 7
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Coastal Car": {
     "id": 52,
@@ -7895,7 +7895,7 @@
       "quad3": 8,
       "quad4": 8
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "Hawaii": {
     "id": 111,
@@ -7917,7 +7917,7 @@
       "quad3": 7,
       "quad4": 2
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "E Kentucky": {
     "id": 79,
@@ -7939,7 +7939,7 @@
       "quad3": 2,
       "quad4": 6
     },
-    "bidType": "N/A"
+    "seed": 69
   },
   "New Orleans": {
     "id": 203,
@@ -7961,6 +7961,6 @@
       "quad3": 5,
       "quad4": 11
     },
-    "bidType": "N/A"
+    "seed": 69
   }
 }

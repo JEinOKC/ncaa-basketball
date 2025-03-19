@@ -19,7 +19,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "generic-ranking-methods": "^1.0.4",
-    "ml-logistic-regression": "^2.0.0"
+    "ml-logistic-regression": "^2.0.0",
+    "ml-regression-multivariate-linear": "^2.0.4"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
