@@ -1,0 +1,18 @@
+{
+	"2025": {
+		"masseyID" : 604302,
+		"tournamentStartDate" : "2025-03-18"
+	},
+	"2024": {
+		"masseyID" : 557745,
+		"tournamentStartDate" : "2024-03-20"
+	},
+	"2023": {
+		"masseyID" : 500054,
+		"tournamentStartDate" : "2023-03-14"
+	},
+	"2022": {
+		"masseyID" : 379387,
+		"tournamentStartDate" : "2022-03-13"
+	}
+}

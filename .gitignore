@@ -25,6 +25,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# python files
+backend/py-src/myenv/
+__pycache__
+
 
 # Server files
 server

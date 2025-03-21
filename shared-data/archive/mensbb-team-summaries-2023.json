@@ -1,0 +1,7988 @@
+{
+  "Butler": {
+    "id": 34,
+    "ranking": 140,
+    "rating": 0.06826199990942942,
+    "averageOpponentRanking": 109.125,
+    "averageOpponentRating": 0.22209864471379945,
+    "averageScoringMargin": -2,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 14,
+      "quad2": 3,
+      "quad3": 0,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "New Orleans": {
+    "id": 203,
+    "ranking": 331,
+    "rating": -0.40232431435482113,
+    "averageOpponentRanking": 239.23333333333332,
+    "averageOpponentRating": -0.15614481069391423,
+    "averageScoringMargin": -2.7,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "Long Beach State": {
+    "id": 148,
+    "ranking": 177,
+    "rating": -0.0013348413816693088,
+    "averageOpponentRanking": 187.74193548387098,
+    "averageOpponentRating": -0.020605710281370128,
+    "averageScoringMargin": 0.12903225806451613,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Cal Baptist": {
+    "id": 37,
+    "ranking": 187,
+    "rating": -0.024081142133907413,
+    "averageOpponentRanking": 181,
+    "averageOpponentRating": -0.008666495748487733,
+    "averageScoringMargin": 0.3225806451612903,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "UAB": {
+    "id": 311,
+    "ranking": 21,
+    "rating": 0.4833334397094208,
+    "averageOpponentRanking": 146.64705882352942,
+    "averageOpponentRating": 0.09002759974144625,
+    "averageScoringMargin": 4.794117647058823,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 12,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Alabama State": {
+    "id": 6,
+    "ranking": 346,
+    "rating": -0.44047653416401716,
+    "averageOpponentRanking": 236.26666666666668,
+    "averageOpponentRating": -0.15044409306261983,
+    "averageScoringMargin": -4.7,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "UC Davis": {
+    "id": 312,
+    "ranking": 186,
+    "rating": -0.01632281102146242,
+    "averageOpponentRanking": 203.2,
+    "averageOpponentRating": -0.06137530290192913,
+    "averageScoringMargin": 1.2333333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 7,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "California": {
+    "id": 39,
+    "ranking": 289,
+    "rating": -0.2607293852968111,
+    "averageOpponentRanking": 115.21875,
+    "averageOpponentRating": 0.1742584271960602,
+    "averageScoringMargin": -6.78125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 11,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Youngstown State": {
+    "id": 363,
+    "ranking": 153,
+    "rating": 0.041057750230878765,
+    "averageOpponentRanking": 245.03225806451613,
+    "averageOpponentRating": -0.17392295337456573,
+    "averageScoringMargin": 4.129032258064516,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 20
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Canisius": {
+    "id": 41,
+    "ranking": 252,
+    "rating": -0.1766776259376217,
+    "averageOpponentRanking": 210.6206896551724,
+    "averageOpponentRating": -0.07001267758010572,
+    "averageScoringMargin": -1.8275862068965518,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Towson": {
+    "id": 306,
+    "ranking": 113,
+    "rating": 0.14614407405487786,
+    "averageOpponentRanking": 211.8181818181818,
+    "averageOpponentRating": -0.09383848629332173,
+    "averageScoringMargin": 3,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "SUNY Albany": {
+    "id": 291,
+    "ranking": 329,
+    "rating": -0.39952968199081756,
+    "averageOpponentRanking": 208.17241379310346,
+    "averageOpponentRating": -0.07903316919963845,
+    "averageScoringMargin": -5.586206896551724,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 3,
+      "quad3": 8,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Wichita State": {
+    "id": 353,
+    "ranking": 143,
+    "rating": 0.06193606243047967,
+    "averageOpponentRanking": 150.59375,
+    "averageOpponentRating": 0.08878897294792998,
+    "averageScoringMargin": 0.71875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Cent Arkansas": {
+    "id": 42,
+    "ranking": 325,
+    "rating": -0.3724452765534379,
+    "averageOpponentRanking": 195.53333333333333,
+    "averageOpponentRating": -0.04092359386937654,
+    "averageScoringMargin": -5,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Massachusetts": {
+    "id": 164,
+    "ranking": 176,
+    "rating": -0.00044015175147058385,
+    "averageOpponentRanking": 165.51612903225808,
+    "averageOpponentRating": 0.02768547594080877,
+    "averageScoringMargin": -0.4838709677419355,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 10,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Central Conn": {
+    "id": 43,
+    "ranking": 349,
+    "rating": -0.4822576834025277,
+    "averageOpponentRanking": 273,
+    "averageOpponentRating": -0.2622567046263127,
+    "averageScoringMargin": -2.5625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 16
+    },
+    "seed": 69
+  },
+  "UNC Asheville": {
+    "id": 321,
+    "ranking": 114,
+    "rating": 0.1452889420645782,
+    "averageOpponentRanking": 235.125,
+    "averageOpponentRating": -0.13989196315637786,
+    "averageScoringMargin": 4,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 18
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "UCF": {
+    "id": 317,
+    "ranking": 84,
+    "rating": 0.23118603429223392,
+    "averageOpponentRanking": 136.59375,
+    "averageOpponentRating": 0.12819928068285757,
+    "averageScoringMargin": 2,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 4,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Northwestern": {
+    "id": 216,
+    "ranking": 41,
+    "rating": 0.37276782223575944,
+    "averageOpponentRanking": 106.8125,
+    "averageOpponentRating": 0.2072748305629084,
+    "averageScoringMargin": 2.8125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 6,
+      "quad3": 2,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 28
+  },
+  "Chicago State": {
+    "id": 47,
+    "ranking": 265,
+    "rating": -0.20602218169212275,
+    "averageOpponentRanking": 210,
+    "averageOpponentRating": -0.08868571787783093,
+    "averageScoringMargin": -3.814814814814815,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 8,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Mississippi": {
+    "id": 175,
+    "ranking": 135,
+    "rating": 0.08844948017485202,
+    "averageOpponentRanking": 106.63636363636364,
+    "averageOpponentRating": 0.21599489679030212,
+    "averageScoringMargin": -1.696969696969697,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 5,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Alcorn State": {
+    "id": 7,
+    "ranking": 232,
+    "rating": -0.11359412690709586,
+    "averageOpponentRanking": 238.58064516129033,
+    "averageOpponentRating": -0.16195640135427314,
+    "averageScoringMargin": 0.9354838709677419,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 3,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Buffalo": {
+    "id": 33,
+    "ranking": 234,
+    "rating": -0.11930791988027727,
+    "averageOpponentRanking": 167.5,
+    "averageOpponentRating": 0.039129007263086484,
+    "averageScoringMargin": -1.7333333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 5,
+      "quad3": 4,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Colgate": {
+    "id": 54,
+    "ranking": 100,
+    "rating": 0.17784704514604624,
+    "averageOpponentRanking": 243.96969696969697,
+    "averageOpponentRating": -0.16704834790081113,
+    "averageScoringMargin": 4.9393939393939394,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 21
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Charleston": {
+    "id": 53,
+    "ranking": 58,
+    "rating": 0.3255733563901191,
+    "averageOpponentRanking": 214.03030303030303,
+    "averageOpponentRating": -0.09819269774383985,
+    "averageScoringMargin": 6.666666666666667,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 19
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 47
+  },
+  "Chattanooga": {
+    "id": 46,
+    "ranking": 216,
+    "rating": -0.08492744799754194,
+    "averageOpponentRanking": 198.5625,
+    "averageOpponentRating": -0.0559637772653099,
+    "averageScoringMargin": -0.0625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Colorado": {
+    "id": 55,
+    "ranking": 103,
+    "rating": 0.17253712154236256,
+    "averageOpponentRanking": 107.11764705882354,
+    "averageOpponentRating": 0.20771232896829667,
+    "averageScoringMargin": 0.7647058823529411,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 4,
+      "quad3": 3,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "UC Riverside": {
+    "id": 314,
+    "ranking": 125,
+    "rating": 0.1201424422140463,
+    "averageOpponentRanking": 191.84848484848484,
+    "averageOpponentRating": -0.03697700104706606,
+    "averageScoringMargin": 1.1515151515151516,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Colorado State": {
+    "id": 56,
+    "ranking": 122,
+    "rating": 0.12585988667766454,
+    "averageOpponentRanking": 114.6875,
+    "averageOpponentRating": 0.19531017429949887,
+    "averageScoringMargin": -1.40625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 5,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Gardner Webb": {
+    "id": 100,
+    "ranking": 231,
+    "rating": -0.11285231147042468,
+    "averageOpponentRanking": 217.68965517241378,
+    "averageOpponentRating": -0.10233829262913752,
+    "averageScoringMargin": -0.20689655172413793,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Rutgers": {
+    "id": 249,
+    "ranking": 62,
+    "rating": 0.3156597086477232,
+    "averageOpponentRanking": 112.8529411764706,
+    "averageOpponentRating": 0.19102835571064955,
+    "averageScoringMargin": 1.3823529411764706,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 5,
+      "quad2": 4,
+      "quad3": 3,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 5,
+      "quad3": 4,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Columbia": {
+    "id": 57,
+    "ranking": 332,
+    "rating": -0.40752449300510546,
+    "averageOpponentRanking": 185.40740740740742,
+    "averageOpponentRating": -0.014183079575443023,
+    "averageScoringMargin": -6.074074074074074,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "UConn": {
+    "id": 58,
+    "ranking": 1,
+    "rating": 0.6801619598577358,
+    "averageOpponentRanking": 112.03030303030303,
+    "averageOpponentRating": 0.19423074481376876,
+    "averageScoringMargin": 5.848484848484849,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 7,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 13
+  },
+  "Stonehill": {
+    "id": 289,
+    "ranking": 324,
+    "rating": -0.36217127976885993,
+    "averageOpponentRanking": 264.9,
+    "averageOpponentRating": -0.23897293200612815,
+    "averageScoringMargin": -2.2,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "Abilene Christian": {
+    "id": 1,
+    "ranking": 230,
+    "rating": -0.11253760990672192,
+    "averageOpponentRanking": 153.73076923076923,
+    "averageOpponentRating": 0.07044231404823213,
+    "averageScoringMargin": -2.269230769230769,
+    "gameCount": 26,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 8,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Jackson State": {
+    "id": 131,
+    "ranking": 326,
+    "rating": -0.3726914654863039,
+    "averageOpponentRanking": 234.84848484848484,
+    "averageOpponentRating": -0.1389675068307865,
+    "averageScoringMargin": -3.0303030303030303,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Charlotte": {
+    "id": 45,
+    "ranking": 93,
+    "rating": 0.21321196970876785,
+    "averageOpponentRanking": 162.65625,
+    "averageOpponentRating": 0.052213456450490955,
+    "averageScoringMargin": 1.84375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 2,
+      "quad2": 0,
+      "quad3": 7,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Coppin State": {
+    "id": 59,
+    "ranking": 316,
+    "rating": -0.33215196729978025,
+    "averageOpponentRanking": 200.1875,
+    "averageOpponentRating": -0.05557990601707139,
+    "averageScoringMargin": -4.84375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 9,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Boston College": {
+    "id": 26,
+    "ranking": 181,
+    "rating": -0.006188095320695378,
+    "averageOpponentRanking": 134.03030303030303,
+    "averageOpponentRating": 0.12697365425783405,
+    "averageScoringMargin": -1,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Cornell": {
+    "id": 60,
+    "ranking": 105,
+    "rating": 0.17108663848650546,
+    "averageOpponentRanking": 183.19230769230768,
+    "averageOpponentRating": -0.009216200834562087,
+    "averageScoringMargin": 1.9615384615384615,
+    "gameCount": 26,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Creighton": {
+    "id": 61,
+    "ranking": 24,
+    "rating": 0.46908634062119653,
+    "averageOpponentRanking": 94.39393939393939,
+    "averageOpponentRating": 0.25749065800134824,
+    "averageScoringMargin": 3.4242424242424243,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 5,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 22
+  },
+  "St. Thomas Mn": {
+    "id": 286,
+    "ranking": 171,
+    "rating": 0.002388919740655367,
+    "averageOpponentRanking": 218.80645161290323,
+    "averageOpponentRating": -0.0962002202717312,
+    "averageScoringMargin": 0.7419354838709677,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Fordham": {
+    "id": 95,
+    "ranking": 94,
+    "rating": 0.21319214682107587,
+    "averageOpponentRanking": 197.3030303030303,
+    "averageOpponentRating": -0.04789918040739795,
+    "averageScoringMargin": 3.8181818181818183,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 8,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Dartmouth": {
+    "id": 66,
+    "ranking": 260,
+    "rating": -0.19634443699342996,
+    "averageOpponentRanking": 178.65384615384616,
+    "averageOpponentRating": -0.007611290230712438,
+    "averageScoringMargin": -4.1923076923076925,
+    "gameCount": 26,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 4,
+      "quad3": 9,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Dayton": {
+    "id": 68,
+    "ranking": 80,
+    "rating": 0.24655070332053913,
+    "averageOpponentRanking": 157.7941176470588,
+    "averageOpponentRating": 0.05362050238747179,
+    "averageScoringMargin": 3.588235294117647,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Lindenwood": {
+    "id": 145,
+    "ranking": 359,
+    "rating": -0.5511011465043093,
+    "averageOpponentRanking": 258.7931034482759,
+    "averageOpponentRating": -0.19885142878617756,
+    "averageScoringMargin": -4.241379310344827,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 15
+    },
+    "seed": 69
+  },
+  "Virginia Tech": {
+    "id": 340,
+    "ranking": 70,
+    "rating": 0.2961457853439974,
+    "averageOpponentRanking": 127.78787878787878,
+    "averageOpponentRating": 0.1453557636760812,
+    "averageScoringMargin": 1.6363636363636365,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 4,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Delaware State": {
+    "id": 70,
+    "ranking": 353,
+    "rating": -0.5055588633472003,
+    "averageOpponentRanking": 207.46428571428572,
+    "averageOpponentRating": -0.06439116848020023,
+    "averageScoringMargin": -6.178571428571429,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 1,
+      "quad3": 8,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Denver": {
+    "id": 71,
+    "ranking": 275,
+    "rating": -0.2258059499683839,
+    "averageOpponentRanking": 238.9,
+    "averageOpponentRating": -0.14119327795607145,
+    "averageScoringMargin": -1.8666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Idaho": {
+    "id": 119,
+    "ranking": 341,
+    "rating": -0.42192084568376426,
+    "averageOpponentRanking": 222.76666666666668,
+    "averageOpponentRating": -0.10806420814131396,
+    "averageScoringMargin": -4.233333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 14
+    },
+    "seed": 69
+  },
+  "Depaul": {
+    "id": 72,
+    "ranking": 188,
+    "rating": -0.02421741079066799,
+    "averageOpponentRanking": 96.54545454545455,
+    "averageOpponentRating": 0.2500267467479079,
+    "averageScoringMargin": -3.606060606060606,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 13,
+      "quad2": 6,
+      "quad3": 4,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Loyola Maryland": {
+    "id": 154,
+    "ranking": 345,
+    "rating": -0.4379987969878322,
+    "averageOpponentRanking": 239.5483870967742,
+    "averageOpponentRating": -0.14722826696812544,
+    "averageScoringMargin": -2.774193548387097,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 13
+    },
+    "seed": 69
+  },
+  "Nevada": {
+    "id": 199,
+    "ranking": 52,
+    "rating": 0.34248137295647096,
+    "averageOpponentRanking": 103.48387096774194,
+    "averageOpponentRating": 0.2166777555588012,
+    "averageScoringMargin": 2.774193548387097,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 4,
+      "quad2": 5,
+      "quad3": 8,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 3,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 46
+  },
+  "Utah Tech": {
+    "id": 330,
+    "ranking": 148,
+    "rating": 0.04845119912986717,
+    "averageOpponentRanking": 157.93333333333334,
+    "averageOpponentRating": 0.05107047081717654,
+    "averageScoringMargin": -1.4666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 6,
+      "quad3": 6,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Duke": {
+    "id": 76,
+    "ranking": 33,
+    "rating": 0.4309433556334444,
+    "averageOpponentRanking": 109.88235294117646,
+    "averageOpponentRating": 0.20459748833486033,
+    "averageScoringMargin": 3.9705882352941178,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 5,
+      "quad2": 7,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 18
+  },
+  "Jacksonville": {
+    "id": 132,
+    "ranking": 221,
+    "rating": -0.09449738907000568,
+    "averageOpponentRanking": 180.26923076923077,
+    "averageOpponentRating": 0.00097859684677626,
+    "averageScoringMargin": -1.6538461538461537,
+    "gameCount": 26,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Illinois": {
+    "id": 122,
+    "ranking": 54,
+    "rating": 0.3409982554023235,
+    "averageOpponentRanking": 115.53125,
+    "averageOpponentRating": 0.1860630484533647,
+    "averageScoringMargin": 2.90625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 2,
+      "quad2": 6,
+      "quad3": 5,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 4,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 36
+  },
+  "E Illinois": {
+    "id": 78,
+    "ranking": 351,
+    "rating": -0.4894244714730645,
+    "averageOpponentRanking": 262.7586206896552,
+    "averageOpponentRating": -0.2124755908821939,
+    "averageScoringMargin": -4.482758620689655,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 18
+    },
+    "seed": 69
+  },
+  "Santa Clara": {
+    "id": 260,
+    "ranking": 86,
+    "rating": 0.22804913015986203,
+    "averageOpponentRanking": 144.2258064516129,
+    "averageOpponentRating": 0.1108610812057126,
+    "averageScoringMargin": 3.3870967741935485,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 4,
+      "quad3": 9,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "E Washington": {
+    "id": 81,
+    "ranking": 129,
+    "rating": 0.10403609989647046,
+    "averageOpponentRanking": 207.78125,
+    "averageOpponentRating": -0.07267791914177589,
+    "averageScoringMargin": 2.875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Evansville": {
+    "id": 86,
+    "ranking": 344,
+    "rating": -0.4367800598375798,
+    "averageOpponentRanking": 182.0625,
+    "averageOpponentRating": -0.005790455999636566,
+    "averageScoringMargin": -6.625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 7,
+      "quad3": 10,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Miami (OH)": {
+    "id": 171,
+    "ranking": 307,
+    "rating": -0.2977744914384174,
+    "averageOpponentRanking": 207.13793103448276,
+    "averageOpponentRating": -0.06898469742556479,
+    "averageScoringMargin": -2.7241379310344827,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Wake Forest": {
+    "id": 346,
+    "ranking": 102,
+    "rating": 0.17437683511986785,
+    "averageOpponentRanking": 125,
+    "averageOpponentRating": 0.15024336999712182,
+    "averageScoringMargin": 1.696969696969697,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 6,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Fairfield": {
+    "id": 88,
+    "ranking": 267,
+    "rating": -0.21028449374784874,
+    "averageOpponentRanking": 221.16666666666666,
+    "averageOpponentRating": -0.09203339075859915,
+    "averageScoringMargin": -1.7666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Loyola Chicago": {
+    "id": 155,
+    "ranking": 237,
+    "rating": -0.1207751505518756,
+    "averageOpponentRanking": 167.1290322580645,
+    "averageOpponentRating": 0.02488923527013765,
+    "averageScoringMargin": -2.967741935483871,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 9,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Fairleigh Dickinson": {
+    "id": 87,
+    "ranking": 288,
+    "rating": -0.25508612775694106,
+    "averageOpponentRanking": 295.96875,
+    "averageOpponentRating": -0.330922131793749,
+    "averageScoringMargin": 0.28125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "Fgcu": {
+    "id": 89,
+    "ranking": 164,
+    "rating": 0.014991176327877638,
+    "averageOpponentRanking": 199.2258064516129,
+    "averageOpponentRating": -0.04173447325667955,
+    "averageScoringMargin": 1.064516129032258,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "USC": {
+    "id": 325,
+    "ranking": 66,
+    "rating": 0.3068517158631688,
+    "averageOpponentRanking": 120.46875,
+    "averageOpponentRating": 0.16745508046131002,
+    "averageScoringMargin": 3.3125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 9,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 2
+    },
+    "seed": 39
+  },
+  "Florida Intl": {
+    "id": 93,
+    "ranking": 213,
+    "rating": -0.07624578593204044,
+    "averageOpponentRanking": 149.23333333333332,
+    "averageOpponentRating": 0.08339005204046337,
+    "averageScoringMargin": -1.8666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 1,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Houston Chr": {
+    "id": 117,
+    "ranking": 333,
+    "rating": -0.40822553541363416,
+    "averageOpponentRanking": 243.3793103448276,
+    "averageOpponentRating": -0.1626444911918658,
+    "averageScoringMargin": -4.620689655172414,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 15
+    },
+    "seed": 69
+  },
+  "Auburn": {
+    "id": 17,
+    "ranking": 23,
+    "rating": 0.47028430088899276,
+    "averageOpponentRanking": 96.6875,
+    "averageOpponentRating": 0.2439277679879592,
+    "averageScoringMargin": 2.875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 3,
+      "quad2": 6,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 35
+  },
+  "George Mason": {
+    "id": 101,
+    "ranking": 128,
+    "rating": 0.11171429097298116,
+    "averageOpponentRanking": 169.63636363636363,
+    "averageOpponentRating": 0.025326646065930585,
+    "averageScoringMargin": 1.6666666666666667,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Arizona": {
+    "id": 10,
+    "ranking": 14,
+    "rating": 0.5373407265827383,
+    "averageOpponentRanking": 109.52941176470588,
+    "averageOpponentRating": 0.20219601126802175,
+    "averageScoringMargin": 5.5,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 10,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 7
+  },
+  "Nicholls State": {
+    "id": 205,
+    "ranking": 249,
+    "rating": -0.16231600982168026,
+    "averageOpponentRanking": 232.40740740740742,
+    "averageOpponentRating": -0.13473568785542622,
+    "averageScoringMargin": -0.9259259259259259,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Grand Canyon": {
+    "id": 108,
+    "ranking": 118,
+    "rating": 0.1312333105809585,
+    "averageOpponentRanking": 156.5625,
+    "averageOpponentRating": 0.05535020125570307,
+    "averageScoringMargin": 2.28125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 9,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Montana State": {
+    "id": 182,
+    "ranking": 115,
+    "rating": 0.1379667691842762,
+    "averageOpponentRanking": 200.1875,
+    "averageOpponentRating": -0.04637383754408994,
+    "averageScoringMargin": 3.34375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Arizona State": {
+    "id": 11,
+    "ranking": 42,
+    "rating": 0.37053957209326466,
+    "averageOpponentRanking": 122.44117647058823,
+    "averageOpponentRating": 0.16638403351023245,
+    "averageScoringMargin": 1.7058823529411764,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 5,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 45
+  },
+  "Tarleton State": {
+    "id": 294,
+    "ranking": 173,
+    "rating": 0.001820145255061037,
+    "averageOpponentRanking": 146.3793103448276,
+    "averageOpponentRating": 0.08735093083353761,
+    "averageScoringMargin": -0.9655172413793104,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Soutern Illinois": {
+    "id": 252,
+    "ranking": 131,
+    "rating": 0.10167014918588749,
+    "averageOpponentRanking": 187.78125,
+    "averageOpponentRating": -0.01567156683824985,
+    "averageScoringMargin": 1.84375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Arkansas Little Rock": {
+    "id": 12,
+    "ranking": 347,
+    "rating": -0.4425283983706234,
+    "averageOpponentRanking": 265.9655172413793,
+    "averageOpponentRating": -0.21655476660695624,
+    "averageScoringMargin": -3.103448275862069,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 15
+    },
+    "seed": 69
+  },
+  "Hofstra": {
+    "id": 114,
+    "ranking": 83,
+    "rating": 0.23972357226508356,
+    "averageOpponentRanking": 193.0909090909091,
+    "averageOpponentRating": -0.030418119711318747,
+    "averageScoringMargin": 3.6666666666666665,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Princeton": {
+    "id": 238,
+    "ranking": 79,
+    "rating": 0.26482624185262493,
+    "averageOpponentRanking": 189.07407407407408,
+    "averageOpponentRating": -0.02682551115511958,
+    "averageScoringMargin": 3.4814814814814814,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Siena": {
+    "id": 267,
+    "ranking": 185,
+    "rating": -0.01084787382511692,
+    "averageOpponentRanking": 230.46875,
+    "averageOpponentRating": -0.12128529760188168,
+    "averageScoringMargin": 1.34375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 5,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Holy Cross": {
+    "id": 115,
+    "ranking": 335,
+    "rating": -0.4095758255346352,
+    "averageOpponentRanking": 243.43333333333334,
+    "averageOpponentRating": -0.15836464697079405,
+    "averageScoringMargin": -3.8666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 16
+    },
+    "seed": 69
+  },
+  "Houston": {
+    "id": 116,
+    "ranking": 2,
+    "rating": 0.6481438639266027,
+    "averageOpponentRanking": 135.23529411764707,
+    "averageOpponentRating": 0.1325010439904812,
+    "averageScoringMargin": 7.588235294117647,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 6,
+      "quad2": 6,
+      "quad3": 10,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 2
+  },
+  "N Colorado": {
+    "id": 189,
+    "ranking": 241,
+    "rating": -0.1256874142189355,
+    "averageOpponentRanking": 190.80645161290323,
+    "averageOpponentRating": -0.02284275637072424,
+    "averageScoringMargin": -2.129032258064516,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 8,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "BYU": {
+    "id": 35,
+    "ranking": 126,
+    "rating": 0.11791891849650041,
+    "averageOpponentRanking": 134.3125,
+    "averageOpponentRating": 0.1394898700924132,
+    "averageScoringMargin": 1.5625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 7,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 5,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Idaho State": {
+    "id": 120,
+    "ranking": 266,
+    "rating": -0.20876120313241991,
+    "averageOpponentRanking": 210.63333333333333,
+    "averageOpponentRating": -0.0866543633153568,
+    "averageScoringMargin": -2.2333333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 6,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "W Illinois": {
+    "id": 343,
+    "ranking": 245,
+    "rating": -0.13657290113359558,
+    "averageOpponentRanking": 222.14814814814815,
+    "averageOpponentRating": -0.1041589236843352,
+    "averageScoringMargin": -0.7037037037037037,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Illinois State": {
+    "id": 123,
+    "ranking": 228,
+    "rating": -0.11158246562808823,
+    "averageOpponentRanking": 202,
+    "averageOpponentRating": -0.05933899657593744,
+    "averageScoringMargin": -2.21875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "North Dakota": {
+    "id": 210,
+    "ranking": 276,
+    "rating": -0.22710579710244272,
+    "averageOpponentRanking": 201.80645161290323,
+    "averageOpponentRating": -0.05110779916655355,
+    "averageScoringMargin": -2.2580645161290325,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Incarnate Word": {
+    "id": 124,
+    "ranking": 328,
+    "rating": -0.3975019319034511,
+    "averageOpponentRanking": 247.17857142857142,
+    "averageOpponentRating": -0.1751979523074448,
+    "averageScoringMargin": -3.2142857142857144,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 0,
+      "quad3": 5,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Iowa State": {
+    "id": 129,
+    "ranking": 27,
+    "rating": 0.45806801936159264,
+    "averageOpponentRanking": 86.28125,
+    "averageOpponentRating": 0.28942125779952094,
+    "averageScoringMargin": 1.96875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 9,
+      "quad2": 4,
+      "quad3": 0,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 11,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 21
+  },
+  "IUPUI": {
+    "id": 130,
+    "ranking": 355,
+    "rating": -0.5243006823101772,
+    "averageOpponentRanking": 235.3,
+    "averageOpponentRating": -0.14299386948402806,
+    "averageScoringMargin": -6.633333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 0,
+      "quad3": 7,
+      "quad4": 18
+    },
+    "seed": 69
+  },
+  "Indiana State": {
+    "id": 126,
+    "ranking": 99,
+    "rating": 0.1904986068209059,
+    "averageOpponentRanking": 209.9090909090909,
+    "averageOpponentRating": -0.07875540034562886,
+    "averageScoringMargin": 3.484848484848485,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "WI Green Bay": {
+    "id": 351,
+    "ranking": 361,
+    "rating": -0.5969560770291319,
+    "averageOpponentRanking": 211.59375,
+    "averageOpponentRating": -0.0805645236686817,
+    "averageScoringMargin": -8.28125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 2
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 10,
+      "quad4": 15
+    },
+    "seed": 69
+  },
+  "Iona": {
+    "id": 127,
+    "ranking": 71,
+    "rating": 0.2903136110810167,
+    "averageOpponentRanking": 211.55882352941177,
+    "averageOpponentRating": -0.07290950642058075,
+    "averageScoringMargin": 5.794117647058823,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 19
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Penn": {
+    "id": 229,
+    "ranking": 138,
+    "rating": 0.08582567396918654,
+    "averageOpponentRanking": 164.24137931034483,
+    "averageOpponentRating": 0.019843492730448546,
+    "averageScoringMargin": 1.2758620689655173,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 7,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 2,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Michigan": {
+    "id": 172,
+    "ranking": 67,
+    "rating": 0.30607729550482055,
+    "averageOpponentRanking": 98.54545454545455,
+    "averageOpponentRating": 0.23005238517247878,
+    "averageScoringMargin": 2.242424242424242,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 11,
+      "quad2": 3,
+      "quad3": 0,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "PFW": {
+    "id": 232,
+    "ranking": 242,
+    "rating": -0.1328673569725997,
+    "averageOpponentRanking": 227.3,
+    "averageOpponentRating": -0.13013772374220386,
+    "averageScoringMargin": -0.23333333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Kent State": {
+    "id": 138,
+    "ranking": 49,
+    "rating": 0.3581689625973062,
+    "averageOpponentRanking": 199.53125,
+    "averageOpponentRating": -0.04221687887643952,
+    "averageScoringMargin": 5.40625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 11,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Northern Kentucky": {
+    "id": 192,
+    "ranking": 205,
+    "rating": -0.06832968331958296,
+    "averageOpponentRanking": 209.53125,
+    "averageOpponentRating": -0.08269319806359726,
+    "averageScoringMargin": 1.90625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Villanova": {
+    "id": 338,
+    "ranking": 91,
+    "rating": 0.21772478463478173,
+    "averageOpponentRanking": 98.47058823529412,
+    "averageOpponentRating": 0.23982888400944316,
+    "averageScoringMargin": 0.5,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "La Salle": {
+    "id": 140,
+    "ranking": 207,
+    "rating": -0.07064249436760084,
+    "averageOpponentRanking": 176.26470588235293,
+    "averageOpponentRating": 0.0070310943434551895,
+    "averageScoringMargin": -1.3529411764705883,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Miami (FL)": {
+    "id": 170,
+    "ranking": 20,
+    "rating": 0.4916276288369851,
+    "averageOpponentRanking": 132.8125,
+    "averageOpponentRating": 0.1273484961675341,
+    "averageScoringMargin": 4.71875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 4,
+      "quad2": 7,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 20
+  },
+  "Lafayette": {
+    "id": 141,
+    "ranking": 279,
+    "rating": -0.23170416230110502,
+    "averageOpponentRanking": 215.73529411764707,
+    "averageOpponentRating": -0.09112860885414999,
+    "averageScoringMargin": -2.764705882352941,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Utah": {
+    "id": 328,
+    "ranking": 101,
+    "rating": 0.17596356021755452,
+    "averageOpponentRanking": 133.28125,
+    "averageOpponentRating": 0.1257357915869981,
+    "averageScoringMargin": 0.78125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 6,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "LIU Brooklyn": {
+    "id": 147,
+    "ranking": 363,
+    "rating": -0.7511461913155191,
+    "averageOpponentRanking": 251.2962962962963,
+    "averageOpponentRating": -0.1760591611647447,
+    "averageScoringMargin": -8.851851851851851,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 1
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 19
+    },
+    "seed": 69
+  },
+  "Alabama": {
+    "id": 4,
+    "ranking": 3,
+    "rating": 0.6401400556914657,
+    "averageOpponentRanking": 76.8529411764706,
+    "averageOpponentRating": 0.3009110839239451,
+    "averageScoringMargin": 5.794117647058823,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 12,
+      "quad2": 7,
+      "quad3": 8,
+      "quad4": 2
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 1
+  },
+  "Longwood": {
+    "id": 149,
+    "ranking": 141,
+    "rating": 0.06419382781757796,
+    "averageOpponentRanking": 247.76666666666668,
+    "averageOpponentRating": -0.17752141501851884,
+    "averageScoringMargin": 1.8666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Texas A&M": {
+    "id": 301,
+    "ranking": 25,
+    "rating": 0.46453258463455216,
+    "averageOpponentRanking": 115.1470588235294,
+    "averageOpponentRating": 0.19992008100072212,
+    "averageScoringMargin": 3.8823529411764706,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 8,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 2
+    },
+    "seed": 25
+  },
+  "ULM": {
+    "id": 319,
+    "ranking": 306,
+    "rating": -0.29661670783179156,
+    "averageOpponentRanking": 170.17241379310346,
+    "averageOpponentRating": 0.021351449139681098,
+    "averageScoringMargin": -3.9310344827586206,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 6,
+      "quad3": 7,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Nebraska": {
+    "id": 198,
+    "ranking": 109,
+    "rating": 0.15327968055107832,
+    "averageOpponentRanking": 101.78125,
+    "averageOpponentRating": 0.23242863341768805,
+    "averageScoringMargin": -0.4375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 4,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 11,
+      "quad2": 4,
+      "quad3": 0,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Maine": {
+    "id": 158,
+    "ranking": 287,
+    "rating": -0.2549684918841393,
+    "averageOpponentRanking": 209.64285714285714,
+    "averageOpponentRating": -0.08567639845681467,
+    "averageScoringMargin": -2.4285714285714284,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 7,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "VCU": {
+    "id": 336,
+    "ranking": 40,
+    "rating": 0.3779137443489922,
+    "averageOpponentRanking": 151.02941176470588,
+    "averageOpponentRating": 0.06857640493045945,
+    "averageScoringMargin": 4.9411764705882355,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 0,
+      "quad2": 5,
+      "quad3": 12,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 50
+  },
+  "Manhattan": {
+    "id": 159,
+    "ranking": 281,
+    "rating": -0.23421875679136037,
+    "averageOpponentRanking": 230.75862068965517,
+    "averageOpponentRating": -0.11992413459158587,
+    "averageScoringMargin": -3,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "Marquette": {
+    "id": 161,
+    "ranking": 11,
+    "rating": 0.5563033972110202,
+    "averageOpponentRanking": 107.47058823529412,
+    "averageOpponentRating": 0.21463150277859167,
+    "averageScoringMargin": 5.529411764705882,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 9,
+      "quad2": 5,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 8
+  },
+  "Radford": {
+    "id": 243,
+    "ranking": 183,
+    "rating": -0.009792727637842015,
+    "averageOpponentRanking": 222.74193548387098,
+    "averageOpponentRating": -0.11106180226421791,
+    "averageScoringMargin": 0.967741935483871,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Tulane": {
+    "id": 308,
+    "ranking": 98,
+    "rating": 0.1910783347419324,
+    "averageOpponentRanking": 162.25806451612902,
+    "averageOpponentRating": 0.06069028533436348,
+    "averageScoringMargin": 2.096774193548387,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "UMBC": {
+    "id": 320,
+    "ranking": 222,
+    "rating": -0.09622807226537401,
+    "averageOpponentRanking": 235.1290322580645,
+    "averageOpponentRating": -0.15111218939676882,
+    "averageScoringMargin": 0.9032258064516129,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Old Dominion": {
+    "id": 224,
+    "ranking": 197,
+    "rating": -0.0369232285905194,
+    "averageOpponentRanking": 177.8,
+    "averageOpponentRating": 0.002822397022698717,
+    "averageScoringMargin": 0.4666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Maryland East Shore": {
+    "id": 166,
+    "ranking": 247,
+    "rating": -0.15106576984428297,
+    "averageOpponentRanking": 212.59259259259258,
+    "averageOpponentRating": -0.08405590665746632,
+    "averageScoringMargin": -0.2222222222222222,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "North Carolina State": {
+    "id": 196,
+    "ranking": 46,
+    "rating": 0.36518789738205093,
+    "averageOpponentRanking": 129.45454545454547,
+    "averageOpponentRating": 0.14042011671243643,
+    "averageScoringMargin": 3.303030303030303,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 2,
+      "quad2": 6,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 4,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 41
+  },
+  "Austin Peay": {
+    "id": 18,
+    "ranking": 338,
+    "rating": -0.41130674394149824,
+    "averageOpponentRanking": 190.10714285714286,
+    "averageOpponentRating": -0.018291612732244198,
+    "averageScoringMargin": -4.821428571428571,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 10,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Memphis": {
+    "id": 167,
+    "ranking": 29,
+    "rating": 0.44687142720877926,
+    "averageOpponentRanking": 120.02941176470588,
+    "averageOpponentRating": 0.17301197373437352,
+    "averageScoringMargin": 5.235294117647059,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 4,
+      "quad2": 6,
+      "quad3": 9,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 29
+  },
+  "Vanderbilt": {
+    "id": 335,
+    "ranking": 95,
+    "rating": 0.20860387973863637,
+    "averageOpponentRanking": 95.62857142857143,
+    "averageOpponentRating": 0.2494083187620508,
+    "averageScoringMargin": 0.6,
+    "gameCount": 35,
+    "wins": {
+      "quad1": 6,
+      "quad2": 5,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "St. John's": {
+    "id": 281,
+    "ranking": 75,
+    "rating": 0.28280502470874236,
+    "averageOpponentRanking": 126.54545454545455,
+    "averageOpponentRating": 0.16095767039509137,
+    "averageScoringMargin": 1.3636363636363635,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 11,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Merrimack": {
+    "id": 169,
+    "ranking": 312,
+    "rating": -0.3256953018946927,
+    "averageOpponentRanking": 262.4375,
+    "averageOpponentRating": -0.24917814551808398,
+    "averageScoringMargin": -0.0625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Michigan State": {
+    "id": 173,
+    "ranking": 43,
+    "rating": 0.3680977041863819,
+    "averageOpponentRanking": 83.3225806451613,
+    "averageOpponentRating": 0.27501884819282013,
+    "averageScoringMargin": 1.5483870967741935,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 4,
+      "quad2": 7,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 3,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 26
+  },
+  "Northern Arizona": {
+    "id": 214,
+    "ranking": 225,
+    "rating": -0.09858119379505073,
+    "averageOpponentRanking": 183.0909090909091,
+    "averageOpponentRating": -0.003337536745063786,
+    "averageScoringMargin": -2.242424242424242,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Mississippi State": {
+    "id": 176,
+    "ranking": 45,
+    "rating": 0.36689570252567844,
+    "averageOpponentRanking": 119.52941176470588,
+    "averageOpponentRating": 0.18624891784340813,
+    "averageScoringMargin": 2.5588235294117645,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 43
+  },
+  "Texas A&M – Corpus Christi": {
+    "id": 293,
+    "ranking": 147,
+    "rating": 0.049139604823306364,
+    "averageOpponentRanking": 255.56666666666666,
+    "averageOpponentRating": -0.19075302612305578,
+    "averageScoringMargin": 3.2666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 18
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Baylor": {
+    "id": 20,
+    "ranking": 19,
+    "rating": 0.5001648760271882,
+    "averageOpponentRanking": 77.75,
+    "averageOpponentRating": 0.3146124875431125,
+    "averageScoringMargin": 2.90625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 11,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 9
+  },
+  "Mississippi Valley State": {
+    "id": 185,
+    "ranking": 357,
+    "rating": -0.540247219515668,
+    "averageOpponentRanking": 223.84375,
+    "averageOpponentRating": -0.11048055200313042,
+    "averageScoringMargin": -6.1875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 14
+    },
+    "seed": 69
+  },
+  "Missouri": {
+    "id": 177,
+    "ranking": 53,
+    "rating": 0.3420818581574132,
+    "averageOpponentRanking": 120.93939393939394,
+    "averageOpponentRating": 0.179771524170437,
+    "averageScoringMargin": 2.6666666666666665,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 4,
+      "quad2": 5,
+      "quad3": 7,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 27
+  },
+  "Southern Indiana": {
+    "id": 274,
+    "ranking": 301,
+    "rating": -0.28861207768416575,
+    "averageOpponentRanking": 267.44827586206895,
+    "averageOpponentRating": -0.22931161097027744,
+    "averageScoringMargin": -0.5172413793103449,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Indiana": {
+    "id": 125,
+    "ranking": 32,
+    "rating": 0.4328712338164521,
+    "averageOpponentRanking": 102.36363636363636,
+    "averageOpponentRating": 0.22665767350595026,
+    "averageScoringMargin": 2.787878787878788,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 6,
+      "quad2": 5,
+      "quad3": 5,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 15
+  },
+  "Morehead State": {
+    "id": 183,
+    "ranking": 240,
+    "rating": -0.12255819149964509,
+    "averageOpponentRanking": 256.2142857142857,
+    "averageOpponentRating": -0.19413776226400997,
+    "averageScoringMargin": 1.1071428571428572,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "West Virginia": {
+    "id": 350,
+    "ranking": 26,
+    "rating": 0.46075215760916366,
+    "averageOpponentRanking": 79.06060606060606,
+    "averageOpponentRating": 0.31007314205216935,
+    "averageScoringMargin": 2.090909090909091,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 7,
+      "quad2": 5,
+      "quad3": 1,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 13,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 34
+  },
+  "Mt St Mary's": {
+    "id": 186,
+    "ranking": 296,
+    "rating": -0.28059714377391864,
+    "averageOpponentRanking": 222.1875,
+    "averageOpponentRating": -0.09387339414638808,
+    "averageScoringMargin": -2.84375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "St. Louis": {
+    "id": 283,
+    "ranking": 89,
+    "rating": 0.22339765683355953,
+    "averageOpponentRanking": 138.9375,
+    "averageOpponentRating": 0.11137225599244457,
+    "averageScoringMargin": 1.75,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 10,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 4,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Murray State": {
+    "id": 188,
+    "ranking": 218,
+    "rating": -0.09036633049731245,
+    "averageOpponentRanking": 177.90322580645162,
+    "averageOpponentRating": 0.007580742886883137,
+    "averageScoringMargin": -0.6774193548387096,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 6,
+      "quad3": 5,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Navy": {
+    "id": 193,
+    "ranking": 202,
+    "rating": -0.06051401083868433,
+    "averageOpponentRanking": 241.03333333333333,
+    "averageOpponentRating": -0.15209491434068745,
+    "averageScoringMargin": 1.9666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "William & Mary": {
+    "id": 354,
+    "ranking": 336,
+    "rating": -0.41110308699415377,
+    "averageOpponentRanking": 210,
+    "averageOpponentRating": -0.08269157344666891,
+    "averageScoringMargin": -3.4838709677419355,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Kansas": {
+    "id": 135,
+    "ranking": 12,
+    "rating": 0.5523680486902797,
+    "averageOpponentRanking": 61.11764705882353,
+    "averageOpponentRating": 0.3496848842097153,
+    "averageScoringMargin": 4.117647058823529,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 16,
+      "quad2": 6,
+      "quad3": 2,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 3
+  },
+  "NE Omaha": {
+    "id": 197,
+    "ranking": 282,
+    "rating": -0.23477853061366208,
+    "averageOpponentRanking": 186.96774193548387,
+    "averageOpponentRating": -0.006775214564959755,
+    "averageScoringMargin": -4.290322580645161,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "UNLV": {
+    "id": 324,
+    "ranking": 56,
+    "rating": 0.3274696819092791,
+    "averageOpponentRanking": 123,
+    "averageOpponentRating": 0.1638929641909692,
+    "averageScoringMargin": 1.8387096774193548,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Southern": {
+    "id": 276,
+    "ranking": 257,
+    "rating": -0.19347421893569944,
+    "averageOpponentRanking": 242.53333333333333,
+    "averageOpponentRating": -0.15335637018572015,
+    "averageScoringMargin": -1.3333333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Saint Peter's": {
+    "id": 285,
+    "ranking": 284,
+    "rating": -0.24529169470512455,
+    "averageOpponentRanking": 234.67741935483872,
+    "averageOpponentRating": -0.1364403856497505,
+    "averageScoringMargin": -1.967741935483871,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "NJIT": {
+    "id": 206,
+    "ranking": 327,
+    "rating": -0.3829352481385038,
+    "averageOpponentRanking": 225.13793103448276,
+    "averageOpponentRating": -0.11148133582633203,
+    "averageScoringMargin": -3.7586206896551726,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Maryland": {
+    "id": 163,
+    "ranking": 22,
+    "rating": 0.4745921625586288,
+    "averageOpponentRanking": 114.51515151515152,
+    "averageOpponentRating": 0.19594739102458578,
+    "averageScoringMargin": 3.4242424242424243,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 2,
+      "quad2": 6,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 3,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 31
+  },
+  "Niagara": {
+    "id": 204,
+    "ranking": 229,
+    "rating": -0.11237344837958244,
+    "averageOpponentRanking": 225.83333333333334,
+    "averageOpponentRating": -0.10376927523753755,
+    "averageScoringMargin": -0.8,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "North Carolina": {
+    "id": 209,
+    "ranking": 37,
+    "rating": 0.38448123884660873,
+    "averageOpponentRanking": 103.18181818181819,
+    "averageOpponentRating": 0.21715044292425553,
+    "averageScoringMargin": 2.6666666666666665,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 6,
+      "quad3": 7,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 3,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "UNC Wilmington": {
+    "id": 323,
+    "ranking": 132,
+    "rating": 0.09794629195818196,
+    "averageOpponentRanking": 202.40625,
+    "averageOpponentRating": -0.04859371770363176,
+    "averageScoringMargin": 2.46875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Arkansas": {
+    "id": 14,
+    "ranking": 9,
+    "rating": 0.5688957812724558,
+    "averageOpponentRanking": 82.33333333333333,
+    "averageOpponentRating": 0.28224981712976743,
+    "averageScoringMargin": 2.727272727272727,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 4,
+      "quad2": 5,
+      "quad3": 9,
+      "quad4": 2
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 3,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 30
+  },
+  "North Dakota State": {
+    "id": 190,
+    "ranking": 224,
+    "rating": -0.09829102782152815,
+    "averageOpponentRanking": 186.93548387096774,
+    "averageOpponentRating": -0.004131405174603588,
+    "averageScoringMargin": -1.032258064516129,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 3,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Gonzaga": {
+    "id": 106,
+    "ranking": 5,
+    "rating": 0.6106494749871855,
+    "averageOpponentRanking": 119.5625,
+    "averageOpponentRating": 0.18160572473791634,
+    "averageScoringMargin": 6.0625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 6,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 10
+  },
+  "North Florida": {
+    "id": 211,
+    "ranking": 199,
+    "rating": -0.0445861541411805,
+    "averageOpponentRanking": 187.58620689655172,
+    "averageOpponentRating": -0.012366402484626777,
+    "averageScoringMargin": -1.2758620689655173,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Bowling Green": {
+    "id": 28,
+    "ranking": 323,
+    "rating": -0.3594524291866311,
+    "averageOpponentRanking": 217.44827586206895,
+    "averageOpponentRating": -0.09575529448863315,
+    "averageScoringMargin": -3.0689655172413794,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Air Force": {
+    "id": 2,
+    "ranking": 151,
+    "rating": 0.04589367046484555,
+    "averageOpponentRanking": 153.75,
+    "averageOpponentRating": 0.08566724671571177,
+    "averageScoringMargin": -0.71875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Boston Univ": {
+    "id": 27,
+    "ranking": 248,
+    "rating": -0.15765061324508736,
+    "averageOpponentRanking": 247.41935483870967,
+    "averageOpponentRating": -0.17080688960001056,
+    "averageScoringMargin": -1.1290322580645162,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Northeastern": {
+    "id": 213,
+    "ranking": 297,
+    "rating": -0.2835089566254954,
+    "averageOpponentRanking": 207.23333333333332,
+    "averageOpponentRating": -0.0756418551386691,
+    "averageScoringMargin": -2.533333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 6,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Texas Tech": {
+    "id": 303,
+    "ranking": 63,
+    "rating": 0.3152349946834499,
+    "averageOpponentRanking": 103.84375,
+    "averageOpponentRating": 0.23399149065429597,
+    "averageScoringMargin": 1.0625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 4,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Northwestern LA": {
+    "id": 217,
+    "ranking": 182,
+    "rating": -0.006470601220630598,
+    "averageOpponentRanking": 239.0625,
+    "averageOpponentRating": -0.15471897751961075,
+    "averageScoringMargin": 1.9375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 17
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Belmont": {
+    "id": 22,
+    "ranking": 120,
+    "rating": 0.12921537145357376,
+    "averageOpponentRanking": 182.93548387096774,
+    "averageOpponentRating": -0.009352845578757827,
+    "averageScoringMargin": 1.8709677419354838,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Ohio": {
+    "id": 220,
+    "ranking": 127,
+    "rating": 0.11606419960014348,
+    "averageOpponentRanking": 207.03125,
+    "averageOpponentRating": -0.07061872949725741,
+    "averageScoringMargin": 1.84375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 6,
+      "quad3": 2,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Oklahoma State": {
+    "id": 223,
+    "ranking": 57,
+    "rating": 0.32581314532135,
+    "averageOpponentRanking": 82.81818181818181,
+    "averageOpponentRating": 0.29525027934707154,
+    "averageScoringMargin": 0.9090909090909091,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 5,
+      "quad2": 5,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "UT Arlington": {
+    "id": 326,
+    "ranking": 256,
+    "rating": -0.1868306976515554,
+    "averageOpponentRanking": 143.3793103448276,
+    "averageOpponentRating": 0.08970264265380043,
+    "averageScoringMargin": -4.068965517241379,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 10,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Saint Mary's": {
+    "id": 284,
+    "ranking": 10,
+    "rating": 0.5598472742071383,
+    "averageOpponentRanking": 119.5625,
+    "averageOpponentRating": 0.17489501612968558,
+    "averageScoringMargin": 5.4375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 11,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 19
+  },
+  "Oral Roberts": {
+    "id": 225,
+    "ranking": 76,
+    "rating": 0.27977093523152263,
+    "averageOpponentRanking": 206.03333333333333,
+    "averageOpponentRating": -0.044757268072554854,
+    "averageScoringMargin": 5.966666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 20
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 48
+  },
+  "Oregon": {
+    "id": 226,
+    "ranking": 38,
+    "rating": 0.3815317497087538,
+    "averageOpponentRanking": 104.54545454545455,
+    "averageOpponentRating": 0.21763268067830518,
+    "averageScoringMargin": 1.4848484848484849,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 9,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 6,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Florida A&M": {
+    "id": 92,
+    "ranking": 354,
+    "rating": -0.5159466750476865,
+    "averageOpponentRanking": 229.22222222222223,
+    "averageOpponentRating": -0.12105417930121629,
+    "averageScoringMargin": -5.555555555555555,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 0,
+      "quad3": 5,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Stanford": {
+    "id": 287,
+    "ranking": 112,
+    "rating": 0.14623440978741645,
+    "averageOpponentRanking": 128.21212121212122,
+    "averageOpponentRating": 0.15547161052244346,
+    "averageScoringMargin": -0.24242424242424243,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 5,
+      "quad3": 4,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Pacific": {
+    "id": 228,
+    "ranking": 239,
+    "rating": -0.12124092392933766,
+    "averageOpponentRanking": 174.3548387096774,
+    "averageOpponentRating": 0.015219994062721504,
+    "averageScoringMargin": -1.5161290322580645,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Pepperdine": {
+    "id": 231,
+    "ranking": 246,
+    "rating": -0.14786796870479757,
+    "averageOpponentRanking": 139.10344827586206,
+    "averageOpponentRating": 0.11845754320253961,
+    "averageScoringMargin": -4.137931034482759,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 8,
+      "quad3": 6,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Rice": {
+    "id": 245,
+    "ranking": 163,
+    "rating": 0.016638059574123547,
+    "averageOpponentRanking": 149.4,
+    "averageOpponentRating": 0.09598079125394965,
+    "averageScoringMargin": -0.9,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Pittsburgh": {
+    "id": 233,
+    "ranking": 73,
+    "rating": 0.2856411874681175,
+    "averageOpponentRanking": 137.58823529411765,
+    "averageOpponentRating": 0.12308805070061833,
+    "averageScoringMargin": 2.911764705882353,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 6,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 3,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 44
+  },
+  "TN Martin": {
+    "id": 304,
+    "ranking": 308,
+    "rating": -0.3023290618793494,
+    "averageOpponentRanking": 274.6896551724138,
+    "averageOpponentRating": -0.24465790803058693,
+    "averageScoringMargin": -0.27586206896551724,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Quinnipiac": {
+    "id": 242,
+    "ranking": 190,
+    "rating": -0.026899442405969056,
+    "averageOpponentRanking": 234.41935483870967,
+    "averageOpponentRating": -0.13006413969013034,
+    "averageScoringMargin": 1.903225806451613,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Rhode Island": {
+    "id": 244,
+    "ranking": 285,
+    "rating": -0.24852372028016811,
+    "averageOpponentRanking": 162.8709677419355,
+    "averageOpponentRating": 0.04050823472758085,
+    "averageScoringMargin": -3.3225806451612905,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 6,
+      "quad3": 8,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Richmond": {
+    "id": 246,
+    "ranking": 161,
+    "rating": 0.019568506632502595,
+    "averageOpponentRanking": 165.78787878787878,
+    "averageOpponentRating": 0.03158667624040442,
+    "averageScoringMargin": 0.30303030303030304,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 9,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "VMI": {
+    "id": 341,
+    "ranking": 348,
+    "rating": -0.47633990066278664,
+    "averageOpponentRanking": 203.79310344827587,
+    "averageOpponentRating": -0.06748954899127445,
+    "averageScoringMargin": -6.551724137931035,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 4,
+      "quad3": 10,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "Ohio State": {
+    "id": 221,
+    "ranking": 82,
+    "rating": 0.24075323729748996,
+    "averageOpponentRanking": 96.4,
+    "averageOpponentRating": 0.24547235700448877,
+    "averageScoringMargin": 0.2571428571428571,
+    "gameCount": 35,
+    "wins": {
+      "quad1": 4,
+      "quad2": 6,
+      "quad3": 0,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 13,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Robert Morris": {
+    "id": 248,
+    "ranking": 243,
+    "rating": -0.13461476379517476,
+    "averageOpponentRanking": 233.93548387096774,
+    "averageOpponentRating": -0.15374019250584914,
+    "averageScoringMargin": -0.45161290322580644,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "St. Bonaventure": {
+    "id": 278,
+    "ranking": 169,
+    "rating": 0.004434122762866208,
+    "averageOpponentRanking": 173.625,
+    "averageOpponentRating": 0.008687043651848534,
+    "averageScoringMargin": -0.65625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 3,
+      "quad3": 10,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "St. Francis Pa": {
+    "id": 280,
+    "ranking": 337,
+    "rating": -0.4111036208680493,
+    "averageOpponentRanking": 271.0689655172414,
+    "averageOpponentRating": -0.2640790301334829,
+    "averageScoringMargin": -2.206896551724138,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Iowa": {
+    "id": 128,
+    "ranking": 61,
+    "rating": 0.31656030370098603,
+    "averageOpponentRanking": 104.46875,
+    "averageOpponentRating": 0.20959924285723616,
+    "averageScoringMargin": 2.0625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 7,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 5,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 32
+  },
+  "Bethune-cookman": {
+    "id": 23,
+    "ranking": 330,
+    "rating": -0.4023092798947804,
+    "averageOpponentRanking": 251.36666666666667,
+    "averageOpponentRating": -0.18624579569643646,
+    "averageScoringMargin": -3.2,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "San Diego State": {
+    "id": 257,
+    "ranking": 4,
+    "rating": 0.6226875385219319,
+    "averageOpponentRanking": 93.8125,
+    "averageOpponentRating": 0.23816504245157472,
+    "averageScoringMargin": 4.78125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 8,
+      "quad3": 11,
+      "quad4": 2
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 17
+  },
+  "Cal State Fullerton": {
+    "id": 63,
+    "ranking": 133,
+    "rating": 0.09684269173215108,
+    "averageOpponentRanking": 179.90322580645162,
+    "averageOpponentRating": -0.004132417661668629,
+    "averageScoringMargin": 0.7741935483870968,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "San Francisco": {
+    "id": 258,
+    "ranking": 117,
+    "rating": 0.13326073424969634,
+    "averageOpponentRanking": 156.9090909090909,
+    "averageOpponentRating": 0.07557956564926904,
+    "averageScoringMargin": 0.9393939393939394,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Texas Southern": {
+    "id": 310,
+    "ranking": 271,
+    "rating": -0.21736076639600557,
+    "averageOpponentRanking": 224.96875,
+    "averageOpponentRating": -0.11054552497777842,
+    "averageScoringMargin": -2.25,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Seattle": {
+    "id": 264,
+    "ranking": 139,
+    "rating": 0.07333019117143999,
+    "averageOpponentRanking": 165.5,
+    "averageOpponentRating": 0.03422709375082891,
+    "averageScoringMargin": 0.7666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "UC San Diego": {
+    "id": 315,
+    "ranking": 300,
+    "rating": -0.28625548425334896,
+    "averageOpponentRanking": 188.85714285714286,
+    "averageOpponentRating": -0.026627429344521263,
+    "averageScoringMargin": -4.107142857142857,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 10,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Wisconsin": {
+    "id": 356,
+    "ranking": 78,
+    "rating": 0.2676030255120977,
+    "averageOpponentRanking": 96.125,
+    "averageOpponentRating": 0.2338981702083414,
+    "averageScoringMargin": 0.9375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 4,
+      "quad2": 7,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 6,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "South Dakota": {
+    "id": 272,
+    "ranking": 270,
+    "rating": -0.21734053801349823,
+    "averageOpponentRanking": 202.44827586206895,
+    "averageOpponentRating": -0.059629591675283124,
+    "averageScoringMargin": -2.689655172413793,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Akron": {
+    "id": 3,
+    "ranking": 134,
+    "rating": 0.09028554825337759,
+    "averageOpponentRanking": 189.29032258064515,
+    "averageOpponentRating": -0.020282380935030864,
+    "averageScoringMargin": 2.3548387096774195,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "South Dakota State": {
+    "id": 251,
+    "ranking": 137,
+    "rating": 0.0859678246437426,
+    "averageOpponentRanking": 189.74193548387098,
+    "averageOpponentRating": -0.005873906244109961,
+    "averageScoringMargin": 0.3548387096774194,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Southeast Missouri State": {
+    "id": 263,
+    "ranking": 254,
+    "rating": -0.1812992910049761,
+    "averageOpponentRanking": 263.11764705882354,
+    "averageOpponentRating": -0.21438681967700782,
+    "averageScoringMargin": 0.3235294117647059,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "South Florida": {
+    "id": 273,
+    "ranking": 189,
+    "rating": -0.026562594160780148,
+    "averageOpponentRanking": 164.90625,
+    "averageOpponentRating": 0.0470208879359706,
+    "averageScoringMargin": -0.09375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "SMU": {
+    "id": 269,
+    "ranking": 201,
+    "rating": -0.05320723469876332,
+    "averageOpponentRanking": 131.0625,
+    "averageOpponentRating": 0.14168700915196178,
+    "averageScoringMargin": -2.90625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 9,
+      "quad3": 6,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "East Texas A&M": {
+    "id": 83,
+    "ranking": 305,
+    "rating": -0.2932708045188846,
+    "averageOpponentRanking": 248.84375,
+    "averageOpponentRating": -0.1832434743737376,
+    "averageScoringMargin": -2.5,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 13
+    },
+    "seed": 69
+  },
+  "New Mexico": {
+    "id": 201,
+    "ranking": 39,
+    "rating": 0.37885964677851136,
+    "averageOpponentRanking": 121.46875,
+    "averageOpponentRating": 0.1731220915315432,
+    "averageScoringMargin": 3,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 3,
+      "quad2": 3,
+      "quad3": 8,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Southern Utah": {
+    "id": 277,
+    "ranking": 81,
+    "rating": 0.24148116444137466,
+    "averageOpponentRanking": 143.3,
+    "averageOpponentRating": 0.09095663309986897,
+    "averageScoringMargin": 1.2,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Stetson": {
+    "id": 288,
+    "ranking": 166,
+    "rating": 0.007399955114088334,
+    "averageOpponentRanking": 185.5,
+    "averageOpponentRating": -0.012305984050455524,
+    "averageScoringMargin": 0.4642857142857143,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Florida State": {
+    "id": 94,
+    "ranking": 235,
+    "rating": -0.11957298451074592,
+    "averageOpponentRanking": 112.78125,
+    "averageOpponentRating": 0.18502306341042085,
+    "averageScoringMargin": -4.15625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 2,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 7,
+      "quad3": 6,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Florida": {
+    "id": 91,
+    "ranking": 69,
+    "rating": 0.30042078841262504,
+    "averageOpponentRanking": 97.75,
+    "averageOpponentRating": 0.2430560443292521,
+    "averageScoringMargin": 1.21875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 8,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 3,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Stony Brook": {
+    "id": 290,
+    "ranking": 293,
+    "rating": -0.27619114046281035,
+    "averageOpponentRanking": 213.03225806451613,
+    "averageOpponentRating": -0.0832253622302736,
+    "averageScoringMargin": -3.903225806451613,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 8,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Syracuse": {
+    "id": 292,
+    "ranking": 107,
+    "rating": 0.163037839095977,
+    "averageOpponentRanking": 133.09375,
+    "averageOpponentRating": 0.1277477590764595,
+    "averageScoringMargin": 0.84375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 4,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Lehigh": {
+    "id": 143,
+    "ranking": 217,
+    "rating": -0.08774064175701798,
+    "averageOpponentRanking": 242.67857142857142,
+    "averageOpponentRating": -0.156808152694659,
+    "averageScoringMargin": -0.32142857142857145,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Tennessee": {
+    "id": 297,
+    "ranking": 17,
+    "rating": 0.5059244300969182,
+    "averageOpponentRanking": 105.36363636363636,
+    "averageOpponentRating": 0.21879497500403133,
+    "averageScoringMargin": 4.212121212121212,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 7,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 14
+  },
+  "Tennessee Tech": {
+    "id": 299,
+    "ranking": 302,
+    "rating": -0.28876271389498487,
+    "averageOpponentRanking": 260.1666666666667,
+    "averageOpponentRating": -0.20451954832343866,
+    "averageScoringMargin": -1.4,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "TCU": {
+    "id": 295,
+    "ranking": 51,
+    "rating": 0.34349859709216507,
+    "averageOpponentRanking": 107.03030303030303,
+    "averageOpponentRating": 0.22676629897474673,
+    "averageScoringMargin": 2.515151515151515,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 7,
+      "quad2": 6,
+      "quad3": 0,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 11,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 1
+    },
+    "seed": 24
+  },
+  "Arkansas Pine Bluff": {
+    "id": 13,
+    "ranking": 320,
+    "rating": -0.3437310346126645,
+    "averageOpponentRanking": 232.2962962962963,
+    "averageOpponentRating": -0.13499022069539765,
+    "averageScoringMargin": -3.6296296296296298,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Texas": {
+    "id": 300,
+    "ranking": 8,
+    "rating": 0.571693145535472,
+    "averageOpponentRanking": 83.32352941176471,
+    "averageOpponentRating": 0.29082223651602435,
+    "averageScoringMargin": 4.088235294117647,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 11,
+      "quad2": 7,
+      "quad3": 1,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 6
+  },
+  "UTEP": {
+    "id": 332,
+    "ranking": 178,
+    "rating": -0.0034940101745480293,
+    "averageOpponentRanking": 137.7,
+    "averageOpponentRating": 0.11963961392754686,
+    "averageScoringMargin": -1.5,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Kansas State": {
+    "id": 136,
+    "ranking": 15,
+    "rating": 0.5149711298564523,
+    "averageOpponentRanking": 100.96875,
+    "averageOpponentRating": 0.23457966855000617,
+    "averageScoringMargin": 3.375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 7,
+      "quad2": 6,
+      "quad3": 3,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 11
+  },
+  "UTRGV": {
+    "id": 333,
+    "ranking": 272,
+    "rating": -0.22067644569312012,
+    "averageOpponentRanking": 165.42857142857142,
+    "averageOpponentRating": 0.039136746368957975,
+    "averageScoringMargin": -2.5714285714285716,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Toledo": {
+    "id": 305,
+    "ranking": 92,
+    "rating": 0.2174057151012304,
+    "averageOpponentRanking": 209.85294117647058,
+    "averageOpponentRating": -0.07124851908948893,
+    "averageScoringMargin": 4.264705882352941,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 17
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Valparaiso": {
+    "id": 334,
+    "ranking": 269,
+    "rating": -0.21355809512293636,
+    "averageOpponentRanking": 190.06451612903226,
+    "averageOpponentRating": -0.029499584246780626,
+    "averageScoringMargin": -2.870967741935484,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 7,
+      "quad3": 7,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "UCLA": {
+    "id": 318,
+    "ranking": 6,
+    "rating": 0.6009520949139219,
+    "averageOpponentRanking": 110.32352941176471,
+    "averageOpponentRating": 0.19032034597124636,
+    "averageScoringMargin": 6.617647058823529,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 6,
+      "quad2": 8,
+      "quad3": 7,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 5
+  },
+  "Cal State Sacramento": {
+    "id": 65,
+    "ranking": 220,
+    "rating": -0.09438892453014314,
+    "averageOpponentRanking": 200.46666666666667,
+    "averageOpponentRating": -0.0482891514046877,
+    "averageScoringMargin": -1.8,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 8,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Utah State": {
+    "id": 329,
+    "ranking": 30,
+    "rating": 0.44554040926452637,
+    "averageOpponentRanking": 101.18181818181819,
+    "averageOpponentRating": 0.222114044337215,
+    "averageScoringMargin": 5.181818181818182,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 3,
+      "quad2": 8,
+      "quad3": 11,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 2
+    },
+    "seed": 40
+  },
+  "Utah Valley": {
+    "id": 331,
+    "ranking": 44,
+    "rating": 0.3677247425356792,
+    "averageOpponentRanking": 160.03333333333333,
+    "averageOpponentRating": 0.04395921782581722,
+    "averageScoringMargin": 4,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 10,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Vermont": {
+    "id": 337,
+    "ranking": 97,
+    "rating": 0.20339699550910328,
+    "averageOpponentRanking": 200.9375,
+    "averageOpponentRating": -0.05333262380151702,
+    "averageScoringMargin": 3.34375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Brown": {
+    "id": 30,
+    "ranking": 179,
+    "rating": -0.0037007941027532095,
+    "averageOpponentRanking": 184.92592592592592,
+    "averageOpponentRating": -0.02896722427801137,
+    "averageScoringMargin": 0.37037037037037035,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Wagner": {
+    "id": 345,
+    "ranking": 280,
+    "rating": -0.23317733764809814,
+    "averageOpponentRanking": 292.96153846153845,
+    "averageOpponentRating": -0.3182288621301567,
+    "averageScoringMargin": -0.11538461538461539,
+    "gameCount": 26,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Temple": {
+    "id": 296,
+    "ranking": 130,
+    "rating": 0.10209878309089469,
+    "averageOpponentRanking": 131.125,
+    "averageOpponentRating": 0.14065947042344,
+    "averageScoringMargin": -0.09375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Washington": {
+    "id": 347,
+    "ranking": 119,
+    "rating": 0.13018064519226016,
+    "averageOpponentRanking": 122.46875,
+    "averageOpponentRating": 0.17195203259248248,
+    "averageScoringMargin": -0.4375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 4,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Weber State": {
+    "id": 349,
+    "ranking": 194,
+    "rating": -0.030623963445347423,
+    "averageOpponentRanking": 197.09677419354838,
+    "averageOpponentRating": -0.046262444954006166,
+    "averageScoringMargin": -0.5806451612903226,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 5,
+      "quad3": 7,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Washington State": {
+    "id": 348,
+    "ranking": 106,
+    "rating": 0.16318927378965534,
+    "averageOpponentRanking": 115.76470588235294,
+    "averageOpponentRating": 0.18484652830342405,
+    "averageScoringMargin": 0.35294117647058826,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Texas State": {
+    "id": 302,
+    "ranking": 206,
+    "rating": -0.07051849504802608,
+    "averageOpponentRanking": 178.46875,
+    "averageOpponentRating": 0.001093659044559053,
+    "averageScoringMargin": -1.59375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Georgia": {
+    "id": 103,
+    "ranking": 149,
+    "rating": 0.047625914248600194,
+    "averageOpponentRanking": 136.9375,
+    "averageOpponentRating": 0.12911784198048407,
+    "averageScoringMargin": -0.28125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "W Carolina": {
+    "id": 342,
+    "ranking": 233,
+    "rating": -0.11410379816558684,
+    "averageOpponentRanking": 214.16666666666666,
+    "averageOpponentRating": -0.09855729965184361,
+    "averageScoringMargin": -0.7666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 5,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Minnesota": {
+    "id": 174,
+    "ranking": 226,
+    "rating": -0.10175364188603468,
+    "averageOpponentRanking": 107.58064516129032,
+    "averageOpponentRating": 0.20410561855105913,
+    "averageScoringMargin": -4.580645161290323,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 9,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "W Michigan": {
+    "id": 344,
+    "ranking": 314,
+    "rating": -0.3288310934244558,
+    "averageOpponentRanking": 204.96428571428572,
+    "averageOpponentRating": -0.061261363277603405,
+    "averageScoringMargin": -5,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 6,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Penn State": {
+    "id": 230,
+    "ranking": 50,
+    "rating": 0.35035990724250743,
+    "averageOpponentRanking": 102.71428571428571,
+    "averageOpponentRating": 0.21827015975268313,
+    "averageScoringMargin": 2.057142857142857,
+    "gameCount": 35,
+    "wins": {
+      "quad1": 5,
+      "quad2": 7,
+      "quad3": 4,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 5,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 38
+  },
+  "Winthrop": {
+    "id": 355,
+    "ranking": 277,
+    "rating": -0.2289485612520686,
+    "averageOpponentRanking": 205.43333333333334,
+    "averageOpponentRating": -0.07147298140401108,
+    "averageScoringMargin": -1.5,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 5,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Xavier": {
+    "id": 361,
+    "ranking": 18,
+    "rating": 0.5027872097462419,
+    "averageOpponentRanking": 98.94117647058823,
+    "averageOpponentRating": 0.24940073756059178,
+    "averageScoringMargin": 4.411764705882353,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 10,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 12
+  },
+  "Morgan State": {
+    "id": 184,
+    "ranking": 250,
+    "rating": -0.16814258675556842,
+    "averageOpponentRanking": 224.55555555555554,
+    "averageOpponentRating": -0.1308600124408772,
+    "averageScoringMargin": -2.4074074074074074,
+    "gameCount": 27,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Sam Houston State": {
+    "id": 254,
+    "ranking": 55,
+    "rating": 0.3388242780328318,
+    "averageOpponentRanking": 167.21428571428572,
+    "averageOpponentRating": 0.028495388242774138,
+    "averageScoringMargin": 4,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 9,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Oklahoma": {
+    "id": 222,
+    "ranking": 59,
+    "rating": 0.3201685047939424,
+    "averageOpponentRanking": 72.34375,
+    "averageOpponentRating": 0.32303623403942716,
+    "averageScoringMargin": 0.1875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 5,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Clemson": {
+    "id": 50,
+    "ranking": 65,
+    "rating": 0.3086183549240854,
+    "averageOpponentRanking": 146.27272727272728,
+    "averageOpponentRating": 0.09703553982670593,
+    "averageScoringMargin": 3.3333333333333335,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 6,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Citadel": {
+    "id": 49,
+    "ranking": 334,
+    "rating": -0.408743532501067,
+    "averageOpponentRanking": 205.90322580645162,
+    "averageOpponentRating": -0.07500730864967713,
+    "averageScoringMargin": -3.7096774193548385,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Virginia": {
+    "id": 339,
+    "ranking": 16,
+    "rating": 0.5091919654393721,
+    "averageOpponentRanking": 123.71875,
+    "averageOpponentRating": 0.16185411489116874,
+    "averageScoringMargin": 4.5625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 3,
+      "quad2": 9,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 16
+  },
+  "NC Central": {
+    "id": 195,
+    "ranking": 180,
+    "rating": -0.005354474359521984,
+    "averageOpponentRanking": 221.3846153846154,
+    "averageOpponentRating": -0.1062007545276483,
+    "averageScoringMargin": 1.0769230769230769,
+    "gameCount": 26,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 7,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Oregon State": {
+    "id": 227,
+    "ranking": 262,
+    "rating": -0.20005164040955342,
+    "averageOpponentRanking": 131.70967741935485,
+    "averageOpponentRating": 0.1327182509954671,
+    "averageScoringMargin": -3.6774193548387095,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 8,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Tulsa": {
+    "id": 309,
+    "ranking": 309,
+    "rating": -0.3040334636774288,
+    "averageOpponentRanking": 152.83333333333334,
+    "averageOpponentRating": 0.0760733483334501,
+    "averageScoringMargin": -5.6,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 5,
+      "quad3": 9,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Queens NC": {
+    "id": 241,
+    "ranking": 236,
+    "rating": -0.11988628563694731,
+    "averageOpponentRanking": 196.76666666666668,
+    "averageOpponentRating": -0.05051403795227405,
+    "averageScoringMargin": -0.3333333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 8,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Marshall": {
+    "id": 162,
+    "ranking": 77,
+    "rating": 0.26765596332891795,
+    "averageOpponentRanking": 207.93548387096774,
+    "averageOpponentRating": -0.0695614929262521,
+    "averageScoringMargin": 5.516129032258065,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 8,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Kentucky": {
+    "id": 139,
+    "ranking": 36,
+    "rating": 0.38497878615588305,
+    "averageOpponentRanking": 106.71875,
+    "averageOpponentRating": 0.22153876425311242,
+    "averageScoringMargin": 2.8125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 7,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 23
+  },
+  "Howard": {
+    "id": 118,
+    "ranking": 203,
+    "rating": -0.06395409625387678,
+    "averageOpponentRanking": 226.29032258064515,
+    "averageOpponentRating": -0.12228526977815893,
+    "averageScoringMargin": 0.6451612903225806,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Georgetown": {
+    "id": 102,
+    "ranking": 208,
+    "rating": -0.07305287480415984,
+    "averageOpponentRanking": 111,
+    "averageOpponentRating": 0.20456714128387637,
+    "averageScoringMargin": -4.96875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 7,
+      "quad3": 4,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Duquesne": {
+    "id": 77,
+    "ranking": 136,
+    "rating": 0.08789675987710927,
+    "averageOpponentRanking": 164.4375,
+    "averageOpponentRating": 0.030891418278794946,
+    "averageScoringMargin": 2.125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Montana": {
+    "id": 181,
+    "ranking": 170,
+    "rating": 0.003245441636600444,
+    "averageOpponentRanking": 197.86666666666667,
+    "averageOpponentRating": -0.03865046584685298,
+    "averageScoringMargin": 0.43333333333333335,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "East Carolina": {
+    "id": 82,
+    "ranking": 195,
+    "rating": -0.0316309128742629,
+    "averageOpponentRanking": 171.6060606060606,
+    "averageOpponentRating": 0.029063470684564732,
+    "averageScoringMargin": -0.18181818181818182,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Mercer": {
+    "id": 168,
+    "ranking": 227,
+    "rating": -0.10909318881000617,
+    "averageOpponentRanking": 212.16129032258064,
+    "averageOpponentRating": -0.08766062618555485,
+    "averageScoringMargin": -0.967741935483871,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 4,
+      "quad3": 11,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Providence": {
+    "id": 239,
+    "ranking": 64,
+    "rating": 0.31145007608851827,
+    "averageOpponentRanking": 131.46875,
+    "averageOpponentRating": 0.16648582939299977,
+    "averageScoringMargin": 3.125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 4,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 42
+  },
+  "Rider": {
+    "id": 247,
+    "ranking": 238,
+    "rating": -0.12116680188419214,
+    "averageOpponentRanking": 225.9655172413793,
+    "averageOpponentRating": -0.10927429979944873,
+    "averageScoringMargin": 0.7931034482758621,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Purdue": {
+    "id": 240,
+    "ranking": 7,
+    "rating": 0.5756256006089325,
+    "averageOpponentRanking": 101.67647058823529,
+    "averageOpponentRating": 0.22052199383813928,
+    "averageScoringMargin": 5.617647058823529,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 9,
+      "quad2": 9,
+      "quad3": 6,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 4
+  },
+  "WI Milwaukee": {
+    "id": 352,
+    "ranking": 214,
+    "rating": -0.07716899941610884,
+    "averageOpponentRanking": 219.51724137931035,
+    "averageOpponentRating": -0.10528279726798345,
+    "averageScoringMargin": 0.7931034482758621,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Sacred Heart": {
+    "id": 253,
+    "ranking": 310,
+    "rating": -0.31333557675824364,
+    "averageOpponentRanking": 285.625,
+    "averageOpponentRating": -0.3079039985943314,
+    "averageScoringMargin": -0.71875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Hartford": {
+    "id": 110,
+    "ranking": 362,
+    "rating": -0.707827501755362,
+    "averageOpponentRanking": 245.64,
+    "averageOpponentRating": -0.1797229972348102,
+    "averageScoringMargin": -7.36,
+    "gameCount": 25,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 2
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 15
+    },
+    "seed": 69
+  },
+  "San Jose State": {
+    "id": 259,
+    "ranking": 60,
+    "rating": 0.31976322398148954,
+    "averageOpponentRanking": 121.90625,
+    "averageOpponentRating": 0.17444233160343342,
+    "averageScoringMargin": 1.46875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 4,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Ga Southern": {
+    "id": 99,
+    "ranking": 172,
+    "rating": 0.0020489856178022873,
+    "averageOpponentRanking": 192.46666666666667,
+    "averageOpponentRating": -0.029930879464683632,
+    "averageScoringMargin": -0.6333333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "South Carolina": {
+    "id": 271,
+    "ranking": 215,
+    "rating": -0.07887545313058346,
+    "averageOpponentRanking": 121.59375,
+    "averageOpponentRating": 0.16388973447945915,
+    "averageScoringMargin": -3.25,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 3,
+      "quad3": 8,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "South Carolina State": {
+    "id": 250,
+    "ranking": 342,
+    "rating": -0.4275659302111108,
+    "averageOpponentRanking": 200.96666666666667,
+    "averageOpponentRating": -0.059847845989555455,
+    "averageScoringMargin": -5.933333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 10,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Lipscomb": {
+    "id": 146,
+    "ranking": 184,
+    "rating": -0.010003738908243886,
+    "averageOpponentRanking": 202.5,
+    "averageOpponentRating": -0.05808021615957384,
+    "averageScoringMargin": 1.2,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Davidson": {
+    "id": 67,
+    "ranking": 142,
+    "rating": 0.06285571833726064,
+    "averageOpponentRanking": 149.5483870967742,
+    "averageOpponentRating": 0.07834101682506855,
+    "averageScoringMargin": 0.6774193548387096,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Wright State": {
+    "id": 359,
+    "ranking": 192,
+    "rating": -0.027128980935179858,
+    "averageOpponentRanking": 238.58064516129033,
+    "averageOpponentRating": -0.16590453331081778,
+    "averageScoringMargin": 1,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 8,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Drake": {
+    "id": 74,
+    "ranking": 35,
+    "rating": 0.40156339590132295,
+    "averageOpponentRanking": 180.1818181818182,
+    "averageOpponentRating": -0.003460580804798515,
+    "averageScoringMargin": 5.2727272727272725,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 49
+  },
+  "Marist": {
+    "id": 160,
+    "ranking": 286,
+    "rating": -0.25000203038115054,
+    "averageOpponentRanking": 232.63636363636363,
+    "averageOpponentRating": -0.12163133871050434,
+    "averageScoringMargin": -1.878787878787879,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "American University": {
+    "id": 8,
+    "ranking": 268,
+    "rating": -0.21191993349326074,
+    "averageOpponentRanking": 263.375,
+    "averageOpponentRating": -0.21275441627866404,
+    "averageScoringMargin": -0.28125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 5,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "San Diego": {
+    "id": 256,
+    "ranking": 273,
+    "rating": -0.22175956740800615,
+    "averageOpponentRanking": 149.17241379310346,
+    "averageOpponentRating": 0.08515242950324918,
+    "averageScoringMargin": -2.586206896551724,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 3,
+      "quad3": 8,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "James Madison": {
+    "id": 134,
+    "ranking": 96,
+    "rating": 0.20433812370616122,
+    "averageOpponentRanking": 193.8,
+    "averageOpponentRating": -0.044006711496319975,
+    "averageScoringMargin": 2.8,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Hampton": {
+    "id": 109,
+    "ranking": 343,
+    "rating": -0.4311225379967477,
+    "averageOpponentRanking": 213.1290322580645,
+    "averageOpponentRating": -0.08999027655138284,
+    "averageScoringMargin": -5.193548387096774,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 7,
+      "quad3": 6,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "LSU": {
+    "id": 156,
+    "ranking": 158,
+    "rating": 0.021582734222557524,
+    "averageOpponentRanking": 118.21212121212122,
+    "averageOpponentRating": 0.19026018230591601,
+    "averageScoringMargin": -1.9090909090909092,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 5,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Missouri KC": {
+    "id": 178,
+    "ranking": 278,
+    "rating": -0.2306729994857015,
+    "averageOpponentRanking": 202.53333333333333,
+    "averageOpponentRating": -0.056542740507358594,
+    "averageScoringMargin": -3.033333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Seton Hall": {
+    "id": 265,
+    "ranking": 68,
+    "rating": 0.3057394140037999,
+    "averageOpponentRanking": 106.96875,
+    "averageOpponentRating": 0.22474407640199312,
+    "averageScoringMargin": 0.3125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Monmouth NJ": {
+    "id": 180,
+    "ranking": 322,
+    "rating": -0.357681027134068,
+    "averageOpponentRanking": 187.6060606060606,
+    "averageOpponentRating": -0.01997777262430926,
+    "averageScoringMargin": -5.454545454545454,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 8,
+      "quad3": 9,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Bellarmine": {
+    "id": 21,
+    "ranking": 253,
+    "rating": -0.18102642279136266,
+    "averageOpponentRanking": 174.73333333333332,
+    "averageOpponentRating": 0.023305060543810468,
+    "averageScoringMargin": -3.2,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Louisville": {
+    "id": 152,
+    "ranking": 291,
+    "rating": -0.27443542147664574,
+    "averageOpponentRanking": 112.0625,
+    "averageOpponentRating": 0.1914705338779607,
+    "averageScoringMargin": -5.875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 2
+    },
+    "losses": {
+      "quad1": 12,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Portland": {
+    "id": 234,
+    "ranking": 145,
+    "rating": 0.05391198517098663,
+    "averageOpponentRanking": 154.16129032258064,
+    "averageOpponentRating": 0.08255829106609194,
+    "averageScoringMargin": -1.5161290322580645,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 5,
+      "quad3": 5,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Boise State": {
+    "id": 25,
+    "ranking": 31,
+    "rating": 0.44497512624151625,
+    "averageOpponentRanking": 109.125,
+    "averageOpponentRating": 0.19835746232356602,
+    "averageScoringMargin": 4.03125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 7,
+      "quad3": 5,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 0
+    },
+    "seed": 37
+  },
+  "Charleston Southern": {
+    "id": 44,
+    "ranking": 321,
+    "rating": -0.3552621959703771,
+    "averageOpponentRanking": 212.24137931034483,
+    "averageOpponentRating": -0.0900871922005452,
+    "averageScoringMargin": -3.9655172413793105,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 9,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Cincinnati": {
+    "id": 48,
+    "ranking": 48,
+    "rating": 0.3591173021629304,
+    "averageOpponentRanking": 143.3125,
+    "averageOpponentRating": 0.11603352373616016,
+    "averageScoringMargin": 2.8125,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 9,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 3,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Cleveland State": {
+    "id": 51,
+    "ranking": 191,
+    "rating": -0.02706174669424259,
+    "averageOpponentRanking": 226.3125,
+    "averageOpponentRating": -0.1268093346949719,
+    "averageScoringMargin": 1.75,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 18
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "MA Lowell": {
+    "id": 157,
+    "ranking": 104,
+    "rating": 0.17123285210629816,
+    "averageOpponentRanking": 255.9375,
+    "averageOpponentRating": -0.21095075481522405,
+    "averageScoringMargin": 4.90625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 6,
+      "quad4": 18
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "S.F. Austin": {
+    "id": 266,
+    "ranking": 123,
+    "rating": 0.12283307626576655,
+    "averageOpponentRanking": 167.86206896551724,
+    "averageOpponentRating": 0.024165558417267443,
+    "averageScoringMargin": 1.4137931034482758,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Loyola Marymount": {
+    "id": 153,
+    "ranking": 116,
+    "rating": 0.13479935986332706,
+    "averageOpponentRanking": 149.13333333333333,
+    "averageOpponentRating": 0.09668286120598005,
+    "averageScoringMargin": 1.2333333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "C Michigan": {
+    "id": 36,
+    "ranking": 339,
+    "rating": -0.41361506001404325,
+    "averageOpponentRanking": 217.9655172413793,
+    "averageOpponentRating": -0.09241461375505598,
+    "averageScoringMargin": -4.482758620689655,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "North Alabama": {
+    "id": 208,
+    "ranking": 211,
+    "rating": -0.07548812713014272,
+    "averageOpponentRanking": 205.72413793103448,
+    "averageOpponentRating": -0.07240773793975473,
+    "averageScoringMargin": -1.0689655172413792,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Alabama A&M": {
+    "id": 5,
+    "ranking": 319,
+    "rating": -0.3404856401312437,
+    "averageOpponentRanking": 245.56666666666666,
+    "averageOpponentRating": -0.18145830174644745,
+    "averageScoringMargin": -2.6,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Presbyterian": {
+    "id": 237,
+    "ranking": 358,
+    "rating": -0.5433836023662559,
+    "averageOpponentRanking": 221.1,
+    "averageOpponentRating": -0.10471902333798502,
+    "averageScoringMargin": -5.266666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 10,
+      "quad4": 13
+    },
+    "seed": 69
+  },
+  "Notre Dame": {
+    "id": 218,
+    "ranking": 165,
+    "rating": 0.009096119924000813,
+    "averageOpponentRanking": 134.90625,
+    "averageOpponentRating": 0.12601201386011943,
+    "averageScoringMargin": -1.90625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 5,
+      "quad3": 7,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Cal Poly": {
+    "id": 38,
+    "ranking": 313,
+    "rating": -0.32789686474830065,
+    "averageOpponentRanking": 186,
+    "averageOpponentRating": -0.0267631771809213,
+    "averageScoringMargin": -4.193548387096774,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 8,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Western Kentucky": {
+    "id": 357,
+    "ranking": 157,
+    "rating": 0.027597557005036872,
+    "averageOpponentRanking": 149.51612903225808,
+    "averageOpponentRating": 0.08946579879884341,
+    "averageScoringMargin": -0.7419354838709677,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "E Kentucky": {
+    "id": 79,
+    "ranking": 144,
+    "rating": 0.05664996691847275,
+    "averageOpponentRanking": 179.83333333333334,
+    "averageOpponentRating": 0.004634417302711023,
+    "averageScoringMargin": -0.1,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Wyoming": {
+    "id": 360,
+    "ranking": 219,
+    "rating": -0.09093396376259882,
+    "averageOpponentRanking": 102.26666666666667,
+    "averageOpponentRating": 0.22372812578339013,
+    "averageScoringMargin": -3.6333333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 10,
+      "quad2": 6,
+      "quad3": 5,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Appalachian State": {
+    "id": 9,
+    "ranking": 204,
+    "rating": -0.06469719233997676,
+    "averageOpponentRanking": 181.24137931034483,
+    "averageOpponentRating": -0.005586268190405305,
+    "averageScoringMargin": -0.5862068965517241,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 6,
+      "quad3": 6,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Campbell": {
+    "id": 40,
+    "ranking": 196,
+    "rating": -0.03692115248753474,
+    "averageOpponentRanking": 216,
+    "averageOpponentRating": -0.10321540883794976,
+    "averageScoringMargin": -0.34375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 9,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Grambling State": {
+    "id": 107,
+    "ranking": 156,
+    "rating": 0.03649459767451267,
+    "averageOpponentRanking": 262.4516129032258,
+    "averageOpponentRating": -0.21724366184290383,
+    "averageScoringMargin": 3.870967741935484,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 20
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "SE Louisiana": {
+    "id": 262,
+    "ranking": 244,
+    "rating": -0.13617112768150572,
+    "averageOpponentRanking": 236.6206896551724,
+    "averageOpponentRating": -0.154152961038126,
+    "averageScoringMargin": -0.4827586206896552,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Bryant": {
+    "id": 31,
+    "ranking": 160,
+    "rating": 0.02027761456892463,
+    "averageOpponentRanking": 207.71428571428572,
+    "averageOpponentRating": -0.06473180146193966,
+    "averageScoringMargin": 0.39285714285714285,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Delaware": {
+    "id": 69,
+    "ranking": 175,
+    "rating": 0.0002567276118995523,
+    "averageOpponentRanking": 198.90625,
+    "averageOpponentRating": -0.06387069086401115,
+    "averageScoringMargin": -0.4375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Detroit": {
+    "id": 73,
+    "ranking": 200,
+    "rating": -0.04765755894557076,
+    "averageOpponentRanking": 210.75,
+    "averageOpponentRating": -0.08649476192717208,
+    "averageScoringMargin": -0.15625,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 9,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Drexel": {
+    "id": 75,
+    "ranking": 198,
+    "rating": -0.043760339982895184,
+    "averageOpponentRanking": 220.7741935483871,
+    "averageOpponentRating": -0.11322320553938489,
+    "averageScoringMargin": 1,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "SC Upstate": {
+    "id": 261,
+    "ranking": 263,
+    "rating": -0.2014648878109492,
+    "averageOpponentRanking": 213.10344827586206,
+    "averageOpponentRating": -0.08805840290599319,
+    "averageScoringMargin": -1.5517241379310345,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "ETSU": {
+    "id": 85,
+    "ranking": 251,
+    "rating": -0.17193998809587477,
+    "averageOpponentRanking": 212.83333333333334,
+    "averageOpponentRating": -0.09038340591666667,
+    "averageScoringMargin": -1.8333333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 8,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "Elon": {
+    "id": 84,
+    "ranking": 350,
+    "rating": -0.4846317194403581,
+    "averageOpponentRanking": 212.53333333333333,
+    "averageOpponentRating": -0.08581582989475336,
+    "averageScoringMargin": -5.333333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 6
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "E Michigan": {
+    "id": 80,
+    "ranking": 317,
+    "rating": -0.33500925481946975,
+    "averageOpponentRanking": 201.33333333333334,
+    "averageOpponentRating": -0.04572951798104673,
+    "averageScoringMargin": -4.233333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 9
+    },
+    "seed": 69
+  },
+  "Yale": {
+    "id": 362,
+    "ranking": 74,
+    "rating": 0.28407704741972556,
+    "averageOpponentRanking": 173.35714285714286,
+    "averageOpponentRating": 0.0038408352149867553,
+    "averageScoringMargin": 3.642857142857143,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 10,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 2,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "New Hampshire": {
+    "id": 200,
+    "ranking": 259,
+    "rating": -0.195186617333596,
+    "averageOpponentRanking": 218.78571428571428,
+    "averageOpponentRating": -0.1029096481199098,
+    "averageScoringMargin": -0.9285714285714286,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Florida Atlantic": {
+    "id": 90,
+    "ranking": 13,
+    "rating": 0.538051359875905,
+    "averageOpponentRanking": 147.65625,
+    "averageOpponentRating": 0.08150875070113081,
+    "averageScoringMargin": 6.34375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 13,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 0
+    },
+    "seed": 33
+  },
+  "Furman": {
+    "id": 97,
+    "ranking": 85,
+    "rating": 0.22912598773481965,
+    "averageOpponentRanking": 214.25806451612902,
+    "averageOpponentRating": -0.08909024763971626,
+    "averageScoringMargin": 5,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "G Washington": {
+    "id": 98,
+    "ranking": 223,
+    "rating": -0.09717716133955415,
+    "averageOpponentRanking": 177.61290322580646,
+    "averageOpponentRating": -0.00038736472009350827,
+    "averageScoringMargin": -1,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 3,
+      "quad3": 10,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Louisiana": {
+    "id": 150,
+    "ranking": 47,
+    "rating": 0.3626453573086042,
+    "averageOpponentRanking": 185.06666666666666,
+    "averageOpponentRating": -0.012955405514167514,
+    "averageScoringMargin": 4.3,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 11,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Harvard": {
+    "id": 111,
+    "ranking": 146,
+    "rating": 0.051662759694300335,
+    "averageOpponentRanking": 179.53846153846155,
+    "averageOpponentRating": 0.0017053599527382135,
+    "averageScoringMargin": -0.23076923076923078,
+    "gameCount": 26,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Hawaii": {
+    "id": 112,
+    "ranking": 150,
+    "rating": 0.046510420240228535,
+    "averageOpponentRanking": 204.125,
+    "averageOpponentRating": -0.07147256329484387,
+    "averageScoringMargin": 3.21875,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "St. Joseph's Pa": {
+    "id": 282,
+    "ranking": 167,
+    "rating": 0.007012079402878877,
+    "averageOpponentRanking": 183.27272727272728,
+    "averageOpponentRating": -0.006499490440668744,
+    "averageScoringMargin": -0.15151515151515152,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 3,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 9,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Il Chicago": {
+    "id": 121,
+    "ranking": 274,
+    "rating": -0.22562791561298753,
+    "averageOpponentRanking": 195.2258064516129,
+    "averageOpponentRating": -0.04297955495778812,
+    "averageScoringMargin": -2.5806451612903225,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 6,
+      "quad3": 7,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Kennesaw State": {
+    "id": 137,
+    "ranking": 88,
+    "rating": 0.2238597263098605,
+    "averageOpponentRanking": 188.74193548387098,
+    "averageOpponentRating": -0.011156408846709672,
+    "averageScoringMargin": 2.870967741935484,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 8,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Lamar": {
+    "id": 142,
+    "ranking": 360,
+    "rating": -0.5665751702997299,
+    "averageOpponentRanking": 248.28571428571428,
+    "averageOpponentRating": -0.17541228031089315,
+    "averageScoringMargin": -5.357142857142857,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 16
+    },
+    "seed": 69
+  },
+  "McNeese State": {
+    "id": 165,
+    "ranking": 315,
+    "rating": -0.32942327155581697,
+    "averageOpponentRanking": 225.0909090909091,
+    "averageOpponentRating": -0.1142722423745723,
+    "averageScoringMargin": -3.757575757575758,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Norfolk State": {
+    "id": 207,
+    "ranking": 155,
+    "rating": 0.03753847959433238,
+    "averageOpponentRanking": 243.48275862068965,
+    "averageOpponentRating": -0.14905391016244068,
+    "averageScoringMargin": 2.5517241379310347,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 17
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "NC A&T": {
+    "id": 194,
+    "ranking": 318,
+    "rating": -0.33736720044899043,
+    "averageOpponentRanking": 205.55172413793105,
+    "averageOpponentRating": -0.06409977097997674,
+    "averageScoringMargin": -3.7241379310344827,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Northern Illinois": {
+    "id": 191,
+    "ranking": 261,
+    "rating": -0.1991372112119197,
+    "averageOpponentRanking": 208.56666666666666,
+    "averageOpponentRating": -0.07712281450289185,
+    "averageScoringMargin": -1.7333333333333334,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 0,
+      "quad4": 10
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 3,
+      "quad3": 6,
+      "quad4": 5
+    },
+    "seed": 69
+  },
+  "Northern Iowa": {
+    "id": 215,
+    "ranking": 212,
+    "rating": -0.07616927029077608,
+    "averageOpponentRanking": 170.03225806451613,
+    "averageOpponentRating": 0.021077887535993968,
+    "averageScoringMargin": -1.1935483870967742,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 6,
+      "quad3": 6,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "UC Irvine": {
+    "id": 313,
+    "ranking": 111,
+    "rating": 0.148344316564694,
+    "averageOpponentRanking": 192.9375,
+    "averageOpponentRating": -0.03602831944099054,
+    "averageScoringMargin": 3.09375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 6,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Portland State": {
+    "id": 235,
+    "ranking": 298,
+    "rating": -0.2839000727241038,
+    "averageOpponentRanking": 191,
+    "averageOpponentRating": -0.02262738196033874,
+    "averageScoringMargin": -3.206896551724138,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Southern Miss": {
+    "id": 275,
+    "ranking": 87,
+    "rating": 0.2271485576153476,
+    "averageOpponentRanking": 184.73333333333332,
+    "averageOpponentRating": -0.015080101023291688,
+    "averageScoringMargin": 4.033333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Liberty": {
+    "id": 144,
+    "ranking": 34,
+    "rating": 0.4051732707511945,
+    "averageOpponentRanking": 178.59375,
+    "averageOpponentRating": 0.00349315155042218,
+    "averageScoringMargin": 5.59375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 9,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "UT San Antonio": {
+    "id": 327,
+    "ranking": 258,
+    "rating": -0.19413481659078743,
+    "averageOpponentRanking": 142.73333333333332,
+    "averageOpponentRating": 0.09967879182387564,
+    "averageScoringMargin": -4.5,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 3,
+      "quad3": 8,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "UNC Greensboro": {
+    "id": 322,
+    "ranking": 121,
+    "rating": 0.1290033414144173,
+    "averageOpponentRanking": 194.66666666666666,
+    "averageOpponentRating": -0.03808394870173578,
+    "averageScoringMargin": 2.7666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Oakland": {
+    "id": 219,
+    "ranking": 295,
+    "rating": -0.27958728502132396,
+    "averageOpponentRanking": 203.16129032258064,
+    "averageOpponentRating": -0.06819686286899325,
+    "averageScoringMargin": -2.838709677419355,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Bradley": {
+    "id": 29,
+    "ranking": 72,
+    "rating": 0.2866800749752069,
+    "averageOpponentRanking": 172.97058823529412,
+    "averageOpponentRating": 0.028344550725983582,
+    "averageScoringMargin": 3.411764705882353,
+    "gameCount": 34,
+    "wins": {
+      "quad1": 0,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 15
+    },
+    "losses": {
+      "quad1": 6,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Cal State Bakersfield": {
+    "id": 62,
+    "ranking": 294,
+    "rating": -0.27831381574103475,
+    "averageOpponentRanking": 196.09677419354838,
+    "averageOpponentRating": -0.054451887686231944,
+    "averageScoringMargin": -3.6129032258064515,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 9,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "St Francis Ny": {
+    "id": 279,
+    "ranking": 356,
+    "rating": -0.5315948770023714,
+    "averageOpponentRanking": 285.2857142857143,
+    "averageOpponentRating": -0.31415137276594696,
+    "averageScoringMargin": -2.357142857142857,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "South Alabama": {
+    "id": 270,
+    "ranking": 108,
+    "rating": 0.16164687150582566,
+    "averageOpponentRanking": 171.66666666666666,
+    "averageOpponentRating": 0.027368056838433782,
+    "averageScoringMargin": 1.4545454545454546,
+    "gameCount": 33,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 2,
+      "quad3": 3,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "UC Santa Barbara": {
+    "id": 316,
+    "ranking": 90,
+    "rating": 0.22166392532017173,
+    "averageOpponentRanking": 217.125,
+    "averageOpponentRating": -0.10238315090712546,
+    "averageScoringMargin": 4.34375,
+    "gameCount": 32,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 16
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Fresno State": {
+    "id": 96,
+    "ranking": 193,
+    "rating": -0.027908279025024546,
+    "averageOpponentRanking": 118.16666666666667,
+    "averageOpponentRating": 0.16903966609210205,
+    "averageScoringMargin": -2.2666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 1,
+      "quad4": 4
+    },
+    "losses": {
+      "quad1": 8,
+      "quad2": 4,
+      "quad3": 7,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Cal State Northridge": {
+    "id": 64,
+    "ranking": 352,
+    "rating": -0.5029358348342235,
+    "averageOpponentRanking": 203.86666666666667,
+    "averageOpponentRating": -0.06305822342114029,
+    "averageScoringMargin": -5.866666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 9,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "Georgia Tech": {
+    "id": 105,
+    "ranking": 162,
+    "rating": 0.016769162629310542,
+    "averageOpponentRanking": 137.83870967741936,
+    "averageOpponentRating": 0.12012519697724805,
+    "averageScoringMargin": -2,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 7,
+      "quad2": 6,
+      "quad3": 4,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Georgia State": {
+    "id": 104,
+    "ranking": 340,
+    "rating": -0.41532712693327495,
+    "averageOpponentRanking": 177.85714285714286,
+    "averageOpponentRating": 0.0066661203962710735,
+    "averageScoringMargin": -3.9285714285714284,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 9,
+      "quad4": 8
+    },
+    "seed": 69
+  },
+  "High Point": {
+    "id": 113,
+    "ranking": 264,
+    "rating": -0.20371133200979025,
+    "averageOpponentRanking": 227.6551724137931,
+    "averageOpponentRating": -0.12922373666656484,
+    "averageScoringMargin": -2.0344827586206895,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 0,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 7
+    },
+    "seed": 69
+  },
+  "Wofford": {
+    "id": 358,
+    "ranking": 210,
+    "rating": -0.07548579699707254,
+    "averageOpponentRanking": 205.8,
+    "averageOpponentRating": -0.07062600765085798,
+    "averageScoringMargin": -0.9,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 1,
+      "quad2": 0,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Arkansas State": {
+    "id": 15,
+    "ranking": 299,
+    "rating": -0.2854021650164529,
+    "averageOpponentRanking": 209.46666666666667,
+    "averageOpponentRating": -0.08115395504642327,
+    "averageScoringMargin": -3.433333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 12,
+      "quad4": 4
+    },
+    "seed": 69
+  },
+  "Ball State": {
+    "id": 19,
+    "ranking": 168,
+    "rating": 0.004726708601325794,
+    "averageOpponentRanking": 210.73333333333332,
+    "averageOpponentRating": -0.07952349435790951,
+    "averageScoringMargin": 1.9666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 2,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 3,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Army": {
+    "id": 16,
+    "ranking": 290,
+    "rating": -0.27125162494322685,
+    "averageOpponentRanking": 253.74193548387098,
+    "averageOpponentRating": -0.1867706805134981,
+    "averageScoringMargin": 0.0967741935483871,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 2,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 3,
+      "quad3": 3,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Siue": {
+    "id": 268,
+    "ranking": 255,
+    "rating": -0.18176725039214423,
+    "averageOpponentRanking": 268.2,
+    "averageOpponentRating": -0.22691571218863488,
+    "averageScoringMargin": 0.5,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 10
+    },
+    "seed": 69
+  },
+  "Binghamton": {
+    "id": 24,
+    "ranking": 283,
+    "rating": -0.24301633415978774,
+    "averageOpponentRanking": 215.27586206896552,
+    "averageOpponentRating": -0.09234629318098617,
+    "averageScoringMargin": -2.8275862068965516,
+    "gameCount": 29,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "MTSU": {
+    "id": 187,
+    "ranking": 110,
+    "rating": 0.15123332107668824,
+    "averageOpponentRanking": 134.09677419354838,
+    "averageOpponentRating": 0.12795718826814587,
+    "averageScoringMargin": 0.3870967741935484,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 2,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 5,
+      "quad2": 1,
+      "quad3": 5,
+      "quad4": 3
+    },
+    "seed": 69
+  },
+  "Bucknell": {
+    "id": 32,
+    "ranking": 304,
+    "rating": -0.2925905183497149,
+    "averageOpponentRanking": 254.38709677419354,
+    "averageOpponentRating": -0.19234893925537094,
+    "averageScoringMargin": -2.4838709677419355,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 11
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 1,
+      "quad3": 6,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Tennessee State": {
+    "id": 298,
+    "ranking": 311,
+    "rating": -0.31864686163182726,
+    "averageOpponentRanking": 286.7142857142857,
+    "averageOpponentRating": -0.27872386094280505,
+    "averageScoringMargin": -0.8928571428571429,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 0,
+      "quad4": 14
+    },
+    "losses": {
+      "quad1": 0,
+      "quad2": 2,
+      "quad3": 1,
+      "quad4": 11
+    },
+    "seed": 69
+  },
+  "New Mexico State": {
+    "id": 202,
+    "ranking": 159,
+    "rating": 0.021067504460895677,
+    "averageOpponentRanking": 134.9047619047619,
+    "averageOpponentRating": 0.11270486711671682,
+    "averageScoringMargin": -2.9523809523809526,
+    "gameCount": 21,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 3
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 5,
+      "quad3": 5,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "North Texas": {
+    "id": 212,
+    "ranking": 28,
+    "rating": 0.44864775444297345,
+    "averageOpponentRanking": 138.67741935483872,
+    "averageOpponentRating": 0.1151333771340516,
+    "averageScoringMargin": 4.580645161290323,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 2,
+      "quad2": 2,
+      "quad3": 13,
+      "quad4": 7
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 1,
+      "quad3": 1,
+      "quad4": 1
+    },
+    "seed": 69
+  },
+  "Jacksonville State": {
+    "id": 133,
+    "ranking": 209,
+    "rating": -0.07306098098968804,
+    "averageOpponentRanking": 189.57142857142858,
+    "averageOpponentRating": -0.018401475501740407,
+    "averageScoringMargin": -1.3571428571428572,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 1,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 5,
+      "quad4": 6
+    },
+    "seed": 69
+  },
+  "Louisiana Tech": {
+    "id": 151,
+    "ranking": 154,
+    "rating": 0.03864048754555322,
+    "averageOpponentRanking": 138.9,
+    "averageOpponentRating": 0.11942129923266863,
+    "averageScoringMargin": -1.2666666666666666,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 9,
+      "quad2": 2,
+      "quad3": 7,
+      "quad4": 0
+    },
+    "seed": 69
+  },
+  "Troy": {
+    "id": 307,
+    "ranking": 152,
+    "rating": 0.04418963451271948,
+    "averageOpponentRanking": 188.23333333333332,
+    "averageOpponentRating": -0.0061534860214098675,
+    "averageScoringMargin": 1.3333333333333333,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 12
+    },
+    "losses": {
+      "quad1": 3,
+      "quad2": 4,
+      "quad3": 4,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Prairie View": {
+    "id": 236,
+    "ranking": 292,
+    "rating": -0.2752858761758129,
+    "averageOpponentRanking": 241.76666666666668,
+    "averageOpponentRating": -0.16145220160703022,
+    "averageScoringMargin": -1.5666666666666667,
+    "gameCount": 30,
+    "wins": {
+      "quad1": 0,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 8
+    },
+    "losses": {
+      "quad1": 4,
+      "quad2": 0,
+      "quad3": 3,
+      "quad4": 12
+    },
+    "seed": 69
+  },
+  "Missouri State": {
+    "id": 179,
+    "ranking": 174,
+    "rating": 0.000986904214396948,
+    "averageOpponentRanking": 174.51612903225808,
+    "averageOpponentRating": 0.016053014986508008,
+    "averageScoringMargin": 0.5806451612903226,
+    "gameCount": 31,
+    "wins": {
+      "quad1": 1,
+      "quad2": 2,
+      "quad3": 4,
+      "quad4": 9
+    },
+    "losses": {
+      "quad1": 2,
+      "quad2": 5,
+      "quad3": 6,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Samford": {
+    "id": 255,
+    "ranking": 124,
+    "rating": 0.1213564134815592,
+    "averageOpponentRanking": 216.42857142857142,
+    "averageOpponentRating": -0.09683702457896212,
+    "averageScoringMargin": 2.857142857142857,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 4,
+      "quad4": 13
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 4,
+      "quad4": 2
+    },
+    "seed": 69
+  },
+  "Coastal Car": {
+    "id": 52,
+    "ranking": 303,
+    "rating": -0.29254902955789036,
+    "averageOpponentRanking": 192.39285714285714,
+    "averageOpponentRating": -0.029866700617173166,
+    "averageScoringMargin": -3.75,
+    "gameCount": 28,
+    "wins": {
+      "quad1": 0,
+      "quad2": 1,
+      "quad3": 2,
+      "quad4": 5
+    },
+    "losses": {
+      "quad1": 1,
+      "quad2": 3,
+      "quad3": 7,
+      "quad4": 9
+    },
+    "seed": 69
+  }
+}
