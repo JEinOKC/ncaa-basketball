@@ -27,6 +27,7 @@ dist-ssr
 
 # python files
 backend/py-src/myenv/
+__pycache__
 
 
 # Server files

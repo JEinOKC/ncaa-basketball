@@ -5,6 +5,10 @@ import joblib
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
+#this class is currently built to only function for the 2025 model.
+#if wanting to run a 2026 model, the 2025 summary will need to be added to the file_names and all file writes should have their names changed
+#ideally this should be addressed through a variable passed through. (TODO)
+
 class MBBRegressionModel:
     def __init__(self):
         self.datasets = []
@@ -14,8 +18,8 @@ class MBBRegressionModel:
         self.regression = None
 
     def set_datasets(self):
-        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../shared-data/archive"))
-        
+        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/archive"))
+        print(data_dir)
         file_names = [
             "mensbb-team-summaries-2022.json",
             "mensbb-team-summaries-2023.json",
@@ -34,7 +38,7 @@ class MBBRegressionModel:
 
 
     def process_predictions(self):
-        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../shared-data/archive"))
+        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/archive"))
         
         file_name = "mensbb-team-summaries-2025.json";
         file_path = os.path.join(data_dir, file_name)
@@ -64,10 +68,12 @@ class MBBRegressionModel:
 
 
     def save_predictions(self):
-        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../shared-data/archive"))
+        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/archive"))
         
         with open(os.path.join(data_dir, "predictions-2025.json"), "w") as f:
             json.dump(self.predictions, f)
+
+        return self.predictions
 
 
     def preprocess_data(self):
@@ -125,7 +131,7 @@ class MBBRegressionModel:
         if self.regression is None:
             raise ValueError("Model not trained. Train before saving.")
         
-        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../shared-data/archive"))
+        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/archive"))
         file_path = os.path.join(data_dir, filename)
         
         with open(file_path, "wb") as f:
@@ -134,7 +140,7 @@ class MBBRegressionModel:
         print(f"Model saved to {filename}")
 
     def load_model(self, filename="seed-prediction-model.pkl"):
-        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../shared-data/archive"))
+        data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/archive"))
         file_path = os.path.join(data_dir, filename)
 
         if not os.path.exists(file_path):

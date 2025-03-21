@@ -6,8 +6,6 @@ import fs from 'fs';
 import path from 'path';
 import { main } from './build-rankings';
 import { SelectionCommittee } from './lib/selection-committee';
-// import { MBBlinearRegression } from './lib/logistical-regression';
-import { MBBRegressionModel } from './lib/multivariate-linear-regression';
 
 // Load environment variables
 dotenv.config();
@@ -57,99 +55,6 @@ app.get('/api/game-results/:year', async (req: Request, res: Response) => {
 	res.status(200).send(gameResults);
 
 	// console.log(`initializing mens basketball rankings for ${year}`);
-});
-
-app.get('/api/full-process-2025-mock' , async (req: Request, res: Response) => {
-	const year = 2025;
-	const teamName = 'Duke';
-
-	const linearRegression = new MBBRegressionModel();
-	
-	linearRegression.trainModel();
-	const trainedRegressionJSON = linearRegression.getRegressionJSON();
-	// res.status(200).send({
-	// 	'trainedRegressionJSON':trainedRegressionJSON,
-	// });
-	// return;
-	console.log('model trained');
-	linearRegression.saveModel();
-	console.log('model saved');
-
-	try{
-
-	
-	
-	// const selectionCommittee = new SelectionCommittee(year);
-	// const teamSummary = selectionCommittee.getTeamSummaryFromFile(teamName);
-
-	// const linearRegression = new MBBRegressionModel();
-	linearRegression.loadModel();
-	const loadedRegressionJSON = linearRegression.getRegressionJSON()
-	console.log('model loaded');
-
-	res.status(200).send({
-		'loaded model' : loadedRegressionJSON,
-		'trainedRegressionJSON':trainedRegressionJSON,
-	});
-
-	}
-	catch(error){
-		console.log('error', error);
-		res.status(500).send('error');
-	}
-
-});
-
-app.get('/api/predict-bid/:year/:teamName', async (req: Request, res: Response) => {
-	const year = parseInt(req.params.year);
-	const teamName = req.params.teamName;
-	
-	const selectionCommittee = new SelectionCommittee(year);
-	const teamSummary = selectionCommittee.getTeamSummaryFromFile(teamName);
-
-	const linearRegression = new MBBRegressionModel();
-	linearRegression.loadModel();
-
-	
-
-	const prediction = linearRegression.predict(teamSummary);
-	const otherPrediction = linearRegression.predictProbability(teamSummary);
-	// const result = linearRegression.predictProbability(teamSummary);
-	res.status(200).send('testing');
-	return;
-	res.status(200).send({
-		// 'rawDecisionValue':result.rawDecisionValue, 
-		// 'simplisticProbability':result.probability,
-		'otherPrediction':otherPrediction,
-		'simplisticPrediction':prediction	,
-		'teamSummary':teamSummary
-	});
-
-});
-
-app.get('/api/predict-bids/:year', async (req: Request, res: Response) => {
-	const year = parseInt(req.params.year);
-	const selectionCommittee = new SelectionCommittee(year);
-
-	// const results = "this function was blown up";
-	const results = await selectionCommittee.getTeamSummariesWithProbabilities();
-
-	// const teamSummary = selectionCommittee.getTeamSummaryFromFile(teamName);
-	// const linearRegression = new MBBRegressionModel();
-	// linearRegression.loadModel();
-	// const results = linearRegression.predict(teamSummary);
-
-	res.status(200).send(results);
-});
-
-app.get('/api/train-model', async (req: Request, res: Response) => {
-	const linearRegression = new MBBRegressionModel();
-	
-	linearRegression.trainModel();
-	linearRegression.saveModel();
-	res.status(200).send('Model trained and saved');
-	
-
 });
 
 // app.get('/api/selection-committee/:year', async (req: Request, res: Response) => {

@@ -32,3 +32,15 @@ services:
       - ./shared-data:/app/data #shared volume for data
       - /app/node_modules 
     command: npm run dev
+  python-backend:
+    build:
+      context: .
+      dockerfile: backend-python.Dockerfile
+    image: ncaa-basketball/flask-server
+    ports:
+      - "3098:5001"
+    volumes: 
+      - ./backend/py-src:/app
+      - ./shared-data:/app/data
+      - /app/myenv
+    command: flask --app server.py --debug run --port 5001

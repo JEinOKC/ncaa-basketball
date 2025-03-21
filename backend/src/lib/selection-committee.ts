@@ -4,7 +4,6 @@ import fs from 'fs';
 import path from 'path';
 import { CollegeNameFormatter } from './college-name-formatter';
 import { SelectionCommitteeType, MasseyEndpointsType, MasseyEndpointsByYearType, TeamDataType, GameTeamDataType, GameDataType, TeamSummaryDataType, YearRankingsType, TeamDataMap, TeamSummaryMap, TeamSummaryWithProbabilityType } from './types';
-import { MBBLogisticalRegression } from './logistical-regression';
 
 const mbbEndpointsByYear = _mbbEndpointsByYear as MasseyEndpointsByYearType;
 const nameTable:{ [key: string]: string } = require(path.join(__dirname, '../../data/name-table.json'));
@@ -207,7 +206,7 @@ export class SelectionCommittee implements SelectionCommitteeType {
 				quad3: 0,
 				quad4: 0
 			},
-			bidType: teamRanking.bid_type
+			seed: 0
 		};
 
 		let sumOpponentRanking = 0;
@@ -403,39 +402,5 @@ export class SelectionCommittee implements SelectionCommitteeType {
 		}
 		
 	}
-
-
-
-	async getTeamSummariesWithProbabilities():Promise<TeamSummaryWithProbabilityType[]> {
-		const dataDir = path.join(__dirname, '../../data/archive');
-		
-		const teamSummaries = this.getTeamSummariesFromFile();
-		const finalSummaries:TeamSummaryWithProbabilityType[] = [];
-
-		const logisticalRegression = new MBBLogisticalRegression();
-		logisticalRegression.loadModel();
-
-		const teamNames = await this.getTeamNames(this.year);
-
-		teamSummaries.forEach((teamSummary:TeamSummaryDataType) => {
-			const result = logisticalRegression.predictProbability(teamSummary);
-			const teamName:string = teamNames.get(teamSummary.id.toString()) || '[unknown]';
-
-			const finalSummary:TeamSummaryWithProbabilityType = {
-				...teamSummary,
-				teamName: teamName,
-				probability: result.probability,
-				prediction: result.prediction,
-				rawDecisionValue: result.rawDecisionValue
-			}
-
-			finalSummaries.push(finalSummary);
-			
-		});
-
-		fs.writeFileSync(path.join(dataDir, `mensbb-team-summaries-${this.year}-with-probabilities.json`), JSON.stringify(finalSummaries, null, 2));
-
-
-		return finalSummaries;
-	}
+	
 }
