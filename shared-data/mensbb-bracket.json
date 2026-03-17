@@ -1,102 +1,108 @@
 {
-    "finalFour" : [
-      ["East","Midwest"],
-      ["South","West"]
+    "finalFour": [
+        [
+            "East",
+            "South"
+        ],
+        [
+            "West",
+            "Midwest"
+        ]
     ],
     "regions": [
-      {
-        "id": "East",
-        "name": "East",
-        "fullname": "East Region"
-      },
-      {
-        "id": "West",
-        "name": "West",
-        "fullname": "West Region"
-      },
-      {
-        "id": "Midwest",
-        "name": "Midwest",
-        "fullname": "Midwest Region"
-      },
-      {
-        "id": "South",
-        "name": "South",
-        "fullname": "South Region"
-      }
+        {
+            "id": "East",
+            "name": "East",
+            "fullname": "East Region"
+        },
+        {
+            "id": "South",
+            "name": "South",
+            "fullname": "South Region"
+        },
+        {
+            "id": "West",
+            "name": "West",
+            "fullname": "West Region"
+        },
+        {
+            "id": "Midwest",
+            "name": "Midwest",
+            "fullname": "Midwest Region"
+        }
     ],
     "teams": {
-      "East": [
-        "Duke",
-        "Alabama",
-        "Wisconsin",
-        "Arizona",
-        "Oregon",
-        "BYU",
-        "St_Mary's_CA",
-        "Mississippi_St",
-        "Baylor",
-        "Vanderbilt",
-        "VCU",
-        "Liberty",
-        "Akron",
-        "Montana",
-        "Robert_Morris",
-        "American_Univ/Mt_St_Mary's"
-      ],
-      "South": [
-        "Auburn",
-        "Michigan_St",
-        "Iowa_St",
-        "Texas_A&M",
-        "Michigan",
-        "Mississippi",
-        "Marquette",
-        "Louisville",
-        "Creighton",
-        "New_Mexico",
-        "San_Diego_St/North_Carolina",
-        "UC_San_Diego",
-        "Yale",
-        "Lipscomb",
-        "Bryant",
-        "Alabama_St/St_Francis_PA"
-      ],
-      "Midwest": [
-        "Houston",
-        "Tennessee",
-        "Kentucky",
-        "Purdue",
-        "Clemson",
-        "Illinois",
-        "UCLA",
-        "Gonzaga",
-        "Georgia",
-        "Utah_St",
-        "Texas/Xavier",
-        "McNeese",
-        "High_Point",
-        "Troy",
-        "Wofford",
-        "SIUE"
-      ],
-      "West": [
-        "Florida",
-        "St_John's",
-        "Texas_Tech",
-        "Maryland",
-        "Memphis",
-        "Missouri",
-        "Kansas",
-        "Connecticut",
-        "Oklahoma",        
-        "Arkansas",        
-        "Drake",
-        "Colorado_St",
-        "Grand_Canyon",
-        "UNC_Wilmington",
-        "NE_Omaha",
-        "Norfolk_St"
-      ]
+        "East": [
+            "Duke",
+            "Connecticut",
+            "Michigan_St",
+            "Kansas",
+            "St_John's",
+            "Louisville",
+            "UCLA",
+            "Ohio_St",
+            "TCU",
+            "UCF",
+            "South_Florida",
+            "Northern_Iowa",
+            "Cal_Baptist",
+            "N_Dakota_St",
+            "Furman",
+            "Siena"
+        ],
+        "South": [
+            "Florida",
+            "Houston",
+            "Illinois",
+            "Nebraska",
+            "Vanderbilt",
+            "North_Carolina",
+            "St_Mary's_CA",
+            "Clemson",
+            "Iowa",
+            "Texas_A&M",
+            "VCU",
+            "McNeese_St",
+            "Troy",
+            "Penn",
+            "Idaho",
+            "Prairie_View/Lehigh"
+        ],
+        "West": [
+            "Arizona",
+            "Purdue",
+            "Gonzaga",
+            "Arkansas",
+            "Wisconsin",
+            "BYU",
+            "Miami_FL",
+            "Villanova",
+            "Utah_St",
+            "Missouri",
+            "Texas/NC_State",
+            "High_Point",
+            "Hawaii",
+            "Kennesaw",
+            "Queens_NC",
+            "LIU_Brooklyn"
+        ],
+        "Midwest": [
+            "Michigan",
+            "Iowa_St",
+            "Virginia",
+            "Alabama",
+            "Texas_Tech",
+            "Tennessee",
+            "Kentucky",
+            "Georgia",
+            "St_Louis",
+            "Santa_Clara",
+            "Miami_OH/SMU",
+            "Akron",
+            "Hofstra",
+            "Wright_St",
+            "Tennessee_St",
+            "UMBC/Howard"
+        ]
     }
-  }
+}

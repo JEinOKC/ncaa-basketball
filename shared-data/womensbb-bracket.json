@@ -1,103 +1,108 @@
 {
-    "finalFour" : [
-      ["Spokane 1","Spokane 4"],
-      ["Birmingham 2","Birmingham 3"]
-      
+    "finalFour": [
+        [
+            "Fort Worth #1",
+            "Sacramento #4"
+        ],
+        [
+            "Sacramento #2",
+            "Fort Worth #3"
+        ]
     ],
     "regions": [
-      {
-        "id": "Spokane 1",
-        "name": "Spokane 1",
-        "fullname": "Spokane 1"
-      },
-      {
-        "id": "Birmingham 2",
-        "name": "Birmingham 2",
-        "fullname": "Birmingham 2"
-      },
-      {
-        "id": "Birmingham 3",
-        "name": "Birmingham 3",
-        "fullname": "Birmingham 3"
-      },
-      {
-        "id": "Spokane 4",
-        "name": "Spokane 4",
-        "fullname": "Spokane 4"
-      }
+        {
+            "id": "Fort Worth #1",
+            "name": "Fort Worth #1",
+            "fullname": "Fort Worth #1 Region"
+        },
+        {
+            "id": "Sacramento #4",
+            "name": "Sacramento #4",
+            "fullname": "Sacramento #4 Region"
+        },
+        {
+            "id": "Sacramento #2",
+            "name": "Sacramento #2",
+            "fullname": "Sacramento #2 Region"
+        },
+        {
+            "id": "Fort Worth #3",
+            "name": "Fort Worth #3",
+            "fullname": "Fort Worth #3 Region"
+        }
     ],
     "teams": {
-      "Spokane 1": [
-        "UCLA",
-        "NC_State",
-        "LSU",
-        "Baylor",
-        "Mississippi",
-        "Florida_St",
-        "Michigan_St",
-        "Richmond",
-        "Georgia_Tech",
-        "Harvard",
-        "George_Mason",
-        "Ball_St",
-        "Grand_Canyon",
-        "San_Diego_St",
-        "Vermont",
-        "UC_San_Diego/Southern_Univ"
-      ],
-      "Birmingham 2": [
-        "South_Carolina",
-        "Duke",
-        "North_Carolina",
-        "Maryland",
-        "Alabama",
-        "West_Virginia",
-        "Vanderbilt",
-        "Utah",
-        "Indiana",
-        "Oregon",
-        "Columbia/Washington",
-        "WI_Green_Bay",
-        "Norfolk_St",
-        "Oregon_St",
-        "Lehigh",
-        "Tennessee_Tech"
-      ],
-      "Birmingham 3": [
-        "Texas",
-        "TCU",
-        "Notre_Dame",
-        "Ohio_St",
-        "Tennessee",
-        "Michigan",
-        "Louisville",
-        "Illinois",
-        "Creighton",
-        "Nebraska",
-        "Iowa_St/Princeton",
-        "South_Florida",
-        "Montana_St",
-        "SF_Austin",
-        "F_Dickinson",
-        "High_Point/William_&_Mary"
-      ],
-      "Spokane 4": [
-        "USC",
-        "Connecticut",
-        "Oklahoma",
-        "Kentucky",
-        "Kansas_St",
-        "Iowa",
-        "Oklahoma_St",
-        "California",
-        "Mississippi_St",
-        "S_Dakota_St",
-        "Murray_St",
-        "Fairfield",
-        "Liberty",
-        "FGCU",
-        "Arkansas_St",
-        "Greensboro"
-      ]
+        "Fort Worth #1": [
+            "Connecticut",
+            "Vanderbilt",
+            "Ohio_St",
+            "North_Carolina",
+            "Maryland",
+            "Notre_Dame",
+            "Illinois",
+            "Iowa_St",
+            "Syracuse",
+            "Colorado",
+            "Fairfield",
+            "Murray_St",
+            "W_Illinois",
+            "Howard",
+            "High_Point",
+            "UT_San_Antonio"
+        ],
+        "Sacramento #4": [
+            "South_Carolina",
+            "Iowa",
+            "TCU",
+            "Oklahoma",
+            "Michigan_St",
+            "Washington",
+            "Georgia",
+            "Clemson",
+            "USC",
+            "Virginia/Arizona_St",
+            "S_Dakota_St",
+            "Colorado_St",
+            "Idaho",
+            "UC_San_Diego",
+            "F_Dickinson",
+            "Southern_Univ/Samford"
+        ],
+        "Sacramento #2": [
+            "UCLA",
+            "LSU",
+            "Duke",
+            "Minnesota",
+            "Mississippi",
+            "Baylor",
+            "Texas_Tech",
+            "Oklahoma_St",
+            "Princeton",
+            "Villanova",
+            "Nebraska/Richmond",
+            "Gonzaga",
+            "WI_Green_Bay",
+            "Col_Charleston",
+            "Jacksonville",
+            "Cal_Baptist"
+        ],
+        "Fort Worth #3": [
+            "Texas",
+            "Michigan",
+            "Louisville",
+            "West_Virginia",
+            "Kentucky",
+            "Alabama",
+            "NC_State",
+            "Oregon",
+            "Virginia_Tech",
+            "Tennessee",
+            "Rhode_Island",
+            "James_Madison",
+            "Miami_OH",
+            "Vermont",
+            "Holy_Cross",
+            "Missouri_St/SF_Austin"
+        ]
     }
-  }
+}

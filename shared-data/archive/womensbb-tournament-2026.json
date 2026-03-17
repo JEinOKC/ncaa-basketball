@@ -1,0 +1,614 @@
+[
+    {
+        "team_name": "UConn",
+        "seed": 1,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #1",
+        "regional_seed": 1,
+        "conference": "Big East",
+        "record": "34\u20130"
+    },
+    {
+        "team_name": "UCLA",
+        "seed": 2,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 1,
+        "conference": "Big Ten",
+        "record": "31\u20131"
+    },
+    {
+        "team_name": "Texas",
+        "seed": 3,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 1,
+        "conference": "SEC",
+        "record": "31\u20133"
+    },
+    {
+        "team_name": "South Carolina",
+        "seed": 4,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 1,
+        "conference": "SEC",
+        "record": "31\u20133"
+    },
+    {
+        "team_name": "LSU",
+        "seed": 5,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 2,
+        "conference": "SEC",
+        "record": "27\u20135"
+    },
+    {
+        "team_name": "Iowa",
+        "seed": 6,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 2,
+        "conference": "Big Ten",
+        "record": "26\u20136"
+    },
+    {
+        "team_name": "Vanderbilt",
+        "seed": 7,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 2,
+        "conference": "SEC",
+        "record": "27\u20134"
+    },
+    {
+        "team_name": "Michigan",
+        "seed": 8,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 2,
+        "conference": "Big Ten",
+        "record": "25\u20136"
+    },
+    {
+        "team_name": "Duke",
+        "seed": 9,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 3,
+        "conference": "ACC",
+        "record": "24\u20138"
+    },
+    {
+        "team_name": "Louisville",
+        "seed": 10,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 3,
+        "conference": "ACC",
+        "record": "27\u20137"
+    },
+    {
+        "team_name": "Ohio State",
+        "seed": 11,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 3,
+        "conference": "Big Ten",
+        "record": "26\u20137"
+    },
+    {
+        "team_name": "TCU",
+        "seed": 12,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 3,
+        "conference": "Big 12",
+        "record": "29\u20135"
+    },
+    {
+        "team_name": "Oklahoma",
+        "seed": 13,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 4,
+        "conference": "SEC",
+        "record": "24\u20137"
+    },
+    {
+        "team_name": "West Virginia",
+        "seed": 14,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 4,
+        "conference": "Big 12",
+        "record": "27\u20136"
+    },
+    {
+        "team_name": "North Carolina",
+        "seed": 15,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 4,
+        "conference": "ACC",
+        "record": "26\u20137"
+    },
+    {
+        "team_name": "Minnesota",
+        "seed": 16,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 4,
+        "conference": "Big Ten",
+        "record": "22\u20138"
+    },
+    {
+        "team_name": "Maryland",
+        "seed": 17,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 5,
+        "conference": "Big Ten",
+        "record": "23\u20138"
+    },
+    {
+        "team_name": "Kentucky",
+        "seed": 18,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 5,
+        "conference": "SEC",
+        "record": "23\u201310"
+    },
+    {
+        "team_name": "Mississippi",
+        "seed": 19,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 5,
+        "conference": "SEC",
+        "record": "23\u201311"
+    },
+    {
+        "team_name": "Michigan State",
+        "seed": 20,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 5,
+        "conference": "Big Ten",
+        "record": "22\u20138"
+    },
+    {
+        "team_name": "Notre Dame",
+        "seed": 21,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 6,
+        "conference": "ACC",
+        "record": "22\u201310"
+    },
+    {
+        "team_name": "Alabama",
+        "seed": 22,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 6,
+        "conference": "SEC",
+        "record": "23\u201310"
+    },
+    {
+        "team_name": "Washington",
+        "seed": 23,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 6,
+        "conference": "Big Ten",
+        "record": "21\u201310"
+    },
+    {
+        "team_name": "Baylor",
+        "seed": 24,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 6,
+        "conference": "Big 12",
+        "record": "24\u20138"
+    },
+    {
+        "team_name": "North Carolina State",
+        "seed": 25,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 7,
+        "conference": "ACC",
+        "record": "20\u201310"
+    },
+    {
+        "team_name": "Texas Tech",
+        "seed": 26,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 7,
+        "conference": "Big 12",
+        "record": "25\u20137"
+    },
+    {
+        "team_name": "Georgia",
+        "seed": 27,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 7,
+        "conference": "SEC",
+        "record": "22\u20139"
+    },
+    {
+        "team_name": "Illinois",
+        "seed": 28,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 7,
+        "conference": "Big Ten",
+        "record": "21\u201311"
+    },
+    {
+        "team_name": "Oregon",
+        "seed": 29,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 8,
+        "conference": "Big Ten",
+        "record": "22\u201312"
+    },
+    {
+        "team_name": "Iowa State",
+        "seed": 30,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 8,
+        "conference": "Big 12",
+        "record": "22\u20139"
+    },
+    {
+        "team_name": "Clemson",
+        "seed": 31,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 8,
+        "conference": "ACC",
+        "record": "21\u201311"
+    },
+    {
+        "team_name": "Oklahoma State",
+        "seed": 32,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 8,
+        "conference": "Big 12",
+        "record": "23\u20139"
+    },
+    {
+        "team_name": "USC",
+        "seed": 33,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 9,
+        "conference": "Big Ten",
+        "record": "17\u201313"
+    },
+    {
+        "team_name": "Princeton",
+        "seed": 34,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 9,
+        "conference": "Ivy League",
+        "record": "26\u20133"
+    },
+    {
+        "team_name": "Virginia Tech",
+        "seed": 35,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 9,
+        "conference": "ACC",
+        "record": "23\u20139"
+    },
+    {
+        "team_name": "Syracuse",
+        "seed": 36,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 9,
+        "conference": "ACC",
+        "record": "23\u20138"
+    },
+    {
+        "team_name": "Villanova",
+        "seed": 37,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 10,
+        "conference": "Big East",
+        "record": "25\u20137"
+    },
+    {
+        "team_name": "Tennessee",
+        "seed": 38,
+        "berth_type": "At-large",
+        "region": "Fort Worth #3",
+        "regional_seed": 10,
+        "conference": "SEC",
+        "record": "16\u201313"
+    },
+    {
+        "team_name": "Colorado",
+        "seed": 39,
+        "berth_type": "At-large",
+        "region": "Fort Worth #1",
+        "regional_seed": 10,
+        "conference": "Big 12",
+        "record": "22\u201311"
+    },
+    {
+        "team_name": "Virginia",
+        "seed": 40,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 10,
+        "conference": "ACC",
+        "record": "19\u201311"
+    },
+    {
+        "team_name": "Fairfield",
+        "seed": 41,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #1",
+        "regional_seed": 11,
+        "conference": "MAAC",
+        "record": "28\u20134"
+    },
+    {
+        "team_name": "South Dakota State",
+        "seed": 42,
+        "berth_type": "Automatic",
+        "region": "Sacramento #4",
+        "regional_seed": 11,
+        "conference": "Summit League",
+        "record": "27\u20136"
+    },
+    {
+        "team_name": "Arizona State",
+        "seed": 43,
+        "berth_type": "At-large",
+        "region": "Sacramento #4",
+        "regional_seed": 10,
+        "conference": "Big 12",
+        "record": "24\u201310"
+    },
+    {
+        "team_name": "Nebraska",
+        "seed": 44,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 11,
+        "conference": "Big Ten",
+        "record": "18\u201312"
+    },
+    {
+        "team_name": "Rhode Island",
+        "seed": 45,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 11,
+        "conference": "Atlantic 10",
+        "record": "28\u20134"
+    },
+    {
+        "team_name": "Richmond",
+        "seed": 46,
+        "berth_type": "At-large",
+        "region": "Sacramento #2",
+        "regional_seed": 11,
+        "conference": "Atlantic 10",
+        "record": "26\u20137"
+    },
+    {
+        "team_name": "James Madison",
+        "seed": 47,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 12,
+        "conference": "Sun Belt",
+        "record": "26\u20138"
+    },
+    {
+        "team_name": "Murray State",
+        "seed": 48,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #1",
+        "regional_seed": 12,
+        "conference": "MVC",
+        "record": "31\u20133"
+    },
+    {
+        "team_name": "Colorado State",
+        "seed": 49,
+        "berth_type": "Automatic",
+        "region": "Sacramento #4",
+        "regional_seed": 12,
+        "conference": "Mountain West",
+        "record": "27\u20137"
+    },
+    {
+        "team_name": "Gonzaga",
+        "seed": 50,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 12,
+        "conference": "WCC",
+        "record": "24\u20139"
+    },
+    {
+        "team_name": "Miami (OH)",
+        "seed": 51,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 13,
+        "conference": "MAC",
+        "record": "28\u20136"
+    },
+    {
+        "team_name": "W Illinois",
+        "seed": 52,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #1",
+        "regional_seed": 13,
+        "conference": "OVC",
+        "record": "26\u20135"
+    },
+    {
+        "team_name": "Idaho",
+        "seed": 53,
+        "berth_type": "Automatic",
+        "region": "Sacramento #4",
+        "regional_seed": 13,
+        "conference": "Big Sky",
+        "record": "29\u20135"
+    },
+    {
+        "team_name": "Green Bay",
+        "seed": 54,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 13,
+        "conference": "Horizon",
+        "record": "25\u20138"
+    },
+    {
+        "team_name": "Charleston",
+        "seed": 55,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 14,
+        "conference": "CAA",
+        "record": "27\u20135"
+    },
+    {
+        "team_name": "Vermont",
+        "seed": 56,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 14,
+        "conference": "America East",
+        "record": "27\u20137"
+    },
+    {
+        "team_name": "UC San Diego",
+        "seed": 57,
+        "berth_type": "Automatic",
+        "region": "Sacramento #4",
+        "regional_seed": 14,
+        "conference": "Big West",
+        "record": "24\u20138"
+    },
+    {
+        "team_name": "Howard",
+        "seed": 58,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #1",
+        "regional_seed": 14,
+        "conference": "MEAC",
+        "record": "26\u20137"
+    },
+    {
+        "team_name": "Fairleigh Dickinson",
+        "seed": 59,
+        "berth_type": "Automatic",
+        "region": "Sacramento #4",
+        "regional_seed": 15,
+        "conference": "NEC",
+        "record": "30\u20134"
+    },
+    {
+        "team_name": "Jacksonville",
+        "seed": 60,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 15,
+        "conference": "ASUN",
+        "record": "24\u20138"
+    },
+    {
+        "team_name": "High Point",
+        "seed": 61,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #1",
+        "regional_seed": 15,
+        "conference": "Big South",
+        "record": "27\u20135"
+    },
+    {
+        "team_name": "Holy Cross",
+        "seed": 62,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 15,
+        "conference": "Patriot",
+        "record": "23\u20139"
+    },
+    {
+        "team_name": "Cal Baptist",
+        "seed": 63,
+        "berth_type": "Automatic",
+        "region": "Sacramento #2",
+        "regional_seed": 16,
+        "conference": "WAC",
+        "record": "23\u201310"
+    },
+    {
+        "team_name": "UT San Antonio",
+        "seed": 64,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #1",
+        "regional_seed": 16,
+        "conference": "American",
+        "record": "18\u201315"
+    },
+    {
+        "team_name": "Missouri State",
+        "seed": 65,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 16,
+        "conference": "CUSA",
+        "record": "22\u201312"
+    },
+    {
+        "team_name": "S.F. Austin",
+        "seed": 66,
+        "berth_type": "Automatic",
+        "region": "Fort Worth #3",
+        "regional_seed": 16,
+        "conference": "Southland",
+        "record": "25\u20139"
+    },
+    {
+        "team_name": "Southern",
+        "seed": 67,
+        "berth_type": "Automatic",
+        "region": "Sacramento #4",
+        "regional_seed": 16,
+        "conference": "SWAC",
+        "record": "19\u201313"
+    },
+    {
+        "team_name": "Samford",
+        "seed": 68,
+        "berth_type": "Automatic",
+        "region": "Sacramento #4",
+        "regional_seed": 16,
+        "conference": "Southern",
+        "record": "16\u201318"
+    }
+]

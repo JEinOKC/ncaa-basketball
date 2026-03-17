@@ -1,1 +1,650 @@
-[]
+[
+    {
+        "team_name": "Auburn",
+        "seed": 1,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 1,
+        "conference": "SEC",
+        "record": "28\u20135"
+    },
+    {
+        "team_name": "Duke",
+        "seed": 2,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 1,
+        "conference": "ACC",
+        "record": "31\u20133"
+    },
+    {
+        "team_name": "Houston",
+        "seed": 3,
+        "berth_type": "Automatic",
+        "region": "Midwest",
+        "regional_seed": 1,
+        "conference": "Big 12",
+        "record": "30\u20134"
+    },
+    {
+        "team_name": "Florida",
+        "seed": 4,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 1,
+        "conference": "SEC",
+        "record": "30\u20134"
+    },
+    {
+        "team_name": "Tennessee",
+        "seed": 5,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 2,
+        "conference": "SEC",
+        "record": "27\u20137"
+    },
+    {
+        "team_name": "Alabama",
+        "seed": 6,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 2,
+        "conference": "SEC",
+        "record": "25\u20138"
+    },
+    {
+        "team_name": "Michigan State",
+        "seed": 7,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 2,
+        "conference": "Big Ten",
+        "record": "27\u20136"
+    },
+    {
+        "team_name": "St. John's",
+        "seed": 8,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 2,
+        "conference": "Big East",
+        "record": "30\u20134"
+    },
+    {
+        "team_name": "Texas Tech",
+        "seed": 9,
+        "berth_type": "At-large",
+        "region": "West",
+        "regional_seed": 3,
+        "conference": "Big 12",
+        "record": "25\u20138"
+    },
+    {
+        "team_name": "Iowa State",
+        "seed": 10,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 3,
+        "conference": "Big 12",
+        "record": "24\u20139"
+    },
+    {
+        "team_name": "Kentucky",
+        "seed": 11,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 3,
+        "conference": "SEC",
+        "record": "22\u201311"
+    },
+    {
+        "team_name": "Wisconsin",
+        "seed": 12,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 3,
+        "conference": "Big Ten",
+        "record": "26\u20139"
+    },
+    {
+        "team_name": "Texas A&M",
+        "seed": 13,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 4,
+        "conference": "SEC",
+        "record": "22\u201310"
+    },
+    {
+        "team_name": "Purdue",
+        "seed": 14,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 4,
+        "conference": "Big Ten",
+        "record": "22\u201311"
+    },
+    {
+        "team_name": "Maryland",
+        "seed": 15,
+        "berth_type": "At-large",
+        "region": "West",
+        "regional_seed": 4,
+        "conference": "Big Ten",
+        "record": "25\u20138"
+    },
+    {
+        "team_name": "Arizona",
+        "seed": 16,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 4,
+        "conference": "Big 12",
+        "record": "22\u201312"
+    },
+    {
+        "team_name": "Michigan",
+        "seed": 17,
+        "berth_type": "Automatic",
+        "region": "South",
+        "regional_seed": 5,
+        "conference": "Big Ten",
+        "record": "25\u20139"
+    },
+    {
+        "team_name": "Clemson",
+        "seed": 18,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 5,
+        "conference": "ACC",
+        "record": "27\u20136"
+    },
+    {
+        "team_name": "Oregon",
+        "seed": 19,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 5,
+        "conference": "Big Ten",
+        "record": "24\u20139"
+    },
+    {
+        "team_name": "Memphis",
+        "seed": 20,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 5,
+        "conference": "American",
+        "record": "29\u20135"
+    },
+    {
+        "team_name": "BYU",
+        "seed": 21,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 6,
+        "conference": "Big 12",
+        "record": "24\u20139"
+    },
+    {
+        "team_name": "Illinois",
+        "seed": 22,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 6,
+        "conference": "Big Ten",
+        "record": "21\u201312"
+    },
+    {
+        "team_name": "Missouri",
+        "seed": 23,
+        "berth_type": "At-large",
+        "region": "West",
+        "regional_seed": 6,
+        "conference": "SEC",
+        "record": "22\u201311"
+    },
+    {
+        "team_name": "Mississippi",
+        "seed": 24,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 6,
+        "conference": "SEC",
+        "record": "22\u201311"
+    },
+    {
+        "team_name": "UCLA",
+        "seed": 25,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 7,
+        "conference": "Big Ten",
+        "record": "22\u201310"
+    },
+    {
+        "team_name": "Marquette",
+        "seed": 26,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 7,
+        "conference": "Big East",
+        "record": "23\u201310"
+    },
+    {
+        "team_name": "Saint Mary's",
+        "seed": 27,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 7,
+        "conference": "WCC",
+        "record": "28\u20135"
+    },
+    {
+        "team_name": "Kansas",
+        "seed": 28,
+        "berth_type": "At-large",
+        "region": "West",
+        "regional_seed": 7,
+        "conference": "Big 12",
+        "record": "21\u201312"
+    },
+    {
+        "team_name": "Louisville",
+        "seed": 29,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 8,
+        "conference": "ACC",
+        "record": "27\u20137"
+    },
+    {
+        "team_name": "Gonzaga",
+        "seed": 30,
+        "berth_type": "Automatic",
+        "region": "Midwest",
+        "regional_seed": 8,
+        "conference": "WCC",
+        "record": "25\u20138"
+    },
+    {
+        "team_name": "UConn",
+        "seed": 31,
+        "berth_type": "At-large",
+        "region": "West",
+        "regional_seed": 8,
+        "conference": "Big East",
+        "record": "23\u201310"
+    },
+    {
+        "team_name": "Mississippi State",
+        "seed": 32,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 8,
+        "conference": "SEC",
+        "record": "21\u201312"
+    },
+    {
+        "team_name": "Creighton",
+        "seed": 33,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 9,
+        "conference": "Big East",
+        "record": "24\u201310"
+    },
+    {
+        "team_name": "Georgia",
+        "seed": 34,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 9,
+        "conference": "SEC",
+        "record": "20\u201312"
+    },
+    {
+        "team_name": "Baylor",
+        "seed": 35,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 9,
+        "conference": "Big 12",
+        "record": "19\u201314"
+    },
+    {
+        "team_name": "Oklahoma",
+        "seed": 36,
+        "berth_type": "At-large",
+        "region": "West",
+        "regional_seed": 9,
+        "conference": "SEC",
+        "record": "20\u201313"
+    },
+    {
+        "team_name": "Arkansas",
+        "seed": 37,
+        "berth_type": "At-large",
+        "region": "West",
+        "regional_seed": 10,
+        "conference": "SEC",
+        "record": "20\u201313"
+    },
+    {
+        "team_name": "New Mexico",
+        "seed": 38,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 10,
+        "conference": "Mountain West",
+        "record": "26\u20137"
+    },
+    {
+        "team_name": "Vanderbilt",
+        "seed": 39,
+        "berth_type": "At-large",
+        "region": "East",
+        "regional_seed": 10,
+        "conference": "SEC",
+        "record": "20\u201312"
+    },
+    {
+        "team_name": "Utah State",
+        "seed": 40,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 10,
+        "conference": "Mountain West",
+        "record": "26\u20137"
+    },
+    {
+        "team_name": "Texas",
+        "seed": 41,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 11,
+        "conference": "SEC",
+        "record": "19\u201315"
+    },
+    {
+        "team_name": "Xavier",
+        "seed": 42,
+        "berth_type": "At-large",
+        "region": "Midwest",
+        "regional_seed": 11,
+        "conference": "Big East",
+        "record": "21\u201311"
+    },
+    {
+        "team_name": "San Diego State",
+        "seed": 43,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 11,
+        "conference": "Mountain West",
+        "record": "21\u20139"
+    },
+    {
+        "team_name": "Drake",
+        "seed": 44,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 11,
+        "conference": "Missouri Valley",
+        "record": "30\u20133"
+    },
+    {
+        "team_name": "VCU",
+        "seed": 45,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 11,
+        "conference": "Atlantic 10",
+        "record": "28\u20136"
+    },
+    {
+        "team_name": "North Carolina",
+        "seed": 46,
+        "berth_type": "At-large",
+        "region": "South",
+        "regional_seed": 11,
+        "conference": "ACC",
+        "record": "22\u201313"
+    },
+    {
+        "team_name": "UC San Diego",
+        "seed": 47,
+        "berth_type": "Automatic",
+        "region": "South",
+        "regional_seed": 12,
+        "conference": "Big West",
+        "record": "30\u20134"
+    },
+    {
+        "team_name": "Colorado State",
+        "seed": 48,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 12,
+        "conference": "Mountain West",
+        "record": "25\u20139"
+    },
+    {
+        "team_name": "McNeese",
+        "seed": 49,
+        "berth_type": "Automatic",
+        "region": "Midwest",
+        "regional_seed": 12,
+        "conference": "Southland",
+        "record": "27\u20136"
+    },
+    {
+        "team_name": "Liberty",
+        "seed": 50,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 12,
+        "conference": "C-USA",
+        "record": "28\u20136"
+    },
+    {
+        "team_name": "Yale",
+        "seed": 51,
+        "berth_type": "Automatic",
+        "region": "South",
+        "regional_seed": 13,
+        "conference": "Ivy",
+        "record": "22\u20137"
+    },
+    {
+        "team_name": "High Point",
+        "seed": 52,
+        "berth_type": "Automatic",
+        "region": "Midwest",
+        "regional_seed": 13,
+        "conference": "Big South",
+        "record": "29\u20135"
+    },
+    {
+        "team_name": "Akron",
+        "seed": 53,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 13,
+        "conference": "MAC",
+        "record": "28\u20136"
+    },
+    {
+        "team_name": "Grand Canyon",
+        "seed": 54,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 13,
+        "conference": "WAC",
+        "record": "26\u20137"
+    },
+    {
+        "team_name": "Lipscomb",
+        "seed": 55,
+        "berth_type": "Automatic",
+        "region": "South",
+        "regional_seed": 14,
+        "conference": "ASUN",
+        "record": "25\u20139"
+    },
+    {
+        "team_name": "Troy",
+        "seed": 56,
+        "berth_type": "Automatic",
+        "region": "Midwest",
+        "regional_seed": 14,
+        "conference": "Sun Belt",
+        "record": "23\u201310"
+    },
+    {
+        "team_name": "UNC Wilmington",
+        "seed": 57,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 14,
+        "conference": "CAA",
+        "record": "27\u20137"
+    },
+    {
+        "team_name": "Montana",
+        "seed": 58,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 14,
+        "conference": "Big Sky",
+        "record": "25\u20139"
+    },
+    {
+        "team_name": "Robert Morris",
+        "seed": 59,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 15,
+        "conference": "Horizon",
+        "record": "26\u20138"
+    },
+    {
+        "team_name": "Wofford",
+        "seed": 60,
+        "berth_type": "Automatic",
+        "region": "Midwest",
+        "regional_seed": 15,
+        "conference": "Southern",
+        "record": "19\u201315"
+    },
+    {
+        "team_name": "Omaha",
+        "seed": 61,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 15,
+        "conference": "Summit",
+        "record": "22\u201312"
+    },
+    {
+        "team_name": "Bryant",
+        "seed": 62,
+        "berth_type": "Automatic",
+        "region": "South",
+        "regional_seed": 15,
+        "conference": "America East",
+        "record": "23\u201311"
+    },
+    {
+        "team_name": "Norfolk State",
+        "seed": 63,
+        "berth_type": "Automatic",
+        "region": "West",
+        "regional_seed": 16,
+        "conference": "MEAC",
+        "record": "24\u201310"
+    },
+    {
+        "team_name": "SIUE",
+        "seed": 64,
+        "berth_type": "Automatic",
+        "region": "Midwest",
+        "regional_seed": 16,
+        "conference": "Ohio Valley",
+        "record": "22\u201311"
+    },
+    {
+        "team_name": "American University",
+        "seed": 65,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 16,
+        "conference": "Patriot",
+        "record": "22\u201312"
+    },
+    {
+        "team_name": "Mt St Mary's",
+        "seed": 66,
+        "berth_type": "Automatic",
+        "region": "East",
+        "regional_seed": 16,
+        "conference": "MAAC",
+        "record": "22\u201312"
+    },
+    {
+        "team_name": "Alabama State",
+        "seed": 67,
+        "berth_type": "Automatic",
+        "region": "South",
+        "regional_seed": 16,
+        "conference": "SWAC",
+        "record": "19\u201315"
+    },
+    {
+        "team_name": "Saint Francis",
+        "seed": 68,
+        "berth_type": "Automatic",
+        "region": "South",
+        "regional_seed": 16,
+        "conference": "NEC",
+        "record": "16\u201317"
+    },
+    {
+        "team_name": "West Virginia",
+        "seed": 69,
+        "berth_type": "First Four Out",
+        "region": null,
+        "regional_seed": null,
+        "conference": "Big 12",
+        "record": "19\u201313"
+    },
+    {
+        "team_name": "Indiana",
+        "seed": 69,
+        "berth_type": "First Four Out",
+        "region": null,
+        "regional_seed": null,
+        "conference": "Big Ten",
+        "record": "19\u201313"
+    },
+    {
+        "team_name": "Ohio State",
+        "seed": 69,
+        "berth_type": "First Four Out",
+        "region": null,
+        "regional_seed": null,
+        "conference": "Big Ten",
+        "record": "17\u201315"
+    },
+    {
+        "team_name": "Boise State",
+        "seed": 69,
+        "berth_type": "First Four Out",
+        "region": null,
+        "regional_seed": null,
+        "conference": "MWC",
+        "record": "24\u201310"
+    }
+]
